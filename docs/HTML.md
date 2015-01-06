@@ -95,7 +95,7 @@
 <p>paragraph of text</>
 ```
 ##9. Figure Caption
-* type: block-element
+* type: Block-element
 * content: 
 * support:
 * exapmle:
