@@ -58,15 +58,17 @@
 </div>
 ```
 ##6. Section or Page Footer
-* type: block-element
-* content: 
-* support:
-* exapmle:
+* type: Block-element
+* content: Flow content, palpable content
+* support: Chrome 5, Firefox 4.0, Gecko 2.0, Internet Explorer 9.0, Opera 11.10, Safari 4.1
+* exapmle: 
 ```
-
+<footer>
+    some important info. appropriate for the bottom of a document, like copyright info
+</footer>
 ```
 ##7. Definition List
-* type: block-element
+* type: Block-element
 * content: 
 * support:
 * exapmle:
