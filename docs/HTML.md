@@ -14,7 +14,7 @@
 ```
 ##2. Article
 * type: block-element
-* content: flow content, sectioning content - able to be nested, palpable
+* content: flow content, sectioning content, palpable
 * support: Chrome 5, Firefox 4.0, Gecko 2.0, Internet Explorer 9.0, Opera 11.10, Safari 4.1
 * exapmle:
 ```
@@ -23,21 +23,29 @@
     <p>text. text. text.</P
 </article>
 ```
-##3. Audio
+##3. Aside
 * type: block-element
-* content: 
-* support:
+* content: Flow content, sectioning content, palpable content
+* support: Chrome 5, Firefox 4.0, Gecko 2.0, Internet Explorer 9.0, Opera 11.10, Safari 4.1
 * exapmle:
 ```
-
+<article>
+    <p>Some Hit Record</p>
+    <aside>
+    This record made a ton of money when it was first released.
+    </aside>
+    <p>more info about band and record company</p>
+</article>
 ```
-##4. Body
+##4. Blockquote
 * type: block-element
-* content: 
-* support:
+* content: Flow Content
+* support: Firefox 1.0 and Gecko 1.7 or earlier, otherwise, All Browsers
 * exapmle:
 ```
-
+<blockquote cite="http://...">
+    <p>Quote taken from the above website</p>
+</blockquote>
 ```
 ##5. Document Division
 * type: block-element
