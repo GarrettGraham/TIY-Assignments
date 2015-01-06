@@ -82,13 +82,17 @@
     <dd>Green</dd>
 </dl>
 ```
-##8. Unordered List
-* type: block-element
-* content: 
-* support:
+##8. Horizontal Rule
+* type: Block-element
+* content: Flow content 
+* support: Chrome 1.0, otherwise. All Browsers
 * exapmle:
 ```
+<p>Paragraph of text</p>
 
+<hr>
+
+<p>paragraph of text</>
 ```
 ##9. Figure Caption
 * type: block-element
