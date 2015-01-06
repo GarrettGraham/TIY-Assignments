@@ -4,13 +4,13 @@
 * support: Chrome, Firefox 1.0, Gecko 1.7 or earlier, Internet Explorer 1.0, Opera 5.12, Safari 1.0
 * example:
 ```
-    <address> 
-        If you need assistance, please email me at: <a href "ganderson7197@icloud.com"Garrett Anderson</a>.<br>
-        Or you may write to:<br>
-        1234 Cognition Dr.<br>
-        Longwood, Florida 32750<br>
-        USA
-    </address>
+<address> 
+    If you need assistance, please email me at: <a href "ganderson7197@icloud.com"Garrett Anderson</a>.<br>
+    Or you may write to:<br>
+    1234 Cognition Dr.<br>
+    Longwood, Florida 32750<br>
+    USA
+</address>
 ```
 ##2. Article
 * type: Block-element
@@ -69,11 +69,18 @@
 ```
 ##7. Definition List
 * type: Block-element
-* content: 
-* support:
+* content: Flow content, palpable content 
+* support: Chrome 1.0, otherwise, All Browsers
 * exapmle:
 ```
-
+<dl>
+    <dt>Name</>
+    <dd>Garrett</dd>
+    <dt>Born</dt>
+    <dd>Orlando, FL</dd>
+    <dt>Favorite Color</dt>
+    <dd>Green</dd>
+</dl>
 ```
 ##8. Unordered List
 * type: block-element
