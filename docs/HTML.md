@@ -1,7 +1,7 @@
 ##1. Address
 * type: block-element
 * content: flow-content, palpable content, with no nesting (exept perhaps in footer)
-* support: Chrome; Firefox (Gecko) - 1.0, 1.7 or earlier; Internet Explorer 1.0; Opera 5.12; Safari 1.0
+* support: Chrome, Firefox 1.0, Gecko 1.7 or earlier, Internet Explorer 1.0, Opera 5.12, Safari 1.0
 * example:
 ```
     <address> 
@@ -14,11 +14,14 @@
 ```
 ##2. Article
 * type: block-element
-* content:
-* support:
+* content: flow content, sectioning content - able to be nested, palpable
+* support: Chrome 5, Firefox 4.0, Gecko 2.0, Internet Explorer 9.0, Opera 11.10, Safari 4.1
 * exapmle:
 ```
-
+<article>
+    <h4>This Article</h4>
+    <p>text. text. text.</P
+</article>
 ```
 ##3. Audio
 * type: block-element
