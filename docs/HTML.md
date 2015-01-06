@@ -94,10 +94,10 @@
 
 <p>paragraph of text</>
 ```
-##9. Figure Caption
+##9. Figure
 * type: Block-element
-* content: 
-* support:
+* content: Flow content
+* support: 
 * exapmle:
 ```
 
