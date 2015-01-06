@@ -1,4 +1,4 @@
-## 1. <address> -- Address
+##1. Address
 * type: block-element
 * content: flow-content, palpable content, with no nesting (exept perhaps in footer)
 * support: Chrome; Firefox (Gecko) - 1.0, 1.7 or earlier; Internet Explorer 1.0; Opera 5.12; Safari 1.0
@@ -12,7 +12,15 @@
     USA
     </address>
 ```
-## 2. <article> -- Article
+##2. Article
+* type: block-element
+* content:
+* support:
+* exapmle:
+```
+
+```
+##3. Audio
 * type: block-element
 * content: 
 * support:
@@ -20,7 +28,7 @@
 ```
 
 ```
-## 3. <audio> -- Audio
+##4. Body
 * type: block-element
 * content: 
 * support:
@@ -28,7 +36,15 @@
 ```
 
 ```
-## 4. <body> -- Body
+##5. Document Division
+* type: block-element
+* content:
+* support:
+* exapmle:
+```
+
+```
+##6. Section or Page Footer
 * type: block-element
 * content: 
 * support:
@@ -36,7 +52,7 @@
 ```
 
 ```
-## 5. <div> -- Document Division
+##7. Definition List
 * type: block-element
 * content: 
 * support:
@@ -44,7 +60,7 @@
 ```
 
 ```
-## 6. <footer> -- Section or Page Footer
+##8. Unordered List
 * type: block-element
 * content: 
 * support:
@@ -52,7 +68,7 @@
 ```
 
 ```
-## 7. <dl> -- Definition List
+##9. Figure Caption
 * type: block-element
 * content: 
 * support:
@@ -60,23 +76,7 @@
 ```
 
 ```
-## 8. <ul> -- Unordered List
-* type: block-element
-* content: 
-* support:
-* exapmle:
-```
-
-```
-## 9. <figcaption> -- Figure Caption
-* type: block-element
-* content: 
-* support:
-* exapmle:
-```
-
-```
-## 10. <form> -- Input Form
+##10. Input Form
 * type: block-element
 * content: 
 * support:
