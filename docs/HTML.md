@@ -200,6 +200,13 @@
   </div>
 </form>
 ```
+#### `autocpitalizaion`
+* _values:_none: completely disables auto cap., sentences: auto cap.s first letter of sentences, words: atuo cap.s first letter of words, characters: auto cap.s all characters, on: depricated since iOS 5, off: depricated since iOS 5
+* _support:_iOS Safari Mobile, on and off values deprecated since iOS 5
+* _example:_
+```
+
+```
 ##11. Image
 * type: Inline-element
 * content: Flow content, phrasing content, embedded content, palpable content. If has usermap attribute, it is interactive content
