@@ -84,14 +84,12 @@
 ```
 ##8. Horizontal Rule
 * type: Block-element
-* content: Flow content 
-* support: Chrome 1.0, otherwise. All Browsers
+* content: Flow content
+* support: Chrome 1.0, otherwise, All Browsers
 * exapmle:
 ```
 <p>Paragraph of text</p>
-
-<hr>
-
+    <hr>
 <p>paragraph of text</p>
 ```
 ##9. Figure
@@ -101,7 +99,7 @@
 * exapmle:
 ```
 <figure>
-    <img src "http://imagesource.com" alt="A photo">
+    <img src "http://www.tavarua.com/sites/default/files/tavarua-resort-photos/tavarua-island-resort_0.jpg" alt="an island">
     <figcaption>Caption for photo</figcaption>
 </figure>
 <p></p>
@@ -119,11 +117,37 @@
     <input type="Submit" value="Save">
 </form>
 ```
-11. Image
+##11. Image
 * type: Inline-element
-* content: Flow content, phrasing content, embedded content, palpable content. If has usermap attribute, it is considered interactive content
-* support: Chrome 1.0, Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
+* content: Flow content, phrasing content, embedded content, palpable content. If has usermap attribute, it is interactive content
+* support: All Browsers
 * exapmle:
 ```
-
+<a href="http://imagelink.com"><img src="photo description.jpg" alt "Photo"/></a>
 ```
+##12. Object
+* type: Inline-element
+* content: Flow content, phrasing content, embedded content, interactive content
+* support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
+* exapmle: 
+```
+<!-- Embed a flash movie -->
+<object data="move.swf" type="application/x-shockwave-flash"></object>
+```
+##13. Span
+* type: Inline-element
+* content: Flow content, phrasing content
+* support: All Browsers
+* exapmle:
+```
+<p><span>sometext</span></p>
+```
+##14. 
+* type: Inline-element
+* content: Flow content, phrasing content
+* support: Firefox, Gecko 1.9.2 or earlier
+* exapmle: 
+```
+<p><strong>Speak No Evil</strong></p>
+```
+##15. 
