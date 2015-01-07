@@ -142,7 +142,7 @@
 ```
 <p><span>sometext</span></p>
 ```
-##14. 
+##14. Strong
 * type: Inline-element
 * content: Flow content, phrasing content
 * support: Firefox, Gecko 1.9.2 or earlier
@@ -150,4 +150,11 @@
 ```
 <p><strong>Speak No Evil</strong></p>
 ```
-##15. 
+##15. Textarea
+* type: Inline-element
+* content: Flow content, phrasing content, interactive content
+* support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
+* exapmle: 
+```
+<textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+```
