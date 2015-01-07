@@ -117,6 +117,24 @@
     <input type="Submit" value="Save">
 </form>
 ```
+###`action` -- form submission URL
+* _values_: URL of a program that processes a form submission
+* _support_: All Browsers
+* _examples_:
+```
+<form action="https://github.com/GarrettGraham">
+    <input name="Garrett's GitHub">
+</form>
+```
+```
+<form action="form-to-email.php" method="post"
+    accept-charset="windows-1252">
+  <div>
+    <label for="txtname">Name:</label>
+    <input type="text" name="txtname" id="txtname"/>
+  </div>
+</form>
+```
 ##11. Image
 * type: Inline-element
 * content: Flow content, phrasing content, embedded content, palpable content. If has usermap attribute, it is interactive content
