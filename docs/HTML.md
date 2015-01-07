@@ -84,29 +84,77 @@
 ```
 ##8. Horizontal Rule
 * type: Block-element
-* content: Flow content 
-* support: Chrome 1.0, otherwise. All Browsers
+* content: Flow content
+* support: Chrome 1.0, otherwise, All Browsers
 * exapmle:
 ```
 <p>Paragraph of text</p>
-
-<hr>
-
-<p>paragraph of text</>
+    <hr>
+<p>paragraph of text</p>
 ```
 ##9. Figure
 * type: Block-element
-* content: Flow content
-* support: 
+* content: Flow content, sectioning root, palpable content
+* support: Chrome 8, Firefox 4.0, Gecko 2.0, Internet Explorer 9.0, Opera 11.10, Safari 5.1
 * exapmle:
 ```
-
+<figure>
+    <img src "http://www.tavarua.com/sites/default/files/tavarua-resort-photos/tavarua-island-resort_0.jpg" alt="an island">
+    <figcaption>Caption for photo</figcaption>
+</figure>
+<p></p>
 ```
 ##10. Input Form
-* type: block-element
-* content: 
-* support:
+* type: Block-element
+* content: Flow content, palpable content
+* support: Chrome 1.0, Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
 * exapmle:
 ```
-
+<!-- Simple for which will send a POST request -->
+<form action="" method="post">
+    <label for= "POST-name">Name:</label>
+    <input id="POST-name" type="text" name="name">
+    <input type="Submit" value="Save">
+</form>
+```
+##11. Image
+* type: Inline-element
+* content: Flow content, phrasing content, embedded content, palpable content. If has usermap attribute, it is interactive content
+* support: All Browsers
+* exapmle:
+```
+<a href="http://imagelink.com"><img src="photo description.jpg" alt "Photo"/></a>
+```
+##12. Object
+* type: Inline-element
+* content: Flow content, phrasing content, embedded content, interactive content
+* support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
+* exapmle: 
+```
+<!-- Embed a flash movie -->
+<object data="move.swf" type="application/x-shockwave-flash"></object>
+```
+##13. Span
+* type: Inline-element
+* content: Flow content, phrasing content
+* support: All Browsers
+* exapmle:
+```
+<p><span>sometext</span></p>
+```
+##14. Strong
+* type: Inline-element
+* content: Flow content, phrasing content
+* support: Firefox, Gecko 1.9.2 or earlier
+* exapmle: 
+```
+<p><strong>Speak No Evil</strong></p>
+```
+##15. Textarea
+* type: Inline-element
+* content: Flow content, phrasing content, interactive content
+* support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
+* exapmle: 
+```
+<textarea name="textarea" rows="10" cols="50">Write something here</textarea>
 ```
