@@ -1,7 +1,6 @@
 ##Common Attributes
 
 #### `class` -- element class names
-
 * *values:* space-separated list of class names
 * *support:* all browsers
 * *examples:*
@@ -13,9 +12,7 @@
   <!-- . . . -->
 </section> <!-- .page--column -->
 ```
-
-### `id` -- unique element identifier
-
+#### `id` -- unique element identifier
 * *values:* single letter character followed by any number of letters, digits, hyphens, underscores, colons or periods
 * *support:* all browsers
 * *examples:*
@@ -24,44 +21,31 @@
   <!-- . . . -->
 </form> <!-- .search#site-search -->
 ```
-
-### `itemprop` -- 
-
+#### `itemprop`
 * _values:_
 * _support:_
 * _example:_
 ```
-
+asdrsdf
 ```
-
-### `lang` --
-
+#### `lang` --
 * _values:_
 * _support:_
 * _example:_
 ```
-
+asdfa
 ```
-
-### `spellcheck` -- 
-
+#### `spellcheck` -- 
 * _values:_
 * _support:_
 * _example:_
 ```
-
+dfgad
 ```
-
-### `style` -- 
-
+#### `style` -- 
 * _values:_
 * _support:_
 * _example:_
-```
-
-```
-
-
 
 ##1. Address
 * type: Block-element
@@ -85,7 +69,7 @@
 ```
 <article>
     <h4>This Article</h4>
-    <p>text. text. text.</P
+    <p>text</P
 </article>
 ```
 ##3. Aside
@@ -205,7 +189,21 @@
 * _support:_iOS Safari Mobile, on and off values deprecated since iOS 5
 * _example:_
 ```
-
+    <form>
+        <p>
+            Normal Input:<br />
+            <input type="text" style="width: 180px ;" />
+        </p>
+        <p>
+            No-Auto Input:<br />
+            <input
+                type="text"
+                autocapitalize="off"
+                autocorrect="off"
+                style="width: 180px ;"
+                />
+        </p>
+    </form>
 ```
 ##11. Image
 * type: Inline-element
