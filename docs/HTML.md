@@ -1,3 +1,52 @@
+##Common Attributes
+
+#### `class` -- element class names
+* *values:* space-separated list of class names
+* *support:* all browsers
+* *examples:*
+```html
+<aside class="page--column">
+  <!-- . . . -->
+</aside> <!-- .page--column -->
+<section class="page--column">
+  <!-- . . . -->
+</section> <!-- .page--column -->
+```
+#### `id` -- unique element identifier
+* *values:* single letter character followed by any number of letters, digits, hyphens, underscores, colons or periods
+* *support:* all browsers
+* *examples:*
+```html
+<form class="search" id="site-search">
+  <!-- . . . -->
+</form> <!-- .search#site-search -->
+```
+#### `itemprop`
+* _values:_
+* _support:_
+* _example:_
+```
+asdrsdf
+```
+#### `lang` --
+* _values:_
+* _support:_
+* _example:_
+```
+asdfa
+```
+#### `spellcheck` -- 
+* _values:_
+* _support:_
+* _example:_
+```
+dfgad
+```
+#### `style` -- 
+* _values:_
+* _support:_
+* _example:_
+
 ##1. Address
 * type: Block-element
 * content: Flow-content, palpable content, with no nesting (exept perhaps in footer)
@@ -20,7 +69,7 @@
 ```
 <article>
     <h4>This Article</h4>
-    <p>text. text. text.</P
+    <p>text</P
 </article>
 ```
 ##3. Aside
@@ -116,6 +165,45 @@
     <input id="POST-name" type="text" name="name">
     <input type="Submit" value="Save">
 </form>
+```
+#### `action` -- form submission URL
+* _values:_ URL of a program that processes a form submission
+* _support:_ All Browsers
+* _examples:_
+```
+<form action="https://github.com/GarrettGraham">
+    <input name="Garrett's GitHub">
+</form>
+```
+```
+<form action="form-to-email.php" method="post"
+    accept-charset="windows-1252">
+  <div>
+    <label for="txtname">Name:</label>
+    <input type="text" name="txtname" id="txtname"/>
+  </div>
+</form>
+```
+#### `autocpitalizaion`
+* _values:_none: completely disables auto cap., sentences: auto cap.s first letter of sentences, words: atuo cap.s first letter of words, characters: auto cap.s all characters, on: depricated since iOS 5, off: depricated since iOS 5
+* _support:_iOS Safari Mobile, on and off values deprecated since iOS 5
+* _example:_
+```
+    <form>
+        <p>
+            Normal Input:<br />
+            <input type="text" style="width: 180px ;" />
+        </p>
+        <p>
+            No-Auto Input:<br />
+            <input
+                type="text"
+                autocapitalize="off"
+                autocorrect="off"
+                style="width: 180px ;"
+                />
+        </p>
+    </form>
 ```
 ##11. Image
 * type: Inline-element
