@@ -131,7 +131,17 @@ dfgad
     <dd>Green</dd>
 </dl>
 ```
-##8. Horizontal Rule
+##8. <header> --Header
+* type: Block-leve element
+* content: Flow content, palpable content
+* support: Chrome 5, Firefox 4.0, Gecko 2.0, IE 9.0, Opera 11.10, Safari 4.0
+* exapmle: 
+```
+<header>
+  a logo
+</header>
+```
+##9. Horizontal Rule
 * type: Block-element
 * content: Flow content
 * support: Chrome 1.0, otherwise, All Browsers
@@ -141,7 +151,7 @@ dfgad
     <hr>
 <p>paragraph of text</p>
 ```
-##9. Figure
+##10. Figure
 * type: Block-element
 * content: Flow content, sectioning root, palpable content
 * support: Chrome 8, Firefox 4.0, Gecko 2.0, Internet Explorer 9.0, Opera 11.10, Safari 5.1
@@ -153,7 +163,7 @@ dfgad
 </figure>
 <p></p>
 ```
-##10. Input Form
+##11. Input Form
 * type: Block-element
 * content: Flow content, palpable content
 * support: Chrome 1.0, Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
@@ -205,7 +215,7 @@ dfgad
         </p>
     </form>
 ```
-##11. Image
+##12. Image
 * type: Inline-element
 * content: Flow content, phrasing content, embedded content, palpable content. If has usermap attribute, it is interactive content
 * support: All Browsers
@@ -213,7 +223,7 @@ dfgad
 ```
 <a href="http://imagelink.com"><img src="photo description.jpg" alt "Photo"/></a>
 ```
-##12. Object
+##13. Object
 * type: Inline-element
 * content: Flow content, phrasing content, embedded content, interactive content
 * support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
@@ -222,7 +232,7 @@ dfgad
 <!-- Embed a flash movie -->
 <object data="move.swf" type="application/x-shockwave-flash"></object>
 ```
-##13. Span
+##14. Span
 * type: Inline-element
 * content: Flow content, phrasing content
 * support: All Browsers
@@ -230,7 +240,7 @@ dfgad
 ```
 <p><span>sometext</span></p>
 ```
-##14. Strong
+##15. Strong
 * type: Inline-element
 * content: Flow content, phrasing content
 * support: Firefox, Gecko 1.9.2 or earlier
@@ -238,7 +248,15 @@ dfgad
 ```
 <p><strong>Speak No Evil</strong></p>
 ```
-##15. Textarea
+##16. Textarea
+* type: Inline-element
+* content: Flow content, phrasing content, interactive content
+* support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
+* exapmle: 
+```
+<textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+```
+## 17. <meta> --Meta
 * type: Inline-element
 * content: Flow content, phrasing content, interactive content
 * support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
