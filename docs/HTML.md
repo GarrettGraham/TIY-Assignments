@@ -90,11 +90,12 @@ dfgad
 ```
 ```
 #### `href` 
-* _description:_
+* _description:_ This was the single required attribute for anchors defining a hypertext source link, but is no longer required in HTML5. Omitting this attribute creates a placeholder link. The href attribute indicates the link target, either a URL or a URL fragment. A URL fragment is a name preceded by a hash mark (#), which specifies an internal target location (an ID) within the current document. 
 * _values:_
-* _support:_
-* _example:_
+* _support:_ URLs are not restricted to Web .HTTP-based documents; URLs might use any protocol supported by the browser. For example, file, ftp, and mailto work in most user agents.
+* _example:_ You can use the special fragment "top" to create a link back to the top of the page, as exemplified below
 ```
+<a href="#top">Return to top</a>
 ```
 #### `media` _HTML5_
 * _description:_
