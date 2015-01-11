@@ -12,6 +12,12 @@
   <!-- . . . -->
 </section> <!-- .page--column -->
 ```
+#### `head` -- 
+* *values:*
+* *support:*
+* *example:*
+```
+```
 #### `id` -- unique element identifier
 * *values:* single letter character followed by any number of letters, digits, hyphens, underscores, colons or periods
 * *support:* all browsers
