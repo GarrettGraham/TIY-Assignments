@@ -47,9 +47,20 @@ dfgad
 * _support:_
 * _example:_
 
+#### `meta`
+* _values:_ represents any metadata information that cannot be represented by one of the other meta-related elements -- .base, .link, .script, .style or .title -- According to the attributes set, the kind of metadata can be one of the following --
+--this is an empty element, it does not require an ending nor closing tag --.meta charset, .meta http-equiv, a .head element. If the .http-equiv is not an encoding declaration, it can also be inside a .noscript element, itself inside a .head element
+.meta name any element that accepts metadata content.
+.meta itemprop any element that accepts metadata content or parsing content.
+* _support:_
+* _attributes:_ This enumerated -- as in a list, to mention seperately as if in counting, to specify, to name one-by-one -- attribute defines the pragma -- also.pragmatic information. - A standardised form of comment which has meaning to the compiler or some other program. It may use a special syntax or a specific form within the normal comment syntax. A pragma usually conveys non-essential information, often intended to help the compiler to optimise the program or to generate formatted documentation -- that can alter servers and user-agents behavior. The value of the pragma is defined using the content and can be one of the following
+* _example:_
+```
+dfgad
+```
 ##1. Address
 * type: Block-element
-* content: Flow-content, palpable content, with no nesting (exept perhaps in footer)
+* content: Flow-content, palpable content, with no nesting -- exept perhaps in footer
 * support: Chrome, Firefox 1.0, Gecko 1.7 or earlier, Internet Explorer 1.0, Opera 5.12, Safari 1.0
 * example:
 ```
@@ -195,7 +206,7 @@ dfgad
 </form>
 ```
 #### `autocpitalizaion`
-* _values:_none: completely disables auto cap., sentences: auto cap.s first letter of sentences, words: atuo cap.s first letter of words, characters: auto cap.s all characters, on: depricated since iOS 5, off: depricated since iOS 5
+* _values:_none: completely disables auto cap., sentences- auto cap.s first letter of sentences, words- atuo cap.s first letter of words, characters- auto cap.s all characters, on- depricated since iOS 5, off- depricated since iOS 5
 * _support:_iOS Safari Mobile, on and off values deprecated since iOS 5
 * _example:_
 ```
@@ -232,7 +243,7 @@ dfgad
 <!-- Embed a flash movie -->
 <object data="move.swf" type="application/x-shockwave-flash"></object>
 ```
-##14. Span
+##14. <span> --Span
 * type: Inline-element
 * content: Flow content, phrasing content
 * support: All Browsers
