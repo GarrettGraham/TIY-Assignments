@@ -1,4 +1,4 @@
-##Common Attributes
+##Global Attributes
 
 #### `class` -- element class names
 * *values:* space-separated list of class names
@@ -19,13 +19,15 @@
 ```
 ```
 #### `id` -- unique element identifier
-* *values:* single letter character followed by any number of letters, digits, hyphens, underscores, colons or periods
-* *support:* all browsers
+* *description:* defines a unique identifier .ID. which must be unique in the whole document. Its purpose is to identify the element when linking -using a fragment identifier, scripting, or styling -with CSS.
+* *values:* single letter character followed by any number of letters, digits, hyphens, underscores, colons or periods - div id='blog logo' - able to reference id tag in stylesheet with a hash tag ??followed by txt that specifies whcih id -- # blog info, ?symantics??
+* *support:* all browsers; Supported on all elements but <base>, <head>, <html>, <meta>, <script>, <style>, and <title>.
+* *Note:* Using characters except ASCII letters and digits, '_', '-' and '.' may cause compatibility problems, as they weren't allowed in HTML 4. Though this restriction has been lifted in HTML 5, an ID should start with a letter for compatibility.
 * *examples:*
-```html
-<form class="search" id="site-search">
-  <!-- . . . -->
-</form> <!-- .search#site-search -->
+
+<!-- reference the unique identifier tag `id` in stylesheet with JUST a hashtag, .myHeader would be if within the div a class was given to myHeader vs. the `id` tag- Google difference of `id` vs class -->
+```
+<h1 id="myHeader"> Surf&Paddle Co. </h1>
 ```
 #### `itemprop`
 * _values:_
