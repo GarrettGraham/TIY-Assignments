@@ -71,7 +71,59 @@ dfgad
 ```
 <title>Surf&Paddle</title>
 ```
+<!--Must correct the number schema because it is thrown off when i add to the list. i believe it is possible to code a rule with java that would automatically correct the numers of each element as i add an element above or below-like how microsoft word automatically corrects a numbered list. -->
 
+##1. <a> --HTML Anchor Element- defines a hyperlink, the named target destination for a hyperlink, or both
+* type: Block-element
+* content: Flow content, phrasing content, interactive content, palpable content. 
+* permitted content: Transparent, containing either flow content or phrasing content.
+* support: Chrome, Firefox 1.0, Gecko 1.7 or earlier, Internet Explorer 1.0, Opera 5.12, Safari 1.0
+* example:
+```
+```
+<!-- 17 attributes for anchor tag -->
+#### `download` _HTML5_
+* _description:_ This attribute, if present, indicates that the author intends the hyperlink to be used for downloading a resource so that when the user clicks on the link they will be prompted to save it as a local file ??what exactly does this mean and how is it beneficial??. 
+* _values:_ If the attribute has a value, the value will be used as the pre-filled file name in the Save prompt that opens when the user clicks on the link --the user can change the name before actually saving the file of course. There are no restrictions on allowed values but forward and backward slashes will be converted to underscores, preventing specific path hintsshould
+* _support:_ consider that most file systems have limitations with regard to what punctuation is supported in file names, and browsers are likely to adjust file names accordingly.
+* _example:_
+```
+```
+#### `href` 
+* _description:_
+* _values:_
+* _support:_
+* _example:_
+```
+```
+#### `media` _HTML5_
+* _description:_
+* _values:_
+* _support:_
+* _example:_
+```
+```
+#### `ping` _HTML5_ 
+* _description:_
+* _values:_
+* _support:_
+* _example:_
+```
+```
+#### `rel`  
+* _description:_
+* _values:_
+* _support:_
+* _example:_
+```
+```
+#### `target` 
+* _description:_
+* _values:_
+* _support:_
+* _example:_
+```
+```
 ##1. Address
 * type: Block-element
 * content: Flow-content, palpable content, with no nesting -- exept perhaps in footer
