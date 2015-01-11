@@ -58,6 +58,14 @@ dfgad
 ```
 dfgad
 ```
+#### `title` --
+* _values:_metadata content; closing/ending tag are mandatory. no other title tag to be included within header
+* _support:_
+* _example:_
+```
+<title>Surf&Paddle</title>
+```
+
 ##1. Address
 * type: Block-element
 * content: Flow-content, palpable content, with no nesting -- exept perhaps in footer
