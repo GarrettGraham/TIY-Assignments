@@ -1,4 +1,4 @@
-##Common Attributes
+##Global Attributes
 
 #### `class` -- element class names
 * *values:* space-separated list of class names
@@ -12,14 +12,22 @@
   <!-- . . . -->
 </section> <!-- .page--column -->
 ```
+#### `head` -- 
+* *values:*
+* *support:*
+* *example:*
+```
+```
 #### `id` -- unique element identifier
-* *values:* single letter character followed by any number of letters, digits, hyphens, underscores, colons or periods
-* *support:* all browsers
+* *description:* defines a unique identifier .ID. which must be unique in the whole document. Its purpose is to identify the element when linking -using a fragment identifier, scripting, or styling -with CSS.
+* *values:* single letter character followed by any number of letters, digits, hyphens, underscores, colons or periods - div id='blog logo' - able to reference id tag in stylesheet with a hash tag ??followed by txt that specifies whcih id -- # blog info, ?symantics??
+* *support:* all browsers; Supported on all elements but <base>, <head>, <html>, <meta>, <script>, <style>, and <title>.
+* *Note:* Using characters except ASCII letters and digits, '_', '-' and '.' may cause compatibility problems, as they weren't allowed in HTML 4. Though this restriction has been lifted in HTML 5, an ID should start with a letter for compatibility.
 * *examples:*
-```html
-<form class="search" id="site-search">
-  <!-- . . . -->
-</form> <!-- .search#site-search -->
+
+<!-- reference the unique identifier tag `id` in stylesheet with JUST a hashtag, .myHeader would be if within the div a class was given to myHeader vs. the `id` tag- Google difference of `id` vs class -->
+```
+<h1 id="myHeader"> Surf&Paddle Co. </h1>
 ```
 #### `itemprop`
 * _values:_
@@ -47,9 +55,81 @@ dfgad
 * _support:_
 * _example:_
 
+#### `meta`
+* _values:_ represents any metadata information that cannot be represented by one of the other meta-related elements -- .base, .link, .script, .style or .title -- According to the attributes set, the kind of metadata can be one of the following --
+--this is an empty element, it does not require an ending nor closing tag --.meta charset, .meta http-equiv, a .head element. If the .http-equiv is not an encoding declaration, it can also be inside a .noscript element, itself inside a .head element
+.meta name any element that accepts metadata content.
+.meta itemprop any element that accepts metadata content or parsing content.
+* _support:_
+* _attributes:_ This enumerated -- as in a list, to mention seperately as if in counting, to specify, to name one-by-one -- attribute defines the pragma -- also.pragmatic information. - A standardised form of comment which has meaning to the compiler or some other program. It may use a special syntax or a specific form within the normal comment syntax. A pragma usually conveys non-essential information, often intended to help the compiler to optimise the program or to generate formatted documentation -- that can alter servers and user-agents behavior. The value of the pragma is defined using the content and can be one of the following
+* _example:_
+```
+dfgad
+```
+#### `title` --
+* _values:_metadata content; closing/ending tag are mandatory. no other title tag to be included within header
+* _support:_
+* _example:_
+```
+<title>Surf&Paddle</title>
+```
+<!--Must correct the number schema because it is thrown off when i add to the list. i believe it is possible to code a rule with java that would automatically correct the numers of each element as i add an element above or below-like how microsoft word automatically corrects a numbered list. -->
+
+##1. <a> --HTML Anchor Element- defines a hyperlink, the named target destination for a hyperlink, or both
+* type: Block-element
+* content: Flow content, phrasing content, interactive content, palpable content. 
+* permitted content: Transparent, containing either flow content or phrasing content.
+* support: Chrome, Firefox 1.0, Gecko 1.7 or earlier, Internet Explorer 1.0, Opera 5.12, Safari 1.0
+* example:
+```
+```
+<!-- 17 attributes for anchor tag -->
+#### `download` _HTML5_
+* _description:_ This attribute, if present, indicates that the author intends the hyperlink to be used for downloading a resource so that when the user clicks on the link they will be prompted to save it as a local file ??what exactly does this mean and how is it beneficial??. 
+* _values:_ If the attribute has a value, the value will be used as the pre-filled file name in the Save prompt that opens when the user clicks on the link --the user can change the name before actually saving the file of course. There are no restrictions on allowed values but forward and backward slashes will be converted to underscores, preventing specific path hintsshould
+* _support:_ consider that most file systems have limitations with regard to what punctuation is supported in file names, and browsers are likely to adjust file names accordingly.
+* _example:_
+```
+```
+#### `href` 
+* _description:_ This was the single required attribute for anchors defining a hypertext source link, but is no longer required in HTML5. Omitting this attribute creates a placeholder link. The href attribute indicates the link target, either a URL or a URL fragment. A URL fragment is a name preceded by a hash mark (#), which specifies an internal target location (an ID) within the current document. 
+* _values:_
+* _support:_ URLs are not restricted to Web .HTTP-based documents; URLs might use any protocol supported by the browser. For example, file, ftp, and mailto work in most user agents.
+* _example:_ You can use the special fragment "top" to create a link back to the top of the page, as exemplified below
+```
+<a href="#top">Return to top</a>
+```
+#### `media` _HTML5_
+* _description:_
+* _values:_
+* _support:_
+* _example:_
+```
+```
+#### `ping` _HTML5_ 
+* _description:_
+* _values:_
+* _support:_
+* _example:_
+```
+```
+#### `rel`  
+* _description:_
+* _values:_
+* _support:_
+* _example:_
+```
+```
+#### `target` 
+* _description:_
+* _values:_
+* _support:_
+* _example:_
+```
+```
 ##1. Address
 * type: Block-element
-* content: Flow-content, palpable content, with no nesting (exept perhaps in footer)
+* content: Flow-content, palpable content, with no nesting -- exept perhaps in footer
 * support: Chrome, Firefox 1.0, Gecko 1.7 or earlier, Internet Explorer 1.0, Opera 5.12, Safari 1.0
 * example:
 ```
@@ -131,7 +211,17 @@ dfgad
     <dd>Green</dd>
 </dl>
 ```
-##8. Horizontal Rule
+##8. <header> --Header
+* type: Block-leve element
+* content: Flow content, palpable content
+* support: Chrome 5, Firefox 4.0, Gecko 2.0, IE 9.0, Opera 11.10, Safari 4.0
+* exapmle: 
+```
+<header>
+  a logo
+</header>
+```
+##9. Horizontal Rule
 * type: Block-element
 * content: Flow content
 * support: Chrome 1.0, otherwise, All Browsers
@@ -141,7 +231,7 @@ dfgad
     <hr>
 <p>paragraph of text</p>
 ```
-##9. Figure
+##10. Figure
 * type: Block-element
 * content: Flow content, sectioning root, palpable content
 * support: Chrome 8, Firefox 4.0, Gecko 2.0, Internet Explorer 9.0, Opera 11.10, Safari 5.1
@@ -153,7 +243,7 @@ dfgad
 </figure>
 <p></p>
 ```
-##10. Input Form
+##11. Input Form
 * type: Block-element
 * content: Flow content, palpable content
 * support: Chrome 1.0, Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
@@ -185,7 +275,7 @@ dfgad
 </form>
 ```
 #### `autocpitalizaion`
-* _values:_none: completely disables auto cap., sentences: auto cap.s first letter of sentences, words: atuo cap.s first letter of words, characters: auto cap.s all characters, on: depricated since iOS 5, off: depricated since iOS 5
+* _values:_none: completely disables auto cap., sentences- auto cap.s first letter of sentences, words- atuo cap.s first letter of words, characters- auto cap.s all characters, on- depricated since iOS 5, off- depricated since iOS 5
 * _support:_iOS Safari Mobile, on and off values deprecated since iOS 5
 * _example:_
 ```
@@ -205,7 +295,7 @@ dfgad
         </p>
     </form>
 ```
-##11. Image
+##12. Image
 * type: Inline-element
 * content: Flow content, phrasing content, embedded content, palpable content. If has usermap attribute, it is interactive content
 * support: All Browsers
@@ -213,7 +303,7 @@ dfgad
 ```
 <a href="http://imagelink.com"><img src="photo description.jpg" alt "Photo"/></a>
 ```
-##12. Object
+##13. Object
 * type: Inline-element
 * content: Flow content, phrasing content, embedded content, interactive content
 * support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
@@ -222,7 +312,7 @@ dfgad
 <!-- Embed a flash movie -->
 <object data="move.swf" type="application/x-shockwave-flash"></object>
 ```
-##13. Span
+##14. <span> --Span
 * type: Inline-element
 * content: Flow content, phrasing content
 * support: All Browsers
@@ -230,7 +320,7 @@ dfgad
 ```
 <p><span>sometext</span></p>
 ```
-##14. Strong
+##15. Strong
 * type: Inline-element
 * content: Flow content, phrasing content
 * support: Firefox, Gecko 1.9.2 or earlier
@@ -238,11 +328,38 @@ dfgad
 ```
 <p><strong>Speak No Evil</strong></p>
 ```
-##15. Textarea
+##16. Textarea
 * type: Inline-element
 * content: Flow content, phrasing content, interactive content
 * support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
 * exapmle: 
 ```
 <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+```
+##17. <meta> --Meta
+* type: Inline-element
+* content: Flow content, phrasing content, interactive content
+* support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
+* exapmle: 
+```
+<textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+```
+
+##18. <menu>
+* description: a group of commands that a user can perform or activate. This includes both toolbar menus, which might appear across the top of a screen, as well as popup menus, such as those that might appear underneath a button after it has been clicked.
+* type: Block-element
+* content: Flow content. Additionally, if in the toolbar menu state, palpable content. Toolbar menu is the default state, unless the parent element is a .menu in the popup menu state. permitted content - If the element is in the toolbar menu state-- flow content, or alternatively, zero or more occurrences of li, script, and template. If the element is in the popup menu state -- zero or more occurrences, in any order, of .menu -popup menu state only- .menuitem, .hr, .script, and .template.
+* support: Chrome, Firefox 1.0, Gecko 1.7 or earlier, Internet Explorer 1.0, Opera 5.12, Safari 1.0
+* example: A button, which displays a menu when clicked.
+```
+<button type="menu" menu="dropdown-menu">
+  Dropdown
+</button>
+
+<menu type="popup" id="dropdown-menu">
+  <menuitem label="Action">
+  <menuitem label="Another action">
+  <hr>
+  <menuitem label="Separated action">
+</menu>
 ```
