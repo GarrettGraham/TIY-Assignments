@@ -336,11 +336,30 @@ dfgad
 ```
 <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
 ```
-## 17. <meta> --Meta
+##17. <meta> --Meta
 * type: Inline-element
 * content: Flow content, phrasing content, interactive content
 * support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
 * exapmle: 
 ```
 <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+```
+
+##18. <menu>
+* description: a group of commands that a user can perform or activate. This includes both toolbar menus, which might appear across the top of a screen, as well as popup menus, such as those that might appear underneath a button after it has been clicked.
+* type: Block-element
+* content: Flow content. Additionally, if in the toolbar menu state, palpable content. Toolbar menu is the default state, unless the parent element is a .menu in the popup menu state. permitted content - If the element is in the toolbar menu state-- flow content, or alternatively, zero or more occurrences of li, script, and template. If the element is in the popup menu state -- zero or more occurrences, in any order, of .menu -popup menu state only- .menuitem, .hr, .script, and .template.
+* support: Chrome, Firefox 1.0, Gecko 1.7 or earlier, Internet Explorer 1.0, Opera 5.12, Safari 1.0
+* example: A button, which displays a menu when clicked.
+```
+<button type="menu" menu="dropdown-menu">
+  Dropdown
+</button>
+
+<menu type="popup" id="dropdown-menu">
+  <menuitem label="Action">
+  <menuitem label="Another action">
+  <hr>
+  <menuitem label="Separated action">
+</menu>
 ```
