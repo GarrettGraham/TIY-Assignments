@@ -205,6 +205,18 @@ dfgad
         </p>
     </form>
 ```
+##11. <time>
+* description: Either a time on a 24-hour clock or a precise date in the Gregorian calendar with optional time and timezone information
+* type: Block-element
+* content: Flow content, phrasing content - no descendant time elements, palpable content
+* support: Chrome 33.0, Firefox 22.0, Gecko 22.0, IE 9.0, Opera 22.0, Safari 7.0
+* exapmle: 
+```
+<textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+```
+
+#HTML Elements: Inline
+
 ##11. Image
 * type: Inline-element
 * content: Flow content, phrasing content, embedded content, palpable content. If has usermap attribute, it is interactive content
