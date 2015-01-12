@@ -9,25 +9,37 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   
-  <!--this is where you include the links to the nounproject icon and correct font style with a href, rel, and type.-->
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!--BELOW is where you include the links to the nounproject and font awesome icons and links to correct font style -?with a href, rel, and type?
+          -- the link href elements below will allow the image icons to be rendered from the websites font awesome and noun project and "translated" into code recognized in text editor and terminal.
+          -- placed the other required link copied from font aweseom for the required fonts below
+          -- use the `i` tag to code in the img src for the magnifying glass icon in the nav bar -->
+  
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="http://fonts.googleapis.com/css?family=Oswald|Open+Sans" rel="stylesheet" type="text/css">
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-</head>
-<!-- Put CSS here! --i.e. this what you reference to CSS stylesheet. below is where you code the blog logo-->
-<!--breakup every box of content within the body header, mian content with columns, sideline, footer, etc. and include subsections for each aforementioned boxes-->
-<!-- use Atom or sublime as txt editor and copy paste to cloud9. under the unity ui theme in atom, there are rubric like files of stylesheets and markup examples including the overlay property in css, the images that are grey until you run curser over image -->
 
+
+</head>
+
+
+
+<!-- Put CSS here! --i.e. this is what you reference to CSS styleshee --
+  -- blocks like those utilizing div tags and class attributes, including .class-selectors 
+  -- breakup every box of content within the body header, mian content with columns, sideline, footer, etc. and include subsections for each aforementioned boxes -->
+  
 <body>
+    
+    
   <!--[if lt IE 7]>
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
- 
+  <!-- Notes -->
   <!--play around with the width height etc constraints using percentages or pc etc. to see how various outcomes in order to gain a solid frame of reference -->
   <!-- just noticed that i am receiving prompt messages from cloud9 that my image or image source is invalid or doesnt work. the preview does not she the picture uploaded and i am now unsure as to how i correctly reference the blog icon image -->
 
@@ -37,26 +49,48 @@
   <!-- write at least the first rough draft of the essay or work on the html.md and css.md or other tasks from previous assignments i did not complete. -->
   <!-- the blog icon is not rendering and cloud9 says the image source is not valid -->
   
-   <!--background image linked by img src tag ??and reference stylesheet - how exactly does syntax look?? -->
-   <!--NEED to figure out how to make wave icon render- ??unmatched tags detected and/or invalid img src path?? -->
-
-
-<!--HEADER -->
-   
-   
+  <!--background image linked by img src tag ??and reference stylesheet - how exactly does syntax look?? -->
+  <!--NEED to figure out how to make wave icon render- ??unmatched tags detected and/or invalid img src path?? -->
   <!-- div class and id specify and demarcates boxes of code in order for the stylesheet to be easily referenced and rendered appropriately --> 
+
+
+
 <header> 
-  <div class="header">
+
+<!-- ?Background image including the other elements within header like the title, nav bar, subtitle with wave icon img, etc. to be referenced and constrained in stylesheet? VERIFY Syntax -->
+
+<div class="header">
     <div class="overlay"></div>
+<!-- The container class acts like a folder within other class selectors may be nest to easily render with stylesheet -->
     <div class="container">
-      <div class="subtext1">
-<!-- there is something F'd up with the code bc the wave logo still wont render. i'll come back to it after i finish the index. -->
-          <img src="Boilerplate/img/wave.png"alt="round-pic" width="50px" height="50px">
-          <span>SURF & PADDLE CO.</span>
-     </div>
+        <!-- the class selector .subtext1 refers to the wave icon and the span or p element surf and paddle text
+          -- is it necessary to list the img src before the txt box in order to render the icon then txt as is on the blog pg
+          -- Google difference btween span and p pertaining to txt andd syntax as well as this portion of the assingment -->
+            
+            <div class="subtext">
+                <img src="/Boilerplate/img/wave.png"alt="round-pic" width="50px" height="50px">
+                <span>SURF & PADDLE CO.</span>
+              </div>
+              
+        <!-- nav bar with magnifying lense icon with link and about link - a href ? syntax ? 
+          -- after doing the most basic code vis a vis the blog, replace there elements attricutes with your own, especially those we have covered or may not have. 
+          -- be sure to incorporate a class selector .nav-bar, or is it without the hyphen or is space ok? 
+          -- DO NOT forget to include the image link from the noun project btween the quotes in the img src 
+          -- REMEMBER to paste the -->
+        
+            <div class="nav-bar">
+                  <i class="fa fa-binoculars"></i>
+                  
+            </div>
+            
+        <div> </div>
+    
+<!--  -->    
+    <div class="subtext2"></div>
+     
 </header>   
    
-
+<!-- wrap text in p boxes - in CSS. the two column mark up and the sidline are to be coded within the body block -->
       <p>Pommy ipsum brilliant a cuppa man and his whippet, muck about bent as a nine bob note knackered I bid you good day wind up, nuthouse had a barney with the inlaws got his end away. Taking the mick oo ecky thump double dutch full English breakast pants, ee bah gum Amelia Pond River Song. Chippy scatterbrained twiglets old girl a bit wonky laughing gear The Hounds of Baskerville had a barney with the inlaws two weeks on't trot mush blimey, bobby have a butcher's at this off t'pub a cuppa scrote the old bill fish fingers and custard stop arsing around. Eton mess queer as a clockwork orange gobsmacked tip-top codswallop flog a dead horse, have a kip lass yorkshire pudding atrocious. - See more at: http://www.pommyipsum.com/#sthash.7GdpgJQs.dpuf</p>
 
       <script src="js/plugins.js"></script>
