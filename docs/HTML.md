@@ -166,6 +166,9 @@ dfgad
     <input type="Submit" value="Save">
 </form>
 ```
+
+####Attributes
+
 #### `action` -- form submission URL
 * _values:_ URL of a program that processes a form submission
 * _support:_ All Browsers
@@ -205,7 +208,22 @@ dfgad
         </p>
     </form>
 ```
-##11. <time>
+
+
+##11. <p> --Paragraph
+* type: Block-element
+* content category: Flow content, palpable content
+* permitted content: Phrasing content
+* browser support: Chrome 1.0, Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
+* exapmle: 
+```
+<p><strong>Speak No Evil</strong></p>
+```
+
+####Attributes
+
+
+##12. <time> --Time Signiture
 * description: Either a time on a 24-hour clock or a precise date in the Gregorian calendar with optional time and timezone information
 * type: Block-element
 * content: Flow content, phrasing content - no descendant time elements, palpable content
@@ -217,7 +235,7 @@ dfgad
 
 #HTML Elements: Inline
 
-##11. Image
+##13. Image
 * type: Inline-element
 * content: Flow content, phrasing content, embedded content, palpable content. If has usermap attribute, it is interactive content
 * support: All Browsers
@@ -225,7 +243,7 @@ dfgad
 ```
 <a href="http://imagelink.com"><img src="photo description.jpg" alt "Photo"/></a>
 ```
-##12. Object
+##14. Object
 * type: Inline-element
 * content: Flow content, phrasing content, embedded content, interactive content
 * support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
@@ -234,7 +252,7 @@ dfgad
 <!-- Embed a flash movie -->
 <object data="move.swf" type="application/x-shockwave-flash"></object>
 ```
-##13. Span
+##15. Span
 * type: Inline-element
 * content: Flow content, phrasing content
 * support: All Browsers
@@ -242,8 +260,7 @@ dfgad
 ```
 <p><span>sometext</span></p>
 ```
-##14. <s> --Strikethrough
-##15. Strong
+##16. <s> --Strikethrough
 * type: ??Inline-element vs. Block-element??
 * content: Flow content, phrasing content
 * support: Firefox, Gecko 1.9.2 or earlier
@@ -251,7 +268,15 @@ dfgad
 ```
 <p><strong>Speak No Evil</strong></p>
 ```
-##16. Textarea
+##17. Strong
+* type: Inline-element
+* content: Flow content, phrasing content
+* support: Firefox, Gecko 1.9.2 or earlier
+* exapmle: 
+```
+<p><strong>Speak No Evil</strong></p>
+```
+##18. Textarea
 * type: Inline-element
 * content: Flow content, phrasing content, interactive content
 * support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
