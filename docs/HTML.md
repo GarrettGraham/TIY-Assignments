@@ -106,7 +106,7 @@ dfgad
     <p>Any kind of content...</P.
 </div>
 ```
-##6. Section or Page Footer
+##6. <footer> --Section or Page Footer
 * type: Block-element
 * content: Flow content, palpable content
 * support: Chrome 5, Firefox 4.0, Gecko 2.0, Internet Explorer 9.0, Opera 11.10, Safari 4.1
@@ -116,6 +116,10 @@ dfgad
     some important info. appropriate for the bottom of a document, like copyright info
 </footer>
 ```
+##7. <datetime> 
+
+
+
 ##7. Definition List
 * type: Block-element
 * content: Flow content, palpable content 
@@ -153,7 +157,7 @@ dfgad
 </figure>
 <p></p>
 ```
-##10. Input Form
+##10. <form> --Input Form
 * type: Block-element
 * content: Flow content, palpable content
 * support: Chrome 1.0, Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
@@ -167,7 +171,10 @@ dfgad
 </form>
 ```
 
-####Attributes
+* attributes:
+* 
+
+
 
 #### `action` -- form submission URL
 * _values:_ URL of a program that processes a form submission
@@ -219,8 +226,7 @@ dfgad
 ```
 <p><strong>Speak No Evil</strong></p>
 ```
-
-####Attributes
+*attributes:
 
 
 ##12. <time> --Time Signiture
@@ -232,6 +238,12 @@ dfgad
 ```
 <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
 ```
+
+
+
+
+
+
 
 #HTML Elements: Inline
 
