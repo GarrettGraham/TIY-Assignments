@@ -61,6 +61,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.main-content {
+    display:inline-block;
+}
+
 .post-time {
     display: inline-block;
     max-width: 75px;
