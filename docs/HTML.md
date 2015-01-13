@@ -242,15 +242,16 @@ dfgad
 ```
 <p><span>sometext</span></p>
 ```
-##14. Strong
-* type: Inline-element
+##14. <s> --Strikethrough
+##15. Strong
+* type: ??Inline-element vs. Block-element??
 * content: Flow content, phrasing content
 * support: Firefox, Gecko 1.9.2 or earlier
 * exapmle: 
 ```
 <p><strong>Speak No Evil</strong></p>
 ```
-##15. Textarea
+##16. Textarea
 * type: Inline-element
 * content: Flow content, phrasing content, interactive content
 * support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
