@@ -62,7 +62,17 @@ textarea {
    ========================================================================== */
 
 
+.post-icon {
+    max-width:75px;
+    max-height:50px;
+}
 
+
+
+.blog-post {
+    max-width:630px;
+    max-height:450px;
+}
 
 
 
