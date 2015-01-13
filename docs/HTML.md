@@ -106,7 +106,7 @@ dfgad
     <p>Any kind of content...</P.
 </div>
 ```
-##6. Section or Page Footer
+##6. <footer> --Section or Page Footer
 * type: Block-element
 * content: Flow content, palpable content
 * support: Chrome 5, Firefox 4.0, Gecko 2.0, Internet Explorer 9.0, Opera 11.10, Safari 4.1
@@ -116,6 +116,10 @@ dfgad
     some important info. appropriate for the bottom of a document, like copyright info
 </footer>
 ```
+##7. <datetime> 
+
+
+
 ##7. Definition List
 * type: Block-element
 * content: Flow content, palpable content 
@@ -153,7 +157,7 @@ dfgad
 </figure>
 <p></p>
 ```
-##10. Input Form
+##10. <form> --Input Form
 * type: Block-element
 * content: Flow content, palpable content
 * support: Chrome 1.0, Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
@@ -166,6 +170,12 @@ dfgad
     <input type="Submit" value="Save">
 </form>
 ```
+
+* attributes:
+* 
+
+
+
 #### `action` -- form submission URL
 * _values:_ URL of a program that processes a form submission
 * _support:_ All Browsers
@@ -205,7 +215,39 @@ dfgad
         </p>
     </form>
 ```
-##11. Image
+
+
+##11. <p> --Paragraph
+* type: Block-element
+* content category: Flow content, palpable content
+* permitted content: Phrasing content
+* browser support: Chrome 1.0, Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
+* exapmle: 
+```
+<p><strong>Speak No Evil</strong></p>
+```
+*attributes:
+
+
+##12. <time> --Time Signiture
+* description: Either a time on a 24-hour clock or a precise date in the Gregorian calendar with optional time and timezone information
+* type: Block-element
+* content: Flow content, phrasing content - no descendant time elements, palpable content
+* support: Chrome 33.0, Firefox 22.0, Gecko 22.0, IE 9.0, Opera 22.0, Safari 7.0
+* exapmle: 
+```
+<textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+```
+
+
+
+
+
+
+
+#HTML Elements: Inline
+
+##13. Image
 * type: Inline-element
 * content: Flow content, phrasing content, embedded content, palpable content. If has usermap attribute, it is interactive content
 * support: All Browsers
@@ -213,7 +255,7 @@ dfgad
 ```
 <a href="http://imagelink.com"><img src="photo description.jpg" alt "Photo"/></a>
 ```
-##12. Object
+##14. Object
 * type: Inline-element
 * content: Flow content, phrasing content, embedded content, interactive content
 * support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
@@ -222,7 +264,7 @@ dfgad
 <!-- Embed a flash movie -->
 <object data="move.swf" type="application/x-shockwave-flash"></object>
 ```
-##13. Span
+##15. Span
 * type: Inline-element
 * content: Flow content, phrasing content
 * support: All Browsers
@@ -230,7 +272,15 @@ dfgad
 ```
 <p><span>sometext</span></p>
 ```
-##14. Strong
+##16. <s> --Strikethrough
+* type: ??Inline-element vs. Block-element??
+* content: Flow content, phrasing content
+* support: Firefox, Gecko 1.9.2 or earlier
+* exapmle: 
+```
+<p><strong>Speak No Evil</strong></p>
+```
+##17. Strong
 * type: Inline-element
 * content: Flow content, phrasing content
 * support: Firefox, Gecko 1.9.2 or earlier
@@ -238,7 +288,7 @@ dfgad
 ```
 <p><strong>Speak No Evil</strong></p>
 ```
-##15. Textarea
+##18. Textarea
 * type: Inline-element
 * content: Flow content, phrasing content, interactive content
 * support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
@@ -246,3 +296,4 @@ dfgad
 ```
 <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
 ```
+##19.
