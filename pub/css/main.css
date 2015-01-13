@@ -80,6 +80,22 @@ textarea {
 }
 
 
+.post-time2 {
+    display: inline-block;
+    max-width: 75px;
+    max-height: 50px;
+}
+
+.post-icon2 {
+    max-width:75px;
+    max-height:50px;
+}
+
+
+.blog-post2 {
+    max-width:630px;
+    max-height:450px;
+}
 
 
 
