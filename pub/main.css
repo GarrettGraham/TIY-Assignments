@@ -98,9 +98,29 @@ textarea {
                                --grey scale titles for each section with notes specific to each box 
    ===================================================================================================*/
 
+<!-- do hardcore research on CSS properties --> 
 
+.site {
+    max-width:1250px;
+    margin:auto;
+}
 
+.content{
+    margin:auto;
+    display:inline;
+}
 
+.blog-post-timeline{
+    margin:auto;
+    
+}
+
+.post-time {
+}
+
+ {
+    background-color:lightblue;
+}
 
 
 
@@ -221,7 +241,8 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 35em) {
+    body {font-size: 100%
     /* Style adjustments for viewports that meet the condition */
 }
 
