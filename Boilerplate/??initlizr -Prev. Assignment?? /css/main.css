@@ -61,46 +61,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.main-content {
-    display:inline-block;
-    margin: auto;
-}
-
-.post-time {
-    display: inline-block;
-    max-width: 75px;
-    max-height: 50px;
-}
-
-.post-icon {
-    max-width:75px;
-    max-height:50px;
-}
 
 
 
-.blog-post {
-    max-width:630px;
-    max-height:450px;
-}
 
-
-.post-time2 {
-    display: inline-block;
-    max-width: 75px;
-    max-height: 50px;
-}
-
-.post-icon2 {
-    max-width:75px;
-    max-height:50px;
-}
-
-
-.blog-post2 {
-    max-width:630px;
-    max-height:450px;
-}
 
 
 
@@ -115,22 +79,15 @@ textarea {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) 
-    .main-content > time {
-        text-indent: 25px;
-        font-size: 15px;
+@media only screen and (min-width: 35em) {
+
 }
 
-
-@media print {
+@media print,
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) 
-      
-       body { font-size: 10px;}
+       (min-resolution: 120dpi) {
 
-@media screen, print {
-  body { line-height: 1.2 }
 }
 
 /* ==========================================================================
