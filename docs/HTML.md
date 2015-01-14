@@ -247,10 +247,15 @@ dfgad
 </figure>
 <p></p>
 ```
+<<<<<<< HEAD
 
 ##10. <form> --Input Form
 =======
 ##11. Input Form
+
+=======
+
+##10. <form> --Input Form
 
 * type: Block-element
 * content: Flow content, palpable content
@@ -310,6 +315,10 @@ dfgad
     </form>
 ```
 
+=======
+
+##12. Image
+=======
 
 
 ##11. <p> --Paragraph
@@ -343,8 +352,11 @@ dfgad
 #HTML Elements: Inline
 
 ##13. Image
+
 =======
 ##12. Image
+
+=======
 
 * type: Inline-element
 * content: Flow content, phrasing content, embedded content, palpable content. If has usermap attribute, it is interactive content
@@ -354,9 +366,14 @@ dfgad
 <a href="http://imagelink.com"><img src="photo description.jpg" alt "Photo"/></a>
 ```
 
+
 ##14. Object
 =======
 ##13. Object
+
+=======
+
+##14. Object
 
 * type: Inline-element
 * content: Flow content, phrasing content, embedded content, interactive content
@@ -369,8 +386,10 @@ dfgad
 
 ##15. Span
 =======
-##14. <span> --Span
 
+##14. <span> --Span
+=======
+##15. Span
 * type: Inline-element
 * content: Flow content, phrasing content
 * support: All Browsers
@@ -378,6 +397,11 @@ dfgad
 ```
 <p><span>sometext</span></p>
 ```
+
+=======
+
+##15. Strong
+=======
 
 ##16. <s> --Strikethrough
 * type: ??Inline-element vs. Block-element??
@@ -388,8 +412,11 @@ dfgad
 <p><strong>Speak No Evil</strong></p>
 ```
 ##17. Strong
+
 =======
 ##15. Strong
+
+=======
 
 * type: Inline-element
 * content: Flow content, phrasing content
@@ -399,8 +426,10 @@ dfgad
 <p><strong>Speak No Evil</strong></p>
 ```
 
+
 ##18. Textarea
 =======
+
 ##16. Textarea
 * type: Inline-element
 * content: Flow content, phrasing content, interactive content
@@ -411,6 +440,10 @@ dfgad
 ```
 ##17. <meta> --Meta
 
+
+=======
+=======
+##18. Textarea
 * type: Inline-element
 * content: Flow content, phrasing content, interactive content
 * support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
@@ -419,8 +452,11 @@ dfgad
 <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
 ```
 
+
 ##19.
 =======
+=======
+
 
 ##18. <menu>
 * description: a group of commands that a user can perform or activate. This includes both toolbar menus, which might appear across the top of a screen, as well as popup menus, such as those that might appear underneath a button after it has been clicked.
@@ -441,3 +477,7 @@ dfgad
 </menu>
 ```
 
+
+=======
+=======
+##19.
