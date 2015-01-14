@@ -14,8 +14,29 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
-// Put CSS here! --i.e. this what you reference to CSS stylesheet. below is where you code the blog logo**/
+<!-- Put CSS here! --i.e. this what you reference to CSS stylesheet. below is where you code the blog logo -->
 
+<style>
+
+.container {
+    margin:0 auto;
+    max-width: 100%;
+}
+
+.main{
+    margin:auto;
+    display:inline;
+}
+
+.blog-post-timeline{
+    margin:auto;
+}
+
+.blog-text > article {
+    background-color:lightblue;
+}
+        
+</style>
 
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -26,10 +47,10 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class="site">
-        <div class="content">
+    <div class="container">
+        <div class="main">
             <ol class="blog-post-timeline"> 
-                <li>  <!-- each `li` represents one blog post, including datetime and icon. the class containers allow easy reference to css-->
+                <li class="blog-text">  <!-- each `li` represents one blog post, including datetime and icon. the class containers allow easy reference to css-->
                     <time class="post-time" datetime="2015-01-12 17:30">
                         <div class="post-icon">
                             <i class="fa fa-angellist fa-2x"></i>
@@ -38,8 +59,9 @@
                         <span><big>17:30</big></span>
                     </time>
 
-            <article>
+                    <article>
                         <h1>Social Advocacy</h1>
+                        <hr>
                         <p>
                             Human experience emergency response accessibility, indicator visionary solve expanding community ownership crisis management 
                             Economic independence agency mobilize activist, natural resources, pathway to a better life voice women's rights.Revitalize; agriculture. 
@@ -59,7 +81,7 @@
                     </article>
                 </li>
                 
-                
+      <!-- creat li clas for the rest -->          
                 <li>
                     <time class="post-time2" datetime="2015-01-10 6:00">
                         <div class="post-icon2">
