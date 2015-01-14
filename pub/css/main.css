@@ -115,8 +115,8 @@ textarea {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) 
-    .main-content > time {
+@media only screen and (max-width: 1250px) 
+    main-content > time {
         text-indent: 25px;
         font-size: 15px;
 }
