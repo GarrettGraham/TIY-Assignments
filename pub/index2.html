@@ -16,47 +16,66 @@
 
 <!-- Put CSS here! --i.e. this what you reference to CSS stylesheet. below is where you code the blog logo -->
 
-<style>
+<style> <!-- FIXME: put in main.css eventually 
+            include comment to specify which section css is referencing 
+     make a comment which color is represented by hexadecimal code -->
 
 .container {
     margin:0 auto;
     max-width: 80%;
 
 }
-
-.post-icon {
-    float:right;
-    display:block;
-}
     
 .main{
-    margin:auto;
+    margin-right:2em;
     display:inline;
     position: absolute;
 }
 
+    /* Timeline */
+    
 .blog-post-timeline{
     margin:auto;
     list-style: none;
-    
-}
+    }
 
 .post-icon {
-    background-color:lightblue;
+    float:right;
+    display:inherit;
+    border-radius:10em;
+}  
     
+.fa-caret-up {
+    color:lightblue;
+    position:relative;
+    top:-0.75em;<!--need to figure how to eliminate all the space above the h2. 
+    Able to use side arrow and transform it to rotate 90deg 180deg etc.
+    able to call this by including the before after blog-text article instead of calling fa itself
+    -->
+    transform-origin:bottom right;
+    
+    }
 
-}
+    
+    
 .blog-text article {
     background-color:lightblue;
-    padding: 10%;
-    margin: auto;
+    padding: 1ex 2em 2ex;
+    margin-top: 1em;
     color:white;
-    text-align:center;
-}
-.blog-text h2 {
-    border-bottom:1px solid;
+    text-align:left;
+    border-radius: 1em;    
 }
 
+.blog-text article::after {
+    }
+    
+    
+.blog-text h2 {
+    border-bottom: 0.1em solid;
+    padding-bottom: 0.5em;
+}
+/* END timeline*/
 </style>
 
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -68,25 +87,38 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        
+        
+        
+        
+<!-- work from class following along with dave as he goes over the blog -->        
+        
+<header></header>
+        
+        
     <div class="container">
+        <div class="main">
             <ol class="blog-post-timeline"> 
-                <li class="blog-text">  <!-- each `li` represents one blog post, including datetime and icon. the class containers allow easy reference to css-->
-                    <time class="post-time" datetime="2015-01-12 17:30">
+                <li class="blog-text">  
+                    <time datetime="2015-01-12T17:30Z-4"> <!-- T indicates time; Z-4 is GMT minus four for Eastern standard time: iso 8601-->
                         <div class="post-icon">
                             <i class="fa fa-angellist fa-2x"></i>
                             </div>
-                        <span>12 Jan 2015</span>
+                        
+                        <span><small>12 Jan 2015</small></span>
                         <span><big>17:30</big></span>
-                    </time>
+                        
+                        </time>
 
-                    <article>
-                        <h2>Social Advocacy</h2>
+                        <article class="text">
+                            <i class="fa fa-caret-up fa-3x"></i>
+                            <h2>Social Advocacy</h2>
                         <!-- border bottom-->
-                        <p>
+                                <p>
                             Human experience emergency response accessibility, indicator visionary solve expanding community ownership crisis management Economic independence agency mobilize activist, natural resources, pathway to a better life voice women's rights.Revitalize; agriculture. foster institutions honor policy dialogue inspire social change. New approaches carbon emissions reductions informal economies billionaire 
-                        </p>
-                    </article>
-                </li>
+                            </p>
+                        </article>
+                    </li>
                 
       <!-- create li clas for the rest       
                 <li>
@@ -166,7 +198,7 @@
                 </li>
                         -->
             </ol>
-            
+        </div> 
     </div> <!-- .container -->
         
         <script src="js/plugins.js"></script>
