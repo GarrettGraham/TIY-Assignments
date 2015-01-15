@@ -93,12 +93,15 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ===================================================================================================
-   Author's custom styles -- Seperate each section of CSS code --Header, Main Body, sideline, Footer 
-                               --grey scale titles for each section with notes specific to each box 
-   ===================================================================================================*/
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
 
-<!-- do hardcore research on CSS properties --> 
+
+
+
+
+
 
 
 
@@ -217,8 +220,7 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 35em) {
-    body {font-size: 100%
+@media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
 

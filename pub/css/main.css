@@ -1,5 +1,15 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
 html,
 button,
 input,
@@ -13,6 +23,12 @@ html {
     line-height: 1.4;
 }
 
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -23,6 +39,10 @@ html {
     text-shadow: none;
 }
 
+/*
+ * A better looking default horizontal rule
+ */
+
 hr {
     display: block;
     height: 1px;
@@ -32,6 +52,11 @@ hr {
     padding: 0;
 }
 
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
 audio,
 canvas,
 img,
@@ -39,15 +64,27 @@ video {
     vertical-align: middle;
 }
 
+/*
+ * Remove default fieldset styles.
+ */
+
 fieldset {
     border: 0;
     margin: 0;
     padding: 0;
 }
 
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
 textarea {
     resize: vertical;
 }
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
 
 .browsehappy {
     margin: 0.2em 0;
@@ -56,51 +93,10 @@ textarea {
     padding: 0.2em 0;
 }
 
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-.main-content {
-    display:inline-block;
-    margin: auto;
-}
-
-.post-time {
-    display: inline-block;
-    max-width: 75px;
-    max-height: 50px;
-}
-
-.post-icon {
-    max-width:75px;
-    max-height:50px;
-}
-
-
-
-.blog-post {
-    max-width:630px;
-    max-height:450px;
-}
-
-
-.post-time2 {
-    display: inline-block;
-    max-width: 75px;
-    max-height: 50px;
-}
-
-.post-icon2 {
-    max-width:75px;
-    max-height:50px;
-}
-
-
-.blog-post2 {
-    max-width:630px;
-    max-height:450px;
-}
 
 
 
@@ -111,36 +107,25 @@ textarea {
 
 
 
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (max-width: 1250px) 
-    main-content > time {
-        text-indent: 25px;
-        font-size: 15px;
-}
 
 
-@media print {
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) 
-      
-       body { font-size: 10px;}
 
-@media screen, print {
-  body { line-height: 1.2 }
-}
+
+
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 
+/*
+ * Image replacement
+ */
+
 .ir {
     background-color: transparent;
     border: 0;
     overflow: hidden;
+    /* IE 6/7 fallback */
     *text-indent: -9999px;
 }
 
@@ -151,10 +136,18 @@ textarea {
     height: 150%;
 }
 
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
 .hidden {
     display: none !important;
     visibility: hidden;
 }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
 
 .visuallyhidden {
     border: 0;
@@ -167,6 +160,11 @@ textarea {
     width: 1px;
 }
 
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
     clip: auto;
@@ -177,32 +175,71 @@ textarea {
     width: auto;
 }
 
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
 .invisible {
     visibility: hidden;
 }
 
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
 
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
 .clearfix {
     *zoom: 1;
 }
 
 /* ==========================================================================
-   Print styles
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 
 @media print {
     * {
         background: transparent !important;
-        color: #000 !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -220,6 +257,10 @@ textarea {
         content: " (" attr(title) ")";
     }
 
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
     .ir a:after,
     a[href^="javascript:"]:after,
     a[href^="#"]:after {
@@ -233,7 +274,7 @@ textarea {
     }
 
     thead {
-        display: table-header-group;
+        display: table-header-group; /* h5bp.com/t */
     }
 
     tr,
