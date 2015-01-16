@@ -101,7 +101,17 @@ textarea {
  background-image:url("http://lorempixel.com/output/abstract-q-c-1920-480-5.jpg")  
 }
 
+.container nav {
+    display:inline;
+    float:right;
+}
 
+.page-heading {
+    text-align: center;
+    margin: 0 auto;
+    text-align: center
+
+}
 
 
 
