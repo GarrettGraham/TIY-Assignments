@@ -104,12 +104,17 @@ textarea {
  border:solid;
  margin:0 auto;
  text-align:center;
+ position:relative;
 }
 
-.container nav {
-    display:inline;
+ .navbar {
+    margin:0 auto;
     text-align:center;
     color: white;
+}
+a {
+    color:white;
+    text-decoration: none;
 }
 .icon {
     float:center;
