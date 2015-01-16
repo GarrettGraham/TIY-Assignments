@@ -97,7 +97,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+.container header {
+ background-image:url("http://lorempixel.com/output/abstract-q-c-1920-480-5.jpg")  
+}
 
 
 
