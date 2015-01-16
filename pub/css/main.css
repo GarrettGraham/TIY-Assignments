@@ -99,7 +99,11 @@ textarea {
 
 .container header {
  background-image:url("http://lorempixel.com/output/abstract-q-c-1920-480-5.jpg"); 
- margin:1em; 
+ width:100%;
+ color:white;
+ border:solid;
+ margin:0 auto;
+ text-align:center;
 }
 
 .container nav {
