@@ -99,13 +99,13 @@ textarea {
 
 
 .container {
-    max-width:60%;
+    max-width:35em;
 }
 
 
 .container header {
- background-image:url("http://lorempixel.com/output/abstract-q-c-1920-480-9.jpg"); 
- width:100%;
+ background-image:url("http://lorempixel.com/output/abstract-q-c-1920-564-3.jpg"); 
+ max-width:90%;
  color:white;
  border:solid;
  margin:0 auto;
