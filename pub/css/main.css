@@ -114,6 +114,10 @@ textarea {
  
 }
 
+header ul {
+    padding-left:0;
+}
+
  .navbar {
     margin:0 auto;
     text-align: center;
