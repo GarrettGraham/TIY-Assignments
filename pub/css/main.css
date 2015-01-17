@@ -97,19 +97,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
 .container header {
  background-image:url("http://lorempixel.com/output/abstract-q-c-1920-480-5.jpg"); 
- width:90%;
+ width:100%;
  color:white;
  border:solid;
  margin:0 auto;
  text-align:center;
+ position:relative;
  
 }
 
  .navbar {
     margin:0 auto;
-    
+    text-align: center;
     color: white;
 }
 a {
