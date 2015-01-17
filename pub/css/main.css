@@ -98,9 +98,14 @@ textarea {
    ========================================================================== */
 
 
+.container {
+    max-width:60%;
+}
+
+
 .container header {
- background-image:url("http://lorempixel.com/output/abstract-q-c-1920-480-5.jpg"); 
- width:70%;
+ background-image:url("http://lorempixel.com/output/abstract-q-c-1920-480-9.jpg"); 
+ width:100%;
  color:white;
  border:solid;
  margin:0 auto;
@@ -128,7 +133,9 @@ a {
     color: white; 
 }
 
-
+footer {
+    display:inline-block;
+}
 
 
 
