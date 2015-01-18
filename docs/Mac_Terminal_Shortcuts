@@ -49,50 +49,53 @@
 
 ###ls -R	Entire content of folder recursively
 
-###sudo [command]	Run command with the security privileges of the superuser (Super User DO)
+###sudo [command] - Run cmnd w.security prvlgs of superuser (Super User DO)
 
-###open [file]	Opens a file
+###open [file]	  - Opens a file
+ 
+###open .	      - Opens the directory
 
-###open .	Opens the directory
+###top	          - Displays active processes. Press q to quit
 
-###top	Displays active processes. Press q to quit
+###nano [file]	  - Opens the Terminal it’s editor
 
-###nano [file]	Opens the Terminal it’s editor
+###pico	[file]	  - Opens the Terminal it’s editor
 
-###pico	[file]	Opens the Terminal it’s editor
-
-###q	Exit
+###q	          - Exit
 
 ###clear	Clear screen
 
 
+
 #COMMAND HISTORY
 
-###history n	Shows the stuff typed – add a number to limit the last n items
+###history n  - Shows the stuff typed – add a number to limit the last n items
 
-###ctrl-r	Interactively search through previously typed commands
-esc-.	Use last argument of previous command
+###ctrl-r     - Interactively search through previously typed commands
 
-###!$	Last argument of previous command
+###esc-.	  - Use last argument of previous command
 
-###!*	All arguments of previous command
+###!$	      - Last argument of previous command
 
-###![value]	Execute the last command typed that starts with ‘value’
+###!*	      - All arguments of previous command
 
-###!!	Execute the last command typed
+###![value]	  - Execute the last command typed that starts with ‘value’
+
+###!!	      - Execute the last command typed
+
 
 
 #FILE MANAGEMENT
 
-###touch [file]	Create new file
+###touch [file]	- Create new file
 
-###pwd	Full path to working directory
+###pwd	        - Full path to working directory
 
-###..	Parent/enclosing directory, e.g.
+###..	        - Parent/enclosing directory, e.g.
 
-###ls -l ..	Long listing of parent directory
+###ls -l ..	    - Long listing of parent directory
 
-###cd ../../	Move 2 levels up
+###cd ../../	- Move 2 levels up
 
 ###.	Current folder
 
