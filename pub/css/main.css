@@ -161,12 +161,11 @@ a {
     display:block;
 }
 
-.id {
-    text-align: left;
-}
 
 footer {
-    display:inline-block;
+    max-width:90%;
+    max-width:8.75em;
+    max-height:6.25em;
 }
 
 
