@@ -152,10 +152,10 @@ a {
 }
 
 .mainContent article {
-    text-align:left;
-    max-width:90%;
-    padding-left:15%;
-    padding-right:15%;s
+    text-align:center;
+    max-width:80%;
+    padding-left:8%;
+    
 }
 
 .mainContent ul {
@@ -167,8 +167,8 @@ a {
     color:turquoise;
     display:block;
     font-size:large;
-    border-left:thin,grey;
-    padding-left:10%;
+    padding-left:0;
+    position:relative;
 }
 
 /* white border around each image in footer  */
@@ -189,9 +189,11 @@ a {
 }
 
 .tiylogo{
+    position:relative;
     text-align:center;
     padding-top:5%;
-    padding-right:15%;
+    padding-right:23%
+
 }
 
 
