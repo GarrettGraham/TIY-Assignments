@@ -99,6 +99,7 @@ textarea {
 
 .container {
     max-width:25em;
+    text-align:center;
 }
 
 
@@ -115,6 +116,7 @@ textarea {
 
 header ul {
     padding-left:0;
+    
 }
 
  .navbar {
@@ -153,7 +155,12 @@ a {
     text-align:left;
     max-width:90%;
     padding-left:15%;
-    padding-right:15%;
+    padding-right:15%;s
+}
+
+.mainContent ul {
+    text-align: center;
+    padding-right:7%;
 }
 
 .mainContent blockquote{
@@ -162,10 +169,14 @@ a {
 }
 
 
-footer {
-    max-width:90%;
-    max-width:8.75em;
-    max-height:6.25em;
+.pageFooter {
+    margin:0 auto;
+    padding-left:13%;
+}
+
+.tiylogo{
+    text-align:center;
+    padding-left:13%;
 }
 
 
