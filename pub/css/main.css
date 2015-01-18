@@ -137,6 +137,18 @@ a {
     color: white; 
 }
 
+article {
+    text-align:left;
+    max-width:80%;
+    padding-left:15%;
+    padding-right:15%;
+}
+
+.mainContent blockquote{
+    font-size:large;
+    color:lightblue;
+}
+
 footer {
     display:inline-block;
 }
