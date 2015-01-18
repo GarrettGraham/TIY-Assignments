@@ -97,9 +97,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-.container {
-    max-width:28 em;
+    .container {
+    max-width:25em;
 }
 
 
@@ -109,7 +108,7 @@ textarea {
  color:white;
  border:solid;
  margin:0 auto;
- text-align:center;
+ text-align:center;s
  position:relative;
  
 }
@@ -124,16 +123,21 @@ header ul {
     color: white;
 }
 
-.icon {
-}
+/*  .icon {
+    height:auto;
+    width:auto;
+    max-width:50px;
+    max-height:50px;
+    position:relative;
+    text-align:center;
+    z-index: 1;
+    }
+removed the call to the wave icon bc the style in the html may be interfering with the css rendering */
 
 a {
     color:white;
     text-decoration: none;
 } /* want to figure out to which element this declaration applies */
-.icon {
-    z-index: -1;
-}
 
 .page-heading {
     text-align: center;
@@ -141,7 +145,7 @@ a {
     color: white; 
 }
 
-article {
+.mainContent article {
     text-align:left;
     max-width:80%;
     padding-left:15%;
@@ -149,8 +153,8 @@ article {
 }
 
 .mainContent blockquote{
-    font-size:large;
     color:turquoise;
+    display:block;
 }
 
 footer {
@@ -281,6 +285,7 @@ footer {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
+
     /* Style adjustments for viewports that meet the condition */
 }
 
