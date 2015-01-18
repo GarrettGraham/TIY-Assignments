@@ -96,7 +96,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-@media only screen and (min-width: 35em) {
 
 .container {
     max-width:35em;
@@ -167,22 +166,35 @@ a {
 .mainContent blockquote{
     color:turquoise;
     display:block;
+    font-size:large;
+    border-left:thin,grey;
+    padding-left:10%;
 }
 
 /* white border around each image in footer  */
 .pageFooter {
     margin:0 auto;
-    padding-left:13%;
-    padding-right:10%;
+    padding-left:0;
+    padding-right:15%;
 }
 
+.pageFooter ol {
+    text-align:center;
+    color:grey;
+}
+
+.pageFooter figure {
+    text-align:center;
+    color:grey;
+}
 
 .tiylogo{
     text-align:center;
-    padding-left:13%;
+    padding-top:5%;
+    padding-right:15%;
 }
 
-}
+
 
 
 
