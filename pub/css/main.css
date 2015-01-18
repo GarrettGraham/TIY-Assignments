@@ -98,7 +98,7 @@ textarea {
    ========================================================================== */
 
 .container {
-    max-width:35em;
+    max-width:100%;
     text-align:center;
     position:relative;
 }
@@ -106,7 +106,7 @@ textarea {
 
 .container header {
  background-image:url("http://lorempixel.com/output/abstract-q-c-900-530-3.jpg"); 
- max-width:100%;
+ max-width:90%;
  color:white;
  border:solid;
  margin:0 auto;
