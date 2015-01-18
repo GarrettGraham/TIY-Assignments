@@ -97,8 +97,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.container {
-    max-width:100%;
+ .container {
+    max-width:35em;
+    margin:0 auto;
     text-align:center;
     position:relative;
 }
@@ -182,11 +183,13 @@ a {
 .pageFooter ol {
     text-align:center;
     color:grey;
+    position:relative;
 }
 
 .pageFooter figure {
     text-align:center;
     color:grey;
+    position:relative;
 }
 
 .tiylogo{
@@ -317,6 +320,7 @@ a {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
+
 
     /* Style adjustments for viewports that meet the condition */
 }
