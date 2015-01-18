@@ -148,6 +148,7 @@ a {
 .mainContent span {
     text-align: center;
 }
+
 .mainContent article {
     text-align:left;
     max-width:90%;
@@ -158,6 +159,10 @@ a {
 .mainContent blockquote{
     color:turquoise;
     display:block;
+}
+
+.id {
+    text-align: left;
 }
 
 footer {
