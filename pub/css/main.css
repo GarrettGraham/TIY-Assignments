@@ -99,12 +99,12 @@ textarea {
 
 
 .container {
-    max-width:35em;
+    max-width:28turem;
 }
 
 
 .container header {
- background-image:url("http://lorempixel.com/output/abstract-q-c-1920-564-3.jpg"); 
+ background-image:url("http://lorempixel.com/output/abstract-q-c-610-605-3.jpg"); 
  max-width:90%;
  color:white;
  border:solid;
@@ -123,12 +123,16 @@ header ul {
     text-align: center;
     color: white;
 }
+
+.icon {
+}
+
 a {
     color:white;
     text-decoration: none;
-}
+} /* want to figure out to which element this declaration applies */
 .icon {
-    float:center;
+    z-index: -1;
 }
 
 .page-heading {
@@ -146,7 +150,7 @@ article {
 
 .mainContent blockquote{
     font-size:large;
-    color:lightblue;
+    color:turquoise;
 }
 
 footer {
