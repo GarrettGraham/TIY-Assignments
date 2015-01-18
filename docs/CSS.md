@@ -481,18 +481,38 @@ vmax
 vmin
 vw
 
-W
-white-space
-widows
-width
-will-change
-word-break
-word-spacing
-word-wrap
-writing-mode
+#W
 
-X Y Z
-z-index
+##white-space
+##widows
+##width
+##will-change
+##word-break
+##word-spacing
+##word-wrap
+##writing-mode
+
+#X,Y,Z
+
+##z-index:
+
+Positioning schemes for the layout of boxes: normal document flow, floats, and absolute positiong. You give it top, left, bottom, and right values to position the element in two-dimensional space, but CSS also allows you to place it in the third dimension using the z-index property. 
+I'm sure you're familiar with three-dimensional coordinate space. We have an x-axis which is typically used to represent the horizontal, a y-axis to represent the vertical, and a z-axis used to represent what happens into and out of the page, or the screen in our case.
+
+
+3-Dimensional Coordinate Space
+We don't literally see the z-axis, as the screen is a two-dimensional plane. We see it in the form of perspective and of some elements appearing in front of or behind other elements when they share the same two-dimensional space.
+
+To determine where along this third axis an element is located, CSS allows us to setthree values on the z-index property.
+
+auto (the default)
+(integer)
+inherit
+For the moment let's focus on the integer value. This can be positive, negative, or 0. The greater the value, the closer to the viewer the element appears. The lower the value, the further away it appears.
+
+If two elements are positioned so they both occupy a shared area of two-dimensional space, the element with the greater z-index will obscure or occlude the element with the lower z-index in the areas where they share the space.
+
+
 
 
 
