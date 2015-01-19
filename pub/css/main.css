@@ -149,7 +149,7 @@ a {
 .smPgTitle {
 }
 
-.page-heading {
+.pageHeading {
     text-align: center;
     margin: 0 auto;
     color: white; 
@@ -164,23 +164,36 @@ a {
     padding-left:8%;
 }
 
-.blogPost {
+.blogPosts {
 }
 
 .datetime {
 }
+
+.blockQuote{
+    color:turquoise;
+    display:block;
+    font-size:large;
+    padding-left:0;
+    position:relative;
+}
+
 
 .buttons {
     text-align:center;
     padding-right:7%;
 }
 
-.mainContent blockquote{
-    color:turquoise;
-    display:block;
-    font-size:large;
-    padding-left:0;
-    position:relative;
+.rightColumn {
+}
+
+.sideBarImg {
+}
+
+.stayConnected {
+}
+
+.selfie {
 }
 
 .navIcons {
