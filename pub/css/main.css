@@ -122,12 +122,9 @@ UPDATE with main.css*/
  position:relative;
 }
 
-header ul {
-    padding-left:0;
-}
-
  .navbar {
     margin:0 auto;
+    padding-left:0;
     text-align:center;
     color:white;
 }
@@ -140,7 +137,6 @@ header ul {
     position:relative;
     text-align:center;
     }
-/* removed the call to the wave icon bc the style in the html may be interfering with the css rendering */
 
 a {
     color:white;
@@ -172,7 +168,6 @@ a {
 }
 
 .datetime {
-
 }
 
 .buttons {
@@ -210,6 +205,9 @@ a {
     position:relative;
 }
 
+.copyRight{
+}
+/*
 .tiylogo{
     position:relative;
     text-align:center;
@@ -217,6 +215,7 @@ a {
     padding-right:23%
 
 }
+*/
 
 
 
