@@ -113,27 +113,31 @@ UPDATE with main.css*/
 */
 
 .container header {
- background-image:url("http://lorempixel.com/output/abstract-q-c-900-530-3.jpg"); 
- background-position:center;
- background-size: cover;
- 
+ background-image:url("http://lorempixel.com/125/125/abstract/3/cc");
+ margin:0 auto;
+ text-align:center;
+ color:white;
  }
 
  /* deleted from above - 
- color:white;
+ 
  border:solid;
- margin:0 auto;
- text-align:center;
+ background-position:center;
+ background-size:cover;
  position:relative;
 */
 
  .navbar {
-    margin:0 auto;
-    padding-left:0;
     text-align:center;
-    color:white;
 }
 
+.navbar a {
+    font-family: 'Oswald' sans-serif;
+}
+  /*  margin:0 auto;
+    padding-left:0;
+    color:white;
+                */
 .waveLogo {
     height:auto;
     width:auto;
