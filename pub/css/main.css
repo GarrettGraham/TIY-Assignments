@@ -113,14 +113,19 @@ UPDATE with main.css*/
 */
 
 .container header {
- background-image:url('https://tse4.mm.bing.net/th?id=HN.608046715324204306&pid=1.7'); 
- max-width:90%;
+ background-image:url("http://lorempixel.com/output/abstract-q-c-900-530-3.jpg"); 
+ background-position:center;
+ background-size: cover;
+ 
+ }
+
+ /* deleted from above - 
  color:white;
  border:solid;
  margin:0 auto;
  text-align:center;
  position:relative;
-}
+*/
 
  .navbar {
     margin:0 auto;
