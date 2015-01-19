@@ -103,20 +103,55 @@ the names of some of the class containers.
 UPDATE with main.css*/
 
 
-/*
-.container {
-    max-width:35em;
+/* max-width:35em;
     margin:0 auto;
     text-align:center;
-    position:relative;
+    position:relative; */
+
+/* possible css declarations....
+
+
+LOOK UP the properties - font-weight
+    amd line-height
+
+p {
+    font-family:;
+    font-size:;
+    color:;
 }
+
+h1 {
+    font-family:;
+    font-size:;
+    color:;
+    margin:;
+   ? text-transform:uppercase;
+   ? line-height:;
+}
+
+h2 {
+    font-family:;
+    font-size:;
+    color:;
+    margin:bottom;
+  ? text-transform:uppercase;
+  ? line-height:;
+  ? margin-bottom:0;
+}
+
+
 */
+.container {
+    font-family: 'Oswald' sans-serif;
+    color:#00008B;
+}
 
 .container header {
  background-image:url("http://lorempixel.com/125/125/abstract/3/cc");
  margin:0 auto;
  text-align:center;
- color:white;
+ color:#FFFFFF;
+ text-transform:uppercase;
  }
 
  /* deleted from above - 
@@ -131,14 +166,17 @@ UPDATE with main.css*/
     text-align:center;
 }
 
-.navbar a {
+  /* !!!!!!! .navbar a {
     font-family: 'Oswald' sans-serif;
     color:#00008B;
-}
-  /*  margin:0 auto;
+}       !!!!!!
+    margin:0 auto;
     padding-left:0;
     color:white;
-                */
+    ?text-transform:uppercae;?
+    ?text-declaration:none;?
+        !!!!!!   */
+
 .waveLogo {
     height:auto;
     width:auto;
@@ -180,7 +218,7 @@ a {
 .datetime {
 }
 
-.blockQuote{
+.blockQuote h3 {
     color:turquoise;
     display:block;
     font-size:large;
