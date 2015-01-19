@@ -171,8 +171,12 @@ a {
 .blogPost {
 }
 
-.mainContent ul {
-    text-align: center;
+.datetime {
+
+}
+
+.buttons {
+    text-align:center;
     padding-right:7%;
 }
 
