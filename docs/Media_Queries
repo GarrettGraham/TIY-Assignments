@@ -1,3 +1,9 @@
+KEYWORDS:
+
+Responsive Web-design <--> why we have media queries
+
+
+
 #CSS
 
 ##Small screens
@@ -25,10 +31,10 @@
 @media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
 
 
-#Customize With Sass
+#Customize With Sass --> ??WHAT IS Sass??
 ###Media queries can be easily customized by changing the variable values in _settings.scss.
 
-##SCSS
+##SCSS ????
 
 $small-range: (0em, 40em); /* 0, 640px */
 $medium-range: (40.063em, 64em); /* 641px, 1024px */

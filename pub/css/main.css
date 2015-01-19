@@ -1,3 +1,9 @@
+/* added new div classes and changed 
+the names of some of the class containers.
+UPDATE with main.css*/
+
+
+
 .container {
     max-width:35em;
     margin:0 auto;
