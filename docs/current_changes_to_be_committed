@@ -1,0 +1,3 @@
+in the header nav bar, within the a href tag for "search" include: <icon class="fa fa-search {?fa-flip-horizontal?}"
+
+for the 'wave' icon: dic class="logo-container">
