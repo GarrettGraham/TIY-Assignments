@@ -188,20 +188,23 @@ a {
     position:relative;
 }
 
-/* white border around each image in footer  */
-.pageFooter {
-    margin:0 auto;
-    padding-left:0;
-    padding-right:15%;
-}
-
-.pageFooter ol {
+.navIcons {
     text-align:center;
     color:grey;
     position:relative;
 }
 
-.pageFooter figure {
+/* white border around each image in footer  */
+.pageBottom {
+    margin:0 auto;
+    padding-left:0;
+    padding-right:15%;
+}
+
+.blogImages {
+}
+
+.pageFooter {
     text-align:center;
     color:grey;
     position:relative;
