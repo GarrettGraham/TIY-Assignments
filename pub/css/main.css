@@ -96,9 +96,38 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.container {
+    max-width:35em;
+}
 
+h1 {
+    text-align:center;
+}
 
+.theGrid table {
+    text-align: center;
+}
 
+th {
+    width:5em;
+    height:5em;
+    line-height:5em;
+    border-top:solid;
+    border-right:solid;
+    border-left:solid;  
+}
+
+td {
+    width:5em;
+    height:5em;
+    line-height:5em;
+    border-top:solid;
+    border-bottom:solid;
+    border-right:solid;
+    border-left:solid; 
+}
+
+/* use css to style color or border, cellpadding
 
 
 
