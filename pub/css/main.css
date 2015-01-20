@@ -240,14 +240,22 @@ blockquote {
 }
 
 /*
-.rightColumn {
+.rightColumn figure {
+    text-align:center;
 }
-.sideBarImg {
+
+.sideBarImg p {
+    position:relative;
 }
-.stayConnected {
+
+.stayconnected {
+    text-align:center;
 }
+
 .selfie {
+    padding left:30%;
 }
+
 .navIcons {
     text-align:center;
     color:#708090;
