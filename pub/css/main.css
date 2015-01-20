@@ -161,6 +161,7 @@ h2 {
 */
 
  .navbar {
+    position:relative;
     text-align:center;
 }
 
@@ -205,6 +206,13 @@ a {
     margin:0 auto;
 }
 
+.mainContent h2 {
+    color:#000080;
+}
+
+.mainContent time {
+    color:#FFD700;
+}
 
 .blogText {
     text-align:center;
@@ -212,13 +220,13 @@ a {
     padding-left:8%;
 }
 
-/*
-.datetime {
+
+.blogPosts p {
+    color:#000080;
 }
-*/
 
 blockquote {
-    color:#40E0D0;
+    color:#FFD700;
     display:block;
     padding-left:0;
     position:relative;
@@ -227,7 +235,8 @@ blockquote {
 
 .buttons {
     text-align:center;
-    padding-right:7%;
+    position:relative;
+    color:#FFD700;
 }
 
 /*
@@ -249,16 +258,20 @@ blockquote {
 
 
 .footer {
-    color:#708090;
-    text-align:center;
+    max-width:80%;
     margin:0 auto;
-    padding-right:5%;   
+    color:#708090;
+    text-align:center;  
 }
 
 .footer h2 {
     text-align:center;
+    color:#000080;
 }
 
+.footer figcaption {
+    color:#000080;
+}
 
 .blogImages {
     position:relative;
