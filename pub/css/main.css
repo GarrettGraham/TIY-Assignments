@@ -141,19 +141,15 @@ h2 {
 
 
 */
-.container {
-    max-width:25em;
-    font-family: 'Oswald' sans-serif;
-    color:#00008B;
-}
 
 .container header {
- background-image:url("http://lorempixel.com/output/abstract-q-c-900-530-3.jpg");
+ background-image:url("http://larvalsubjects.files.wordpress.com/2013/05/renaissance-the-school-of-athens-classic-art-paitings-raphael-painter-rafael-philosophers-hd-wallpapers.jpg");
  max-width:100%;
  margin:0 auto;
  text-align:center;
  color:#FFFFFF;
  text-transform:uppercase;
+ position:relative;
  }
 
  /* deleted from above - 
@@ -193,11 +189,10 @@ a {
     text-decoration: none;
 } /* want to figure out to which element this declaration applies */
 
-.waveLogo {
-}
-
+/*
 .smPgTitle {
 }
+*/
 
 .pageHeading {
     text-align: center;
@@ -206,7 +201,10 @@ a {
 }
 
 .mainContent {
+    max-width:80%;
+    margin:0 auto;
 }
+
 
 .blogText {
     text-align:center;
@@ -214,16 +212,14 @@ a {
     padding-left:8%;
 }
 
-.blogPosts {
-}
-
+/*
 .datetime {
 }
+*/
 
-.blockQuote h3 {
-    color:turquoise;
+blockquote {
+    color:#40E0D0;
     display:block;
-    font-size:large;
     padding-left:0;
     position:relative;
 }
@@ -234,42 +230,51 @@ a {
     padding-right:7%;
 }
 
+/*
 .rightColumn {
 }
-
 .sideBarImg {
 }
-
 .stayConnected {
 }
-
 .selfie {
 }
-
 .navIcons {
     text-align:center;
-    color:grey;
+    color:#708090;
     position:relative;
 }
 
 /* white border around each image in footer  */
-.pageBottom {
-    margin:0 auto;
-    padding-left:0;
-    padding-right:15%;
-}
 
-.blogImages {
-}
 
-.pageFooter {
+.footer h2 {
+    display:inline-block;
     text-align:center;
-    color:grey;
+    margin:0 auto;
+    padding-right:5%;
+}
+
+
+.blogImages li {
+    display:inline;
+    text-align:center;
+    margin:0 auto;
+    padding-right:5%;
+}
+
+
+.footer {
+    color:#708090;
     position:relative;
+    text-align:center;   
 }
 
 .copyRight{
+    position:relative;
+    text-align:center;
 }
+
 /*
 .tiylogo{
     position:relative;
@@ -279,14 +284,6 @@ a {
 
 }
 */
-
-
-
-
-
-
-
-
 
 
 
@@ -400,6 +397,15 @@ a {
    Modify as content requires.
    ========================================================================== */
 
+/* Large Viewport*/
+@media only screen and (min-width: 64em) {
+}
+
+/* Tablet Size Viewports */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+}
+
+/* Mobile Viewports*/
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
