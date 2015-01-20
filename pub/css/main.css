@@ -248,27 +248,25 @@ blockquote {
 /* white border around each image in footer  */
 
 
-.footer h2 {
-    display:inline-block;
-    text-align:center;
-    margin:0 auto;
-    padding-right:5%;
-}
-
-
-.blogImages li {
-    display:inline;
-    text-align:center;
-    margin:0 auto;
-    padding-right:5%;
-}
-
-
 .footer {
     color:#708090;
-    position:relative;
-    text-align:center;   
+    text-align:center;
+    margin:0 auto;
+    padding-right:5%;   
 }
+
+.footer h2 {
+    text-align:center;
+}
+
+
+.blogImages {
+    position:relative;
+    display:inline;
+    text-align:center;
+    padding-right:0.25em;
+}
+
 
 .copyRight{
     position:relative;
