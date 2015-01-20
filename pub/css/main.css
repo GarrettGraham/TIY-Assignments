@@ -97,15 +97,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .container {
-    max-width:35em;
+    max-width:60em;
 }
 
 h1 {
     text-align:center;
+    padding-left:5em; 
 }
 
-.theGrid table {
-    text-align: center;
+.table {
+    padding-left:15em;
 }
 
 th {
@@ -127,6 +128,45 @@ td {
     border-left:solid; 
 }
 
+.r1 :nth-child(even) {
+    background-color:#AFEEEE;
+}
+
+.r2 :nth-child(4) {
+    background-color:#000080;
+}
+
+.r2 :nth-child(odd) {
+    background-color:#AFEEEE;
+}
+
+.r3 :nth-child(even) {
+    background-color:#AFEEEE;
+}
+
+.r4 :nth-child(odd) {
+    background-color:#AFEEEE;
+}
+
+.r5 :nth-child(even) {
+    background-color:#AFEEEE;
+}
+
+.r6 :nth-child(odd) {
+    background-color:#AFEEEE;
+}
+
+.r7 :nth-child(even) {
+    background-color:#AFEEEE;
+}
+
+.r8 :nth-child(odd) {
+    background-color:#AFEEEE;
+}
+
+.r9 :nth-child(even) {
+    background-color:#AFEEEE;
+}
 /* use css to style color or border, cellpadding
 
 
