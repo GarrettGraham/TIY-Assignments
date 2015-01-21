@@ -17,7 +17,7 @@ VOCAB.
 
 * Assertion - a predicate (a true–false statement) placed in a program to indicate that the developer thinks that the predicate is always true at that place. If an assertion evaluates to false at run-time, an assertion failure results, which typically causes execution to abort.
 
-* Predicate - a true-false statement
+* Predicate - a true-false statement. 
 
 
 
@@ -108,3 +108,21 @@ function hello ( ) {
 
 hello('garrett'); ---> the hello is the "Boolean Monster"
 					    anything within the parentheses, refers back to the function identifier 
+
+!!unicode -- use css to add chess pieces to your grid!!
+		use a class to denote which element the piece should be in and use css properties to shift the chess piece image into the correct box
+
+Calculator Kata
+test driven developement
+Control Flow Statements
+
+practice the assert function 
+
+AT LEAST if-else, else-if, return, break, continue etc... documentation
+10 total control statements but probably skip 'label'
+create a file main.js inside a file called scripts/main.js run with node.scripts.main
+
+addition, subtraction, multiplication, division
+
+play with the assert function -- try to break everything
+example on github
