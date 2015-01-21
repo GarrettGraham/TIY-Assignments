@@ -110,9 +110,8 @@ textarea {
 }
 
 h1 {
-    position:relative;
     text-align:center;
-    padding-left:7em; 
+    padding-left:20%; 
 }
 
 .table {
