@@ -227,14 +227,50 @@ typeof NaN // 'number'
 typeof 'a' // 'string'
 ```
 
+FUNCTIONS
+
+function
+
+function - generator
+
+return
+
+* symbol: return [[expression]]
+* usage: ends function execution and specifies a value to be returned to the function caller.  The expression to return. if omitted, undefined is returned instead
+* pronunciation: 
+* examples:
+```
+function magic(x) {
+  return function calc(x) { return x * 42};
+}
+
+var answer = magic();
+answer(1337); // 56154
+
+function square(x) {
+   return x * x;
+}
+```
+
+
+
+CONTROL-FLOW STATEMENTS
+
+
+block Statement:
+
+break Statement:
+
+continue Statement:
+
 Conditional Statements:
 
 if...else
 
 * symbol: if () {} else {} 
 * description: if (condition) { statement1; } else { statement2 ;}
-* usage: 'if' statements execute a statement if a logical condition is true, use the 'else' to execute a statement if the condition is false.
-* pronunciation: 'if' some condition is true return x, else (if condition is false) return y
+* usage: 'if' statements execute a statement if a logical condition is true, use the 'else' to execute a statement if the condition is false. else...if clause allows you to combine conditional functions.
+* pronunciation: 'if' some condition is true return x, else (if condition is false) return y.
 * examples:
 ```
 
@@ -257,7 +293,30 @@ if (condition) {
     statement_3_runs_if_condition_is_false;
     statement_4_runs_if_condition_is_false;
 }
+
+function checkData() {
+  if (document.form1.threeChar.value.length == 3) {
+    return true;
+  } else {
+    alert("Enter exactly three characters. " +
+      document.form1.threeChar.value + " is not valid.");
+    return false;
+  }
 ```
+
+switch
+
+Loop Statements:
+
+do...while Statements:
+
+while Statements:
+
+label Statement:
+
+
+
+Object Manipulation Statements:
 
 
 
