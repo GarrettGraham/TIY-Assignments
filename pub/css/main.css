@@ -97,7 +97,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .container {
-    max-width:60em;
+    max-width:100%;
 }
 
 .theGrid {
