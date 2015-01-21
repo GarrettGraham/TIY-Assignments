@@ -9,11 +9,14 @@ null // how exciting
 
 Primative: Boolean
 
-* symbol: 
-* pronunciation:
+* symbol: Boolean
+* pronunciation: "x=Boolean(expression)";"new Boolean(false)";"new Boolean(true)"
 * examples:
 ```
-
+x = new Boolean(false);
+if (x) {
+  // this code is executed
+}
 ```
 
 Primative: Number
