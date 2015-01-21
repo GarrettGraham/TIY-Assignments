@@ -6,7 +6,7 @@ function add (a, b) {
 
 assert(add(3, 4) === 7)
 
-function diff(a, b) {
+function diff (a, b) {
     return (a - b)
 }
 
@@ -18,5 +18,9 @@ function prod (a, b) {
 
 assert(prod(4, 9) === 36)
 
+function div (a, b) {
+    return (a / b)
+}
 
+assert(div(3,2) === 1.5)
 
