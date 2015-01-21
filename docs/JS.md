@@ -171,6 +171,21 @@ NaN
 
 ```
 
+Operators:
+
+Assignment
+Comparison
+Arithmetic
+Bitwise
+Logical 
+String
+Special
+
+JavaScript has both binary and unary operators, and one special ternary operator, the conditional operator. 
+
+A binary operator requires two operands, one before the operator and one after the operator: operand1 operator operand2
+
+
 Operator: Addition
 
 * symbol: 
@@ -210,4 +225,5 @@ typeof NaN // 'number'
 
 typeof 'a' // 'string'
 ```
+
 
