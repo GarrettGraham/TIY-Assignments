@@ -1,16 +1,18 @@
 Primative: Null
 
 * symbol: null
+* description: a.k.a. - a Literal - truthy vs. falsy - " 'intentionally blank' - such as empty brackets/braces etc." 
 * pronunciation: "null", "null value", "is null"
 * examples:
 ```
-null // how exciting
+null // 
 ```
 
 
 Primative: Boolean
 
 * symbol: new Boolean([value])
+* description: a.k.a. - a Literal
 * pronunciation: "x = Boolean(expression)";"new Boolean(false)";"new Boolean(true)"
 * examples:
 ```
@@ -18,12 +20,17 @@ x = new Boolean(false);
 if (x) {
   // this code is executed
 }
+
+null == null // true
+
+undefined == null // false
 ```
 
 
 Primative: Number
 
 * symbol: Number()
+* description: Number is a J.S. object which is an object wrapper that allows manipulation of numeric values.
 * pronunciation: "new Number(value);"
 * examples:
 ```
@@ -58,8 +65,9 @@ Number("100a")    // NaN
 
 Primative: String
 
-* symbol: String()	
-* pronunciation: 'string(thing)';"String(thing)";"new String(thing)"
+* symbol: String()
+* description:	
+* pronunciation: 'string(thing)';"String(thing)";"new String(thing)"; 'a'
 * examples:
 ```
 var outputStrings = [];
@@ -72,6 +80,7 @@ for (var i = 0, n = inputValues.length; i < n; ++i) {
 Primative: Symbol (new in ECMAScript6)
 
 * symbol: Symbol([description])
+* description:
 * pronunciation:
 * examples:
 ```
@@ -84,32 +93,56 @@ typeof Symbol.iterator === 'symbol'
 
 Primative: undefined
 
-* symbol: 
+* symbol: undefined
+* description: "'the default 'empty'. A primitive value automatically assigned to just-declared variables and formal arguments for which there are no actual arguments."
 * pronunciation:
 * examples:
 ```
+var x;
+if (x === undefined) {
+   // these statements execute
+}
+else {
+   // these statements do not execute
+}
 
 ```
 
 
 Object
-* symbol: 
-* pronunciation:
+
+* symbol: new Object()
+* description: the object constructor creates an object wrapper for the given value
+* pronunciation: "Object"
 * examples:
 ```
+// Object initialiser or literal
+{ [ nameValuePair1[, nameValuePair2[, ...nameValuePairN] ] ] }
 
+// Called as a constructor
+new Object([value])
 ```
 
 Array
-* symbol: 
-* pronunciation:
+
+* symbol: new Array(); var arr = ['...']
+* description: a global object constructor of arrays: high-level, list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of an array nor the type of its elements are fixed.
+* pronunciation: 
 * examples:
 ```
+var msgArray = [];
+msgArray[0] = 'Hello';
+msgArray[99] = 'world';
 
+if (msgArray.length === 100) {
+  console.log('The length is 100.');
+}
 ```
 
 RegExp (Regular Expression)
+
 * symbol: 
+* description:
 * pronunciation:
 * examples:
 ```
@@ -119,7 +152,9 @@ RegExp (Regular Expression)
 
 
 Infinity
+
 * symbol: 
+* description:
 * pronunciation:
 * examples:
 ```
@@ -127,27 +162,52 @@ Infinity
 ```
 
 NaN
-* symbol: 
+
+* symbol: NaN 
+* description: 'indescriminate number'. NaN is returned if the argument cannot be converted into a number
 * pronunciation:
 * examples:
 ```
 
 ```
-
-undefined
-* symbol: 
-* pronunciation:
-* examples:
-```
-
-```
-
 
 Operator: Addition
+
 * symbol: 
 * pronunciation:
 * examples:
 ```
 
+```
+
+Operator: Modulus
+
+* symbol: %
+* pronunciation:
+* examples:
+```
+
+```
+
+Operator: Typeof
+
+* symbol: typeof
+* pronunciation: 
+* examples:
+```
+// x has not been defined before
+if (typeof x === 'undefined') { // evaluates to true without errors
+   // these statements execute
+}
+
+if(x === undefined){ // throws a ReferenceError
+
+}
+
+typeof 12345 // 'number'
+
+typeof NaN // 'number'
+
+typeof 'a' // 'string'
 ```
 

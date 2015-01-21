@@ -1,0 +1,110 @@
+
+VOCAB.
+
+* Concatination
+
+* Return Value vs. Side Effect
+
+* Referential Transparency
+
+* Encapsulation - everything i need to do my job is readily available here or close at hand
+
+* String Delimiters - 
+
+* Identifiers - like labels of code
+
+* Token - 'unexpected token'
+
+* Assertion - a predicate (a true–false statement) placed in a program to indicate that the developer thinks that the predicate is always true at that place. If an assertion evaluates to false at run-time, an assertion failure results, which typically causes execution to abort.
+
+* Predicate - a true-false statement
+
+
+
+
+*** Parentheses 'INVOKE' the function ***
+
+
+
+
+
+node chooses to display strings in single quotations
+
+double equals == wants to have Booleans
+
+1 + true <returns> 2 
+
+	---> in JavaScript, everything if not specifically identified as a string, 		 will be given a defaul value of either 1 or 0 
+
+					--> true === 1; false === 0
+
+plus + tries to convert all the operands into numbers if unable to create operands as strings
+
+
+
+*** The following WILL cause issues - overloaded syntax: ***
+
+						() [] {} 
+
+						,  ;  :  =
+
+
+Modulus (%) returns only the remainder and not quite restricted to follow PEMDAS
+
+'Bang' === !
+
+assignment operators --> refer to variables
+
+must have a label assigned to a value, otherwise, 'the garbage collector' will clean up un-assigned variables/values
+
+
+
+
+Browsers DO NOT render JavaScript by default 
+
+	--> print(1 + 1) does not compute without telling the computer:
+
+
+Java File --> in command line:
+> node main.js
+
+in order to render JS --> 
+
+console.log(1 + 1);
+console.log('Hello World');
+console.log('Hello World' === 'Hello World');
+
+define a variable --> var print
+
+print('hello world') --> returns an error message because there is no value given to the identifier 'hello world'. the parenthesis denote an identifier.
+
+a single equal ( = ) --> is an assigner
+					 --> var print = console.log;
+
+		* The semi-colon ( ; ) seperates statements
+
+				--> console.log(1 + 1); console.log(hello world);
+
+		* expressions are seperated by a comma ( , )
+
+Ex:  var print = console.log
+	 var name = Garrett
+
+	 print('hello, ' + name);
+	 print('do you like my hat?')
+
+	 must follow specific path in code in order to perform a task --> instead of re-writing the same code to perform the same task with a different variable, you are able to combine the tasks into a ??function??
+
+	 MAGIC FORMULA: functions name () {
+	 } 
+
+	 	--> able to give the function identifier ANY name. it is anonymous if not 	  given an identifier
+
+var print = console.log;
+
+function hello ( ) {
+	print('hello, ' + name);
+}
+
+hello('garrett'); ---> the hello is the "Boolean Monster"
+					    anything within the parentheses, refers back to the function identifier 
