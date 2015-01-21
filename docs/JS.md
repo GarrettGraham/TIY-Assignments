@@ -185,6 +185,7 @@ JavaScript has both binary and unary operators, and one special ternary operator
 
 A binary operator requires two operands, one before the operator and one after the operator: operand1 operator operand2
 
+A unary operator requires a single operand, either before or after the operator: operator operand or operand operator
 
 Operator: Addition
 
@@ -225,5 +226,38 @@ typeof NaN // 'number'
 
 typeof 'a' // 'string'
 ```
+
+Conditional Statements:
+
+if...else
+
+* symbol: if () {} else {} 
+* description: if (condition) { statement1; } else { statement2 ;}
+* usage: 'if' statements execute a statement if a logical condition is true, use the 'else' to execute a statement if the condition is false.
+* pronunciation: 'if' some condition is true return x, else (if condition is false) return y
+* examples:
+```
+
+ if (condition_1) {
+     statement_1;
+ } else if (condition_2) {
+     statement_2;
+ } else if (condition_n) {
+     statement_n;
+ } else {
+     statement_last;
+ }
+ 
+?? To execute multiple statements, group them within a block statement ({ ... })
+
+if (condition) {
+    statement_1_runs_if_condition_is_true;
+    statement_2_runs_if_condition_is_true;
+} else {
+    statement_3_runs_if_condition_is_false;
+    statement_4_runs_if_condition_is_false;
+}
+```
+
 
 
