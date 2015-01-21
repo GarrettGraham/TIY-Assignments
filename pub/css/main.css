@@ -93,10 +93,13 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
+/*==========================================================================
    Author's custom styles
    ========================================================================== */
-@media only screen and (min-width:30em) and (max-width:90em) {
+ 
+
+ /*@media only screen and (min-width:30em) and (max-width:90em) {}*/
+
 
 .container {
     max-width:100%;
@@ -113,9 +116,9 @@ h1 {
 }
 
 .table {
-    margin:0 auto;
     text-align:center;
-    padding-left:10em;
+    padding-left:30%;
+    padding-bottom:10%;
 }
 
 th {
@@ -177,7 +180,7 @@ td {
     background-color:#AFEEEE;
 }
 
-}
+
 /* use css to style color or border, cellpadding
 
 
@@ -195,7 +198,7 @@ td {
 
 /* ==========================================================================
    Helper classes
-   ========================================================================== */
+   ========================================================================== 
 
 /*
  * Image replacement
