@@ -1,1 +1,16 @@
 open -a Brackets ~/.zshrc 
+
+$ alias >>> lists the alias' 
+
+$ alias | grep git >>> the grep is a filter
+
+command flags : -n (--line number)
+
+!?open?:p 
+
+$ alias brackets="open -a 
+
+pseudo elements MUST be attached to an element!
+
+NEED :before and :after pseudo classes to unse the contnt property in css
+

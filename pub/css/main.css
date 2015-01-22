@@ -139,6 +139,7 @@ td {
     border-left:solid; 
 }
 
+
 .r1 :nth-child(even) {
     background-color:#AFEEEE;
 }
@@ -179,6 +180,29 @@ td {
     background-color:#AFEEEE;
 }
 
+/* chess pieces = make div class and have each class mean something
+    
+.white.queen.piece {
+    border: 1px solid;
+    width: 10em;
+    height: 19em;
+}
+
+.white.queen.piece big {
+    font-size 6em;
+    text-align: center;
+}
+
+.white.queen.piece:before {
+content: '\2655';
+font-size: 7em;
+}
+
+.white.king.piece:before { 
+    content: '\2654';
+
+dont need to call each div so specifically. should be able to just call white piece and then specify the div class for the black pieces
+*/
 
 /* use css to style color or border, cellpadding
 
