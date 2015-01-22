@@ -4,6 +4,7 @@ function add (a, b) {
 	return (a + b); 
 }
 
+as
 assert(add(3, 4) === 7)
 
 function diff (a, b) {
@@ -24,3 +25,10 @@ function div (a, b) {
 
 assert(div(3,2) === 1.5)
 
+
+assert(plus("one", "one") === 2);
+
+if ("one" = 1) {
+    return true
+} else {
+    return false}
