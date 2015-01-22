@@ -14,3 +14,57 @@ pseudo elements MUST be attached to an element!
 
 NEED :before and :after pseudo classes to unse the contnt property in css
 
+unintentionally empty === undefined
+
+intentionally empty === the type: null
+
+An array is a built-in type within Java
+
+watch is a generic command to do anything desired
+
+mochajs.org --> set of tools
+
+mocha has added two keywords: 'it' and 'describe'
+    
+    describe: given a string and something to do, it does it and when run through mocha, a heading is given
+    
+    
+    Calculator Kata:
+    
+function plus(A, B) {
+    return 2;
+    }
+    
+ Calculator Kata: from class
+    
+function plus(A, B) {
+    if ( A == "zero" ) {
+        return B;
+    } 
+    return 2;
+}
+
+describe('string calculator', function () {
+    describe('start with "one" + "one"', function () {
+    assert(plus("one", "one") === 2)
+    
+    OR easier to use 'it' 
+    
+    it('should add "one" + "one"', function () {
+    assert.equal(plus("one", "one"), 2)
+    });
+
+
+describe('string calculator', function () {
+    describe('start with "one" + "one"', function () {
+    assert(plus("one", "one") === 2)
+    
+    OR easier to use 'it' 
+    
+    it('should add "one" + "one"', function () {
+    assert(plus("one", "one") === 2)
+    });
+    
+    
+    
+Tracer Bullet

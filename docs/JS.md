@@ -149,7 +149,14 @@ RegExp (Regular Expression)
 
 ```
 
+Assert
+* symbol:
+* definition: var assert = require('assert');
+* pronunciation:
+* examples:
+```
 
+```
 
 Infinity
 

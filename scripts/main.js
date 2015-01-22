@@ -62,10 +62,27 @@ function wordToInt(word) {
     assert(plus("zero","zero") === 0);
     assert(plus("one", "one") === 1);
     assert(plus("two", "two") === 2);
-    assert
-    
-    
-    
-    
-assert(plus("one", "one") === 2);
+    assert(plus("three", "three") === 3);
 
+    
+    
+    
+
+    Calculator Kata: from class
+    
+function plus(A, B) {
+    if ( A == "zero" ) {
+        return B;
+    } 
+    return 2;
+}
+
+describe('string calculator', function () {
+    describe('start with "one" + "one"', function () {
+    assert(plus("one", "one") === 2)
+    
+    OR easier to use 'it' 
+    
+    it('should add "one" + "one"', function () {
+    assert.equal(plus("one", "one"), 2)
+    });
