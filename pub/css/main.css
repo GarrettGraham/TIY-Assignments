@@ -107,7 +107,7 @@ textarea {
 
 
 table {
-    width: 100%
+    width: 80%
 }
 
 thead th {
@@ -130,7 +130,7 @@ tbody td {
 }
 
 
-/*
+}
 td {
     width:5em;
     height:5em;
@@ -140,17 +140,10 @@ td {
     border-right:solid;
     border-left:solid; 
 }
-*/
 
 
 .r1 :nth-child(even) {
 }
-
-/*
-.r2 :nth-child(4) {
-    background-color:#000080;
-}
-*/
 
 .r2 :nth-child(odd) {
     background-color:#AFEEEE;
@@ -184,16 +177,6 @@ td {
     background-color:#AFEEEE;
 }
 
-:before {
-    font-size: 2em;
-}
-
-.piece.white.queen {
-    width: 10em;
-    width 19ex;
-}
-
-.piece
 /* chess pieces = make div class and have each class mean something
     
 .white.queen.piece {
