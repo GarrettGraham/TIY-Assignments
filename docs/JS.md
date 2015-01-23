@@ -111,250 +111,384 @@ else {
 
 Object
 
-* symbol: new Object()
-* description: the object constructor creates an object wrapper for the given value
-* pronunciation: "Object"
-* examples:
-```
-// Object initialiser or literal
-{ [ nameValuePair1[, nameValuePair2[, ...nameValuePairN] ] ] }
-
-// Called as a constructor
-new Object([value])
-```
-
-ARRAY: Objects and Literals
-
-* symbol: new Array(); var arr = ['...']
-    arrayLength:
-    elementN
-* description: a global object constructor of arrays: high-level, list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of an array nor the type of its elements are fixed.
-* Accessing Array Elements: JS arrays are zero index: the first element of an array is at index 0, and the last element is at the index equal to the value of the arrays length property minus 1
+    * symbol: new Object()
+    * description: the object constructor creates an object wrapper for the given value
+    * pronunciation: "Object"
+    * examples:
     ```
-    var arr = ['this is the first element', 'this is the second element'];
-    console.log(arr[0]);              // prints 'this is the first element'
-    console.log(arr[1]);              // prints 'this is the second element'
-    console.log(arr[arr.length - 1]); // prints 'this is the last element'
-    ```
-* pronunciation: 
-* examples:
-```
-var msgArray = [];
-msgArray[0] = 'Hello';
-msgArray[99] = 'world';
+    // Object initialiser or literal
+    { [ nameValuePair1[, nameValuePair2[, ...nameValuePairN] ] ] }
 
-if (msgArray.length === 100) {
-  console.log('The length is 100.');
-}
-```
+    // Called as a constructor
+    new Object([value])
+    ```
+
+    ARRAY: Objects and Literals
+
+    * symbol: new Array(); var arr = ['...']
+        arrayLength:
+        elementN
+    * description: a global object constructor of arrays: high-level, list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of an array nor the type of its elements are fixed.
+    * Accessing Array Elements: JS arrays are zero index: the first element of an array is at index 0, and the last element is at the index equal to the value of the arrays length property minus 1
+        ```
+        var arr = ['this is the first element', 'this is the second element'];
+        console.log(arr[0]);              // prints 'this is the first element'
+        console.log(arr[1]);              // prints 'this is the second element'
+        console.log(arr[arr.length - 1]); // prints 'this is the last element'
+        ```
+    * pronunciation: 
+    * examples:
+    ```
+    var msgArray = [];
+    msgArray[0] = 'Hello';
+    msgArray[99] = 'world';
+
+    if (msgArray.length === 100) {
+      console.log('The length is 100.');
+    }
+    ```
 
 Array.length
 
-* symbol: array.length; arr.length
+    * symbol: array.length; arr.length
 
-* description: the value of the length property is an integer with a positive sign and a value less than 2 to the 32nd power. you can set the length property to truncate an array at any time. when you extend an array by changing its length property, the number of actual elements does not increase; for ex: if you set length to 3 when it is currently 2, the array still contains only 2 elements. thus the legth property says nothing about the number of defined values in the array.
+    * description: the value of the length property is an integer with a positive sign and a value less than 2 to the 32nd power. you can set the length property to truncate an array at any time. when you extend an array by changing its length property, the number of actual elements does not increase; for ex: if you set length to 3 when it is currently 2, the array still contains only 2 elements. thus the legth property says nothing about the number of defined values in the array.
 
-* result: 
+    * result: 
 
-* parameters: no
+    * parameters: no
 
-* pronunciation: array.length; array.prototype.length
+    * pronunciation: array.length; array.prototype.length
 
-* examples:
-```
-// Iterating over an array. in the following, the array numbers is iterated through by looking at the length property to see how many elements it has. the value in each element is then doubled.
+    * examples:
+    ```
+    // Iterating over an array. in the following, the array numbers is iterated through by looking at the length property to see how many elements it has. the value in each element is then doubled.
 
-var numbers = [1,2,3,4,5];
+    var numbers = [1,2,3,4,5];
 
-for(var i = 0; i < numbers.length; i++) {
-numbers[i] *= 2;
-}
-// number is now [2,4,6,8,10]
+    for(var i = 0; i < numbers.length; i++) {
+    numbers[i] *= 2;
+    }
+    // number is now [2,4,6,8,10]
 
-shortening an array:
+    shortening an array:
 
-if (statesUS.length > 50) {
-statesUS.length = 50;
-}
-```
+    if (statesUS.length > 50) {
+    statesUS.length = 50;
+    }
+    ```
 
 Array.prototype.pop()
 
-* symbol: arr.pop()
+    * symbol: arr.pop()
 
-* result: Removes the last element from an array and returns that value/element to the calleer. pop is intentionally generic; this method can be called or applied to objects resemebling. If you call pop() on an empty array, it returns an undefined value
-* parameters: no
-* returns: the last element removed from an array
-* pronunciation: arr.pop(), var popped = myFish.pop()
+    * result: Removes the last element from an array and returns that value/element to the calleer. pop is intentionally generic; this method can be called or applied to objects resemebling. If you call pop() on an empty array, it returns an undefined value
+    * parameters: no
+    * returns: the last element removed from an array
+    * pronunciation: arr.pop(), var popped = myFish.pop()
 
 
-* exmples:
-```
-//removing the last element of an array
+    * exmples:
+    ```
+    //removing the last element of an array
 
-var myFish = ['angel','clown', 'mandarin', 'sturgeon'];
+    var myFish = ['angel','clown', 'mandarin', 'sturgeon'];
 
-console.log(myFish); 
+    console.log(myFish); 
 
-var popped = myFish.pop();
+    var popped = myFish.pop();
 
-console.log(myFish);
+    console.log(myFish);
 
-console.log(popped);
-```
+    console.log(popped);
+    ```
 
 Array.prototype.push()
 
-* symbol: arr.push(element1, ..., elementN)
+    * symbol: arr.push(element1, ..., elementN)
 
-* pronunciation: Adds one or more elements to the end of an array and returns the new length of the array. the push method adds values to an array. push is intentioanlly generic. the push method can be used with call() or apply() on objects resembling arrays. The push method relies on a legth property to determine where to start inserting the given values. if the length property cannot be converted into a number, the index used is 0. the only native, array-like objects are strings, although they are not suitable in applications of this method, as strings are immutable.
+    * pronunciation: Adds one or more elements to the end of an array and returns the new length of the array. the push method adds values to an array. push is intentioanlly generic. the push method can be used with call() or apply() on objects resembling arrays. The push method relies on a legth property to determine where to start inserting the given values. if the length property cannot be converted into a number, the index used is 0. the only native, array-like objects are strings, although they are not suitable in applications of this method, as strings are immutable.
 
-* parameters: elementN represents the elements to add to the end of the array.
+    * parameters: elementN represents the elements to add to the end of the array.
 
-* Returns: the new length property of the object upon which the method was called.
+    * Returns: the new length property of the object upon which the method was called.
 
-* examples:
-```
-Adding elements to an array: 
+    * examples:
+    ```
+    Adding elements to an array: 
 
-var sports = ['soccer', 'baseball'];
-var total = sports.push('footbal','swimming');
+    var sports = ['soccer', 'baseball'];
+    var total = sports.push('footbal','swimming');
 
-console.log(sports); // ['soccer',
-'baseball', 'football', 'swimming']
+    console.log(sports); // ['soccer',
+    'baseball', 'football', 'swimming']
 
-console.log(total);  // 4
+    console.log(total);  // 4
 
-Merging two arrays: uses apply() to merge elements from a second array
+    Merging two arrays: uses apply() to merge elements from a second array
 
-var vegetables = ['parsnip', 'potato'];
-var moreVegs = ['celery', 'beetroot'];
+    var vegetables = ['parsnip', 'potato'];
+    var moreVegs = ['celery', 'beetroot'];
 
-// Merge the second array into the first one
-// Equivalent to vegetables.push('celery', 'beetroot');
-Array.prototype.push.apply(vegetables, moreVegs);
+    // Merge the second array into the first one
+    // Equivalent to vegetables.push('celery', 'beetroot');
+    Array.prototype.push.apply(vegetables, moreVegs);
 
-console.log(vegetables); // ['parsnip', 'potato', 'celery', 'beetroot']
-```
+    console.log(vegetables); // ['parsnip', 'potato', 'celery', 'beetroot']
+    ```
 
-Array.prototype.reverse()
+    Array.prototype.reverse()
 
-* symbol: arr.reverse()
+    * symbol: arr.reverse()
 
-* description: Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first. the reverse method transposes the elements of the calling array object in place, mutating the array, and returning a reference to the array.
+    * description: Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first. the reverse method transposes the elements of the calling array object in place, mutating the array, and returning a reference to the array.
 
-*parameters: none
+    *parameters: none
 
-*examples: 
-```
-//the following creates an array myArray, containing three elements, then reverses the array.
+    *examples: 
+    ```
+    //the following creates an array myArray, containing three elements, then reverses the array.
 
-var myArray = ['one', 'two', 'three'];
-myArray.reverse();
+    var myArray = ['one', 'two', 'three'];
+    myArray.reverse();
 
-console.log(myArray) // ['three', 'two', 'one'] 
-```
+    console.log(myArray) // ['three', 'two', 'one'] 
+    ```
 
 Array.prototype.shift()
 
-* symbol: arr.shift()
+    * symbol: arr.shift()
 
-* description: Removes the first element from an array and returns that element. the shift method removes the element at the zeroeth index and shift the values at consecutive indexes down, then reutns the removed value. if the length property is 0, undefined is returned. shift is intentionally generic; this method can be called or applie to objects resembling arrays. Objects which do not contain a length property reflecting the last ina series of consecutiv, zero-baed numerical properties may not behave in any meaningful manner.
+    * description: Removes the first element from an array and returns that element. the shift method removes the element at the zeroeth index and shift the values at consecutive indexes down, then reutns the removed value. if the length property is 0, undefined is returned. shift is intentionally generic; this method can be called or applie to objects resembling arrays. Objects which do not contain a length property reflecting the last ina series of consecutiv, zero-baed numerical properties may not behave in any meaningful manner.
 
-* examples:
-```
-var myFish = ['angel', 'clown', 'mandarin', 'sugeon'];
+    * examples:
+    ```
+    var myFish = ['angel', 'clown', 'mandarin', 'sugeon'];
 
-console.log('myFish before: ' + myFish);
+    console.log('myFish before: ' + myFish);
 
-var shifted = myFish.shift();
+    var shifted = myFish.shift();
 
-console.log('myFish after: ' + myFish);
-console.log('Removed this elemetn: ' + shifted);
+    console.log('myFish after: ' + myFish);
+    console.log('Removed this elemetn: ' + shifted);
 
-//This example displays the following:
+    //This example displays the following:
 
-myFish before: angel.clowm,mandarinn,surgeon
+    myFish before: angel.clowm,mandarinn,surgeon
 
-myFish after: clown,mandarin,surgeon
-Removed this element: angel
+    myFish after: clown,mandarin,surgeon
+    Removed this element: angel
 
-```
+    ```
 
 Array.prototype.sort()
-Sorts the elements of an array in place and returns the array.
+
+    * symbol: arr.sort([compareFunction])
+
+    * description: Sorts the elements of an array in place and returns the array. the sort is not necessarily stable (When sorting some kinds of data, only part of the data is examined when determining the sort order i.e. sorting by color). the default sort order is according to string Unicode code points. if compareFunction is not supplied, elements are sorted by converting them to strings and comparing strings in Unicode code point order. For exmple, "Cherry" comes before "banana". In a numberic sort, 9 comes before 80, but bcause numbers are converted to strings, "80" comes before "9" in unicode order.
+
+    * parameters: 
+        compareFunction: optional. Specifies a function that defines the sort order. if omitted, the array is sorted according to each character's Unicode code point value, according to the string conversion of each element.
+        if comparFunction is supplied, the array elements are sorted according to the return value of the compare function. if a and b are two elements being compared, then:
+        
+    --If compareFunction(a, b) is less than 0, sort a to a lower index than b, i.e. a comes first.
+    --If compareFunction(a, b) returns 0, leave a and b unchanged with respect to each other, but sorted with respect to all different elements. Note: the ECMAscript standard does not guarantee this behaviour, and thus not all browsers (e.g. Mozilla versions dating back to at least 2003) respect this.
+    --If compareFunction(a, b) is greater than 0, sort b to a lower index than a. 
+    --compareFunction(a, b) must always return the same value when given a specific pair of elements a and b as its two arguments. If inconsistent results are returned then the sort order is undefined
+
+    * example: 
+    ```
+    the compare funtion has the following form:
+    
+    function compare(a, b) {
+        if (a is less than b by some ordering  criterion) {
+    return -1;
+      }
+      if (a is greater than b by the ordering criterion) {
+        return 1;
+      }
+      // a must be equal to b
+      return 0;
+    }
+    
+    to compare numbers instead of strings, the compare function can simply subract b from a. the following function will sort the array ascending:
+    
+    function compareNumbers(a, b) {
+        return a - b;
+    }
+    
+    the sort method can be conveniently used with function expression (and closures):
+    
+    var numbers = [4, 2, 5, 1, 3];
+    numbers.sort(function(a, b) {
+        return a - b;
+        });
+        print(numbers);
+        
+    Objects can be sorted givn the value of one of their properties:
+    
+    var items = [
+      { name: 'Edward', value: 21 },
+      { name: 'Sharpe', value: 37 },
+      { name: 'And', value: 45 },
+      { name: 'The', value: -12 },
+      { name: 'Magnetic' },
+      { name: 'Zeros', value: 37 }
+    ];
+    items.sort(function (a, b) {
+      if (a.name > b.name) {
+        return 1;
+      }
+      if (a.name < b.name) {
+        return -1;
+      }
+      // a must be equal to b
+      return 0;
+    });
+        
+        var stringArray = ['Blue', 'Humpback', 'Beluga'];
+    var numericStringArray = ['80', '9', '700'];
+    var numberArray = [40, 1, 5, 200];
+    var mixedNumericArray = ['80', '9', '700', 40, 1, 5, 200];
+
+    function compareNumbers(a, b) {
+      return a - b;
+    }
+
+    // again, assumes a print function is defined
+    console.log('stringArray:', stringArray.join());
+    console.log('Sorted:', stringArray.sort());
+
+    console.log('numberArray:', numberArray.join());
+    console.log('Sorted without a compare function:', numberArray.sort());
+    console.log('Sorted with compareNumbers:', numberArray.sort(compareNumbers));
+
+    console.log('numericStringArray:', numericStringArray.join());
+    console.log('Sorted without a compare function:', numericStringArray.sort());
+    console.log('Sorted with compareNumbers:', numericStringArray.sort(compareNumbers));
+
+    console.log('mixedNumericArray:', mixedNumericArray.join());
+    console.log('Sorted without a compare function:', mixedNumericArray.sort());
+    console.log('Sorted with compareNumbers:', mixedNumericArray.sort(compareNumbers));
+    
+    the above examples produces the following output. as the output shows, when a compare function is used, numbers sort correctly whether they are numbers or numberic strings:
+    
+    stringArray: Blue,Humpback,Beluga
+    Sorted: Beluga,Blue,Humpback
+
+    numberArray: 40,1,5,200
+    Sorted without a compare function: 1,200,40,5
+    Sorted with compareNumbers: 1,5,40,200
+
+    numericStringArray: 80,9,700
+    Sorted without a compare function: 700,80,9
+    Sorted with compareNumbers: 9,80,700
+
+    mixedNumericArray: 80,9,700,40,1,5,200
+    Sorted without a compare function: 1,200,40,5,700,80,9
+    Sorted with compareNumbers: 1,5,9,40,80,200,700
+    
+    for sorting strings with non-ASCII characters such as strings with acccented characters, strings from languges other than English: use String.localCompare:
+        var items = ['réservé', 'premier', 'cliché', 'communiqué', 'café', 'adieu'];
+        items.sort(function (a, b) {
+          return a.localeCompare(b);
+        });
+        // items is ['adieu', 'café', 'cliché', 'communiqué', 'premier', 'réservé']
+
+    Sorting Maps:
+        The compareFunction can be invoked multiple times per element within the array. Depending on the compareFunction's nature, this may yield a high overhead. the more work a compareFunction does and the more elements there are to sort, the wiser it may be to consider using a map for sorting. the idea is to walk the aray once to extract the actual values used for sorting into a temporary array, sort the temporary array and then walk the temporary array to bring the original array into the right order
+    // the array to be sorted
+        var list = ['Delta', 'alpha', 'CHARLIE', 'bravo'];
+
+    // temporary holder of position and sort-value
+        var map = list.map(function(e, i) {
+          return { index: i, value: e.toLowerCase() };
+        })
+
+    // sorting the map containing the reduced values
+        map.sort(function(a, b) {
+          return +(a.value > b.value) || +(a.value === b.value) - 1;
+        });
+
+    // container for the resulting order
+        var result = map.map(function(e){
+          return list[e.index];
+        });
+    
+    ```
+
 
 Array.prototype.splice()
-* symbol: array.splice(start, deleteCount[, item1[, item2[, ...]]])
+    * symbol: array.splice(start, deleteCount[, item1[, item2[, ...]]])
 
-* description: if you specify a different number of elements to insert than the number you're removing, the array will have a different length at the end of the call.
+    * description: if you specify a different number of elements to insert than the number you're removing, the array will have a different length at the end of the call.
 
-* result: the splice method changed the conteent of an array by adding and/or removing elements from an array.
+    * result: the splice method changed the conteent of an array by adding and/or removing elements from an array.
 
-* parameters: 
+    * parameters: 
 
-start: index at which to start changing the array. if greater than the length of the array. if greater than the length of the array, actual starting index will be set to the length of the array. if negative, will begin that many elements from the end
+    start: index at which to start changing the array. if greater than the length of the array. if greater than the length of the array, actual starting index will be set to the length of the array. if negative, will begin that many elements from the end
 
-deleteCount: an integer indicating the number of old array elements to remove. if deleteCount is 0, no elements are removed. in this case, you should specify at least one new element. if deleteCount is greater than the number of elements left in the array starting at index, then all of the elements through the end of the array will be deleted.
+    deleteCount: an integer indicating the number of old array elements to remove. if deleteCount is 0, no elements are removed. in this case, you should specify at least one new element. if deleteCount is greater than the number of elements left in the array starting at index, then all of the elements through the end of the array will be deleted.
 
-itemN: the element to add to the array. if you dont specify any elements, splice will only remove elements from the array.
+    itemN: the element to add to the array. if you dont specify any elements, splice will only remove elements from the array.
 
-* returns: the splice method returns an array containing the deleted elements. if only one element is removed, an array ofone element is returned. if no elements are removed, an empty array is returned.
+    * returns: the splice method returns an array containing the deleted elements. if only one element is removed, an array ofone element is returned. if no elements are removed, an empty array is returned.
 
-* examples:
-```
-var myFish = ['angel', 'clown', 'mandarin', 'surgeon'];
+    * examples:
+    ```
+    var myFish = ['angel', 'clown', 'mandarin', 'surgeon'];
 
-// removes 0 elements from index 2, and inserts 'drum'
-var removed = myFish.splice(2, 0, 'drum');
-// myFish is ['angel', 'clown', 'drum', 'mandarin', 'surgeon']
-// removed is [], no elements removed
+    // removes 0 elements from index 2, and inserts 'drum'
+    var removed = myFish.splice(2, 0, 'drum');
+    // myFish is ['angel', 'clown', 'drum', 'mandarin', 'surgeon']
+    // removed is [], no elements removed
 
-// removes 1 element from index 3
-removed = myFish.splice(3, 1);
-// myFish is ['angel', 'clown', 'drum', 'surgeon']
-// removed is ['mandarin']
+    // removes 1 element from index 3
+    removed = myFish.splice(3, 1);
+    // myFish is ['angel', 'clown', 'drum', 'surgeon']
+    // removed is ['mandarin']
 
-// removes 1 element from index 2, and inserts 'trumpet'
-removed = myFish.splice(2, 1, 'trumpet');
-// myFish is ['angel', 'clown', 'trumpet', 'surgeon']
-// removed is ['drum']
+    // removes 1 element from index 2, and inserts 'trumpet'
+    removed = myFish.splice(2, 1, 'trumpet');
+    // myFish is ['angel', 'clown', 'trumpet', 'surgeon']
+    // removed is ['drum']
 
-// removes 2 elements from index 0, and inserts 'parrot', 'anemone' and 'blue'
-removed = myFish.splice(0, 2, 'parrot', 'anemone', 'blue');
-// myFish is ['parrot', 'anemone', 'blue', 'trumpet', 'surgeon']
-// removed is ['angel', 'clown']
+    // removes 2 elements from index 0, and inserts 'parrot', 'anemone' and 'blue'
+    removed = myFish.splice(0, 2, 'parrot', 'anemone', 'blue');
+    // myFish is ['parrot', 'anemone', 'blue', 'trumpet', 'surgeon']
+    // removed is ['angel', 'clown']
 
-// removes 2 elements from index 3
-removed = myFish.splice(3, Number.MAX_VALUE);
-// myFish is ['parrot', 'anemone', 'blue']
-// removed is ['trumpet', 'surgeon']
-```
+    // removes 2 elements from index 3
+    removed = myFish.splice(3, Number.MAX_VALUE);
+    // myFish is ['parrot', 'anemone', 'blue']
+    // removed is ['trumpet', 'surgeon']
+    ```
 
 Array.prototype.unshift()
 
-* symbol: arr.unshift([element1[, ...[, elementN]]])
+    * symbol: arr.unshift([element1[, ...[, elementN]]])
 
-* description: Adds one or more elements to the front of an array and returns the new length of the array. the unshift method inserts the given values to the beginning of an array-like object. unshift is intentionally generic; this method can be called or applied to objects resembling arrays. Objects which do not contain a length property reflecting the last in a series of consecutive, zero-based numberical properties may not behave in any meaningful manner
+    * description: Adds one or more elements to the front of an array and returns the new length of the array. the unshift method inserts the given values to the beginning of an array-like object. unshift is intentionally generic; this method can be called or applied to objects resembling arrays. Objects which do not contain a length property reflecting the last in a series of consecutive, zero-based numberical properties may not behave in any meaningful manner
 
-* parameters: 
-elementN: elements to add to the front of the array
+    * parameters: 
+    elementN: elements to add to the front of the array
 
-* returns: the new length property of the object upon which the method was called
+    * returns: the new length property of the object upon which the method was called
 
-* examples:
-```
-var arr = [1, 2];
+    * examples:
+    ```
+    var arr = [1, 2];
 
-arr.unshift(0); //result of call is 3, the new array length
-//arr is [0, 1, 2]
+    arr.unshift(0); //result of call is 3, the new array length
+    //arr is [0, 1, 2]
 
-arr.unshift(-2, -1); // = 5
-// arr is [-2, -1, 0, 1, 2]
+    arr.unshift(-2, -1); // = 5
+    // arr is [-2, -1, 0, 1, 2]
 
-arr.unshift([-3])
-// arr is [[-3], -2, -1, 0, 1, 2]
-```
+    arr.unshift([-3])
+    // arr is [[-3], -2, -1, 0, 1, 2]
+    ```
 
 RegExp (Regular Expression)
 
