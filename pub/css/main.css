@@ -107,20 +107,30 @@ textarea {
 
 
 table {
-    text-align:center;
-    padding-left:30%;
-    padding-bottom:10%;
+    width: 90%
 }
 
-th {
-    width:5em;
-    height:5em;
-    line-height:5em;
-    border-top:solid;
-    border-right:solid;
-    border-left:solid;  
+thead th {
+    text-align: center;
+    border-bottom: 1px solid;
+    color: white;
 }
 
+tbody th {
+    border-bottom: 1px solid black;
+    text-align: center;
+    color:white;
+}
+
+tbody td {
+    width: 10%;
+    padding-bottom: 10%;
+    border: 1px solid black;
+    background-color: #e6e4de;
+}
+
+
+/*
 td {
     width:5em;
     height:5em;
@@ -130,14 +140,17 @@ td {
     border-right:solid;
     border-left:solid; 
 }
+*/
 
 
 .r1 :nth-child(even) {
 }
 
+/*
 .r2 :nth-child(4) {
     background-color:#000080;
 }
+*/
 
 .r2 :nth-child(odd) {
     background-color:#AFEEEE;
@@ -169,6 +182,15 @@ td {
 
 .r9 :nth-child(even) {
     background-color:#AFEEEE;
+}
+
+:before {
+    font-size: 2em;
+}
+
+.piece.white.queen {
+    width: 10em;
+    width 19ex;
 }
 
 /* chess pieces = make div class and have each class mean something
