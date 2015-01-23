@@ -238,7 +238,22 @@ console.log(vegetables); // ['parsnip', 'potato', 'celery', 'beetroot']
 ```
 
 Array.prototype.reverse()
-Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first.
+
+* symbol: arr.reverse()
+
+* description: Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first. the reverse method transposes the elements of the calling array object in place, mutating the array, and returning a reference to the array.
+
+*parameters: none
+
+*examples: 
+```
+//the following creates an array myArray, containing three elements, then reverses the array.
+
+var myArray = ['one', 'two', 'three'];
+myArray.reverse();
+
+console.log(myArray) // ['three', 'two', 'one'] 
+```
 
 Array.prototype.shift()
 
@@ -270,14 +285,76 @@ Array.prototype.sort()
 Sorts the elements of an array in place and returns the array.
 
 Array.prototype.splice()
-Adds and/or removes elements from an array.
+* symbol: array.splice(start, deleteCount[, item1[, item2[, ...]]])
+
+* description: if you specify a different number of elements to insert than the number you're removing, the array will have a different length at the end of the call.
+
+* result: the splice method changed the conteent of an array by adding and/or removing elements from an array.
+
+* parameters: 
+
+start: index at which to start changing the array. if greater than the length of the array. if greater than the length of the array, actual starting index will be set to the length of the array. if negative, will begin that many elements from the end
+
+deleteCount: an integer indicating the number of old array elements to remove. if deleteCount is 0, no elements are removed. in this case, you should specify at least one new element. if deleteCount is greater than the number of elements left in the array starting at index, then all of the elements through the end of the array will be deleted.
+
+itemN: the element to add to the array. if you dont specify any elements, splice will only remove elements from the array.
+
+* returns: the splice method returns an array containing the deleted elements. if only one element is removed, an array ofone element is returned. if no elements are removed, an empty array is returned.
+
+* examples:
+```
+var myFish = ['angel', 'clown', 'mandarin', 'surgeon'];
+
+// removes 0 elements from index 2, and inserts 'drum'
+var removed = myFish.splice(2, 0, 'drum');
+// myFish is ['angel', 'clown', 'drum', 'mandarin', 'surgeon']
+// removed is [], no elements removed
+
+// removes 1 element from index 3
+removed = myFish.splice(3, 1);
+// myFish is ['angel', 'clown', 'drum', 'surgeon']
+// removed is ['mandarin']
+
+// removes 1 element from index 2, and inserts 'trumpet'
+removed = myFish.splice(2, 1, 'trumpet');
+// myFish is ['angel', 'clown', 'trumpet', 'surgeon']
+// removed is ['drum']
+
+// removes 2 elements from index 0, and inserts 'parrot', 'anemone' and 'blue'
+removed = myFish.splice(0, 2, 'parrot', 'anemone', 'blue');
+// myFish is ['parrot', 'anemone', 'blue', 'trumpet', 'surgeon']
+// removed is ['angel', 'clown']
+
+// removes 2 elements from index 3
+removed = myFish.splice(3, Number.MAX_VALUE);
+// myFish is ['parrot', 'anemone', 'blue']
+// removed is ['trumpet', 'surgeon']
+```
 
 Array.prototype.unshift()
-Adds one or more elements to the front of an array and returns the new length of the array.
 
+* symbol: arr.unshift([element1[, ...[, elementN]]])
 
+* description: Adds one or more elements to the front of an array and returns the new length of the array. the unshift method inserts the given values to the beginning of an array-like object. unshift is intentionally generic; this method can be called or applied to objects resembling arrays. Objects which do not contain a length property reflecting the last in a series of consecutive, zero-based numberical properties may not behave in any meaningful manner
 
+* parameters: 
+elementN: elements to add to the front of the array
 
+* returns: the new length property of the object upon which the method was called
+
+* examples:
+```
+var arr = [1, 2];
+
+arr.unshift(0); //result of call is 3, the new array length
+//arr is [0, 1, 2]
+
+arr.unshift(-2, -1); // = 5
+// arr is [-2, -1, 0, 1, 2]
+
+arr.unshift([-3])
+// arr is [[-3], -2, -1, 0, 1, 2]
+```
 
 RegExp (Regular Expression)
 
@@ -291,8 +368,8 @@ RegExp (Regular Expression)
 
 Assert
 * symbol:
-* definition: var assert = require('assert');
-* pronunciation:
+* definition: 
+* pronunciation: var assert = require('assert');
 * examples:
 ```
 
