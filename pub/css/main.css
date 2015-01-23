@@ -105,16 +105,8 @@ textarea {
     max-width:100%;
 }
 
-.theGrid {
-    max-width:80%;
-}
 
-h1 {
-    text-align:center;
-    padding-left:20%; 
-}
-
-.table {
+table {
     text-align:center;
     padding-left:30%;
     padding-bottom:10%;
