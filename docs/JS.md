@@ -419,6 +419,7 @@ Array.prototype.sort()
 
 
 Array.prototype.splice()
+
     * symbol: array.splice(start, deleteCount[, item1[, item2[, ...]]])
 
     * description: if you specify a different number of elements to insert than the number you're removing, the array will have a different length at the end of the call.
