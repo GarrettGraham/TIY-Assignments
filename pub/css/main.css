@@ -107,7 +107,7 @@ textarea {
 
 
 table {
-    width: 90%
+    width: 100%
 }
 
 thead th {
@@ -123,8 +123,8 @@ tbody th {
 }
 
 tbody td {
-    width: 10%;
-    padding-bottom: 10%;
+    width: 12.5%;
+    padding-bottom: 12.5%;
     border: 1px solid black;
     background-color: #e6e4de;
 }
@@ -193,6 +193,7 @@ td {
     width 19ex;
 }
 
+.piece
 /* chess pieces = make div class and have each class mean something
     
 .white.queen.piece {
