@@ -16,3 +16,5 @@ board[6][4] = ' ';
 console.log(board.join('\n'));
 
 
+
+
