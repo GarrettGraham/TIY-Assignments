@@ -107,7 +107,7 @@ textarea {
 }
 
 .theGrid {
-    max-width:80%;
+    max-width:70;
     padding-bottom: 10%;
 }
 
@@ -139,6 +139,7 @@ td {
     border-bottom:solid;
     border-right:solid;
     border-left:solid; 
+    text-align: center;
 }
 
 
@@ -176,6 +177,8 @@ td {
 .r9 :nth-child(even) {
     background-color:#AFEEEE;
 }
+
+
 
 /* chess pieces = make div class and have each class mean something
     
