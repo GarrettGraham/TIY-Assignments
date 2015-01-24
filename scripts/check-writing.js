@@ -1,9 +1,21 @@
 var assert = require('assert') 
 
-function (A, B) {
-    return A + B;
-}
+var toEnglish = ["zero", "one", "two", "three", "four", "five"];
 
-it('should add "one" and "one"', function () {
-    assert.equal(plus('"one", "one"), 2);
-    });
+var whatNum = function(a){
+    if(a == 0) {
+        return toEnglish[0];
+    } else if(a == 1){
+        return toEnglish[1];
+    } else if(a == 2){
+        return toEnglish[2];
+    } else if(a == 3){
+        return toEnglish[3];
+    } else if(a == 4){
+        return toEnglish[4];
+    } else if(a == 5){
+        return toEnglish[5];
+    } else {
+        console.log('too high to count');
+    }
+}
