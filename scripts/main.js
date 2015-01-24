@@ -26,3 +26,4 @@ function move(fromY, fromX, toY, toX) {
     print(board);
 }
 
+function move(8, 4, 7, 6); 
