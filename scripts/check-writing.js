@@ -15,7 +15,17 @@ var whatNum = function(a){
         return toEnglish[4];
     } else if(a == 5){
         return toEnglish[5];
+    } else if(a == 6){
+        return toEnglish[6];
+    } else if(a == 7){
+        return toEnglish[7];
+    } else if(a == 8){
+        return toEnglish[8];
+    } else if(a == 9){
+        return toEnglish[9];
+    } else if(a == 10){
+        return toEnglish[10];
     } else {
-        console.log('too high to count');
+        console.log("I'm not able to count higher than ten.");
     }
 }
