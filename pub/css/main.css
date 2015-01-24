@@ -101,36 +101,35 @@ textarea {
  /*@media only screen and (min-width:30em) and (max-width:90em) {}*/
 
 
+
 .container {
     max-width:100%;
 }
 
-
-table {
-    width: 80%
+.theGrid {
+    max-width:80%;
 }
 
-thead th {
-    text-align: center;
-    border-bottom: 1px solid;
-    color: white;
+h1 {
+    text-align:center;
+    padding-left:20%; 
 }
 
-tbody th {
-    border-bottom: 1px solid black;
-    text-align: center;
-    color:white;
+.table {
+    text-align:center;
+    padding-left:30%;
+    padding-bottom:10%;
 }
 
-tbody td {
-    width: 12.5%;
-    padding-bottom: 12.5%;
-    border: 1px solid black;
-    background-color: #e6e4de;
+th {
+    width:5em;
+    height:5em;
+    line-height:5em;
+    border-top:solid;
+    border-right:solid;
+    border-left:solid;  
 }
 
-
-}
 td {
     width:5em;
     height:5em;
@@ -143,6 +142,10 @@ td {
 
 
 .r1 :nth-child(even) {
+}
+
+.r2 :nth-child(4) {
+    background-color:#000080;
 }
 
 .r2 :nth-child(odd) {
