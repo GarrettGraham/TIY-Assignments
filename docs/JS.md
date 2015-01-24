@@ -1,112 +1,112 @@
 Primative: Null
 
-* symbol: null
-* description: a.k.a. - a Literal - truthy vs. falsy - " 'intentionally blank' - such as empty brackets/braces etc." 
-* pronunciation: "null", "null value", "is null"
-* examples:
-```
-null // 
-```
+    * symbol: null
+    * description: a.k.a. - a Literal - truthy vs. falsy - " 'intentionally blank' - such as empty brackets/braces etc." 
+    * pronunciation: "null", "null value", "is null"
+    * examples:
+    ```
+    null // 
+    ```
 
 
 Primative: Boolean
 
-* symbol: new Boolean([value])
-* description: a.k.a. - a Literal
-* pronunciation: "x = Boolean(expression)";"new Boolean(false)";"new Boolean(true)"
-* examples:
-```
-x = new Boolean(false);
-if (x) {
-  // this code is executed
-}
+    * symbol: new Boolean([value])
+    * description: a.k.a. - a Literal
+    * pronunciation: "x = Boolean(expression)";"new Boolean(false)";"new Boolean(true)"
+    * examples:
+    ```
+    x = new Boolean(false);
+    if (x) {
+      // this code is executed
+    }
 
-null == null // true
+    null == null // true
 
-undefined == null // false
-```
-
-
-Primative: Number
-
-* symbol: Number()
-* description: Number is a J.S. object which is an object wrapper that allows manipulation of numeric values.
-* pronunciation: "new Number(value);"
-* examples:
-```
-To Assign Values to Numeric Variables:
-var biggestNum = Number.MAX_VALUE;
-var smallestNum = Number.MIN_VALUE;
-var infiniteNum = Number.POSITIVE_INFINITY;
-var negInfiniteNum = Number.NEGATIVE_INFINITY;
-var notANum = Number.NaN;
+    undefined == null // false
+    ```
 
 
-Integer Range:
-var biggestInt = 9007199254740992;
-var smallestInt = -9007199254740992;
+    Primative: Number
+
+    * symbol: Number()
+    * description: Number is a J.S. object which is an object wrapper that allows manipulation of numeric values.
+    * pronunciation: "new Number(value);"
+    * examples:
+    ```
+    To Assign Values to Numeric Variables:
+    var biggestNum = Number.MAX_VALUE;
+    var smallestNum = Number.MIN_VALUE;
+    var infiniteNum = Number.POSITIVE_INFINITY;
+    var negInfiniteNum = Number.NEGATIVE_INFINITY;
+    var notANum = Number.NaN;
 
 
-To Convert a Date object:
-var d = new Date('December 17, 1995 03:24:00');
-print(Number(d));
+    Integer Range:
+    var biggestInt = 9007199254740992;
+    var smallestInt = -9007199254740992;
 
 
-Convert Numeric Strings to Numbers:
-Number("123")     // 123
-Number("")        // 0
-Number("0x11")    // 17
-Number("0b11")    // 3
-Number("0o11")    // 9
-Number("foo")     // NaN
-Number("100a")    // NaN
-```
+    To Convert a Date object:
+    var d = new Date('December 17, 1995 03:24:00');
+    print(Number(d));
+
+
+    Convert Numeric Strings to Numbers:
+    Number("123")     // 123
+    Number("")        // 0
+    Number("0x11")    // 17
+    Number("0b11")    // 3
+    Number("0o11")    // 9
+    Number("foo")     // NaN
+    Number("100a")    // NaN
+    ```
 
 
 Primative: String
 
-* symbol: String()
-* description:	
-* pronunciation: 'string(thing)';"String(thing)";"new String(thing)"; 'a'
-* examples:
-```
-var outputStrings = [];
-for (var i = 0, n = inputValues.length; i < n; ++i) {
-  outputStrings.push(String(inputValues[i]));
-}
-```
+    * symbol: String()
+    * description:	
+    * pronunciation: 'string(thing)';"String(thing)";"new String(thing)"; 'a'
+    * examples:
+    ```
+    var outputStrings = [];
+    for (var i = 0, n = inputValues.length; i < n; ++i) {
+      outputStrings.push(String(inputValues[i]));
+    }
+    ```
 
 
 Primative: Symbol (new in ECMAScript6)
 
-* symbol: Symbol([description])
-* description:
-* pronunciation:
-* examples:
-```
-typeof Symbol() === 'symbol'
-typeof Symbol('foo') === 'symbol'
-typeof Symbol.iterator === 'symbol'
-```
+    * symbol: Symbol([description])
+    * description:
+    * pronunciation:
+    * examples:
+    ```
+    typeof Symbol() === 'symbol'
+    typeof Symbol('foo') === 'symbol'
+    typeof Symbol.iterator === 'symbol'
+    ```
 
 
 
 Primative: undefined
 
-* symbol: undefined
-* description: "'the default 'empty'. A primitive value automatically assigned to just-declared variables and formal arguments for which there are no actual arguments."
-* pronunciation:
-* examples:
-```
-var x;
-if (x === undefined) {
-   // these statements execute
-}
-else {
-   // these statements do not execute
-}
+    * symbol: undefined
+    * description: "'the default 'empty'. A primitive value automatically assigned to just-declared variables and formal arguments for which there are no actual arguments."
+    * pronunciation:
+    * examples:
+    ```
+    var x;
+    if (x === undefined) {
+       // these statements execute
+    }
+    else {
+       // these statements do not execute
+    }
 
-```
+    ```
 
 
 Object
@@ -237,7 +237,7 @@ Array.prototype.push()
     console.log(vegetables); // ['parsnip', 'potato', 'celery', 'beetroot']
     ```
 
-    Array.prototype.reverse()
+Array.prototype.reverse()
 
     * symbol: arr.reverse()
 
@@ -259,7 +259,7 @@ Array.prototype.shift()
 
     * symbol: arr.shift()
 
-    * description: Removes the first element from an array and returns that element. the shift method removes the element at the zeroeth index and shift the values at consecutive indexes down, then reutns the removed value. if the length property is 0, undefined is returned. shift is intentionally generic; this method can be called or applie to objects resembling arrays. Objects which do not contain a length property reflecting the last ina series of consecutiv, zero-baed numerical properties may not behave in any meaningful manner.
+    * description: Removes the first element from an array and returns that element. the shift method removes the element at the zeroeth index and shift the values at consecutive indexes down, then returns the removed value. if the length property is 0, undefined is returned. shift is intentionally generic; this method can be called or applie to objects resembling arrays. Objects which do not contain a length property reflecting the last ina series of consecutiv, zero-baed numerical properties may not behave in any meaningful manner.
 
     * examples:
     ```
@@ -279,6 +279,31 @@ Array.prototype.shift()
     myFish after: clown,mandarin,surgeon
     Removed this element: angel
 
+    ```
+
+Array.prototype.unshift()
+
+    * symbol: arr.unshift([element1[, ...[, elementN]]])
+
+    * description: Adds one or more elements to the front of an array and returns the new length of the array. the unshift method inserts the given values to the beginning of an array-like object. unshift is intentionally generic; this method can be called or applied to objects resembling arrays. Objects which do not contain a length property reflecting the last in a series of consecutive, zero-based numberical properties may not behave in any meaningful manner
+
+    * parameters: 
+    elementN: elements to add to the front of the array
+
+    * returns: the new length property of the object upon which the method was called
+
+    * examples:
+    ```
+    var arr = [1, 2];
+
+    arr.unshift(0); //result of call is 3, the new array length
+    //arr is [0, 1, 2]
+
+    arr.unshift(-2, -1); // = 5
+    // arr is [-2, -1, 0, 1, 2]
+
+    arr.unshift([-3])
+    // arr is [[-3], -2, -1, 0, 1, 2]
     ```
 
 Array.prototype.sort()
@@ -371,7 +396,7 @@ Array.prototype.sort()
     console.log('Sorted without a compare function:', mixedNumericArray.sort());
     console.log('Sorted with compareNumbers:', mixedNumericArray.sort(compareNumbers));
     
-    the above examples produces the following output. as the output shows, when a compare function is used, numbers sort correctly whether they are numbers or numberic strings:
+    -->the above examples produces the following output. as the output shows, when a compare function is used, numbers sort correctly whether they are numbers or numberic strings:
     
     stringArray: Blue,Humpback,Beluga
     Sorted: Beluga,Blue,Humpback
@@ -388,14 +413,14 @@ Array.prototype.sort()
     Sorted without a compare function: 1,200,40,5,700,80,9
     Sorted with compareNumbers: 1,5,9,40,80,200,700
     
-    for sorting strings with non-ASCII characters such as strings with acccented characters, strings from languges other than English: use String.localCompare:
+    -->for sorting strings with non-ASCII characters such as strings with acccented characters, strings from languges other than English: use String.localCompare:
         var items = ['réservé', 'premier', 'cliché', 'communiqué', 'café', 'adieu'];
         items.sort(function (a, b) {
           return a.localeCompare(b);
         });
         // items is ['adieu', 'café', 'cliché', 'communiqué', 'premier', 'réservé']
 
-    Sorting Maps:
+    -->Sorting Maps:
         The compareFunction can be invoked multiple times per element within the array. Depending on the compareFunction's nature, this may yield a high overhead. the more work a compareFunction does and the more elements there are to sort, the wiser it may be to consider using a map for sorting. the idea is to walk the aray once to extract the actual values used for sorting into a temporary array, sort the temporary array and then walk the temporary array to bring the original array into the right order
     // the array to be sorted
         var list = ['Delta', 'alpha', 'CHARLIE', 'bravo'];
@@ -464,31 +489,6 @@ Array.prototype.splice()
     removed = myFish.splice(3, Number.MAX_VALUE);
     // myFish is ['parrot', 'anemone', 'blue']
     // removed is ['trumpet', 'surgeon']
-    ```
-
-Array.prototype.unshift()
-
-    * symbol: arr.unshift([element1[, ...[, elementN]]])
-
-    * description: Adds one or more elements to the front of an array and returns the new length of the array. the unshift method inserts the given values to the beginning of an array-like object. unshift is intentionally generic; this method can be called or applied to objects resembling arrays. Objects which do not contain a length property reflecting the last in a series of consecutive, zero-based numberical properties may not behave in any meaningful manner
-
-    * parameters: 
-    elementN: elements to add to the front of the array
-
-    * returns: the new length property of the object upon which the method was called
-
-    * examples:
-    ```
-    var arr = [1, 2];
-
-    arr.unshift(0); //result of call is 3, the new array length
-    //arr is [0, 1, 2]
-
-    arr.unshift(-2, -1); // = 5
-    // arr is [-2, -1, 0, 1, 2]
-
-    arr.unshift([-3])
-    // arr is [[-3], -2, -1, 0, 1, 2]
     ```
 
 RegExp (Regular Expression)
