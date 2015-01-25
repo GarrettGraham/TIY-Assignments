@@ -274,44 +274,44 @@
 
 
 #### `action` -- form submission URL
-* _values:_ URL of a program that processes a form submission
-* _support:_ All Browsers
-* _examples:_
-```
-<form action="https://github.com/GarrettGraham">
-    <input name="Garrett's GitHub">
-</form>
-```
-```
-<form action="form-to-email.php" method="post"
-    accept-charset="windows-1252">
-  <div>
-    <label for="txtname">Name:</label>
-    <input type="text" name="txtname" id="txtname"/>
-  </div>
-</form>
-```
-#### `autocpitalizaion`
-* _values:_none: completely disables auto cap., sentences- auto cap.s first letter of sentences, words- atuo cap.s first letter of words, characters- auto cap.s all characters, on- depricated since iOS 5, off- depricated since iOS 5
-* _support:_iOS Safari Mobile, on and off values deprecated since iOS 5
-* _example:_
-```
-    <form>
-        <p>
-            Normal Input:<br />
-            <input type="text" style="width: 180px ;" />
-        </p>
-        <p>
-            No-Auto Input:<br />
-            <input
-                type="text"
-                autocapitalize="off"
-                autocorrect="off"
-                style="width: 180px ;"
-                />
-        </p>
+    * _values:_ URL of a program that processes a form submission
+    * _support:_ All Browsers
+    * _examples:_
+    ```
+    <form action="https://github.com/GarrettGraham">
+        <input name="Garrett's GitHub">
     </form>
-```
+    ```
+    ```
+    <form action="form-to-email.php" method="post"
+        accept-charset="windows-1252">
+      <div>
+        <label for="txtname">Name:</label>
+        <input type="text" name="txtname" id="txtname"/>
+      </div>
+    </form>
+    ```
+#### `autocpitalizaion`
+    * _values:_none: completely disables auto cap., sentences- auto cap.s first letter of sentences, words- atuo cap.s first letter of words, characters- auto cap.s all characters, on- depricated since iOS 5, off- depricated since iOS 5
+    * _support:_iOS Safari Mobile, on and off values deprecated since iOS 5
+    * _example:_
+    ```
+        <form>
+            <p>
+                Normal Input:<br />
+                <input type="text" style="width: 180px ;" />
+            </p>
+            <p>
+                No-Auto Input:<br />
+                <input
+                    type="text"
+                    autocapitalize="off"
+                    autocorrect="off"
+                    style="width: 180px ;"
+                    />
+            </p>
+        </form>
+    ```
 
 =======
 
@@ -320,26 +320,26 @@
 
 
 ##11. <p> --Paragraph
-* type: Block-element
-* content category: Flow content, palpable content
-* permitted content: Phrasing content
-* browser support: Chrome 1.0, Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
-* exapmle: 
-```
-<p><strong>Speak No Evil</strong></p>
-```
-*attributes:
+    * type: Block-element
+    * content category: Flow content, palpable content
+    * permitted content: Phrasing content
+    * browser support: Chrome 1.0, Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
+    * exapmle: 
+    ```
+    <p><strong>Speak No Evil</strong></p>
+    ```
+    *attributes:
 
 
 ##12. <time> --Time Signiture
-* description: Either a time on a 24-hour clock or a precise date in the Gregorian calendar with optional time and timezone information
-* type: Block-element
-* content: Flow content, phrasing content - no descendant time elements, palpable content
-* support: Chrome 33.0, Firefox 22.0, Gecko 22.0, IE 9.0, Opera 22.0, Safari 7.0
-* exapmle: 
-```
-<textarea name="textarea" rows="10" cols="50">Write something here</textarea>
-```
+    * description: Either a time on a 24-hour clock or a precise date in the Gregorian calendar with optional time and timezone information
+    * type: Block-element
+    * content: Flow content, phrasing content - no descendant time elements, palpable content
+    * support: Chrome 33.0, Firefox 22.0, Gecko 22.0, IE 9.0, Opera 22.0, Safari 7.0
+    * exapmle: 
+    ```
+    <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+    ```
 
 
 
@@ -396,12 +396,21 @@
 <p><span>sometext</span></p>
 ```
 
-=======
-
+=============
 ##15. Strong
-=======
+=============
 
+    * type: Inline-element
+    * content: Flow content, phrasing content
+    * support: Firefox, Gecko 1.9.2 or earlier
+    * exapmle: 
+    ```
+    <p><strong>Speak No Evil</strong></p>
+    ```
+
+==========================
 ##16. <s> --Strikethrough
+==========================
 * type: ??Inline-element vs. Block-element??
 * content: Flow content, phrasing content
 * support: Firefox, Gecko 1.9.2 or earlier
@@ -409,73 +418,156 @@
 ```
 <p><strong>Speak No Evil</strong></p>
 ```
-##17. Strong
+
+
+===============
+##17. Textarea
+===============
+
+    * type: Inline-element
+    * content: Flow content, phrasing content, interactive content
+    * support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
+    * exapmle: 
+    ```
+    <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+    ```
+    
+====================
+##18. <meta> --Meta
+====================
 
 =======
-##15. Strong
-
-=======
-
-* type: Inline-element
-* content: Flow content, phrasing content
-* support: Firefox, Gecko 1.9.2 or earlier
-* exapmle: 
-```
-<p><strong>Speak No Evil</strong></p>
-```
-
-
-##18. Textarea
-=======
-
-##16. Textarea
-* type: Inline-element
-* content: Flow content, phrasing content, interactive content
-* support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
-* exapmle: 
-```
-<textarea name="textarea" rows="10" cols="50">Write something here</textarea>
-```
-##17. <meta> --Meta
-
-
-=======
-=======
-##18. Textarea
-* type: Inline-element
-* content: Flow content, phrasing content, interactive content
-* support: Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
-* exapmle: 
-```
-<textarea name="textarea" rows="10" cols="50">Write something here</textarea>
-```
-
-
 ##19.
 =======
-=======
 
+====================
+##20. <menu> --Menu
+====================
 
-##18. <menu>
-* description: a group of commands that a user can perform or activate. This includes both toolbar menus, which might appear across the top of a screen, as well as popup menus, such as those that might appear underneath a button after it has been clicked.
-* type: Block-element
-* content: Flow content. Additionally, if in the toolbar menu state, palpable content. Toolbar menu is the default state, unless the parent element is a .menu in the popup menu state. permitted content - If the element is in the toolbar menu state-- flow content, or alternatively, zero or more occurrences of li, script, and template. If the element is in the popup menu state -- zero or more occurrences, in any order, of .menu -popup menu state only- .menuitem, .hr, .script, and .template.
-* support: Chrome, Firefox 1.0, Gecko 1.7 or earlier, Internet Explorer 1.0, Opera 5.12, Safari 1.0
-* example: A button, which displays a menu when clicked.
-```
-<button type="menu" menu="dropdown-menu">
-  Dropdown
-</button>
+    * description: a group of commands that a user can perform or activate. This includes both toolbar menus, which might appear across the top of a screen, as well as popup menus, such as those that might appear underneath a button after it has been clicked.
+    * type: Block-element
+    * content: Flow content. Additionally, if in the toolbar menu state, palpable content. Toolbar menu is the default state, unless the parent element is a .menu in the popup menu state. permitted content - If the element is in the toolbar menu state-- flow content, or alternatively, zero or more occurrences of li, script, and template. If the element is in the popup menu state -- zero or more occurrences, in any order, of .menu -popup menu state only- .menuitem, .hr, .script, and .template.
+    * support: Chrome, Firefox 1.0, Gecko 1.7 or earlier, Internet Explorer 1.0, Opera 5.12, Safari 1.0
+    * example: A button, which displays a menu when clicked.
+    ```
+    <button type="menu" menu="dropdown-menu">
+      Dropdown
+    </button>
 
-<menu type="popup" id="dropdown-menu">
-  <menuitem label="Action">
-  <menuitem label="Another action">
-  <hr>
-  <menuitem label="Separated action">
-</menu>
-```
+    <menu type="popup" id="dropdown-menu">
+      <menuitem label="Action">
+      <menuitem label="Another action">
+      <hr>
+      <menuitem label="Separated action">
+    </menu>
+    ```
 
 
 =======
 =======
 ##19.
+
+
+In HTML, the relationship between two documents, in which one links to the other using an <a>, <area>, or <link> element, can be specified as one of these link types.
+
+List of the defined link types and their significance in HTML
+Link Type	Description	Allowed in these elements	Not allowed in these elements
+alternate	
+If the element is <link> and the rel attribute also contains the stylesheet type, the link defines an alternative style sheet; in that case the title attribute must be present and not be the empty string.
+If the type is set to application/rss+xml or application/atom+xml, the link defines a syndication feed. The first defined on the page is the default one.
+Else the link defines an alternative page:
+either for another media, like a handheld device (if the media attribute is set),
+or in another language (if the hreflang attribute is set),
+or in another format, like in PDF (if the type attribute is set),
+or a combination of those.
+<a>, <area>, <link>	None.
+archives
+HTML5	Defines a hyperlink to a document archiving a link to this one. E.g. a blog entry would link to a monthly index page that way.
+
+Note: Although recognized, the singular archive is incorrect and must be avoided.	<a>, <area>, <link>	None.
+author
+HTML5	Defines a hyperlink to a page describing the author or allowing to reach him.
+
+Note: This may be a mailto: hyperlink, but this is not recommended on public pages as robot harvesters will quickly lead to a lot of spam sent to the address. In that case, it is better to lead to a page containing a contact form.
+
+Although recognized, the rev attribute on <a>, <area> or<link> elements with a link type of made is incorrect and should be replaced by the rel attribute with this link type.	<a>, <area>, <link>	None.
+bookmark	Indicates that the hyperlink is a permalink for the nearest ancestor <article> element. If none, it is a permalink for the section the element is most closely associated to.
+
+This allows to bookmarks single article in a multi-articles page, like on a montly summary blog page, or a blog aggregator.	<a>, <area>	<link>
+external
+HTML5	Indicates that the hyperlink leads to a resource outside the site of the current page, i.e. that following the link will make the user leave the site.	<a>, <area>	<link>
+first
+HTML5	Indicates that the hyperlink leads to the first resource of the sequence the current page is in.
+
+Note: Other link types related to linking resources in the same sequence are last, prev, next.
+
+Although recognized, the synomyns begin and start are incorrect and must be avoided.	<a>, <area>, <link>	None.
+help	
+if the element is <a> or <area>, it indicates that the hyperlink leads to a resource giving further help about the parent of the element, and its descendants;
+if the element is <link> it indicates that the hyperlink leads to a resource giving further help about the page as a whole.
+<a>, <area>, <link>	None.
+icon
+HTML5	Defines a resource for representing the page in the user interface, usually an icon (auditory or visual one).
+
+The media, type and sizes attributes allow the browser to select the most appropriate icon in its context. If several resources match, the browser will select the last one declared, in tree order. As these attributes are merely hints, and the resources may be non-appropriate upon further inspection, the browser will then select another one, if appropriate.
+
+Note: Apple's iOS do not use this link type, nor the sizes attribute, like others mobile browsers do, to select a webpage icon for Web Clip or a start-up placeholder. Instead it uses the non-standard apple-touch-icon and apple-touch-startup-image respectively.
+
+The shortcut link type is often seen before icon, but this link type is non-conforming, ignored and web authors must not use it anymore.	<link>	<a>, <area>
+index	Indicates that the page is part of a hierarchical structure and that the hyperlink leads to the top level resource of that structure.
+
+If one or several up link types are also present, the number of these up indicates the depth of the current page in the hierarchy.	<a>, <area>, <link>	None.
+last
+HTML5	Indicates that the hyperlink leads to the last resource of the sequence the current page is in.
+
+Note: Other link types related to linking resources in the same sequence are first, prev, next.
+
+Although recognized, the synomyn end is incorrect and must be avoided.	<a>, <area>, <link>	None.
+license
+HTML5	Indicates that the hyperlink leads to a document describing the licensing information. If not inside the <head> element, the standard doesn't distinguish between a hyperlink applying to a specific part of the document or to the document as a whole. Only the data on the page can indicate this.
+
+Note: Although recognized, the synonym copyright is incorrect and must be avoided.	<a>, <area>, <link>	None.
+next	Indicates that the hyperlink leads to the next resource of the sequence the current page is in.
+
+Note: Other link types related to linking resources in the same sequence are first, prev, last.	<a>, <area>, <link>	None.
+nofollow
+HTML5	Indicates that the linked document is not endorsed by the author of this one, for example if it has no control over it, if it is a bad example or if there is commercial relationship between the two (sold link). This link type may be used by some search engines that use popularity ranking techniques.	<a>, <area>	<link>
+noreferrer
+HTML5	
+Prevents the browser, when navigating to another page, to send this page name, or any other value, as referrer via the Referer: HTTP header.
+(In Firefox, before Firefox 37, this worked only in links found in pages. Links clicked in the UI, like "Open in a new tab" via the contextual menu, doesn't abide for this value)
+
+<a>, <area>	<link>
+pingback
+HTML5	Defines an external resource URI to call if one make a comment or a citation about the webpage. The protocol used to make such a call is defined in the Pingback 1.0 specification.
+
+Note: if the X-Pingback: HTTP header is also present, this header has precedence over the <link> element with this link type	<link>	<a>, <area>
+prefetch
+HTML5	Hints the browser to fetch in advance the linked resource, as it will likely be requested by the user.
+
+Note: the Link Prefetch FAQ has details on which links can be prefetched and on alternative method	<a> Unimplemented,
+<area> Unimplemented,
+<link>	None.
+prev	Indicates that the hyperlink leads to the precedent resource of the sequence the current page is in.
+
+Note: other link types related to linking resources in the same sequence are first, last, next.
+
+Although recognized, the synomyn previous is incorrect and must be avoided.	<a>, <area>, <link>	None.
+search	Indicates that the hyperlink reference a document whose interface is specially designing for searching in this document, or site, and its resources.
+
+If the type attribute is set to application/opensearchdescription+xml the resource is an OpenSearch plugin that can be easily added to the interface of some browsers like Firefox or Internet Explorer.	<a>, <area>, <link>	None.
+stylesheet
+HTML5	Defines an external resource to be used as a stylesheet. If the type is not set, the browser should assume it is a text/css stylesheet until further inspection.
+
+If used in combination with the alternate keyword, it defines an alternative style sheet; in that case the title attribute must be present and not be the empty string.	<link>	<a>, <area>
+sidebar
+HTML5	Indicates that the hyperlink leads to a resource that would be better suited for a secondary browsing context, like a sidebar. Browsers, that don't have such a context will ignore this keyword.	<a>, <area>, <link>	None.
+tag
+HTML5	Indicates that the hyperlink reference a document describing a tag that applies to this document.
+
+Note: this link type should not be set on links member of a tag cloud as these one does not apply to a single document but to a set of pages.	<a>, <area>, <link>	None.
+up
+HTML5	Indicates that the page is part of a hierarchical structure and that the hyperlink leads to the higher level resource of that structure.
+
+The number of up link types indicates the depth difference between the current page and the linked resource.	<a>, <area>, <link>	None.
+
