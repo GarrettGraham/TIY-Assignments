@@ -1,60 +1,62 @@
 ##Global Attributes
 
 #### `class` -- element class names
-* *values:* space-separated list of class names
-* *support:* all browsers
-* *examples:*
-```html
-<aside class="page--column">
-  <!-- . . . -->
-</aside> <!-- .page--column -->
-<section class="page--column">
-  <!-- . . . -->
-</section> <!-- .page--column -->
-```
+    * *values:* space-separated list of class names
+    * *support:* all browsers
+    * *examples:*
+    ```html
+    <aside class="page--column">
+      <!-- . . . -->
+    </aside> <!-- .page--column -->
+    <section class="page--column">
+      <!-- . . . -->
+    </section> <!-- .page--column -->
+    ```
 #### `head` -- 
-* *values:*
-* *support:*
-* *example:*
-```
-```
+    * *values:*
+    * *support:*
+    * *example:*
+    ```
+    ```
 #### `id` -- unique element identifier
-* *description:* defines a unique identifier .ID. which must be unique in the whole document. Its purpose is to identify the element when linking -using a fragment identifier, scripting, or styling -with CSS.
-* *values:* single letter character followed by any number of letters, digits, hyphens, underscores, colons or periods - div id='blog logo' - able to reference id tag in stylesheet with a hash tag ??followed by txt that specifies whcih id -- # blog info, ?symantics??
-* *support:* all browsers; Supported on all elements but <base>, <head>, <html>, <meta>, <script>, <style>, and <title>.
-* *Note:* Using characters except ASCII letters and digits, '_', '-' and '.' may cause compatibility problems, as they weren't allowed in HTML 4. Though this restriction has been lifted in HTML 5, an ID should start with a letter for compatibility.
-* *examples:*
+    * *description:* defines a unique identifier .ID. which must be unique in the whole document. Its purpose is to identify the element when linking -using a fragment identifier, scripting, or styling -with CSS.
+    * *values:* single letter character followed by any number of letters, digits, hyphens, underscores, colons or periods - div id='blog logo' - able to reference id tag in stylesheet with a hash tag ??followed by txt that specifies whcih id -- # blog info, ?symantics??
+    * *support:* all browsers; Supported on all elements but <base>, <head>, <html>, <meta>, <script>, <style>, and <title>.
+    * *Note:* Using characters except ASCII letters and digits, '_', '-' and '.' may cause compatibility problems, as they weren't allowed in HTML 4. Though this restriction has been lifted in HTML 5, an ID should start with a letter for compatibility.
+    * *examples:*
 
-<!-- reference the unique identifier tag `id` in stylesheet with JUST a hashtag, .myHeader would be if within the div a class was given to myHeader vs. the `id` tag- Google difference of `id` vs class -->
-```
-<h1 id="myHeader"> Surf&Paddle Co. </h1>
-```
+    <!-- reference the unique identifier tag `id` in stylesheet with JUST a hashtag, .myHeader would be if within the div a class was given to myHeader vs. the `id` tag- Google difference of `id` vs class -->
+    ```
+    <h1 id="myHeader"> Surf&Paddle Co. </h1>
+    ```
 #### `itemprop`
-* _values:_
-* _support:_
-* _example:_
-```
-asdrsdf
-```
+    * _values:_
+    * _support:_
+    * _example:_
+    ```
+    asdrsdf
+    ```
 #### `lang` --
-* _values:_
-* _support:_
-* _example:_
-```
-asdfa
+    * _values:_
+    * _support:_
+    * _example:_
+    ```
+    asdfa
 ```
 #### `spellcheck` -- 
-* _values:_
-* _support:_
-* _example:_
-```
-dfgad
-```
+    * _values:_
+    * _support:_
+    * _example:_
+    ```
+    dfgad
+    ```
 #### `style` -- 
-* _values:_
-* _support:_
-* _example:_
+    * _values:_
+    * _support:_
+    * _example:_
+    ```
 
+    ```
 #### `meta`
 * _values:_ represents any metadata information that cannot be represented by one of the other meta-related elements -- .base, .link, .script, .style or .title -- According to the attributes set, the kind of metadata can be one of the following --
 --this is an empty element, it does not require an ending nor closing tag --.meta charset, .meta http-equiv, a .head element. If the .http-equiv is not an encoding declaration, it can also be inside a .noscript element, itself inside a .head element
