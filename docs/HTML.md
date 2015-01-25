@@ -1,4 +1,6 @@
+====================
 ##Global Attributes
+====================
 
 #### `class` -- element class names
     * *values:* space-separated list of class names
@@ -12,6 +14,7 @@
       <!-- . . . -->
     </section> <!-- .page--column -->
     ```
+    
 #### `head` -- 
     * *values:*
     * *support:*
@@ -19,6 +22,7 @@
     ```
     ```
 #### `id` -- unique element identifier
+
     * *description:* defines a unique identifier .ID. which must be unique in the whole document. Its purpose is to identify the element when linking -using a fragment identifier, scripting, or styling -with CSS.
     * *values:* single letter character followed by any number of letters, digits, hyphens, underscores, colons or periods - div id='blog logo' - able to reference id tag in stylesheet with a hash tag ??followed by txt that specifies whcih id -- # blog info, ?symantics??
     * *support:* all browsers; Supported on all elements but <base>, <head>, <html>, <meta>, <script>, <style>, and <title>.
@@ -29,6 +33,7 @@
     ```
     <h1 id="myHeader"> Surf&Paddle Co. </h1>
     ```
+    
 #### `itemprop`
     * _values:_
     * _support:_
@@ -36,13 +41,15 @@
     ```
     asdrsdf
     ```
+    
 #### `lang` --
     * _values:_
     * _support:_
     * _example:_
     ```
     asdfa
-```
+    ```
+
 #### `spellcheck` -- 
     * _values:_
     * _support:_
@@ -50,6 +57,7 @@
     ```
     dfgad
     ```
+
 #### `style` -- 
     * _values:_
     * _support:_
@@ -57,6 +65,7 @@
     ```
 
     ```
+
 #### `meta`
     * _values:_ represents any metadata information that cannot be represented by one of the other meta-related elements -- .base, .link, .script, .style or .title -- According to the attributes set, the kind of metadata can be one of the following --
     --this is an empty element, it does not require an ending nor closing tag --.meta charset, .meta http-equiv, a .head element. If the .http-equiv is not an encoding declaration, it can also be inside a .noscript element, itself inside a .head element
@@ -68,6 +77,7 @@
     ```
     dfgad
     ```
+
 #### `title` --
     * _values:_metadata content; closing/ending tag are mandatory. no other title tag to be included within header
     * _support:_
@@ -86,6 +96,7 @@
     ```
     ```
 <!-- 17 attributes for anchor tag -->
+
 #### `download` _HTML5_
 * _description:_ This attribute, if present, indicates that the author intends the hyperlink to be used for downloading a resource so that when the user clicks on the link they will be prompted to save it as a local file ??what exactly does this mean and how is it beneficial??. 
 * _values:_ If the attribute has a value, the value will be used as the pre-filled file name in the Save prompt that opens when the user clicks on the link --the user can change the name before actually saving the file of course. There are no restrictions on allowed values but forward and backward slashes will be converted to underscores, preventing specific path hintsshould
@@ -93,6 +104,7 @@
 * _example:_
 ```
 ```
+
 #### `href` 
 * _description:_ This was the single required attribute for anchors defining a hypertext source link, but is no longer required in HTML5. Omitting this attribute creates a placeholder link. The href attribute indicates the link target, either a URL or a URL fragment. A URL fragment is a name preceded by a hash mark (#), which specifies an internal target location (an ID) within the current document. 
 * _values:_
@@ -101,6 +113,7 @@
 ```
 <a href="#top">Return to top</a>
 ```
+
 #### `media` _HTML5_
 * _description:_
 * _values:_
@@ -108,6 +121,7 @@
 * _example:_
 ```
 ```
+
 #### `ping` _HTML5_ 
 * _description:_
 * _values:_
@@ -115,6 +129,7 @@
 * _example:_
 ```
 ```
+
 #### `rel`  
 * _description:_
 * _values:_
@@ -122,6 +137,7 @@
 * _example:_
 ```
 ```
+
 #### `target` 
 * _description:_
 * _values:_
@@ -129,7 +145,15 @@
 * _example:_
 ```
 ```
+
+=====================
+Block-Level Elements
+=====================
+
+=============
 ##1. Address
+=============
+
     * type: Block-element
     * content: Flow-content, palpable content, with no nesting -- exept perhaps in footer
     * support: Chrome, Firefox 1.0, Gecko 1.7 or earlier, Internet Explorer 1.0, Opera 5.12, Safari 1.0
@@ -143,7 +167,11 @@
         USA
     </address>
     ```
+
+=============
 ##2. Article
+=============
+
     * type: Block-element
     * content: Flow content, sectioning content, palpable content
     * support: Chrome 5, Firefox 4.0, Gecko 2.0, Internet Explorer 9.0, Opera 11.10, Safari 4.1
@@ -154,7 +182,11 @@
         <p>text</P
     </article>
     ```
+    
+===========
 ##3. Aside
+===========
+
     * type: Block-element
     * content: Flow content, sectioning content, palpable content
     * support: Chrome 5, Firefox 4.0, Gecko 2.0, Internet Explorer 9.0, Opera 11.10, Safari 4.1
@@ -168,7 +200,10 @@
         <p>more info about band and record company</p>
     </article>
     ```
+================
 ##4. Blockquote
+================
+
     * type: Block-element
     * content: Flow Content
     * support: Firefox 1.0 and Gecko 1.7 or earlier, otherwise, All Browsers
@@ -178,148 +213,163 @@
         <p>Quote taken from the above website</p>
     </blockquote>
     ```
+=====================================
 ##5. <div></div> --Document Division
-* type: Block-element
-* content: Flow content, palpable content
-* support: All Browsers
-* exapmle:
-```
-<div>
-    <p>Any kind of content...</P.
-</div>
-```
+=====================================
+    * type: Block-element
+    * content: Flow content, palpable content
+    * support: All Browsers
+    * exapmle:
+    ```
+    <div>
+        <p>Any kind of content...</P.
+    </div>
+    ```
 
+=======================================
 ##6. <footer> --Section or Page Footer
-* type: Block-element
-* content: Flow content, palpable content
-* support: Chrome 5, Firefox 4.0, Gecko 2.0, Internet Explorer 9.0, Opera 11.10, Safari 4.1
-* exapmle: 
-```
-<footer>
-    some important info. appropriate for the bottom of a document, like copyright info
-</footer>
-```
+=======================================
+
+    * type: Block-element
+    * content: Flow content, palpable content
+    * support: Chrome 5, Firefox 4.0, Gecko 2.0, Internet Explorer 9.0, Opera 11.10, Safari 4.1
+    * exapmle: 
+    ```
+    <footer>
+        some important info. appropriate for the bottom of a document, like copyright info
+    </footer>
+    ```
+================
 ##7. <datetime> 
+================
 
+=====================
+##8. Definition List
+=====================
 
-
-##7. Definition List
-* type: Block-element
-* content: Flow content, palpable content 
-* support: Chrome 1.0, otherwise, All Browsers
-* exapmle:
-```
-<dl>
-    <dt>Name</>
-    <dd>Garrett</dd>
-    <dt>Born</dt>
-    <dd>Orlando, FL</dd>
-    <dt>Favorite Color</dt>
-    <dd>Green</dd>
-</dl>
-```
-##8. <header> --Header
-* type: Block-leve element
-* content: Flow content, palpable content
-* support: Chrome 5, Firefox 4.0, Gecko 2.0, IE 9.0, Opera 11.10, Safari 4.0
-* exapmle: 
-```
-<header>
-  a logo
-</header>
-```
-##9. Horizontal Rule
-* type: Block-element
-* content: Flow content
-* support: Chrome 1.0, otherwise, All Browsers
-* exapmle:
-```
-<p>Paragraph of text</p>
-    <hr>
-<p>paragraph of text</p>
-```
-##10. Figure
-* type: Block-element
-* content: Flow content, sectioning root, palpable content
-* support: Chrome 8, Firefox 4.0, Gecko 2.0, Internet Explorer 9.0, Opera 11.10, Safari 5.1
-* exapmle:
-```
-<figure>
-    <img src "http://www.tavarua.com/sites/default/files/tavarua-resort-photos/tavarua-island-resort_0.jpg" alt="an island">
-    <figcaption>Caption for photo</figcaption>
-</figure>
-<p></p>
-```
-<<<<<<< HEAD
-
-
-##10. <form> --Input Form
-
-* type: Block-element
-* content: Flow content, palpable content
-* support: Chrome 1.0, Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
-* exapmle:
-```
-<!-- Simple for which will send a POST request -->
-<form action="" method="post">
-    <label for= "POST-name">Name:</label>
-    <input id="POST-name" type="text" name="name">
-    <input type="Submit" value="Save">
-</form>
-```
-
-* attributes:
-* 
-
-
-
-#### `action` -- form submission URL
-    * _values:_ URL of a program that processes a form submission
-    * _support:_ All Browsers
-    * _examples:_
+    * type: Block-element
+    * content: Flow content, palpable content 
+    * support: Chrome 1.0, otherwise, All Browsers
+    * exapmle:
     ```
-    <form action="https://github.com/GarrettGraham">
-        <input name="Garrett's GitHub">
+    <dl>
+        <dt>Name</>
+        <dd>Garrett</dd>
+        <dt>Born</dt>
+        <dd>Orlando, FL</dd>
+        <dt>Favorite Color</dt>
+        <dd>Green</dd>
+    </dl>
+    ```
+
+=======================
+##9. <header> --Header
+=======================
+
+    * type: Block-leve element
+    * content: Flow content, palpable content
+    * support: Chrome 5, Firefox 4.0, Gecko 2.0, IE 9.0, Opera 11.10, Safari 4.0
+    * exapmle: 
+    ```
+    <header>
+      a logo
+    </header>
+    ```
+======================
+##10. Horizontal Rule
+======================
+
+    * type: Block-element
+    * content: Flow content
+    * support: Chrome 1.0, otherwise, All Browsers
+    * exapmle:
+    ```
+    <p>Paragraph of text</p>
+        <hr>
+    <p>paragraph of text</p>
+    ```
+
+=============
+##11. Figure
+=============
+
+    * type: Block-element
+    * content: Flow content, sectioning root, palpable content
+    * support: Chrome 8, Firefox 4.0, Gecko 2.0, Internet Explorer 9.0, Opera 11.10, Safari 5.1
+    * exapmle:
+    ```
+    <figure>
+        <img src "http://www.tavarua.com/sites/default/files/tavarua-resort-photos/tavarua-island-resort_0.jpg" alt="an island">
+        <figcaption>Caption for photo</figcaption>
+    </figure>
+    <p></p>
+    ```
+==========================
+##12. <form> --Input Form
+==========================
+
+    * type: Block-element
+    * content: Flow content, palpable content
+    * support: Chrome 1.0, Firefox 1.0, Gecko 1.7 or earlier, otherwise, All Browsers
+    * exapmle:
+    ```
+    <!-- Simple for which will send a POST request -->
+    <form action="" method="post">
+        <label for= "POST-name">Name:</label>
+        <input id="POST-name" type="text" name="name">
+        <input type="Submit" value="Save">
     </form>
     ```
-    ```
-    <form action="form-to-email.php" method="post"
-        accept-charset="windows-1252">
-      <div>
-        <label for="txtname">Name:</label>
-        <input type="text" name="txtname" id="txtname"/>
-      </div>
-    </form>
-    ```
-#### `autocpitalizaion`
-    * _values:_none: completely disables auto cap., sentences- auto cap.s first letter of sentences, words- atuo cap.s first letter of words, characters- auto cap.s all characters, on- depricated since iOS 5, off- depricated since iOS 5
-    * _support:_iOS Safari Mobile, on and off values deprecated since iOS 5
-    * _example:_
-    ```
-        <form>
-            <p>
-                Normal Input:<br />
-                <input type="text" style="width: 180px ;" />
-            </p>
-            <p>
-                No-Auto Input:<br />
-                <input
-                    type="text"
-                    autocapitalize="off"
-                    autocorrect="off"
-                    style="width: 180px ;"
-                    />
-            </p>
+
+    * attributes:
+    * 
+
+    #### `action` -- form submission URL
+        * _values:_ URL of a program that processes a form submission
+        * _support:_ All Browsers
+        * _examples:_
+        ```
+        <form action="https://github.com/GarrettGraham">
+            <input name="Garrett's GitHub">
         </form>
-    ```
+        ```
+        ```
+        <form action="form-to-email.php" method="post"
+            accept-charset="windows-1252">
+          <div>
+            <label for="txtname">Name:</label>
+            <input type="text" name="txtname" id="txtname"/>
+          </div>
+        </form>
+        ```
 
-=======
+    #### `autocpitalizaion`
 
-##12. Image
-=======
-
-
+        * _values:_none: completely disables auto cap., sentences- auto cap.s first letter of sentences, words- atuo cap.s first letter of words, characters- auto cap.s all characters, on- depricated since iOS 5, off- depricated since iOS 5
+        * _support:_iOS Safari Mobile, on and off values deprecated since iOS 5
+        * _example:_
+        ```
+            <form>
+                <p>
+                    Normal Input:<br />
+                    <input type="text" style="width: 180px ;" />
+                </p>
+                <p>
+                    No-Auto Input:<br />
+                    <input
+                        type="text"
+                        autocapitalize="off"
+                        autocorrect="off"
+                        style="width: 180px ;"
+                        />
+                </p>
+            </form>
+        ```
+        
+======================
 ##11. <p> --Paragraph
+======================
+
     * type: Block-element
     * content category: Flow content, palpable content
     * permitted content: Phrasing content
@@ -330,8 +380,10 @@
     ```
     *attributes:
 
-
+==============================
 ##12. <time> --Time Signiture
+==============================
+
     * description: Either a time on a 24-hour clock or a precise date in the Gregorian calendar with optional time and timezone information
     * type: Block-element
     * content: Flow content, phrasing content - no descendant time elements, palpable content
@@ -349,12 +401,10 @@
 
 #HTML Elements: Inline
 
+
+============
 ##13. Image
-
-=======
-##12. Image
-
-=======
+============
 
 * type: Inline-element
 * content: Flow content, phrasing content, embedded content, palpable content. If has usermap attribute, it is interactive content
@@ -364,14 +414,10 @@
 <a href="http://imagelink.com"><img src="photo description.jpg" alt "Photo"/></a>
 ```
 
-
+=============
 ##14. Object
-=======
-##13. Object
+=============
 
-=======
-
-##14. Object
 
 * type: Inline-element
 * content: Flow content, phrasing content, embedded content, interactive content
@@ -382,12 +428,10 @@
 <object data="move.swf" type="application/x-shockwave-flash"></object>
 ```
 
-##15. Span
-=======
 
-##14. <span> --Span
 =======
-##15. Span
+##15. <span> --Span
+=======
 * type: Inline-element
 * content: Flow content, phrasing content
 * support: All Browsers
@@ -397,7 +441,7 @@
 ```
 
 =============
-##15. Strong
+##16. Strong
 =============
 
     * type: Inline-element
@@ -409,7 +453,7 @@
     ```
 
 ==========================
-##16. <s> --Strikethrough
+##17. <s> --Strikethrough
 ==========================
 * type: ??Inline-element vs. Block-element??
 * content: Flow content, phrasing content
