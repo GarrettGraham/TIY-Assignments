@@ -178,7 +178,10 @@ td {
     background-color:#AFEEEE;
 }
 
+/* black pawns */
+.black-pawn :before {
 
+}
 
 /* chess pieces = make div class and have each class mean something
     

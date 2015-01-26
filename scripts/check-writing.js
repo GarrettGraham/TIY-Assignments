@@ -36,6 +36,6 @@ var whatNum = function(a){
     } else if(a == 15){
         return toEnglish[15]
     }
-        console.log("I'm not able to count higher than ten.");
+        console.log("I'm not able to count very high.");
     }
 }

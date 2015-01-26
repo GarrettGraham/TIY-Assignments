@@ -1,13 +1,21 @@
 var assert = require('assert');
 
 
-function plus(A, B) {
-    return 5;
-}
 
-it('should add "zero" and "five"', funtion () {
-   assert.equal(plus("zero","five"), 5);
-});
+//function plus (A, B) {
+//    return 6;
+//}
+//it('should add "zero" and "five"', function () {
+//    assert.equal(plus("zero","five"), 5);
+//});
+
+//function plus(A, B) {
+//    return 5;
+//}
+//
+//it('should add "zero" and "five"', funtion () {
+//   assert.equal(plus("zero","five"), 5);
+//});
 
 //function plus(A, B) {
 //    return 4;
@@ -80,3 +88,11 @@ it('should add "zero" and "five"', funtion () {
 //it('should add "five" and "five"', function () {
 //    assert.equal(plus("five", "five"), 10);
 //});
+
+function plus (A, B) {
+    var x;
+    var y;
+    
+    
+    if (A == 'zero') {
+        return 
