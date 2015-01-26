@@ -598,7 +598,8 @@ Array.prototype.every()
             * returns: Boolean
         * thisArg: `Object` to which to bind `callback`
         returns: `Boolean` whether `callback` returns true for every element
-        example:
+    
+    * example:
         ```
         function every(anArray, callback){
           var hasFailed = false; // it hasn't has it?
@@ -616,13 +617,53 @@ Array.prototype.every()
         ```
 Array.prototype.some()
 
-Array.prototype.filter()
+    --The some() method tests whether some element in the array passes the test implemented by the provided function.
+    * Description: `some` executes the callback function once for each element present in the array until it finds one where `callback` returns a true value. If such an element is found, `some` immediately returns `true`. otherwise, `some` returns `false`. `callback` is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values.
+    `callback` is invoked with three arguments: 1. the value of the element, 2. the index of the element, and 3. the array object being traversed.
+    if a `thisArg` parameter is provided to `some`, it will be passed to `callback` when invoked, for use as its `this` value. Otherwise, the value `undefined` will be passed for use as its `this` value. the `this` value ultimately observable by `callback` is determined according to the usual rules for determining the `this` seen by a funtion. 
+    `some` does not mutate the array on which it is called
+    
+    the range of elements processed by `some` is set before the first invocation of `callback`. if an existeing, unvisited element of the array is changed by `callback`, its value passed to the visiting `callback` will be the value at the time that `some` visits that elements index; elements that are deleted are not visited.
+    
+    * parameters: 
+        * callback - function to test for each element, taking three arguments:
+            1. currentValue - the current element being processed in the array
+            2. index - the index of the current element being processed in the array
+            3. array - the array `some` was called upon.
+        * thisArg - optional. Value to use as `this` when executing callback.
+    * example:
+    ```
+    Testing value of array elements: the following tests whether any element in the array is bigger than 10:
+    
+    function isBiggerThan10(element, index, array) {
+    return element > 10;
+    }
+    [2 ,5, 8, 1, 4].some(isBiggerThan10); //false
+    [12, 5, 8, 1, 4].some(isBiggerThan10); //true
+    
+    Testing array elements using arrow functions: Arrow Functions (!!look-up!!) provides a shorter syntax for the same test.
+    [2, 5, 8, 1, 4].some(elem => elem > 10); //false
+    [12, 5, 8, 1, 4].some(elem => elem > 10); //true
+    ```
+
+Array.prototype.filter() 
+
+    --the filter() method creates a new array with all elements that pass the test implemented by the provided function
+    
+    * description:
+    
+    * parameters: 
+        callback - function to test each element of the array. Invoke with arguments (element, index, array). Return `true` to keep the element, `false` otherwise
+        thisArg - optional. Value to use as `this` when executing `callback`
 
 Array.prototype.map()
 
 Array.prototype.reduce()
 
 Array.prototype.reduceRight()
+
+
+
 
 RegExp (Regular Expression)
 
