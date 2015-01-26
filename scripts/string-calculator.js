@@ -2,11 +2,19 @@ var assert = require('assert');
 
 
 function plus(A, B) {
-    return 4;
+    return 5;
 }
-it('should add "zero" and "four"', function () {
-    assert.equal(plus("zero","four"), 4);
-}
+
+it('should add "zero" and "five"', funtion () {
+   assert.equal(plus("zero","five"), 5);
+});
+
+//function plus(A, B) {
+//    return 4;
+//}
+//it('should add "zero" and "four"', function () {
+//    assert.equal(plus("zero","four"), 4);
+//}
 
 //function plus(A, B) {
 //    return 3;
