@@ -492,6 +492,137 @@ Array.prototype.splice()
     // myFish is ['parrot', 'anemone', 'blue']
     // removed is ['trumpet', 'surgeon']
     ```
+=================
+Literal: `Array`
+Iterator Methods
+=================
+
+Array.prototype.forEach()
+
+    -- The forEach() method executes a provided function once per array element.
+    
+    Description:forEach() executes the provided callback once for each element present in the array in ascending order. It is not invoked for indexes that have been deleted or elided. However, it is executed for elements that are present and have the value undefined.
+    
+    `callback` is invoked with three arguments: 1. the element value, 2. the element index, and 3. the array being traversed
+    
+    if a thisArg parameter is provided to forEAch(), it will be passed to `callback` when invoked, for use as its `this` value. Otherwise, the value undeined will be passed for use as its `this` value. the `this` value ultimately observable by `callback` is determined according the the usual rules for determining the `this` seen by a function.
+    
+    the range of elements processed by forEach() is set beore the first invocation of `callback`. if the values of existing elements of the array are changed, the value passted to `callback` will be the value at the time forEach() visits them; elements that are deleted before being visited are not visited.
+    
+    Note: there is no way to stop or break a forEach() loop. The solution is to use Array.prototype.every() or array.prototype.some()
+    
+    forEach() executes the `callback` function once for each array element; unlike every() and some() it, always returns the value undefined.
+    
+    Parameters: callback - function that produces an element of the new Array, taking three arguments:
+        1. current value - the current element being processed in the array
+        2. index - the indx of the current element being processed in the array
+        3. array - the array forEach() was called once
+        
+        : thisArg - optional. Value to use as `this` when executing `callback`
+        
+    example:
+    ```
+    --Printing the contents of an array: logs a line for each element in an array:
+    
+    function logArrayElements(element, index, array) {
+      console.log('a[' + index + '] = ' + element);
+    }
+
+    // Note ellision, there is no member at 2 so it isn't visited
+    [2, 5, , 9].forEach(logArrayElements);
+    // logs:
+    // a[0] = 2
+    // a[1] = 5
+    // a[3] = 9
+    
+    --Breaking a loop: using array.prototype.every() to log the content of an array and stop when it reaches a value higher than the given THRESHOLD:
+
+    var THRESHOLD = 12;
+    VAR V = [5, 2, 16, 4, 3, 18, 20];
+    var res;
+    
+    res = v.every(function(element, index, array) {
+        console.log('element:', element);
+        if (element >= THRESHOLD) {
+        return false;
+    }
+        return true;
+    });
+    console.log('res:', res);
+    // logs:
+    // element: 5
+    // element: 2
+    // element: 16
+    // res: true
+    
+    --An object copy function: the following code creates a copy of a given object. There are different ways to create a copy of an object...
+    
+    function copy(o) {
+      var copy = Object.create(Object.getPrototypeOf(o));
+      var propNames = Object.getOwnPropertyNames(o);
+
+      propNames.forEach(function(name) {
+        var desc = Object.getOwnPropertyDescriptor(o, name);
+        Object.defineProperty(copy, name, desc);
+      });
+
+      return copy;
+    }
+
+    var o1 = { a: 1, b: 2 };
+    var o2 = copy(o1); // o2 looks like o1 now
+    ```
+
+Array.prototype.every()
+
+    -- The every() method tests whether all elements in the array pass the test implemented by the provided function.
+    * Description: 
+    The every method executes the provided callback function once for each element present in the array until it finds one where callback returns a falsy value (a value that becomes false when converted to a Boolean). If such an element is found, the every method immediately returns false. Otherwise, if callback returned a true value for all elements, every will return true. callback is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values.
+
+    callback is invoked with three arguments: the value of the element, the index of the element, and the Array object being traversed.
+
+    If a thisArg parameter is provided to every, it will be passed to callback when invoked, for use as its this value.  Otherwise, the value undefined will be passed for use as its this value.  The this value ultimately observable by callback is determined according to the usual rules for determining the this seen by a function.
+
+    every does not mutate the array on which it is called.
+
+    The range of elements processed by every is set before the first invocation of callback. Elements which are appended to the array after the call to every begins will not be visited by callback. If existing elements of the array are changed, their value as passed to callback will be the value at the time every visits them; elements that are deleted are not visited.
+
+    every acts like the "for all" quantifier in mathematics. In particular, for an empty array, it returns true. (It is vacuously true that all elements of the empty set satisfy any given condition.)
+    
+    * parameters:
+        * callback: Function to test each element against
+            * params:
+                * item: element to process
+                * index: index of processed element
+                * all: array instance
+            * returns: Boolean
+        * thisArg: `Object` to which to bind `callback`
+        returns: `Boolean` whether `callback` returns true for every element
+        example:
+        ```
+        function every(anArray, callback){
+          var hasFailed = false; // it hasn't has it?
+
+          // iterate...
+          anArray.foreach(function(item, index, all){
+            if ( hasFailed ) return; // one failure ruins everything...
+
+            hasFailed = !callback(item, index, all); // why invert here?
+          });
+
+          return !hasFailed; // Another inverse?
+          // What if `anArray` is empty?
+        }
+        ```
+Array.prototype.some()
+
+Array.prototype.filter()
+
+Array.prototype.map()
+
+Array.prototype.reduce()
+
+Array.prototype.reduceRight()
 
 RegExp (Regular Expression)
 
@@ -613,8 +744,6 @@ function square(x) {
 }
 ```
 
-
-
 CONTROL-FLOW STATEMENTS
 
 
@@ -674,7 +803,6 @@ do...while Statements:
 while Statements:
 
 label Statement:
-
 
 
 Object Manipulation Statements:
