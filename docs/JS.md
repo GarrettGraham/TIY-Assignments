@@ -650,12 +650,85 @@ Array.prototype.filter()
 
     --the filter() method creates a new array with all elements that pass the test implemented by the provided function
     
-    * description:
+    * description: filter() calls a provided `callback` function once for each element in an array, and constructs a new array of all the values for which `callback` returns a true value. `callback` is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values. Array elements which do not pass the callback test are simply skipped, and are not included in the new array.
+    Callback in invoked with three arguments: 1. the value of the element, 2. the index of the element, and 3. the array object being traversed
+    
+    if a thisArg parameter is provided to filter, it will be passed to callback when invoked, for use as its this value. otherwise, the value undefined will be passed for use as its this value. the this value ultimately  observable by callback is determined according to the usual rules for determining the this seen by a function. 
+    
+    filter() does not mutate the array on which it is called.
+    
+    the range of elements processed by filter() is set before the first invocation of callback. Elements which are appendd to the array after the call to filter() begins will not be visited by callback. If existing elements of the array are changed, or deleted, their value as passsed to callback will be the value at the time filter() visits them; elemetns that are deleted are not visited.
     
     * parameters: 
         callback - function to test each element of the array. Invoke with arguments (element, index, array). Return `true` to keep the element, `false` otherwise
         thisArg - optional. Value to use as `this` when executing `callback`
+    * exapmle:
+    ```
+    Filtering out all small values - the following uses filter() to create a filtered array that has all elements with values less than 10 removed:
+    
+    function isBigEnough(element) {
+      return element >= 10;
+    }
+    var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
+    // filtered is [12, 130, 44]
+    
+    JSON filtering invalid entries and sorting based on id - the following uses filter() to create a filtered json that all elements with integer id and .txt extension in path. and then sorts the filtered json bason on id.
+    
+    var arr = [
+      { id: 15, path: 'foo.txt' },
+      { id: -1, path: 'bar.1.txt' },
+      { id: 3, path: 'mine.txt' },
+      { id: 12.2, path: 'yours.txt' },
+      { id: 12.2, path: 'yours.txt.diff' },
+      { path: 'foo.bar.txt' },
+      { id: 'null', path: 'mine.txt' },
+      { id: 'undefined', path: null },
+      { id: undefined, path: null },
+      { id: NaN, path: null },
+      { id: NaN }
+    ];
+    var invalidEntries;
 
+    function filterByID(element) {
+      if (element.id && typeof(element.id) === 'number') {
+        return element;
+      }
+      else {
+        invalidEntries++;
+      }
+    }
+
+    function filterByExtension(element) {
+      if (element.path && typeof(element.path) === 'string') {
+        var strToArr = element.path.split('.');
+        var extension = strToArr[strToArr.length - 1]; 
+        if (extension === 'txt') {
+          return element;
+        }
+        else {
+          invalidEntries++;
+        }
+      }
+      else {
+        invalidEntries++;
+      }
+    }
+
+    function sortByID(arr) {
+      return arr.sort(function(first, second) {
+        return first.id - second.id;
+      });
+    }
+
+    (function filterSortAndReport(arr) {
+      invalidEntries = 0;
+      var arrByID = arr.filter(filterByID);
+      var filteredArray = arrByID.filter(filterByExtension);
+      var sortedArray = sortByID(filteredArray);
+      console.log('Filtered And Sorted Array\n', sortedArray);
+      console.log('Number of Invalid Entries = ', invalidEntries);
+    })(arr);
+    ```
 Array.prototype.map()
 
 Array.prototype.reduce()
