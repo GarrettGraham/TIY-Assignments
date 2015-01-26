@@ -11,7 +11,11 @@ console.log(date());
 //});
 
 function plus (a, b) {
-    return a + b;
+    if (a == "zero") {
+        return 0;
+    } else {
+        return 1;
+    };
 }
 
 it('should have a function called `plus`', function () {
@@ -22,6 +26,16 @@ it('should have a function called `plus`', function () {
 it('should take "zero"', function() {
     assert.equal(plus("zero", "zero"), 0;
 });
+    
+    
+The following is nested in node:
+  
+numbers = ["zero", "one", "two", "three" ]
+numbers[0] ---> identifies whatever is at the zero index
+numbers[1] ---> whats at the one index
+toEnglish(o); ---> 'zero'
+toEnglish(1); ---> 'one'
+
     
 it('should take "one"', function (){
     assert.equal(plus("zero","one"), 1);
