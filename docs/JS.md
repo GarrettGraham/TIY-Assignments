@@ -1,3 +1,5 @@
+LITERALS
+
 Primative: Null
 
     * symbol: null
@@ -27,7 +29,7 @@ Primative: Boolean
     ```
 
 
-    Primative: Number
+Primative: Number
 
     * symbol: Number()
     * description: Number is a J.S. object which is an object wrapper that allows manipulation of numeric values.

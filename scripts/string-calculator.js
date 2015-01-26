@@ -1,5 +1,7 @@
 var assert = require('assert');
 
+//Rondori Style Kata
+
 
 
 //function plus (A, B) {
@@ -89,6 +91,7 @@ var assert = require('assert');
 //    assert.equal(plus("five", "five"), 10);
 //});
 
+//the following is the code David reviewed in class 01-25-15
 function plus (A, B) {
     var x;
     var y;

@@ -27,6 +27,10 @@ it('should take "zero"', function() {
     assert.equal(plus("zero", "zero"), 0;
 });
     
+
+Queue : First-In-First-Out
+Stack : Last-In-First-Out
+
     
 The following is nested in node:
   
