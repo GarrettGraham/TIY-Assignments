@@ -795,6 +795,27 @@ Array.prototype.map()
 
 Array.prototype.reduce()
 
+    --The reduce() method applies a function against an accumulator and each value of the array (from left-to-right) has to reduce it to a single value.
+    
+    * description: 
+    
+        reduce executes the callback function once for each element present in the array, excluding holes in the array, receiving four arguments: the initial value (or value from the previous callback call), the value of the current element, the current index, and the array over which iteration is occurring.
+
+    The first time the callback is called, previousValue and currentValue can be one of two values. If initialValue is provided in the call to reduce, then previousValue will be equal to initialValue and currentValue will be equal to the first value in the array. If no initialValue was provided, then previousValue will be equal to the first value in the array and currentValue will be equal to the second.
+
+    If the array is empty and no initialValue was provided, TypeError would be thrown. If the array has only one element (regardless of position) and no initialValue was provided, or if initialValue is provided but the array is empty, the solo value would be returned without calling callback.
+
+
+    * parameters: 
+    
+        callback - Function to execute on each value in the array, taking four arguments:
+            1. previousValue - The value previously returned in the last invocation of the callback, or initialValue, if supplied. (See below.)
+            2. currentValue - The current element being processed in the array.
+            3. index - The index of the current element being processed in the array.
+            4. array - The array reduce was called upon.
+
+        initialValue - Optional. Object to use as the first argument to the first call of the callback.
+
 Array.prototype.reduceRight()
 
 
