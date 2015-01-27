@@ -804,7 +804,33 @@ Array.prototype.reduce()
     The first time the callback is called, previousValue and currentValue can be one of two values. If initialValue is provided in the call to reduce, then previousValue will be equal to initialValue and currentValue will be equal to the first value in the array. If no initialValue was provided, then previousValue will be equal to the first value in the array and currentValue will be equal to the second.
 
     If the array is empty and no initialValue was provided, TypeError would be thrown. If the array has only one element (regardless of position) and no initialValue was provided, or if initialValue is provided but the array is empty, the solo value would be returned without calling callback.
+    
+    Suppose the following use of reduce occurred:
 
+        [0, 1, 2, 3, 4].reduce(function(previousValue, currentValue, index, array) {
+          return previousValue + currentValue;
+        });
+        The callback would be invoked four times, with the arguments and return values in each call being as follows:
+
+            previousValue	currentValue	index	array	return value
+        first call	0	1	1	[0, 1, 2, 3, 4]	1
+        second call	1	2	2	[0, 1, 2, 3, 4]	3
+        third call	3	3	3	[0, 1, 2, 3, 4]	6
+        fourth call	6	4	4	[0, 1, 2, 3, 4]	10
+        The value returned by reduce would be that of the last callback invocation (10).
+
+        If you were to provide an initial value as the second argument to reduce, the result would look like this:
+
+        [0, 1, 2, 3, 4].reduce(function(previousValue, currentValue, index, array) {
+          return previousValue + currentValue;
+        }, 10);
+            previousValue	currentValue	index	array	return value
+        first call	10	0	0	[0, 1, 2, 3, 4]	10
+        second call	10	1	1	[0, 1, 2, 3, 4]	11
+        third call	11	2	2	[0, 1, 2, 3, 4]	13
+        fourth call	13	3	3	[0, 1, 2, 3, 4]	16
+        fifth call	16	4	4	[0, 1, 2, 3, 4]	20
+        The value returned by reduce this time would be, of course, 20
 
     * parameters: 
     
@@ -815,8 +841,96 @@ Array.prototype.reduce()
             4. array - The array reduce was called upon.
 
         initialValue - Optional. Object to use as the first argument to the first call of the callback.
+        
+    * example:
+    ```
+    Sum up all values within an array
+
+        var total = [0, 1, 2, 3].reduce(function(a, b) {
+          return a + b;
+        });
+        // total == 6
+        
+    Flatten an array of arrays
+
+        var flattened = [[0, 1], [2, 3], [4, 5]].reduce(function(a, b) {
+          return a.concat(b);
+        });
+        // flattened is [0, 1, 2, 3, 4, 5]
+
+    ```
 
 Array.prototype.reduceRight()
+
+    --The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left) has to reduce it to a single value.
+    
+    * description: 
+        
+    reduceRight executes the callback function once for each element present in the array, excluding holes in the array, receiving four arguments: the initial value (or value from the previous callback call), the value of the current element, the current index, and the array over which iteration is occurring.
+
+    The call to the reduceRight callback would look something like this:
+    
+    ```
+    array.reduceRight(function(previousValue, currentValue, index, array) {
+      // ...
+    });
+    ```
+    
+    The first time the function is called, the previousValue and currentValue can be one of two values. If an initialValue was provided in the call to reduceRight, then previousValue will be equal to initialValue and currentValue will be equal to the last value in the array. If no initialValue was provided, then previousValue will be equal to the last value in the array and currentValue will be equal to the second-to-last value.
+
+    If the array is empty and no initialValue was provided, TypeError would be thrown. If the array has only one element (regardless of position) and no initialValue was provided, or if initialValue is provided but the array is empty, the solo value would be returned without calling callback.
+
+    Some example run-throughs of the function would look like this:
+
+    [0, 1, 2, 3, 4].reduceRight(function(previousValue, currentValue, index, array) {
+      return previousValue + currentValue;
+    });
+    The callback would be invoked four times, with the arguments and return values in each call being as follows:
+
+        previousValue	currentValue	index	array	return value
+    first call	4	3	3	[0, 1, 2, 3, 4]	7
+    second call	7	2	2	[0, 1, 2, 3, 4]	9
+    third call	9	1	1	[0, 1, 2, 3, 4]	10
+    fourth call	10	0	0	[0, 1, 2, 3, 4]	10
+    The value returned by reduceRight would be that of the last callback invocation (10).
+
+    And if you were to provide an initialValue, the result would look like this:
+
+    [0, 1, 2, 3, 4].reduceRight(function(previousValue, currentValue, index, array) {
+      return previousValue + currentValue;
+    }, 10);
+        previousValue	currentValue	index	array	return value
+    first call	10	4	4	[0, 1, 2, 3, 4]	14
+    second call	14	3	3	[0, 1, 2, 3, 4]	17
+    third call	17	2	2	[0, 1, 2, 3, 4]	19
+    fourth call	19	1	1	[0, 1, 2, 3, 4]	20
+    fifth call	20	0	0	[0, 1, 2, 3, 4]	20
+    The value returned by reduceRight this time would be, of course, 20.
+    
+    * parameters:
+        * callback - Function to execute on each value in the array, taking four arguments:
+            1. previousValue - The value previously returned in the last invocation of the callback, or initialValue, if supplied. (See below.)
+            2. currentValue - The current element being processed in the array.
+            3. index - The index of the current element being processed in the array.
+            4. array - The array reduce was called upon.
+        * initialValue - Optional. Object to use as the first argument to the first call of the callback.
+    
+    * example:
+    ```
+    Sum up all values within an array:
+
+        var total = [0, 1, 2, 3].reduceRight(function(a, b) {
+          return a + b;
+        });
+        // total == 6
+        
+    Flatten an array of arrays:
+
+        var flattened = [[0, 1], [2, 3], [4, 5]].reduceRight(function(a, b) {
+            return a.concat(b);
+        }, []);
+        // flattened is [4, 5, 2, 3, 0, 1]
+    ```
 
 
 
