@@ -501,11 +501,13 @@ Array.prototype.forEach()
 
     -- The forEach() method executes a provided function once per array element.
     
-    Description:forEach() executes the provided callback once for each element present in the array in ascending order. It is not invoked for indexes that have been deleted or elided. However, it is executed for elements that are present and have the value undefined.
+    Description:
+    
+    forEach() executes the provided callback once for each element present in the array in ascending order. It is not invoked for indexes that have been deleted or elided. However, it is executed for elements that are present and have the value undefined.
     
     `callback` is invoked with three arguments: 1. the element value, 2. the element index, and 3. the array being traversed
     
-    if a thisArg parameter is provided to forEAch(), it will be passed to `callback` when invoked, for use as its `this` value. Otherwise, the value undeined will be passed for use as its `this` value. the `this` value ultimately observable by `callback` is determined according the the usual rules for determining the `this` seen by a function.
+    if a thisArg parameter is provided to forEAch(), it will be passed to `callback` when invoked, for use as its `this` value. Otherwise, the value undefined will be passed for use as its `this` value. the `this` value ultimately observable by `callback` is determined according the the usual rules for determining the `this` seen by a function.
     
     the range of elements processed by forEach() is set beore the first invocation of `callback`. if the values of existing elements of the array are changed, the value passted to `callback` will be the value at the time forEach() visits them; elements that are deleted before being visited are not visited.
     
@@ -513,7 +515,9 @@ Array.prototype.forEach()
     
     forEach() executes the `callback` function once for each array element; unlike every() and some() it, always returns the value undefined.
     
-    Parameters: callback - function that produces an element of the new Array, taking three arguments:
+    * Parameters: 
+    
+    callback - function that produces an element of the new Array, taking three arguments:
         1. current value - the current element being processed in the array
         2. index - the indx of the current element being processed in the array
         3. array - the array forEach() was called once
@@ -576,7 +580,9 @@ Array.prototype.forEach()
 Array.prototype.every()
 
     -- The every() method tests whether all elements in the array pass the test implemented by the provided function.
+    
     * Description: 
+    
     The every method executes the provided callback function once for each element present in the array until it finds one where callback returns a falsy value (a value that becomes false when converted to a Boolean). If such an element is found, the every method immediately returns false. Otherwise, if callback returned a true value for all elements, every will return true. callback is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values.
 
     callback is invoked with three arguments: the value of the element, the index of the element, and the Array object being traversed.
