@@ -15,6 +15,12 @@ function answer() {
         }
     });
     
+    events.filter(function(item) {
+        return item.type == 'PushEvent;
+    });
+    
+    pushEvents.length == numberOfPushEvents;
+    
     while ( index < events.length) {   // while is a keyword for a loop
         var event = events[index];     // event is always === 30. the index
                                        // less than events.length is the                                            // THRESHOLD. Its a FINITE Loop
