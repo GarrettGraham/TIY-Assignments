@@ -731,6 +731,68 @@ Array.prototype.filter()
     ```
 Array.prototype.map()
 
+    --The map() method creates a new array with the results of calling a provided function on every element in this array.
+    
+    * description: map calls a provided callback function once for each element in an array, in order, and constructs a new array from the results. callback is invoked only for indexes of the array which have assigned values; it is not invoked for indexes that are undefined, those which have been deleted or which have never been assigned values.
+
+    callback is invoked with three arguments: the value of the element, the index of the element, and the Array object being traversed.
+
+    If a thisArg parameter is provided to map, it will be passed to callback when invoked, for use as its this value. Otherwise, the value undefined will be passed for use as its this value. The this value ultimately observable by callback is determined according to the usual rules for determining the this seen by a function.
+
+    map does not mutate the array on which it is called (although callback, if invoked, may do so).
+
+    The range of elements processed by map is set before the first invocation of callback. Elements which are appended to the array after the call to map begins will not be visited by callback. If existing elements of the array are changed, or deleted, their value as passed to callback will be the value at the time map visits them; elements that are deleted are not visited.
+
+    * parameters:
+    
+        * callback - function that produces an element of the new Array, taking three arguments:
+            currentValue - the current element being processed in the array
+            index - the indx of the current element being processed in the array
+            array - the array map was called upon
+            
+        * thisArg - optional. Value to use as this when executing callback
+        
+    * example:
+    ```
+    --Mapping an array of numbers to an array of square roots: the following code takes an array of numbers and creates a new array containing the square roots of the numbers in the first array.
+    
+    var numbers = [1, 4, 9];
+    var roots = numbers.map(Math.sqrt);
+    // roots is now [1, 2, 3], numbers is still [1, 4, 9]
+    
+    --Mapping an array of numbers using a function containing an argument: The following code shows how map works when a function requiring one argument is used with it. The argument will automatically be assigned to each element of the array as map loops through the original array.
+    
+    var numbers = [1, 4, 9];
+    var doubles = numbers.map(function(num) {
+      return num * 2;
+    });
+    // doubles is now [2, 8, 18]. numbers is still [1, 4, 9]
+    
+    --using map generically: This example shows how to use map on a String to get an array of bytes in the ASCII encoding representing the character values
+    
+    var map = Array.prototype.map;
+    var a = map.call('Hello World', function(x) { return x.charCodeAt(0); });
+    // a now equals [72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100]
+    
+    --using map generically querySelectorAll: shows how to iterate through a collection of objects collected by querySelectorAll. In this case we get all selected options on the screen and printed on the console:
+    
+    var elems = document.querySelectorAll('select option:checked');
+    var values = [].map.call(elems, function(obj) {
+      return obj.value;
+    });
+    
+    --using map to reverse a string
+    
+    var str = '12345';
+    [].map.call(str, function(x) {
+      return x;
+    }).reverse().join(''); 
+
+    // Output: '54321'
+    // Bonus: use '===' to test if original string was a palindrome
+    
+    ```
+
 Array.prototype.reduce()
 
 Array.prototype.reduceRight()
