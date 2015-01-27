@@ -517,11 +517,11 @@ Array.prototype.forEach()
     
     * Parameters: 
     
-    callback - function that produces an element of the new Array, taking three arguments:
-        1. current value - the current element being processed in the array
-        2. index - the indx of the current element being processed in the array
-        3. array - the array forEach() was called once
-        
+        : callback - function that produces an element of the new Array, taking three arguments:
+            1. current value - the current element being processed in the array
+            2. index - the indx of the current element being processed in the array
+            3. array - the array forEach() was called once
+
         : thisArg - optional. Value to use as `this` when executing `callback`
         
     example:
@@ -656,18 +656,28 @@ Array.prototype.filter()
 
     --the filter() method creates a new array with all elements that pass the test implemented by the provided function
     
-    * description: filter() calls a provided `callback` function once for each element in an array, and constructs a new array of all the values for which `callback` returns a true value. `callback` is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values. Array elements which do not pass the callback test are simply skipped, and are not included in the new array.
-    Callback in invoked with three arguments: 1. the value of the element, 2. the index of the element, and 3. the array object being traversed
+    * description: 
     
-    if a thisArg parameter is provided to filter, it will be passed to callback when invoked, for use as its this value. otherwise, the value undefined will be passed for use as its this value. the this value ultimately  observable by callback is determined according to the usual rules for determining the this seen by a function. 
-    
-    filter() does not mutate the array on which it is called.
-    
-    the range of elements processed by filter() is set before the first invocation of callback. Elements which are appendd to the array after the call to filter() begins will not be visited by callback. If existing elements of the array are changed, or deleted, their value as passsed to callback will be the value at the time filter() visits them; elemetns that are deleted are not visited.
+        filter() calls a provided `callback` function once for each element in an array, and constructs a new array of all the values for which `callback` returns a true value. `callback` is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values. Array elements which do not pass the callback test are simply skipped, and are not included in the new array.
+
+        Callback in invoked with three arguments: 
+            1. the value of the element 
+            2. the index of the element
+            3. the array object being traversed
+
+        if a thisArg parameter is provided to filter, it will be passed to callback when invoked, for use as its this value. otherwise, the value undefined will be passed for use as its this value. the this value ultimately  observable by callback is determined according to the usual rules for determining the this seen by a function. 
+
+        filter() does not mutate the array on which it is called.
+
+        the range of elements processed by filter() is set before the first invocation of callback. Elements which are appendd to the array after the call to filter() begins will not be visited by callback. If existing elements of the array are changed, or deleted, their value as passsed to callback will be the value at the time filter() visits them; elemetns that are deleted are not visited.
     
     * parameters: 
-        callback - function to test each element of the array. Invoke with arguments (element, index, array). Return `true` to keep the element, `false` otherwise
+    
+        callback - function to test each element of the array. 
+            Invoke with arguments (element, index, array). 
+            Return `true` to keep the element, `false` otherwise
         thisArg - optional. Value to use as `this` when executing `callback`
+        
     * exapmle:
     ```
     Filtering out all small values - the following uses filter() to create a filtered array that has all elements with values less than 10 removed:
@@ -914,12 +924,13 @@ Array.prototype.reduceRight()
     The value returned by reduceRight this time would be, of course, 20.
     
     * parameters:
-        * callback - Function to execute on each value in the array, taking four arguments:
+    
+        : callback - Function to execute on each value in the array, taking four arguments:
             1. previousValue - The value previously returned in the last invocation of the callback, or initialValue, if supplied. (See below.)
             2. currentValue - The current element being processed in the array.
             3. index - The index of the current element being processed in the array.
             4. array - The array reduce was called upon.
-        * initialValue - Optional. Object to use as the first argument to the first call of the callback.
+        : initialValue - Optional. Object to use as the first argument to the first call of the callback.
     
     * example:
     ```
@@ -943,7 +954,19 @@ Array.prototype.reduceRight()
 
 RegExp (Regular Expression)
 
+    --The RegExp constructor creates a regular expression object for matching text with a pattern.
+
 * symbol: 
+    Literal and constructor notations are possible:
+        /pattern/flags
+        newRegExp(pattern[, flags])
+
+* Parameters: 
+    pattern - the text of the regular expression
+    flags - if specified, flags can have any combination of the following values: 
+        g - global match
+        i - ignore case
+        m - multiline, treat beginning and end characters(^ and $) as working over multiple lines (i.e., match the beginning or end of each line (delimited by \n or \r), not only the very beginnin or end othe whole input string
 * description:
 * pronunciation:
 * examples:
