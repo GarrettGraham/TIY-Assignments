@@ -9,28 +9,36 @@ it('should tell us that the event has an input', function () {
 
 
 function answer () {
+    var pushEvents = events.filter(function(item) {
+    return item.type == 'PushEvent';
+    
+    });
+    
     return {
         'total':events.length,
         'PushEvent': {
-        
+            'total': pushEvents.lengths
+            
         }
     }
 };
 
-console.log(events.length)
+console.log(answer());
+
 var theAnswer = answer();
 
 it('should return that answer exists', function () {
     assert(answer);
-    assert(events.length === 30);
+    assert.equal(events.length, 30);
 });
 
 it('should return the length when calling answer function', function () {
    assert.equal(theAnswer.total, 30);
 });
 
-it('should have "PushEvent"', function() {
-   assert(theAnswer.PushEvent); 
+it('should have "pushEvent", and has a total count of PushEvents', function() {
+    assert(theAnswer.PushEvent); 
+    assert.equal(theAnswer.PushEvent.total, 0);
 });
    
 
@@ -47,13 +55,6 @@ it('should have "PushEvent"', function() {
 //        }
 //    };
 //}
-
-
-
-
-
-
-
 
 
 

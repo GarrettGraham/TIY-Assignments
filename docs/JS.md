@@ -492,10 +492,10 @@ Array.prototype.splice()
     // myFish is ['parrot', 'anemone', 'blue']
     // removed is ['trumpet', 'surgeon']
     ```
-=================
+====================
 Literal: `Array`
 Iterator Methods
-=================
+====================
 
 Array.prototype.forEach()
 
