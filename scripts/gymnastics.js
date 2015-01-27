@@ -3,6 +3,52 @@ var events = require('../apis/users/GarrettGraham/events.json');
 
 
 
+it('should tell us that the event has an input', function () {
+    assert(events);
+});
+
+
+function answer () {
+    return {
+        'total':events.length,
+        'PushEvent': {
+        
+        }
+    }
+};
+
+console.log(events.length)
+var theAnswer = answer();
+
+it('should return that answer exists', function () {
+    assert(answer);
+    assert(events.length === 30);
+});
+
+it('should return the length when calling answer function', function () {
+   assert.equal(theAnswer.total, 30);
+});
+
+it('should have "PushEvent"', function() {
+   assert(theAnswer.PushEvent); 
+});
+   
+
+//function answer() {
+//        return {
+//            'total':
+//            'PushEvent': {
+//                'total':
+//            'perDay':
+//        }'
+//        'other': {
+//            'total':
+//            'perDay':
+//        }
+//    };
+//}
+
+
 
 
 
