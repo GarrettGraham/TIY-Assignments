@@ -9,23 +9,24 @@ it('should tell us that the event has an input', function () {
 
 
 function answer () {
+
     var pushEvents = events.filter(function(item) {
     return item.type == 'PushEvent';
-    
     });
     
+
     return {
         'total':events.length,
         'PushEvent': {
-            'total': pushEvents.lengths
-            
+            'total': pushEvents.length,  
         }
     }
 };
 
-console.log(answer());
+//console.log(answer());
+//console.log(events.length);
 
-var theAnswer = answer();
+var theAnswer = answer(); //answer() is the function invocation <--> same as calling the function 
 
 it('should return that answer exists', function () {
     assert(answer);
@@ -36,12 +37,16 @@ it('should return the length when calling answer function', function () {
    assert.equal(theAnswer.total, 30);
 });
 
-it('should have "pushEvent", and has a total count of PushEvents', function() {
+it('should have "PushEvent", and has a total count of PushEvents', function() {
     assert(theAnswer.PushEvent); 
-    assert.equal(theAnswer.PushEvent.total, 0);
+    assert.equal(theAnswer.PushEvent.total, 25);
 });
    
 
+    //the json data is comprised of multiple boxes containing various pieces of data. in terms of the gymnastics assignment, we are looking for the total amount of certain pieces of data that are found within each box. for the api gymnastics, we create a process for the robot to follow in order for that robot to return what we specify and ignore superfluous data.
+    //we tell the robot what data to identify and how to identify said information and then run tests to 
+    
+    
 //function answer() {
 //        return {
 //            'total':
