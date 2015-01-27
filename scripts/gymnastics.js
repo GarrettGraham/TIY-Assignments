@@ -2,13 +2,43 @@ var assert = require('assert');
 
 var events = require('../apis/users/GarrettGraham/events.json');
 
-assert(events.length);
+//assert(events.length);
 
 function answer() {
-    return {
-        'total': events.length}
-} //end of answer
+    var firstEvent = events[0];
+    var numberOfPushEvents = 0;
+    
+    events.forEach(function(item, index, all) {
 
+        if (item.type == "PushEvent"){
+            numberOfPushEvents++;
+        }
+    });
+    
+    while ( index < events.length) {   // while is a keyword for a loop
+        var event = events[index];     // event is always === 30. the index
+                                       // less than events.length is the                                            // THRESHOLD. Its a FINITE Loop
+    }
+    
+    if (firstEvent.type == "PushEvent") {
+        numberOfPushEvents = numberOfPushEvents + 1;
+        numberOfPushEvents++ //++ is the incrementation of adding 1
+    }
+    
+    var secondEvent = events[1];
+        if (secondEvent.type == "PushEvent" ) {
+            numberOfPushEvents++;
+        }
+    
+    var thirdEvent = events[2];
+    
+    return {
+        'total': events.length;
+        'PushEvents': {
+            'total':
+    }
+    } //end of answer
+}
 describe('the setup', function(){
     it('should have events', function() {
     assert(events);
@@ -21,15 +51,16 @@ describe('the setup', function(){
 });
 
 describe('the answer', function() {
-    var theAnswer = answer();
+    var theAnswer = answer(); //this is the result of the function answer
+                              // the parentheses is an `answer invocation`
     
-    it('should have 30 total events', function() {
-    assert.equal(theAnswer.total, 30);
-           });
+//    it('should have 30 total events', function() {
+//    assert.equal(theAnswer.total, 30);
+//           });
     
-//function answers () {
-//    return {
-//        'total':
+function answers () {
+    return {
+        'total': events.length;
 //        'PushEvent': {
 //        'total':
 //        'perDay':
@@ -40,3 +71,15 @@ describe('the answer', function() {
 //        }
 //    };
 //}
+    
+    assert(events);
+    assert(answer);
+    assert(typeof answer == 'function');
+        
+    var theAnswer = answer(); 
+        
+    assert.equal(theAnswe.total, 30); //I assert that the key "total" in variable "theAnswer" is equal to Number 30
+    
+    assert(theAnswer.PushEvents);
+    
+    assert(theAnswer.PushEvents.total);
