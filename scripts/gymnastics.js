@@ -32,7 +32,7 @@ function answer () {
 
 
 var theAnswer = answer(); //answer() is the function invocation <--> same as calling the function 
-console.log(theAnswer)
+console.log(theAnswer) //concole.log prints for you what you designate to the robot
 it('should return that answer exists', function () {
     assert(answer);
     assert.equal(events.length, 30);

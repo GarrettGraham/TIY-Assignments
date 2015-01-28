@@ -8,7 +8,7 @@ function checkWriter(n) {
 }
 
 it('should print the string value of a given number input', function () {
-    assert.equal(checkWriter(13), "fourteen");
+    assert.equal(checkWriter(13), "thirteen");
 });
 
 //var toEnglish = ["zero", "one", "two", "three", "four", "five"];
