@@ -9,25 +9,30 @@ it('should tell us that the event has an input', function () {
 
 
 function answer () {
-
     var pushEvents = events.filter(function(item) {
     return item.type == 'PushEvent';
     });
+    var otherEvents = events.filter(function(item) {
+        return item.type != 'PushEvent';
+    })
     
 
     return {
         'total':events.length,
         'PushEvent': {
             'total': pushEvents.length,  
+        },
+        'other': {
+                'total': otherEvents.length
         }
-    }
-};
+    }   
+}
 
 //console.log(answer());
-//console.log(events.length);
+
 
 var theAnswer = answer(); //answer() is the function invocation <--> same as calling the function 
-
+console.log(theAnswer)
 it('should return that answer exists', function () {
     assert(answer);
     assert.equal(events.length, 30);
