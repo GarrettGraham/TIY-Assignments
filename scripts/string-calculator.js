@@ -6,26 +6,33 @@ console.log(Date())
 //});
 //
 //
-it('should add "zeros"', function () {
-    assert.equal(plus("zero", "zero"), 0);
-    assert.equal(plus("zero", "one"), 1);
-    assert.equal(plus("zero", "two"), 2);
-    assert.equal(plus("zero", "three"), 3);
-    assert.equal(plus("zero", "four"), 4);
-    assert.equal(plus("zero", "five"), 5);
-    assert.equal(plus("zero", "six"), 6);
-    assert.equal(plus("zero","seven"), 7);
-    assert.equal(plus("zero","eight"), 8);
-    assert.equal(plus("zero", "nine"), 9);
-    assert.equal(plus("zero","ten"), 10);
-});
+//it('should add "zeros"', function () {
+//    assert.equal(plus("zero", "zero"), 0);
+//    assert.equal(plus("zero", "one"), 1);
+//    assert.equal(plus("zero", "two"), 2);
+//    assert.equal(plus("zero", "three"), 3);
+//    assert.equal(plus("zero", "four"), 4);
+//    assert.equal(plus("zero", "five"), 5);
+//    assert.equal(plus("zero", "six"), 6);
+//    assert.equal(plus("zero","seven"), 7);
+//    assert.equal(plus("zero","eight"), 8);
+//    assert.equal(plus("zero", "nine"), 9);
+//    assert.equal(plus("zero","ten"), 10);
+//});
+//
+//it('should add "one" to everything', function () {
+//    assert.equal(plus("zero", "zero"), 0);
+//    assert.equal(plus("one", "zero"), 1);
+//    assert.equal(plus("two","zero"), 2);
+//    assert.equal(plus("three", "zero"), 3);
+//    assert.equal(plus("four", "zero"), 4);
+//    assert.equal(plus("five","zero"), 5);
+//    assert.equal(plus("six","zero"), 6);
+//    assert.equal(plus("seven","zero
+//    
+//});
 
-it('should add "one" to everything', function () {
-    assert.equal(plus("one", "zero"), 0);
-});
-
-    
-function plus(A, B) {
+ 
     var numbers = {
         "ten": 10,
         "nine": 9,
@@ -37,13 +44,14 @@ function plus(A, B) {
         "three": 3, //commas seperate values/elements/keys in a list
         "two": 2,
         "one": 1,
-        "zero": 0,
-    };
+        "zero": 0
+    }
     
-    return numbers[B];
+    function add(A,B) {
+        return numbers[A] + numbers[B];
 };
 
-it('should add "
+console.log(add("one","three"));
 
 
 //    if (B == "six") {
