@@ -1,0 +1,23 @@
+{
+  "name": "TIY-Assignments",
+  "version": "1.0.0",
+  "description": "repo for TIY-Assignments",
+  "main": "01_25_15_Notes_main.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GarrettGraham/TIY-Assignments.git"
+  },
+  "author": "Garrett Lee Graham Anderson <ganderson7197@icloud.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GarrettGraham/TIY-Assignments/issues"
+  },
+  "homepage": "https://github.com/GarrettGraham/TIY-Assignments"
+}
