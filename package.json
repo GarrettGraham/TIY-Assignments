@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/GarrettGraham/TIY-Assignments/issues"
   },
-  "homepage": "https://github.com/GarrettGraham/TIY-Assignments"
+  "homepage": "https://github.com/GarrettGraham/TIY-Assignments",
+  "dependencies": {
+    "lodash": "^3.0.0"
+  }
 }
