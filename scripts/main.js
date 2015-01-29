@@ -12,7 +12,7 @@ var board = [
 
 function print(board){
   // Before any rows are printed, print the `<table>`...
-  console.log('<table class="chessboard">');
+  console.log('<table class="chessboard"><tbody><tr><th></th><th>a</th><th>b</th><th>c</th><th>d</th><th>e</th><th>f</th><th>g</th><th>h</th>');
 
   _.forEach(board, function(row, rank){
 
