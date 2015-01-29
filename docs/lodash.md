@@ -32,18 +32,54 @@ _.forEach(collection, [iteratee=_.identity], [thisArg])
     Returns
     (Array|Object|string): Returns collection.
 
-Example
-_([1, 2, 3]).forEach(function(n) { console.log(n); }).value();
-// → logs each value from left to right and returns the array
+    Example:
+    ```
+    _([1, 2, 3]).forEach(function(n) { console.log(n); }).value();
+    // → logs each value from left to right and returns the array
 
-_.forEach({ 'one': 1, 'two': 2, 'three': 3 }, function(n, key) { console.log(n, key); });
-// → logs each value-key pair and returns the object (iteration order is not guaranteed)
-
+    _.forEach({ 'one': 1, 'two': 2, 'three': 3 }, function(n, key) { console.log(n, key); });
+    // → logs each value-key pair and returns the object (iteration order is not guaranteed)
+    ```
 
 _.map(collection, [iteratee=_.identity], [thisArg])
 
 
-Creates an array of values by running each element in collection through iteratee. The iteratee is bound to thisArg and invoked with three arguments; (value, index|key, collection).
+    Creates an array of values by running each element in collection through iteratee. The iteratee is bound to thisArg and invoked with three arguments; (value, index|key, collection).
+
+    If a property name is provided for predicate the created ".property" style callback returns the property value of the given element. 
+
+    If an object is provided for predicate the created ".matches" style callback returns true for elements that have the properties of the given object, else false.
+
+Arguments
+    collection (Array|Object|string): The collection to iterate over.
+    [iteratee=_.identity] (Function|Object|string): The function invoked per iteration. If a property name or object is provided it is used to create a ".property" or ".matches" style callback respectively.
+    [thisArg] (*): The this binding of iteratee.
+    Returns
+    (Array): Returns the new mapped array.
+
+Example
+    ```
+    _.map([1, 2, 3], function(n) { return n * 3; });
+    // → [3, 6, 9]
+
+    _.map({ 'one': 1, 'two': 2, 'three': 3 }, function(n) { return n * 3; });
+    // → [3, 6, 9] (iteration order is not guaranteed)
+
+    var users = [
+      { 'user': 'barney' },
+      { 'user': 'fred' }
+    ];
+
+    // using the "_.property" callback shorthand
+    _.map(users, 'user');
+    // → ['barney', 'fred']
+    ```
+
+
+_.reject(collection, [predicate=_.identity], [thisArg])
+
+
+The opposite of _.filter; this method returns the elements of collection that predicate does not return truthy for. 
 
 If a property name is provided for predicate the created ".property" style callback returns the property value of the given element. 
 
@@ -51,23 +87,24 @@ If an object is provided for predicate the created ".matches" style callback ret
 
 Arguments
 collection (Array|Object|string): The collection to iterate over.
-[iteratee=_.identity] (Function|Object|string): The function invoked per iteration. If a property name or object is provided it is used to create a ".property" or ".matches" style callback respectively.
-[thisArg] (*): The this binding of iteratee.
+[predicate=_.identity] (Function|Object|string): The function invoked per iteration. If a property name or object is provided it is used to create a ".property" or ".matches" style callback respectively.
+[thisArg] (*): The this binding of predicate.
 Returns
-(Array): Returns the new mapped array.
+(Array): Returns the new filtered array.
 
 Example
-_.map([1, 2, 3], function(n) { return n * 3; });
-// → [3, 6, 9]
-
-_.map({ 'one': 1, 'two': 2, 'three': 3 }, function(n) { return n * 3; });
-// → [3, 6, 9] (iteration order is not guaranteed)
+var odds = _.reject([1, 2, 3, 4], function(n) { return n % 2 == 0; });
+// → [1, 3]
 
 var users = [
-  { 'user': 'barney' },
-  { 'user': 'fred' }
+  { 'user': 'barney', 'age': 36, 'active': false },
+  { 'user': 'fred',   'age': 40, 'active': true }
 ];
 
 // using the "_.property" callback shorthand
-_.map(users, 'user');
-// → ['barney', 'fred']
+_.pluck(_.reject(users, 'active'), 'user');
+// → ['barney']
+
+// using the "_.matches" callback shorthand
+_.pluck(_.reject(users, { 'age': 36 }), 'user');
+// → ['fred']
