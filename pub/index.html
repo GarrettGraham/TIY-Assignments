@@ -11,21 +11,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        
+        
+        
+        <!--bower:css-->
+        <!--endbower-->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    
 
-        <!-- Add your site or application content here -->
+
+
+
+    <body>
+
         <div class="container">
             <div class="row">
-                <section class="col-xs-12 col-sm-6 col-md-4">
+                
+                
+                
+    <!-- DONT NEED TO include the col-x-12 in the first two column sections because by default the breakpoints will be there. when you just have the col-xs-12 in the thrid column section, the rendering of the page will be correct and the medium view will have the upper two columns with the third column underneath accross the 12 columns-->
+                <section class="col-sm-6 col-md-4">
                     <form>
                         <div class='form-group'>
                             <label for="firstName">First Name</label>
@@ -43,6 +52,7 @@
                         </div>
                             
                         <div>
+                    <!-- NEED TO HAVE A LABEL TAG FOR THE DROP DOWN MENUS -->
                             <select name="Choose a Country">
                                 <option>Choose a country</option>
                                 <option value="value1">Canada</option>
@@ -59,7 +69,7 @@
                 </section>
                 
                 
-                <section class="col-xs-12 col-sm-6 col-md-4">
+                <section class="col-sm-6 col-md-4">
                     <div class='form-group'>
                         <label for="telephone">Phone Number</label>
                         <input type="telephone" class="form-conrtol" id="phone" placeholder="407.704.5555">
@@ -71,6 +81,7 @@
                     </div>
                     
                     <div>
+                <!-- NEED TO HAVE A LABEL TAG FOR THE DROP DOWN MENUS -->
                         <select name="Occupation">
                             <option>Choose an occupation</option>
                             <option value="value1">Call Girl</option>
@@ -90,8 +101,9 @@
                     </div>
                 </section>
                 
-                <section class="col-xs-12 col-sm-6 col-md-4">
+                <section class="col-xs-12  col-md-4">
                     <div>
+                <!-- NEED TO HAVE A LABEL TAG FOR THE DROP DOWN MENUS -->
                         <select name="talents">
                             <option>Choose a Talent</option>
                             <option value="value1">Call Girl</option>
@@ -129,6 +141,9 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        
+        <!--bower:js-->
+        <!--endbower-->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
