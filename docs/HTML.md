@@ -393,12 +393,6 @@ Block-Level Elements
     <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
     ```
 
-
-
-
-
-
-
 #HTML Elements: Inline
 
 
@@ -505,11 +499,27 @@ Block-Level Elements
       <menuitem label="Separated action">
     </menu>
     ```
+==================================
+21. <label> Label Elemtent</label>
+==================================
+The HTML <label> Element represents a caption for an item in a user interface. It can be associated with a control either by placing the control element inside the label element, or by using the for attribute. Such a control is called the labeled control of the label element.
 
+Content categories: Flow content, phrasing content, interactive content, form-associated element, palpable content.
 
-=======
-=======
-##19.
+Permitted content: Phrasing content, but no descendant label elements. No labelable elements other than the labeled control are allowed.
+
+Tag omission: None, both the starting and ending tag are mandatory.
+
+Permitted parent elements: Any element that accepts phrasing content.
+
+DOM interface: HTMLLabelElement
+
+    Attributes:
+        for
+
+=================
+22. 
+=================
 
 
 In HTML, the relationship between two documents, in which one links to the other using an <a>, <area>, or <link> element, can be specified as one of these link types.
