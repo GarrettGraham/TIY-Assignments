@@ -107,6 +107,10 @@ img {
     float: left;
 }
 
+.details li {
+    style:none;
+}
+
 /*figcaption {
 /*    float: right;}
 
