@@ -13,9 +13,16 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <!--         <link rel="stylesheet" href="../octicons/octicons.css">   -->
         <link rel="stylesheet" href="css/normalize.css">
+        
+        <!--bower:css-->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <!--endbower-->
+        
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
     </head>
     <body>
         
@@ -45,7 +52,7 @@
 -->
         <div class="container-fluid">
             <div class="row">
-            <div class="col-xs-12 col-md-4">
+            <div class="col-xs-12">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
         
@@ -55,9 +62,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <!-- the text for the toggle renders and overlays the hamburger menu
-                        How may i include the drop down links like the github page does while keeping                           the text from showing up on the rendering???-->
                 </button>
+                
                 <a class="navbar-brand" href="#"><i class="fa fa-github fa-2x"></i></a>
             <!-- sytle the octocat icon to be centered in the middle of the page -->
             </div>
@@ -68,36 +74,38 @@
             </ul>
         </div>
     </nav>
-                <div class="profileHeader">
-                    <figure>
-                    <img src="https://avatars3.githubusercontent.com/u/583231?v=3&s=400">
-                    </figure>
-    <figcaption class="userDetails">  
-       <h3>The Octocat</h3>
-        <h4>octocat</h4>
-        <ol class="details">
-            <li><i class="fa fa-map-marker"></i><h5>Orlando, FL</h5></li>
-           
-            <li><i class="fa fa-envelope-o"></i>
-                <h5>me@me.com</h5></li>
-        </ol>
-        </figcaption>      
-    </div>        
+                
+    <div class="profileImage">
+        <figure>
+            <img src="https://avatars3.githubusercontent.com/u/583231?v=3&s=400">
+        </figure>        
+            <figcaption class="userDetails">  
+               <h3>The Octocat</h3>
+                    <h4>octocat</h4>
+                        <ol class="details">
+                            <li><i class="fa fa-users"></i><h5>GitHub</h5></li>
+                            <li><i class="fa fa-map-marker"></i><h5>San Francisco</h5></li>
+                            <li><i class="fa fa-envelope-o"></i><h5>octocat@github.com</h5></li>
+                            <li><i class="fa fa-link"></i><h5>http://www.github.com/blog</h5></li> <!--need the icon for the link -->
+                        </ol>
+            </figcaption>      
+    </div> 
         
-            
+        <button><!-- bootstrap --></button>        
+                </div>
+        
+          <!--  
             <div class="col-xs-12 col-md-4">
             
-<!--  These are the breakpoints for the medium desktop view  -->
+<!--  These are the breakpoints for the medium desktop view 
             </div>
             
-<!--            <div class=""></div>-->
+<!--            <div class=""></div>
         </div>
     
-</div> <!-- closing div for the first <div class='container fluid'>-->
+</div> <!-- closing div for the first <div class='container fluid'
 
-        </div>        
-       
-        
+        </div>        -->
         
         
         
