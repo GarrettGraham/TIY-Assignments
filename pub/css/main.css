@@ -107,9 +107,6 @@ img {
     float: left;
 }
 
-.details li {
-    style:none;
-}
 
 /*figcaption {
 /*    float: right;}
@@ -120,7 +117,9 @@ img {
 */
 
 
-
+.panel-body > div{
+    border-bottom: 0.1em;
+}
 
 
 
