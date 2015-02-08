@@ -97,9 +97,23 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-img {
-   border-radius:0.2em; 
+
+/*
+.profileHeader figure {
+    border-radius:0.2em;
+    width:7em;
+    height:7em;
+    float: left;
 }
+
+figcaption {
+    float: right;
+}
+
+.details {
+    style:none;
+}
+*/
 
 
 
