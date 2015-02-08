@@ -83,7 +83,7 @@
                         
                             <div class="userDetails">
                                     <ul>
-                                        <li><span class="octicon octicon-organization"> GitHub</span></li>
+                                        <li><span class="octicon octicon-organization"> <id></id></span></li>
                                         <li><span class="octicon octicon-location"> San Francisco</span></li>
                                         <li><span class="octicon octicon-mail"><a href="mailto:octocat@github.com"> octocat@github.com</a></span></li> <!-- saw that carolina used a mailto so i looked it up in mdn and wrote it out based on the example on mdn -->
                                         <li><span class="octicon octicon-link"><a href=""> http://www.github.com/blog</a></span></li>
@@ -157,11 +157,15 @@
         
         <script>
             $(document).ready(function(data) {
+                console.log()
+// saw that Jared wrote a test for the json data. id like to understand that more: use watch mocha in terminal to run the test? looking at the code is a helpful reminder of the syntax of jquery and he explained to me the classes being called but im still fuzzy on the function names, like he wrote user and i wrote users. is there a difference?
                 
-                
-                
-            });
+    });
+    
+    $.getJSON("octocat.json", function(users) {
+        $('.profileHeader').find('#').append(users.company),
         
+    });
         </script>
         
         
