@@ -100,21 +100,26 @@ textarea {
 /*.navbar-brand {
     align-content:center;}*/
 
-img {
+.octokitty {
     border-radius:0.2em;
     width:7em;
     height:7em;
     float: left;
 }
 
-
-textarea {
-    width:100%;
+.profileHeader {
+    position:relative;
+    border-bottom:1px;
 }
 
 .userDetails {
-    display: block;
+    float:right;
+    list-style:none;
 }
+textarea {
+    max-width:100%;
+}
+
 
 /*figcaption {
 /*    float: right;}

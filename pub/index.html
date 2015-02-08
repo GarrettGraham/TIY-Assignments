@@ -64,7 +64,7 @@
                             <span class="icon-bar"></span>
                         </button>
 
-                        <a class="navbar-brand" href="#"><span class="octicon octicon-flame"></span></a>
+                        <a class="navbar-brand" href="#"><span class="octicon octicon-mark-github"></span></a>
                     <!-- sytle the octocat icon to be centered in the middle of the page -->
                     </div>
 
@@ -75,51 +75,52 @@
                 </div>
             </nav>
                 
-                <div class="profileImage">
+                <div class="profileHeader">
                     <figure>
-                        <img src="https://avatars3.githubusercontent.com/u/583231?v=3&s=400">
+                        <img src="https://avatars3.githubusercontent.com/u/583231?v=3&s=400" class="octokitty">
+                    <figcatpion><h4>The Octocat</h4><h5>octocat</h5></figcatpion>
+                    
                     </figure>        
-                        <figcaption class="userDetails">  
-                           <h3>The Octocat</h3>
-                                <h4>octocat</h4>
-                                    <ol class="details">
-                                        <li><i class="fa fa-users"></i><h5>GitHub</h5></li>
-                                        <li><i class="fa fa-map-marker"></i><h5>San Francisco</h5></li>
-                                        <li><i class="fa fa-envelope-o"></i><h5>octocat@github.com</h5></li>
-                                        <li><i class="fa fa-link"></i><h5>http://www.github.com/blog</h5></li> <!--need the correct icon for the link: try to get octicons to render -->
-                                    </ol>
-                        </figcaption>      
+                        
+                            <div class="userDetails">
+                                    <ul>
+                                        <li><span class="octicon octicon-organization"></span><p>GitHub<p></li>
+                                        <li><span class="octicon octicon-location"></span><p>San Francisco</p></li>
+                                        <li><span class="octicon octicon-mail"></span><a href="mailto:octocat@github.com">octocat@github.com</a></li> <!-- saw that carolina used a mailto so i looked it up in mdn and wrote it out based on the example on mdn -->
+                                        <li><span class="octicon octicon-link"></span><a href=""><p>http://www.github.com/blog</p></a></li>
+                                    </ul>
+                            </div>  
                 </div> 
         
             <br>
             
-                    <button type="button" class="btn btn-success btn-lg btn-block"><i class="fa fa-user"></i>Follow</button> 
-            
-            
+                    <button type="button" class="btn btn-success btn-lg btn-block"><span class="octicon octicon-person"></span></i>Follow</button> 
                
             <br>
+        
+        <!-- Popular Repos: need to push the star to far right and include the numbers representing the users who starred the repo -->
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Popular Repositories</h3>
                             </div>
                                 <div class="panel-body">
-                                    <i class="fa fa-cube"></i>octocat/Spoon-Knife<i class="fa fa-heart-o"></i>
+                                    <span class="octicon octicon-repo"></span><a href="">octocat/Spoon-Knife</a><i class="fa fa-heart-o"></i>
                                 </div>
                             
                             <div class="panel-body">
-                                    <i class="fa fa-cube"></i>octocat/Hello-World<i class="fa fa-heart-o"></i>
+                                    <span class="octicon octicon-repo"></span>octocat/Hello-World<i class="fa fa-heart-o"></i>
                                 </div>
                             
                             <div class="panel-body">
-                                    <i class="fa fa-cube"></i>octocat/hello-world<i class="fa fa-heart-o"></i>
+                                    <span class="octicon octicon-repo"></span>octocat/hello-world<i class="fa fa-heart-o"></i>
                                 </div>
                             
                             <div class="panel-body">
-                                    <i class="fa fa-cube"></i>octocat/octocat.github.io<i class="fa fa-heart-o"></i>
+                                    <span class="octicon octicon-repo"></span>octocat/octocat.github.io<i class="fa fa-heart-o"></i>
                                 </div>
                             
                             <div class="panel-body">
-                                    <i class="fa fa-cube"></i>octocat/git-consortium<i class="fa fa-heart-o"></i>
+                                    <span class="octicon octicon-repo"></span>octocat/git-consortium<i class="fa fa-heart-o"></i>
                                 </div>
                             
                         
