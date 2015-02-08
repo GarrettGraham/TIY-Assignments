@@ -109,13 +109,36 @@ textarea {
 
 .profileHeader {
     position:relative;
-    border-bottom:1px;
+    border-bottom:1px solid grey;
+    margin-bottom:0.9em;
+    padding:0.9em 0.9em 0.6em;
+}
+
+.profileHeader h4 {
+    margin:0;
+
+}
+
+
+.profileHeader h5 {
+    color:grey;
+    font-size:0.75em;
+    margin:0;
 }
 
 .userDetails {
-    float:right;
-    list-style:none;
+    margin:0.5em;
+    padding: 0;
+    list-style-type: none;
 }
+
+.userDetails span{
+    color: grey;
+
+}
+
+
+
 textarea {
     max-width:100%;
 }
