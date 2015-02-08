@@ -108,18 +108,27 @@ img {
 }
 
 
+textarea {
+    width:100%;
+}
+
+.userDetails {
+    display: block;
+}
+
 /*figcaption {
 /*    float: right;}
 
+
+
+
+
+
 /*
-.details {
-    style:none;}
-*/
-
-
-.panel-body > div{
+.panel-body {
     border-bottom: 0.1em;
 }
+*/
 
 
 
