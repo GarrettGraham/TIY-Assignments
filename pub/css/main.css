@@ -131,12 +131,9 @@ textarea {
     padding-left:0.5em;
 }
 
-.profileHeader h4 {
-    padding-left:5em;
-}
-
-ul {
-    list-style: none;
+.userDetails ul {
+    list-style:none;
+    font-size:30%;
 }
 
 .userDetails span{
