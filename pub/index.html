@@ -165,10 +165,23 @@
              I still need to play major catch up in order to understand the DOM, JSOn
                 and the API stuff and synthesize the knowledge and commit it to memory!! -->
 <!--
-        <script>
+        
+    $(document).ready(function() {
+
+    var userData = $.getJSON("https://api.github.com/users/:user");
+
+userData.done(function(json) {
+var user =json;
+
+$("#myname").html(user.name);
+
+
+});
+
+    <script>
         var octocat;
             
-            var promis = $.get('https://api.github.com/users/octocat',
+            var promise = $.get('https://api.github.com/users/octocat',
                 function(data) {
                     console.log('done!',data.login);
                     octocat = data;
