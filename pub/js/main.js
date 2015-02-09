@@ -18,15 +18,15 @@ $(document).ready(function(data) {
     });
 
 //$('button').click(function (postComment) {
-//    $.post("https://api.github.com/repos/TheIronYard--Orlando/FEE--2015--SPRING/issues/248/comments?access_token=74bb82cbc3e64f93285bab5934430939524b8472", comment)
+//    $.postJSON("https://api.github.com/repos/TheIronYard--Orlando/FEE--2015--SPRING/issues/248/comments?access_token=74bb82cbc3e64f93285bab5934430939524b8472", comment)
 //    });
 //        pretty sure this isnt correct
         
-====================================
-Notations from Peers: 09-02-15
-====================================
-    maddie did $.getJSON
-                    $('').text
-                    
-    Adam did $.getJSON
-                    $('').html
+//====================================
+//Notations from Peers: 09-02-15
+//====================================
+//    maddie did $.getJSON
+//                    $('').text
+//                    
+//    Adam did $.getJSON
+//                    $('').html
