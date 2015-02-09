@@ -11,198 +11,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/octicons/octicons.css">
+
         <link rel="stylesheet" href="css/normalize.css">
-        
-        <!--bower:css-->
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-        <!--endbower-->
-        
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-
     </head>
     <body>
-        
-<!--
-        <header>
-            <div class='banner'>
-                
-             <span class="octicon octicon-mark-github"></span>
-            <input type="text" class="searchBox" id="searchGithub" placeholder="Search GitHub">
-        
-        <a href="url">Explore</a>
-        <a href="url">Gist</a>
-        <a href="url">Blog</a>
-        <a href="url">Help</a>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-        <img src="jpg of me...">
-        
-        <a href="url">GarrettGraham</a>
-        
-        <span class="octicon octicon-plus"></span>
-        <span class="octicon octicon-inbox"></span>
-        <span class="octicon octicon-gear"></span>
-        <span class="octicon octicon-sign-out"></span>
+        <!-- Add your site or application content here -->
+        <p>Hello world! This is HTML5 Boilerplate.</p>
 
-            </div>
-        </header>
--->
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-md-4 col-md-8"> <!-- to have the md size columns here will create a responsive app -->
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-
-                        <a class="navbar-brand" href="#"><span class="octicon octicon-mark-github"></span></a>
-                    <!-- sytle the octocat icon to be centered in the middle of the page -->
-                    </div>
-
-                    <ul class="nav nav-tabs">
-                        <li role="presentation" class="active"><a href="#">About</a></li>
-                        <li role="presentation"><a href="#">Repositories</a></li>
-                    </ul>
-                </div>
-            </nav>
-                
-                <div class="profileHeader">
-                    <figure>
-                        <img src="https://avatars3.githubusercontent.com/u/583231?v=3&s=400" class="octokitty">
-                    <figcatpion><h4>The Octocat</h4><h5>octocat</h5></figcatpion>
-                    </figure>        
-                        
-                            <div class="userDetails">
-                                    <ul>
-                                        <li><span class="octicon octicon-organization"> GitHub</span></li>
-                                        <li><span class="octicon octicon-location"> San Francisco</span></li>
-                                        <li><span class="octicon octicon-mail"><a href="mailto:octocat@github.com"> octocat@github.com</a></span></li> <!-- saw that carolina used a mailto so i looked it up in mdn and wrote it out based on the example on mdn -->
-                                        <li><span class="octicon octicon-link"><a href=""> http://www.github.com/blog</a></span></li>
-                                    </ul>
-                                </div>  
-                            </div> 
-        
-            <br>
-            
-                    <button type="button" class="btn btn-success btn-lg btn-block"><span class="octicon octicon-person"></span></i>Follow</button> 
-               
-            <br>
-        
-        <div class="userTracking">
-            <ul>
-                <li>{{Followers}}</li>
-                <li>{{Starred}}</li>
-                <li>{{Following}}</li>
-            </ul>
-        </div>
-        
-        <!-- Popular Repos: need to push the star to far right and include the numbers representing the users who starred the repo -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Popular Repositories</h3>
-                            </div>
-                                <div class="panel-body">
-                                    <span class="octicon octicon-repo"></span><a href="">octocat/Spoon-Knife</a>
-                                </div>
-                            
-                            <div class="panel-body">
-                                <span class="octicon octicon-repo"></span><a href="">octocat/Hello-World</a>
-                                </div>
-                            
-                            <div class="panel-body">
-                                <span class="octicon octicon-repo"></span><a href="">octocat/hello-world</a>
-                                </div>
-                            
-                            <div class="panel-body">
-                                <span class="octicon octicon-repo"></span><a href="">octocat/octocat.github.io</a>
-                                </div>
-                            
-                            <div class="panel-body">
-                                <span class="octicon octicon-repo"></span><a href="">octocat/git-consortium</a>
-                            </div>
-                            
-                        
-                    <!-- the form below will be for the comment box and use a placeholder text for "leave a comment" and us change the default code to create the submit button instead of save as is exemplified on mdn -->
-                            <form action="" method="post">
-                                <button>Comment</button> <textarea class="form-control" rows="5" cols="50"></textarea>
-                            </form>
-
-            
-                            
-            </div>   
-        </div>
-        
-     
-         <!--
-<div class="container"> to create a seperate container would make this more adaptive : for responsive, you may include the col-md-4 col-md-8 along side the col-xs-12
-    <div class="row">
-<div class="col-md-4 col-md-8"> <!-- These are the breakpoints for the medium desktop view 
-            </div> -->
-
-        
-        <!-- bower.js-->
-        <script src= "bower_components/jquery/dist/jquery.js"></script>
-        <script src= "bower_components/bootstrap/dist/js/bootstrap.js"></script>
-        <!-- endbower-->
-        
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        
-        
-    <!-- !!The below script code is for the API info to be ued for the assignment
-             I still need to play major catch up in order to understand the DOM, JSOn
-                and the API stuff and synthesize the knowledge and commit it to memory!! -->
-<!--
-        
-    $(document).ready(function() {
 
-    var userData = $.getJSON("https://api.github.com/users/:user");
-
-userData.done(function(json) {
-var user =json;
-
-$("#myname").html(user.name);
-
-
-});
-
-    <script>
-        var octocat;
-            
-            var promise = $.get('https://api.github.com/users/octocat',
-                function(data) {
-                    console.log('done!',data.login);
-                    octocat = data;
-                }
-            );
-            
-            console.log(octocat);
-            
-            promise.done(function(data) {
-                console.log('second callback', data);
-            });
-
-            promise.done(function() {
-                console.log('third callback', octocat.login);
-            });
-        
-        </script>
-        
--->
-        
-        
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
