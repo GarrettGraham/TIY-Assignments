@@ -129,7 +129,10 @@ textarea {
 .userDetails {
     margin:0.5em;
     padding: 0;
-    list-style-type: none;
+}
+
+ul {
+    list-style: none;
 }
 
 .userDetails span{

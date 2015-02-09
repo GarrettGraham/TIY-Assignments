@@ -83,13 +83,13 @@
                         
                             <div class="userDetails">
                                     <ul>
-                                        <li><span class="octicon octicon-organization"> <id></id></span></li>
+                                        <li><span class="octicon octicon-organization">GitHub</span></li>
                                         <li><span class="octicon octicon-location"> San Francisco</span></li>
                                         <li><span class="octicon octicon-mail"><a href="mailto:octocat@github.com"> octocat@github.com</a></span></li> <!-- saw that carolina used a mailto so i looked it up in mdn and wrote it out based on the example on mdn -->
                                         <li><span class="octicon octicon-link"><a href=""> http://www.github.com/blog</a></span></li>
                                     </ul>
-                            </div>  
-                </div> 
+                                </div>  
+                            </div> 
         
             <br>
             
@@ -163,7 +163,7 @@
     });
     
     $.getJSON("octocat.json", function(users) {
-        $('.profileHeader').find('#').append(users.company),
+        $('figcaption').find('h5').append(users.name),
         
     });
         </script>
