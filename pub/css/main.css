@@ -128,7 +128,11 @@ textarea {
 
 .userDetails {
     margin:0.5em;
-    padding: 0;
+    padding-left:0.5em;
+}
+
+.profileHeader h4 {
+    padding-left:5em;
 }
 
 ul {
@@ -137,6 +141,7 @@ ul {
 
 .userDetails span{
     color: grey;
+    padding-left:0.5em;
 
 }
 
