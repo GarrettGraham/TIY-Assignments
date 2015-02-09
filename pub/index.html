@@ -83,7 +83,7 @@
                         
                             <div class="userDetails">
                                     <ul>
-                                        <li><span class="octicon octicon-organization">GitHub</span></li>
+                                        <li><span class="octicon octicon-organization"> GitHub</span></li>
                                         <li><span class="octicon octicon-location"> San Francisco</span></li>
                                         <li><span class="octicon octicon-mail"><a href="mailto:octocat@github.com"> octocat@github.com</a></span></li> <!-- saw that carolina used a mailto so i looked it up in mdn and wrote it out based on the example on mdn -->
                                         <li><span class="octicon octicon-link"><a href=""> http://www.github.com/blog</a></span></li>
@@ -107,19 +107,19 @@
                                 </div>
                             
                             <div class="panel-body">
-                                    <span class="octicon octicon-repo"></span>octocat/Hello-World<i class="fa fa-heart-o"></i>
+                                <span class="octicon octicon-repo"></span><a href="">octocat/Hello-World</a><i class="fa fa-heart-o"></i>
                                 </div>
                             
                             <div class="panel-body">
-                                    <span class="octicon octicon-repo"></span>octocat/hello-world<i class="fa fa-heart-o"></i>
+                                <span class="octicon octicon-repo"></span><a href="">octocat/hello-world</a><i class="fa fa-heart-o"></i>
                                 </div>
                             
                             <div class="panel-body">
-                                    <span class="octicon octicon-repo"></span>octocat/octocat.github.io<i class="fa fa-heart-o"></i>
+                                <span class="octicon octicon-repo"></span><a href="">octocat/octocat.github.io</a><i class="fa fa-heart-o"></i>
                                 </div>
                             
                             <div class="panel-body">
-                                    <span class="octicon octicon-repo"></span>octocat/git-consortium<i class="fa fa-heart-o"></i>
+                                <span class="octicon octicon-repo"></span><a href="">octocat/git-consortium</a><i class="fa fa-heart-o"></i>
                                 </div>
                             
                         
@@ -132,20 +132,16 @@
 -->
                             
                             
-                                <label>Comment <textarea class="form-control" rows="5" cols="50"></textarea></label>
+                    <label>Comment <textarea class="form-control" rows="5" cols="50"></textarea></label>
+            
                             
-                        </div>
-                
-                
-                
-                
-                
+            </div>   
         </div>
         
      
-            <div class="col-md-4 col-md-8">
+         <!--   <div class="col-md-4 col-md-8">
             
-<!--  These are the breakpoints for the medium desktop view -->
+<!--  These are the breakpoints for the medium desktop view 
             </div>
             
 <!--            <div class=""></div>
@@ -155,34 +151,16 @@
 
         </div>        -->
         
-        <script>
-            $(document).ready(function(data) {
-                console.log()
-// saw that Jared wrote a test for the json data. id like to understand that more: use watch mocha in terminal to run the test? looking at the code is a helpful reminder of the syntax of jquery and he explained to me the classes being called but im still fuzzy on the function names, like he wrote user and i wrote users. is there a difference?
-                
-    });
-    
-    $.getJSON("octocat.json", function(users) {
-        $('figcaption').find('h5').append(users.name),
-        
-    });
-        </script>
-        
-        
-        
         <!-- bower.js-->
         <script src= "bower_components/jquery/dist/jquery.js"></script>
-        <script src= "bower_components/bootstrap/dist/js.js"></script>
-
+        <script src= "bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <!-- endbower-->
         
-<!--
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
--->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
         
         
     <!-- !!The below script code is for the API info to be ued for the assignment
