@@ -1314,17 +1314,18 @@ Standard Built-in Objects
 
                 Date.prototype.setSeconds() - Sets the seconds for a specified date according to local time.
 
-                Date.prototype.setTime() - Sets the Date object to the time represented by a number of milliseconds since January 1,
-                                            1970, 00:00:00 UTC, allowing for negative numbers for times prior.
+                Date.prototype.setTime() - Sets the Date object to the time represented by a number of milliseconds since
+                                            January 1, 1970, 00:00:00 UTC, allowing for negative numbers for times prior.
 
                 Date.prototype.setUTCDate() - Sets the day of the month for a specified date according to universal time.
 
-                Date.prototype.setUTCFullYear() - Sets the full year (e.g. 4 digits for 4-digit years) for a specified date
-                                                    according to universal time.
+                Date.prototype.setUTCFullYear() - Sets the full year (e.g. 4 digits for 4-digit years) for a specified
+                                                    date according to universal time.
 
                 Date.prototype.setUTCHours() - Sets the hour for a specified date according to universal time.
 
-                Date.prototype.setUTCMilliseconds() - Sets the milliseconds for a specified date according to universal time.
+                Date.prototype.setUTCMilliseconds() - Sets the milliseconds for a specified date according to universal
+                                                        time.
 
                 Date.prototype.setUTCMinutes() - Sets the minutes for a specified date according to universal time.
 
@@ -1332,8 +1333,8 @@ Standard Built-in Objects
 
                 Date.prototype.setUTCSeconds() - Sets the seconds for a specified date according to universal time.
 
-                Date.prototype.setYear() - ::Deprecated:: Sets the year (usually 2-3 digits) for a specified date according to local
-                                            time. Use setFullYear() instead.
+                Date.prototype.setYear() - ::Deprecated:: Sets the year (usually 2-3 digits) for a specified date
+                                                according to local time. Use setFullYear() instead.
                                             
             Conversion Getter: 
             
@@ -1347,19 +1348,20 @@ Standard Built-in Objects
                 Date.prototype.toGMTString() - Returns a string representing the Date based on the GMT (UT) time zone. Use
                                                 toUTCString() instead.
 
-                Date.prototype.toLocaleDateString() - Returns a string with a locality sensitive representation of the date portion
-                                                        of this date based on system settings.
+                Date.prototype.toLocaleDateString() - Returns a string with a locality sensitive representation of the
+                                                        date portion of this date based on system settings.
 
                 Date.prototype.toLocaleFormat() - Converts a date to a string, using a format string.
 
-                Date.prototype.toLocaleString() - Returns a string with a locality sensitive representation of this date. Overrides
-                                                    the Object.prototype.toLocaleString() method.
+                Date.prototype.toLocaleString() - Returns a string with a locality sensitive representation of this date.
+                                                    Overrides the Object.prototype.toLocaleString() method.
 
-                Date.prototype.toLocaleTimeString() - Returns a string with a locality sensitive representation of the time portion
-                                                        of this date based on system settings.
+                Date.prototype.toLocaleTimeString() - Returns a string with a locality sensitive representation of the
+                                                        time portion of this date based on system settings.
 
-                Date.prototype.toSource() - Returns a string representing the source for an equivalent Date object; you can use this
-                                                value to create a new object. Overrides the Object.prototype.toSource() method.
+                Date.prototype.toSource() - Returns a string representing the source for an equivalent Date object; you
+                                                can use this value to create a new object. Overrides the
+                                                Object.prototype.toSource() method.
 
                 Date.prototype.toString() - Returns a string representing the specified Date object. Overrides the
                                                 Object.prototype.toString() method.
@@ -1368,13 +1370,14 @@ Standard Built-in Objects
 
                 Date.prototype.toUTCString() - Converts a date to a string using the UTC timezone.
 
-                Date.prototype.valueOf() - Returns the primitive value of a Date object. Overrides the Object.prototype.valueOf()
-                                            method.
+                Date.prototype.valueOf() - Returns the primitive value of a Date object. Overrides the
+                                            Object.prototype.valueOf() method.
                                             
                                         
                     ```                        
                     Methods inherited from Object: __defineGetter__, __defineSetter__, hasOwnProperty, isPrototypeOf,
-                                                    __lookupGetter__, __lookupSetter__, __noSuchMethod__, propertyIsEnumerable,
+                                                    __lookupGetter__, __lookupSetter__, __noSuchMethod__,
+                                                    propertyIsEnumerable,
                                                     unwatch, watch
                     ```
                     

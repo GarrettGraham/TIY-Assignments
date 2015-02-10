@@ -118,8 +118,13 @@ textarea {
 }
 */
 
+/* 
+What does the asterisk before margin and padding refer to??
+*/
 
-#he {
+html, body {height: 100%;}
+
+#hex {
     color: white;
     font: 64px/64px Calibri;
     height: 64px;
@@ -128,13 +133,6 @@ textarea {
     margin-top:-32px;
     text:center;
 }
-
-
-
-
-
-
-
 
 
 
