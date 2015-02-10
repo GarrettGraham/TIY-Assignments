@@ -1201,7 +1201,7 @@ Standard Objects(by category)
         objects dealing with numbers, dates and mathematical calculations
             * Number
             * Math
-            * Date
+            * Date - see below
     
     Text Processing
         objects for manipulating texts.
@@ -1239,6 +1239,7 @@ Standard Objects(by category)
             * Intl.NumberFormat
     Other
             * arguments
+            
 ============================
  DATE : An Object Container?
 ============================
