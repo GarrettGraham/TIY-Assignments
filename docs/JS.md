@@ -1152,7 +1152,27 @@ Object Manipulation Statements:
 ===============================================
 Standard Built-in Objects
 ===============================================
+Summary
+    The term "global objects" (or standard built-in objects) here is not to be confused with the global object. 
+        Here, global objects refer to objects in the global scope (but only if ECMAScript 5 strict mode is not used! Otherwise it returns undefined). 
+        The global object itself can be accessed by the this operator in the global scope. In fact, the global scope consists of the properties of 
+        the global object (including inherited properties, if any).
 
+    Other objects in the global scope are either created by the user script or provided by the host application. The host objects available 
+        in browser contexts are documented in the API reference. For more information about the distinction between the DOM and core JavaScript, 
+        see JavaScript technologies overview.
+
+Standard Objects(by category)
+    Value Properties
+        Global properties returning a simple value
+            * Infinity
+            * NaN
+            * undefined
+            * null - literal
+            
+    Function properties
+        Global functions returning the result of a specific routine
+            *
 ============================
  DATE : An Object Container
 ============================
