@@ -1172,9 +1172,75 @@ Standard Objects(by category)
             
     Function properties
         Global functions returning the result of a specific routine
-            *
+            * eval()
+            * isFinite()
+            * isNaN()
+            * parseFloat()
+            * parseInt()
+            * decodeURI()
+            * decodeURIComponent()
+            * encodeURI()
+            * encodeURIComponent()
+    
+    Fundamental Objects
+        General language objects, functions and errors.
+            * Object
+            * Function
+            * Boolean
+            * Symbol - inBeta
+            * Error
+            * EvalError
+            * InternalError
+            * RangeError
+            * ReferenceError
+            * SyntaxError
+            * TypeError
+            * URIError
+    
+    Numbers and Dates
+        objects dealing with numbers, dates and mathematical calculations
+            * Number
+            * Math
+            * Date
+    
+    Text Processing
+        objects for manipulating texts.
+            * string
+            * RegExp
+            
+    Indexed collections
+        collections ordered by an index. Array-type objects
+            * Array
+            * Int8Array
+            * Uint8Array
+            * Uint8ClampedArray
+            * Int16Array
+            * Uint16Array
+            * Int32Array
+            * Uint32Array
+            * Float32Array
+            * Float64Array
+            
+    Keyed collections
+        collections of objects as keys. Elements iterable in insertion order.
+            * inBeta
+    
+    Structured data
+        Data buffers and JavaScript Object Notation.
+            * ArrayBuffer
+            * DataView
+            * JSON
+            
+    Internationalization
+        Additions to the ECMAScript core for language-sensitive functionalities.
+            * Intl
+            * Intl.Collator
+            * Intl.DateTimeFormat
+            * Intl.NumberFormat
+    Other
+            * arguments
 ============================
- DATE : An Object Container
+ DATE : An Object Container?
 ============================
     SUMMARY:
         Creates a JavaScript Date instance that represents a single moment in time. Date objects are based on a time value that is
