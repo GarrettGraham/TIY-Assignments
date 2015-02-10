@@ -1153,9 +1153,9 @@ Object Manipulation Statements:
 Standard Built-in Objects
 ===============================================
 
-======
- DATE
-======
+============================
+ DATE : An Object Container
+============================
     SUMMARY:
         Creates a JavaScript Date instance that represents a single moment in time. Date objects are based on a time value that is
         the number of milliseconds since 1 January, 1970 UTC.
@@ -1291,18 +1291,18 @@ Standard Built-in Objects
 
                 Date.prototype.getUTCMonth() - Returns the month (0-11) in the specified date according to universal time.
 
-                Date.prototype.getUTCSeconds() - Returns the seconds (0-59) in the specified date according to universal time.
+                Date.prototype.getUTCSeconds() - Returns the seconds (0-59) in the specified date according to universal
+                                                    time.
 
-                Date.prototype.getYear() - ::Deprecated:: Returns the year (usually 2-3 digits) in the specified date according to 
-                                                local time. 
-                                            Use getFullYear() instead.
+                Date.prototype.getYear() - ::Deprecated:: Returns the year (usually 2-3 digits) in the specified date
+                                                according to local time. Use getFullYear() instead.
                 
             Setter:
             
                 Date.prototype.setDate() - Sets the day of the month for a specified date according to local time.
 
-                Date.prototype.setFullYear() - Sets the full year (e.g. 4 digits for 4-digit years) for a specified date according
-                                                to local time.
+                Date.prototype.setFullYear() - Sets the full year (e.g. 4 digits for 4-digit years) for a specified date
+                                                according to local time.
                                                 
                 Date.prototype.setHours() - Sets the hours for a specified date according to local time.
 
@@ -1375,11 +1375,116 @@ Standard Built-in Objects
                                             
                                         
                     ```                        
-                    Methods inherited from Object: __defineGetter__, __defineSetter__, hasOwnProperty, isPrototypeOf,
-                                                    __lookupGetter__, __lookupSetter__, __noSuchMethod__,
-                                                    propertyIsEnumerable,
-                                                    unwatch, watch
+                    Methods inherited from Object: __defineGetter__, __defineSetter__, hasOwnProperty,
+                                                    isPrototypeOf, __lookupGetter__, __lookupSetter__,
+                                                    __noSuchMethod__, propertyIsEnumerable, unwatch, watch
                     ```
-                    
+    EXAMPLES:
+        * several ways to create JavaScript dates
+    ```
+    var today = new Date ();
+    var birthday = new Date('December 17, 1995 03:24:00');
+    var birthday = new Date('1995-12-17T03:24:00');
+    var birthday = new Date(1995, 11, 17);
+    var birthday = new Date(1995, 11, 17, 3, 24, 0);
+    ```
     
+    Two digit years map to 1900 - 1999
+        * In order to create and get dates between the years 0 and 99 the Date.prototype.setFullYear() 
+            and Date.prototype.getFullYear() methods should be used
+    ```
+    var date = new Date(98, 1); // Sun Feb 01 1998 00:00:00 GMT+0000 (GMT)
+
+    // Deprecated method, 98 maps to 1998 here as well
+        date.setYear(98);           // Sun Feb 01 1998 00:00:00 GMT+0000 (GMT)
+
+        date.setFullYear(98);       // Sat Feb 01 0098 00:00:00 GMT+0000 (BST)
+    ```
+    
+    Calculating elapsed time
+        * show how to determine the elapsed time between two JavaScript dates:
+    ```
+    // using Date objects
+        var start = Date.now();
+
+    // the event to time goes here:
+        doSomethingForALongTime();
+        var end = Date.now();
+        var elapsed = end - start; // elapsed time in milliseconds
+    ```
+    
+    ```
+    // using built-in methods
+        var start = new Date();
+
+    // the event to time goes here:
+        doSomethingForALongTime();
+        var end = new Date();
+        var elapsed = end.getTime() - start.getTime(); // elapsed time in milliseconds    
+    ```
+    
+    ```
+    // to test a function and get back its return
+        function printElapsedTime(fTest) {
+          var nStartTime = Date.now(),
+              vReturn = fTest(),
+              nEndTime = Date.now();
+
+          console.log('Elapsed time: ' + String(nEndTime - nStartTime) + ' milliseconds');
+          return vReturn;
+        }
+
+    yourFunctionReturn = printElapsedTime(yourFunction);
+    ```
+    
+    Note: In browsers that support the Web Performance API's high-resolution time feature, 
+    Performance.now() can provide more reliable and precise measurements of elapsed time than Date.now().
+    
+    Browser compatability: all
+    
+
+==========================
+WindowTimers.setInterval()
+==========================
+
+    SUMMARY:
+        calls a function or executes a code snippet repeatedly, with a fixed time
+        delay between each call to that function. Returns an intervalID.
+        
+    SYNTAX:
+        ```
+        var intervalID = window.setInterval(func, delay[, param1,
+        var intervalID = window.setInterval(code, delay);
+        ```
+        * intervalID is a unique interval ID you can pass to clearInterval().
+        * func is the function you want to be called repeatedly
+        * code in the alternate syntax, is a string of code you want to be executed repeatedly
+            (using this syntax is not recommended for the same reasons as using eval() )
+        * delay is the number of milliseconds (thousandths of a second) that the setInterval() 
+            function should wait before each call to func. As with setTimeout, there is a minimum delay
+            enforced
+        
+        Note that passing additional parameters to the function in the first syntax does not
+        work in IE 9 and betow. If you want to enable this functionality on that browser you must use a 
+        a compatibility code (see the Callback arguments paragraph).
+        
+        Note: Prior to Gecko 13 (Firefox 13.0 / Thunderbird 13.0 / SeaMonkey 2.10), Gecko passed an 
+                extra parameter to the callback routine, indicating the "actual lateness" of the timeout 
+                in milliseconds. This non-standard parameter is no longer provided.
+        
+        Note: Within scope of extension development you should use this method with care, because 
+                window object could be updated during such events as checking for extensions' updates 
+                and hence timers that attached to it could be lost (as shown in Addons developer forum example). 
+                In such case nsITimer interface can provide more reliable results.
                 
+    EXAMPLES: 
+    
+        Generic
+        ```
+        var intervalID = window.setInterval(animate, 500);
+        ```
+        
+        Example 2: Alternating two colors
+            * the following will continue to call the flashtext() function once a second, until you 
+                clear the intervalID by blicking the Stop Button
+    
