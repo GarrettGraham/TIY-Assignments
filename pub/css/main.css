@@ -126,7 +126,7 @@ html, body {height: 100%;}
 
 #hex {
     color: white;
-    font: 64px/64px Calibri;
+    font: 64px/64px Calibri; /* I changed the font from the site as it was a custom font with an @import url */
     height: 64px;
     position: relative;
     top: 50%;
