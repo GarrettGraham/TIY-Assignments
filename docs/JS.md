@@ -1240,9 +1240,10 @@ Standard Objects(by category)
     Other
             * arguments
             
-============================
- DATE : An Object Container?
-============================
+            
+=================================
+DATE: A Standard Built-in object 
+=================================
     SUMMARY:
         Creates a JavaScript Date instance that represents a single moment in time. Date objects are based on a time value that is
         the number of milliseconds since 1 January, 1970 UTC.
@@ -1529,9 +1530,12 @@ Standard Objects(by category)
     
     Browser compatability: all
     
+==========================
+Web API Interfaces
+==========================
 
 ==========================
-WindowTimers.setInterval()
+WindowTimers.setInterval()  
 ==========================
 
     SUMMARY:
@@ -1574,4 +1578,38 @@ WindowTimers.setInterval()
         Example 2: Alternating two colors
             * the following will continue to call the flashtext() function once a second, until you 
                 clear the intervalID by blicking the Stop Button
+                
+                ```
+                <!DOCTYPE html>
+                <html>
+                <head>
+                <meta charset="UTF-8" />
+                <title>setInterval/clearInterval example</title>
+                <script>
+                
+                var nIntervID;
+                
+                function changeColor() {
+                    nIntervID = setInterval(flashText, 500);
+                }
+                
+                function flashText() {
+                    var oElem = document.getElementByID("my_box");
+                    oElem.style.color = oElem.syle.color =="red" ? "blue"    //what does the ? mean?
+                    }
+                    
+                function stopTextColor() {
+                    clearInterval(nIntervID);
+                    }
+                </script>
+                </head>
+                
+                <body onload="changeColor();">
+                <div id="my_box">
+                <p>Hello World</p>
+                </div>
+                <button onclick="stopTextColor();">Stop</button>
+                </body>
+                </html>
+                ```
     
