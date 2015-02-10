@@ -1149,3 +1149,234 @@ Object Manipulation Statements:
 
 
 
+===============================================
+Standard Built-in Objects
+===============================================
+
+======
+ DATE
+======
+    SUMMARY:
+        Creates a JavaScript Date instance that represents a single moment in time. Date objects are based on a time value that is
+        the number of milliseconds since 1 January, 1970 UTC.
+
+    CONSTRUNTOR:
+        
+        ```
+        new Date();
+        new Date(value);
+        new Date(datestring);
+        new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
+        ```
+        
+            Note: JavaScript Date objects can only be instantiated by calling JavaScript Date as a constructor: calling it as a
+            regular function (i.e. without the new operator) will return a string rather than a Date object; unlike other JavaScript
+            object types, JavaScript Date objects have no literal syntax.
+            
+    PARAMETERS:
+    
+            Note: Where Date is called as a constructor with more than one argument, if values are greater than their logical range
+            (e.g. 13 is provided as the month value or 70 for the minute value), the adjacent value will be adjusted. E.g. new
+            Date(2013, 13, 1) is equivalent to new Date(2014, 1, 1), both create a date for 2014-02-01 (note that the month is 0
+            based). Similarly for other values: new Date(2013, 2, 1, 0, 70) is equivalent to new Date(2013, 2, 1, 1, 10) which both
+            create a date for 2013-03-01T01:10:00.
+            
+        :value - integer value representing the number of milliseconds since 1 January 1970 00:00:00 UTC (Unix Epoch).
+        
+        :dataString - String value representing a date. The string should be in a format recognized by the Date.parse() method 
+                        (IETF-compliant RFC 2822 timestamps and also a version of ISO8601  WTF does this mean???).
+        
+        :year - Integer value representing the year. Values from 0 to 99 map to the years 1900 to 1999. (see ex. below)
+        
+        :month - Integer value representing the month, beginning with 0 for January to 11 for December.
+        
+        :day - Optional. Integer value representing the day of the month.
+        
+        :hour - Optional. Integer value representing the hour of the day
+        
+        :minute - Optional. Integer value representing the minute segment of a time.
+        
+        :second - Optional. Integer value representing the second segment of a time.
+        
+        :millisecond - Optional. Integer value representing the millisecond segment of a time.
+        
+    DESCRIPTION:
+        
+        :If no arguments are provided, the constructor creates a JavaScript Date object for the current date and time according to
+        system settings.
+        
+        :If at least two arguments are supplied, missing arguments are either set to 1 (if day is missing) or 0 for all others.
+        
+        :The JavaScript date is based on a time value that is milliseconds since midnight 01 January, 1970 UTC. A day holds
+        86,400,000 milliseconds. The JavaScript Date object range is -100,000,000 days to 100,000,000 days relative to 01 January,
+        1970 UTC.
+        
+        :The JavaScript Date object provides uniform behavior across platforms. The time value can be passed between systems to
+        represent the same moment in time and if used to create a local date object, will reflect the local equivalent of the time.
+        
+        :The JavaScript Date object supports a number of UTC (universal) methods, as well as local time methods. UTC, also known as
+        Greenwich Mean Time (GMT), refers to the time as set by the World Time Standard. The local time is the time known to the
+        computer where JavaScript is executed.
+        
+        :Invoking JavaScript Date as a function (i.e., without the new operator) will return a string representing the current date
+        and time.
+        
+    PROPERTIES:
+        
+        Date.prototype - Allows the addition of properties to a JavaScript Date object.
+        
+        Date.length - The value of Date.length is 7. This is the number of arguments handled by the computer.
+        
+            ```
+            Properties inherited from Function: arity, caller, constructor, length, name
+            ```
+    
+    METHODS
+    
+        Date.now()  - Returns the numeric value corresponding to the current time - the number of milliseconds elapsed since 1
+        January 1970 00:00:00 UTC.
+
+        Date.parse() - Parses a string representation of a date and returns the number of milliseconds since 1 January, 1970,
+        00:00:00, UTC.
+
+        Date.UTC() - Accepts the same parameters as the longest form of the constructor (i.e. 2 to 7) and returns the number of
+        milliseconds since 1 January, 1970, 00:00:00 UTC.
+        
+            ```
+            Methods inherited from Function: apply, call, toSource, toString
+            ```
+            
+    JAVA SCRIPT DATE INSTANCES - All date instances inherit from Date.prototype. The prototype object of the Date constructor can be
+                                modified to affect all Date instances.
+                                
+        Date.prototype Methods:
+            
+            Getter:
+            
+                Date.prototype.getDate() - Returns the day of the month (1-31) for the specified date according to local time
+                
+                Date.prototype.getDay() - Returns the day of the week (0-6) for the specified date according to local time.
+
+                Date.prototype.getFullYear() - Returns the year (4 digits for 4-digit years) of the specified date according to                                                     local time.
+
+                Date.prototype.getHours() - Returns the hour (0-23) in the specified date according to local time.
+
+                Date.prototype.getMilliseconds() - Returns the milliseconds (0-999) in the specified date according to local time.
+
+                Date.prototype.getMinutes() - Returns the minutes (0-59) in the specified date according to local time.
+
+                Date.prototype.getMonth() - Returns the month (0-11) in the specified date according to local time.
+
+                Date.prototype.getSeconds() - Returns the seconds (0-59) in the specified date according to local time.
+
+                Date.prototype.getTime() - Returns the numeric value of the specified date as the number of milliseconds since
+                                            January 1, 1970, 00:00:00 UTC (negative for prior times).
+
+                Date.prototype.getTimezoneOffset() - Returns the time-zone offset in minutes for the current locale.
+
+                Date.prototype.getUTCDate() - Returns the day (date) of the month (1-31) in the specified date according to
+                                                universal time.
+
+                Date.prototype.getUTCDay() - Returns the day of the week (0-6) in the specified date according to universal time.
+
+                Date.prototype.getUTCFullYear() - Returns the year (4 digits for 4-digit years) in the specified date according to
+                                                    universal time.
+                                                    
+                Date.prototype.getUTCHours() - Returns the hours (0-23) in the specified date according to universal time.
+
+                Date.prototype.getUTCMilliseconds() - Returns the milliseconds (0-999) in the specified date according to universal
+                                                        time.
+                                                        
+                Date.prototype.getUTCMinutes() - Returns the minutes (0-59) in the specified date according to universal time.
+
+                Date.prototype.getUTCMonth() - Returns the month (0-11) in the specified date according to universal time.
+
+                Date.prototype.getUTCSeconds() - Returns the seconds (0-59) in the specified date according to universal time.
+
+                Date.prototype.getYear() - ::Deprecated:: Returns the year (usually 2-3 digits) in the specified date according to 
+                                                local time. 
+                                            Use getFullYear() instead.
+                
+            Setter:
+            
+                Date.prototype.setDate() - Sets the day of the month for a specified date according to local time.
+
+                Date.prototype.setFullYear() - Sets the full year (e.g. 4 digits for 4-digit years) for a specified date according
+                                                to local time.
+                                                
+                Date.prototype.setHours() - Sets the hours for a specified date according to local time.
+
+                Date.prototype.setMilliseconds() - Sets the milliseconds for a specified date according to local time.
+
+                Date.prototype.setMinutes() - Sets the minutes for a specified date according to local time.
+
+                Date.prototype.setMonth() - Sets the month for a specified date according to local time.
+
+                Date.prototype.setSeconds() - Sets the seconds for a specified date according to local time.
+
+                Date.prototype.setTime() - Sets the Date object to the time represented by a number of milliseconds since January 1,
+                                            1970, 00:00:00 UTC, allowing for negative numbers for times prior.
+
+                Date.prototype.setUTCDate() - Sets the day of the month for a specified date according to universal time.
+
+                Date.prototype.setUTCFullYear() - Sets the full year (e.g. 4 digits for 4-digit years) for a specified date
+                                                    according to universal time.
+
+                Date.prototype.setUTCHours() - Sets the hour for a specified date according to universal time.
+
+                Date.prototype.setUTCMilliseconds() - Sets the milliseconds for a specified date according to universal time.
+
+                Date.prototype.setUTCMinutes() - Sets the minutes for a specified date according to universal time.
+
+                Date.prototype.setUTCMonth() - Sets the month for a specified date according to universal time.
+
+                Date.prototype.setUTCSeconds() - Sets the seconds for a specified date according to universal time.
+
+                Date.prototype.setYear() - ::Deprecated:: Sets the year (usually 2-3 digits) for a specified date according to local
+                                            time. Use setFullYear() instead.
+                                            
+            Conversion Getter: 
+            
+                Date.prototype.toDateString() - Returns the "date" portion of the Date as a human-readable string.
+
+                Date.prototype.toISOString() - Converts a date to a string following the ISO 8601 Extended Format.
+
+                Date.prototype.toJSON() - Returns a string representing the Date using toISOString(). Intended for use by
+                                            JSON.stringify().
+
+                Date.prototype.toGMTString() - Returns a string representing the Date based on the GMT (UT) time zone. Use
+                                                toUTCString() instead.
+
+                Date.prototype.toLocaleDateString() - Returns a string with a locality sensitive representation of the date portion
+                                                        of this date based on system settings.
+
+                Date.prototype.toLocaleFormat() - Converts a date to a string, using a format string.
+
+                Date.prototype.toLocaleString() - Returns a string with a locality sensitive representation of this date. Overrides
+                                                    the Object.prototype.toLocaleString() method.
+
+                Date.prototype.toLocaleTimeString() - Returns a string with a locality sensitive representation of the time portion
+                                                        of this date based on system settings.
+
+                Date.prototype.toSource() - Returns a string representing the source for an equivalent Date object; you can use this
+                                                value to create a new object. Overrides the Object.prototype.toSource() method.
+
+                Date.prototype.toString() - Returns a string representing the specified Date object. Overrides the
+                                                Object.prototype.toString() method.
+                                                
+                Date.prototype.toTimeString() - Returns the "time" portion of the Date as a human-readable string.
+
+                Date.prototype.toUTCString() - Converts a date to a string using the UTC timezone.
+
+                Date.prototype.valueOf() - Returns the primitive value of a Date object. Overrides the Object.prototype.valueOf()
+                                            method.
+                                            
+                                        
+                    ```                        
+                    Methods inherited from Object: __defineGetter__, __defineSetter__, hasOwnProperty, isPrototypeOf,
+                                                    __lookupGetter__, __lookupSetter__, __noSuchMethod__, propertyIsEnumerable,
+                                                    unwatch, watch
+                    ```
+                    
+    
+                
