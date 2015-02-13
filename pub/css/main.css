@@ -97,42 +97,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* This is not code i came up with on my own but i figure i'll write it out as a means to practice getting the code under my fingers. I have no clue as to how i may have come up with this on my considering the breadth of information on the date setInterval() decumentation...
 
 
-/*styling #hex*/
 
-/*custom font - Lato*/
-/*@import url("http://fonts.googleapis.com/css?family=Lato:100");
-/*basic reset*/
-/* {margin: 0; padding: 0;}
-/*make the body occupy full height*/
-/*html, body {height: 100%;}
 
-#hex {
-	color: white; font: 64px/64px Lato; height: 64px;
-	/*Vertical centering*/
-	/*position: relative; top: 50%; margin-top: -32px;
-	/*Horizontal centering*/
-	/*text-align: center;
-}
-*/
 
-/* 
-What does the asterisk before margin and padding refer to??
-*/
 
-html, body {height: 100%;}
 
-#hex {
-    color: white;
-    font: 64px/64px Calibri; /* I changed the font from the site as it was a custom font with an @import url */
-    height: 64px;
-    position: relative;
-    top: 50%;
-    margin-top:-32px;
-    text:center;
-}
+
+
+
+
 
 
 
