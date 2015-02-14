@@ -104,8 +104,16 @@ body {
 .bodycontainer {
     overflow:auto;
 }
+
+
+
 .timelineHeader {
     text-align: center;
+    display:inline;
+}
+
+.timelineHeader span {
+    
 }
 
 }
@@ -129,9 +137,10 @@ span {
     float:right;
 }
 
-.carrot {
-
+.carrot {    
 }
+
+
 
 
 
