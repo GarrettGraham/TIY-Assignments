@@ -122,9 +122,6 @@ body {
 }
 
 }
-nav {
-    list-style: none;
-}
 
 ul {
     list-style:none;
@@ -144,9 +141,12 @@ span {
 article {
     background-color:#6cbfee;
     color:#ffffff;
-    border-radius:2.5%;
-    margin-bottom: 5%;
-    margin-left: -2%;
+    border-radius:1.5%;
+    padding-left:3%;
+    padding-right:2%;
+    padding-bottom:1%;
+    margin-bottom: 4%;
+    margin-left: -3%;
 
 }
 
@@ -170,13 +170,21 @@ article {
     border-radius:50%;
 }
 
+h3 {
+    margin-top:0em;
+    padding-top: 0 0 0.7em;
+    border-bottom: 0.15em solid;
+    border-bottom-width: 50%;
 }
 
 
+}
 
 
+@media only screen and (min-width: 35em) and (max-width: 50em){
 
 
+}
 
 
 
