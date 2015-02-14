@@ -7,8 +7,13 @@
 
 var assert = require('assert');
 
-function plus(A, B){
-  // TYPE ALL OF THIS YOURSELF!
+var number = {
+    one: 1,
+    two: 2,
+    three: 3
+}
+function plus(a, b){
+return number[a] + number [b];  
 }
 
 it('should add "one" and "one"', function(){
