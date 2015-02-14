@@ -126,24 +126,41 @@ ul {
     list-style:none;
 }
 
-initialDatetime {
+.initialDatetime {
+    position:relative;
+    bottom: 2em;
     display: block;
+    color:#6cbfee;
 }   
 
 span {
     display:block;
 }
 
+article {
+    background-color:#6cbfee;
+    color:#ffffff;
+    border-radius:2.5%;
+}
+
+.carrot {
+    position:relative;
+    bottom:2em;
+    color:#6cbfee;
+    padding-bottom: 2em;
+}
+
 .mobileIcon {
     float:right;
+    width:1.8em;
+    height:1.em;
+    text-align:center;
+    position:relative;
+    bottom: 2.5em;
+    color:#ffffff;
+    background:#6cbfee;
+    border-radius:50%;
 }
-
-article {
-    background-color:;
-}
-.carrot {    
-}
-
 
 
 
