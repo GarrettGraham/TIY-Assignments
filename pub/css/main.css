@@ -97,11 +97,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.timelineHeader {
+    text-align: center;
+    
+}
 
+nav {
+    list-style: none;
+}
 
-
-
-
+ul {
+    list-style:none;
+}
 
 
 
