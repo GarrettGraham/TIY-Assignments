@@ -109,11 +109,12 @@ body {
 
 .timelineHeader {
     text-align: center;
-    display:inline;
+    color:#46a4da;
 }
 
-.timelineHeader span {
-    
+
+.timelineHeader p span {
+    display:inline;   
 }
 
 }
@@ -137,6 +138,9 @@ span {
     float:right;
 }
 
+article {
+    background-color:;
+}
 .carrot {    
 }
 
