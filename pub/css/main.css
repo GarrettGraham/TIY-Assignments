@@ -96,9 +96,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+@media only screen and (max-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+
 body {
     width:90%;
-    margin:0 auto;
+    margin:0 5% auto;
 }
 
 .bodycontainer {
@@ -128,7 +132,7 @@ ul {
 
 .initialDatetime {
     position:relative;
-    bottom: 2em;
+    bottom: 1em;
     display: block;
     color:#6cbfee;
 }   
@@ -141,12 +145,16 @@ article {
     background-color:#6cbfee;
     color:#ffffff;
     border-radius:2.5%;
+    margin-bottom: 5%;
+    margin-left: -2%;
+
 }
 
 .carrot {
     position:relative;
-    bottom:2em;
+    bottom:1em;
     color:#6cbfee;
+    padding-left:1em;
     padding-bottom: 2em;
 }
 
@@ -162,7 +170,7 @@ article {
     border-radius:50%;
 }
 
-
+}
 
 
 
@@ -278,10 +286,12 @@ article {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+/*
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+     Style adjustments for viewports that meet the condition 
 }
+*/
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
