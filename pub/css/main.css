@@ -96,12 +96,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-.timelineHeader {
-    text-align: center;
-    
+body {
+    width:90%;
+    margin:0 auto;
 }
 
+.bodycontainer {
+    overflow:auto;
+}
+.timelineHeader {
+    text-align: center;
+}
+
+}
 nav {
     list-style: none;
 }
@@ -110,6 +117,9 @@ ul {
     list-style:none;
 }
 
+initialDatetime {
+    
+}   
 
 
 
