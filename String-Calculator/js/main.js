@@ -126,6 +126,10 @@ it('should add "one" and "ten"', function() {
     assert.equal(plus("one", "ten"), 11);
 });
 
+/* lucky number 20 - 1st run:fail; */  
+is('should add "one" and "twenty"', function() {
+    assert.equal(plus("one", "twenty"), 21);
+});
 
 /* subtraction */
 
