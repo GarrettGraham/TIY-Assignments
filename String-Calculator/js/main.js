@@ -7,7 +7,10 @@
 
 //var assert = require('assert');
 
-var operator = 'multiply';
+var addOperator = 'addition';
+var subtractOperator = 'subtraction';
+var multiplyOperator = 'multiplication';
+var divOperator = 'division';
 var i = 1;
 var msg = '';
 
@@ -50,15 +53,30 @@ var numbers = {
 ////    document.write(i);
 //}
 
-if (operator == 'multiply') {
-    while (i < 30) {
-    msg += i + ' x 5 = ' + (i * 5) + '<br />'; i++;
+
+// SUBTRACTION while loop
+
+if (subtractOperator == 'subtraction') {
+    while (i > 30) {
+    msg -= i + ' - 5 = ' + (i - 5) + '<br />'; i--;
     }
-// else {
-//    while( i < 30) {
-//    msg += i + ' x 5
-//    }
 }
+
+
+
+// MULTIPLY if Loop --> need to figure out else statement and syntax but if part still works great without the else
+
+    //if (multiplyOperator == 'multipltication') {
+    //    while (i < 30) {
+    //    msg += i + ' x 5 = ' + (i * 5) + '<br />'; i++;
+    //    }
+    //// else {
+    ////    while( i < 30) {
+    ////    msg += i + ' x 5
+    ////    }
+    //}
+
+
 
 //
 //it('should multiply "one" and "five"', function() {
