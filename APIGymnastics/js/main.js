@@ -41,7 +41,7 @@
                 //  * `thisArg`: `Object` to which to bind `callback`
                 //* _returns:_ `Boolean` whether `callback` returns `true` for _every_ element
                 //* _example:_
-
+=============================================================================================
 function every(anArray, callback){
   var hasFailed = false; // it hasn't has it?
 
@@ -55,6 +55,7 @@ function every(anArray, callback){
   return !hasFailed; // Another inverse?
   // What if `anArray` is empty?
 }
+=============================================================================================
 
 //---
 //
@@ -64,14 +65,15 @@ function every(anArray, callback){
 //
 //Create a file called `scripts/gymnastics.js` and use the following incantation to get your cached API data into the file (again replacing `USERNAME`):
 
-
+=============================================================================================
 var events = require('../apis/github/users/USERNAME/events.json'); // Replace USERNAME!
+=============================================================================================
 
 
 //Next, use the methods of `Array` that you've documented to uncover some statistics about your progress. You can create as many functions as you like to help you derive the answers, but place the final invocations (not just the values) into a function called `answers` that returns the following:
 //
 
-
+=============================================================================================
 function answer(){
   return {
     'total': ...,    // How many total events did you fetch?
@@ -85,6 +87,7 @@ function answer(){
     }
   };
 } 
+=============================================================================================
 
 // END answer
 
