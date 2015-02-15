@@ -26,12 +26,37 @@ var number = {
 }
 
 var addOperator = 'addition';
+var subtractOperator = 'subtraction';
+var multiplyOperator = 'multiplication';
+var divOperator = 'division';
+
 var i = 0;
 var msg = '';
 
-// Addition loop
+//// Addition loop
+//
+//if (addOperator === 'addition') {
+//    while (i < 20) {
+//        return i;
+//    }
+//}
 
-if (addOperator === 'addition') {
+// Subtraction loop
+//
+if (subtractOperator === 'subtraction') {
+    while (i < 20) {
+        return i;
+    }
+    
+}
+
+if (multiplyOperator === 'multiplication') {
+    while (i < 20) {
+        return i;
+    }
+}
+
+if (divOperator === 'division') {
     while (i < 20) {
         return i;
     }
