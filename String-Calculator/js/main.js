@@ -7,7 +7,7 @@
 
 var assert = require('assert');
 
-var i = {
+var numbers = {
     zero: 0,
     one: 1,
     two: 2,
@@ -39,18 +39,19 @@ var i = {
     twentyEight:28,
     twentyNine:29,
     Thirty:30,
-
 }
 
-//var i = 1;
+var i = 1;
 var msg = '';  
 
-while (i < 30) {
+while (i <= 30) {
     msg += i + ' x 5 = ' + (i * 5) + '<br />';    
-
-document.write(i);
-
+//    document.write(i);
 }
+
+it('should return 5 times tables and end at 20', function() {
+    document.getElementById('answer').innerHTML = msg;
+});
 
 //var i = 0;
 //
@@ -60,7 +61,7 @@ document.write(i);
 //    return number [a] + number [b];
 //}
 // 
-//
+// WRITE A it should statement as the test
 //
 ///* addition */
 //
