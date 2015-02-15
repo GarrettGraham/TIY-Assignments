@@ -3,13 +3,13 @@
 
 ### Projects
 
-* [timeline](https://github.com/GarrettGraham/TIY-Assignments/blob/gh-pages/Timeline/index.html)
+* [timeline](Timeline/index.html) 
 
 * [Surf+Paddle]('')
 
-* [String-Calculator](https://GarrettGraham.github.io/TIY-Assignments/blob/gh-pages/String-Calculator/js/main.js)
+* [String-Calculator](String-Calculator/js/main.js)
 
-* [Check-Writing](https://GarrettGraham.github.io/TIY-Assignments/blob/gh-pages/Check-Writing/js/main.js)
+* [Check-Writing](Check-Writing/js/main.js)
 
 * [APIGymnastics]('')
 
