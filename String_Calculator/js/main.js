@@ -8,6 +8,7 @@
 var assert = require('assert');
 
 var number = {
+    zero: 0,
     one: 1,
     two: 2,
     three: 3,
@@ -29,14 +30,99 @@ var number = {
     nineteen: 19,
     twenty: 20,
 }
+
 function plus(a, b){
 return number[a] + number [b];  
 }
 
-it('should add "one" and "one"', function(){
-  assert.equal(plus("one", "one"), 2);
+it('should add "zero" and "zero"', function(){
+  assert.equal(plus("zero", "zero"), 0);
 });
 
+it('should add "zero" and "one"', function(){
+  assert.equal(plus("zero", "one"), 1);
+});
+
+it('should add "zero" and "two"', function() {
+    assert.equal(plus("zero", "two"), 2);
+});
+
+it('should add "zero" and "three"', function() {
+    assert.equal(plus("zero", "three"), 3);
+});
+
+it('should add "zero" and "four"', function() {
+    assert.equal(plus("zero", "four"), 4);
+});
+
+it('should add "zero" and "five"', function() {
+    assert.equal(plus("zero", "five"), 5);
+});
+
+it('should add "zero" and "six"', function() {
+    assert.equal(plus("zero", "six"), 6);
+});
+
+it('should add "zero" and "seven"', function() {
+    assert.equal(plus("zero", "seven"), 7);
+});
+
+it('should add "zero" and "eight"', function() {
+    assert.equal(plus("zero", "eight"), 8);
+});
+it('should add "zero" and "nine"', function() {
+    assert.equal(plus("zero", "nine"), 9);
+});
+it('should add "zero" and "ten"', function() {
+    assert.equal(plus("zero", "ten"), 10);
+}); 
+
+
+/* one and [number] */
+
+it('should add "one" and "zero"', function() {
+    assert.equal(plus("one", "zero"), 1);
+});
+
+it('should add "one" and "one"', function() {
+    assert.equal(plus("one", "one"), 2);
+});
+
+it('should add "one" and "two"', function() {
+    assert.equal(plus("one", "two"), 3);
+});
+
+it('should add "one" and "three"', function() {
+    assert.equal(plus("one", "three"), 4);
+});
+
+it('should add "one" and "four"', function() {
+    assert.equal(plus("one", "four"), 5);
+});
+
+it('should add "one" and "five"', function() {
+    assert.equal(plus("one", "five"), 6);
+});
+
+it('should add "one" and "six"', function() {
+    assert.equal(plus("one", "six"), 7);
+});
+
+it('should add "one" and "seven"', function() {
+    assert.equal(plus("one", "seven"), 8);
+});
+
+it('should add "one" and "eight"', function() {
+    assert.equal(plus("one", "eight"), 9);
+});
+
+it('should add "one" and "nine"', function() {
+    assert.equal(plus("one", "nine"), 10);
+});
+
+it('should add "one" and "ten"', function() {
+    assert.equal(plus("one", "ten"), 11);
+});
 
 //* Provide test cases for `"zero"` through `"ten"`
 //* Just use `if` and `return` statements
