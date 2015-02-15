@@ -3,7 +3,7 @@
 
 ### Projects
 
-* [timeline](https://github.com/GarrettGraham/TIY-Assignments/tree/gh-pages/verticalTimeline)
+* [timeline](https://GarrettGraham.github.io/TIY-Assignments/blob/feature/24--helluva-ride/Timeline/index.html)
 
 * [Surf+Paddle](https://github.com/GarrettGraham/TIY-Assignments/tree/feature/24--helluva-ride/Surf%2BPaddle)
 
