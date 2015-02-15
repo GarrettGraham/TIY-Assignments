@@ -314,6 +314,9 @@ it('should multiply "one" and "ten"', function() {
     assert.equal(multiply("one", "ten"), 10);
 });
 
+
+/* division */
+
 function divide(a, b) {
     return number[a] / number[b];
 }
