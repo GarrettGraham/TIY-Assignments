@@ -7,7 +7,7 @@
 
 var assert = require('assert');
 
-var number = {
+var i = {
     zero: 0,
     one: 1,
     two: 2,
@@ -42,7 +42,7 @@ var number = {
 
 }
 
-var = 1;
+//var i = 1;
 var msg = '';  
 
 while (i < 30) {
