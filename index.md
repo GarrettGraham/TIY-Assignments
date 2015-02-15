@@ -3,13 +3,13 @@
 
 ### Projects
 
-* [timeline](https://GarrettGraham.github.io/TIY-Assignments/blob/feature/24--helluva-ride/Timeline/index.html)
+* [timeline](https://GarrettGrahamgithub.io/TIY-Assignments/blob/gh-pages/Timeline/index.html)
 
-* [Surf+Paddle](https://github.com/GarrettGraham/TIY-Assignments/tree/feature/24--helluva-ride/Surf%2BPaddle)
+* [Surf+Paddle]('')
 
-* [String-Calculator](https://github.com/GarrettGraham/TIY-Assignments/tree/feature/24--helluva-ride/String-Calculator)
+* [String-Calculator](https://GarrettGraham.github.io/TIY-Assignments/blob/gh-pages/String-Calculator/js/main.js)
 
-* [Check-Writing](https://github.com/GarrettGraham/TIY-Assignments/tree/feature/24--helluva-ride/Check-Writing)
+* [Check-Writing](https://GarrettGraham.github.io/TIY-Assignments/blob/gh-pages/Check-Writing/js/main.js)
 
 
 <!------------------------------------->
