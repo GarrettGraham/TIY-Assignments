@@ -11,6 +11,11 @@
 
 * [Check-Writing](https://GarrettGraham.github.io/TIY-Assignments/blob/gh-pages/Check-Writing/js/main.js)
 
+* [APIGymnastics]('')
+
+* [Chessboard]('')
+
+* [GitHub]('')
 
 <!------------------------------------->
     NEED TO FIX the link and gh-pages
