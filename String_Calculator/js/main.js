@@ -267,6 +267,47 @@ it('should multiply "zero" and "nine"', function(){
 it('should multiply "zero" and "ten"', function(){
   assert.equal(multiply("zero", "ten"), 0);
 });
+
+            /* one and [number] */
+
+it('should multiply "one" and "zero"', function() {
+    assert.equal(multiply("one", "zero"), 0);
+});
+
+it('should multiply "one" and "one"', function() {
+    assert.equal(multiply("one", "one"), 1);
+});
+
+it('should multiply "one" and "two"', function() {
+    assert.equal(multiply("one", "two"), 2);
+});
+
+it('should multiply "one" and "three"', function() {
+    assert.equal(multiply("one", "three"), 3);
+});
+
+it('should multiply "one" and "four"', function() {
+    assert.equal(multiply("one", "four"), 4);
+});
+
+it('should multiply "one" and "five"', function() {
+    assert.equal(multiply("one", "five"), 5);
+});
+
+it('should multiply "one" and "six"', function() {
+    assert.equal(multiply("one", "six"), 6);
+});
+
+it('should multiply "one" and "seven"', function() {
+    assert.equal(multiply("one", "seven"), 7);
+});
+
+it('should multiply "one" and "eight"', function() {
+    assert.equal(multiply("one", "eight"), 8);
+});
+
+
+
 //* Provide test cases for `"zero"` through `"ten"`
 //* Just use `if` and `return` statements
 //* You may need to read about [Logical Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
