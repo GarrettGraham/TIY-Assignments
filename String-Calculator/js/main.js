@@ -50,11 +50,11 @@ var numbers = {
 
 // ADDITION while LOOP
 
-if (addOperator== 'addition') {
-    while (i < 30) {
-        msg += i + ' + 5 = ' + '<br />'; i++;
-    }
-}
+//if (addOperator== 'addition') {
+//    while (i < 30) {
+//        msg += i + ' + 5 = ' + '<br />'; i++;
+//    }
+//}
 // SUBTRACTION while LOOP
     //
     //if (subtractOperator == 'subtraction') {
@@ -64,7 +64,8 @@ if (addOperator== 'addition') {
     //}
 
 
-// MULTIPLY if LOOP --> need to figure out else statement and syntax but if part still works great without the else
+// MULTIPLY if LOOP
+// --> need to figure out else statement and syntax but if part still works great without the else
 
     //if (multiplyOperator == 'multipltication') {
     //    while (i < 30) {
@@ -75,7 +76,11 @@ if (addOperator== 'addition') {
     ////    msg += i + ' x 5
     ////    }
     //}
-
+if (divOperator == 'division') {
+    while (i < 30) {
+    msg += i + ' / 1 (i / 1) = ' + '<br />'; i++;
+    }
+}
 
 //========================================================================
 //                                 MISC.
