@@ -66,7 +66,7 @@ function every(anArray, callback){
 //Create a file called `scripts/gymnastics.js` and use the following incantation to get your cached API data into the file (again replacing `USERNAME`):
 
 =============================================================================================
-var events = require('../apis/github/users/USERNAME/events.json'); // Replace USERNAME!
+var events = require('../apis/github/users/GarrettGraham/events.json'); // Replace USERNAME!
 =============================================================================================
 
 
