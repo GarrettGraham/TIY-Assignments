@@ -48,23 +48,23 @@ var numbers = {
     Thirty: 30
 }
 
-//while (i <= 30) {
-//    msg += i + ' x 5 = ' + (i * 5) + '<br />';    
-////    document.write(i);
-//}
+// ADDITION while LOOP
 
-
-// SUBTRACTION while loop
-
-if (subtractOperator == 'subtraction') {
-    while (i > 30) {
-    msg -= i + ' - 5 = ' + (i - 5) + '<br />'; i--;
+if (addOperator== 'addition') {
+    while (i < 30) {
+        msg += i + ' + 5 = ' + '<br />'; i++;
     }
 }
+// SUBTRACTION while LOOP
+    //
+    //if (subtractOperator == 'subtraction') {
+    //    while (i > 30) {
+    //    msg -= i + ' - 5 = ' + (i - 5) + '<br />'; i--;
+    //    }
+    //}
 
 
-
-// MULTIPLY if Loop --> need to figure out else statement and syntax but if part still works great without the else
+// MULTIPLY if LOOP --> need to figure out else statement and syntax but if part still works great without the else
 
     //if (multiplyOperator == 'multipltication') {
     //    while (i < 30) {
@@ -77,6 +77,13 @@ if (subtractOperator == 'subtraction') {
     //}
 
 
+//========================================================================
+//                                 MISC.
+//========================================================================
+//while (i <= 30) {
+//    msg += i + ' x 5 = ' + (i * 5) + '<br />';    
+////    document.write(i);
+//}
 
 //
 //it('should multiply "one" and "five"', function() {
@@ -85,13 +92,16 @@ if (subtractOperator == 'subtraction') {
 
 //var i = 0;
 //
-////// forLOOP
+////// for LOOP
 // for (var i = 0; i >= 30; i++) {
 //    document.write(i);
 //    return number [a] + number [b];
 //}
 // 
 // WRITE A it should statement as the test
+
+//========================================================================
+//========================================================================
 //
 ///* addition */
 //
