@@ -34,7 +34,7 @@ var number = {
 /* addition */
 
 function plus(a, b){
-return number[a] + number [b];  
+    return number[a] + number [b];  
 }
 
 it('should add "zero" and "zero"', function(){
@@ -370,6 +370,8 @@ it('should divide "one" and "nine"', function() {
 it('should divide "one" and "one"', function() {
     assert.equal(divide("one", "ten"), 1/10);
 });
+
+
 //* Provide test cases for `"zero"` through `"ten"`
 //* Just use `if` and `return` statements
 //* You may need to read about [Logical Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
