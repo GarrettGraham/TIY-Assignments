@@ -3,7 +3,7 @@
 
 ### Projects
 
-* [timeline](https://GarrettGrahamgithub.io/TIY-Assignments/blob/gh-pages/Timeline/index.html)
+* [timeline](https://github.com/GarrettGraham/TIY-Assignments/blob/gh-pages/Timeline/index.html)
 
 * [Surf+Paddle]('')
 
