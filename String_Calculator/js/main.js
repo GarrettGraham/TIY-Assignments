@@ -306,8 +306,67 @@ it('should multiply "one" and "eight"', function() {
     assert.equal(multiply("one", "eight"), 8);
 });
 
+it('should multiply "one" and "nine"', function() {
+    assert.equal(multiply("one", "nine"), 9); 
+});
 
+it('should multiply "one" and "ten"', function() {
+    assert.equal(multiply("one", "ten"), 10);
+});
 
+function divide(a, b) {
+    return number[a] / number[b];
+}
+
+// ??how do you return undefined for dividing by zero??
+
+//it('should divide "zero" and "zero"', function() {
+//    assert.equal(divide("zero", "zero"), "undefined");
+//});
+
+//it('should divide "one" and "zero"', function() {
+//   assert.equal(divide("one", "zero"), ????); 
+//});
+
+it('should divide "one" and "one"', function() {
+    assert.equal(divide("one", "one"), 1);
+});
+
+it('should divide "one" and "two"', function() {
+    assert.equal(divide("one", "two"), 1/2);
+});
+
+it('should divide "one" and "three"', function() {
+    assert.equal(divide("one", "three"), 1/3);
+});
+
+it('should divide "one" and "four"', function() {
+    assert.equal(divide("one", "four"), 1/4);
+});
+
+it('should divide "one" and "five"', function() {
+    assert.equal(divide("one", "five"), 1/5);
+});
+
+it('should divide "one" and "six"', function() {
+    assert.equal(divide("one", "six"), 1/6);
+});
+
+it('should divide "one" and "seven"', function() {
+    assert.equal(divide("one", "seven"), 1/7);
+});
+
+it('should divide "one" and "eight"', function() {
+    assert.equal(divide("one", "eight"), 1/8);
+});
+
+it('should divide "one" and "nine"', function() {
+    assert.equal(divide("one", "nine"), 1/9);
+});
+
+it('should divide "one" and "one"', function() {
+    assert.equal(divide("one", "ten"), 1/10);
+});
 //* Provide test cases for `"zero"` through `"ten"`
 //* Just use `if` and `return` statements
 //* You may need to read about [Logical Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
