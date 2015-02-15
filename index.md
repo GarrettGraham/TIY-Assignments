@@ -15,7 +15,7 @@
 
 * [Chessboard]('')
 
-* [GitHub]('')
+* [GitHubProfile]('')
 
 <!------------------------------------->
     NEED TO FIX the link and gh-pages
