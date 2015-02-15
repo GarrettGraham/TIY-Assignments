@@ -5,7 +5,11 @@
 //javascript
 
 
-var assert = require('assert');
+//var assert = require('assert');
+
+var operator = 'multiply';
+var i = 1;
+var msg = '';
 
 var numbers = {
     zero: 0,
@@ -29,29 +33,39 @@ var numbers = {
     eighteen: 18,
     nineteen: 19,
     twenty: 20,
-    twentyOne:21,
-    twentyTwo:22,
-    twentyThree:23,
-    twentyFour:24,
-    twentyFive:25,
-    twentySix:26,
-    twentySeven:27,
-    twentyEight:28,
-    twentyNine:29,
-    Thirty:30,
+    twentyOne: 21,
+    twentyTwo: 22,
+    twentyThree: 23,
+    twentyFour: 24,
+    twentyFive: 25,
+    twentySix: 26,
+    twentySeven: 27,
+    twentyEight: 28,
+    twentyNine: 29,
+    Thirty: 30
 }
 
-var i = 1;
-var msg = '';  
+//while (i <= 30) {
+//    msg += i + ' x 5 = ' + (i * 5) + '<br />';    
+////    document.write(i);
+//}
 
-while (i <= 30) {
-    msg += i + ' x 5 = ' + (i * 5) + '<br />';    
-//    document.write(i);
+if (operator == 'multiply') {
+    while (i < 30) {
+    msg += i + ' x 5 = ' + (i * 5) + '<br />'; i++;
+    }
+// else {
+//    while( i < 30) {
+//    msg += i + ' x 5
+//    }
 }
 
-it('should return 5 times tables and end at 20', function() {
-    document.getElementById('answer').innerHTML = msg;
-});
+console.log(msg);
+
+//
+//it('should multiply "one" and "five"', function() {
+//    assert.equal(multiply(a,b), 5);
+//});
 
 //var i = 0;
 //
