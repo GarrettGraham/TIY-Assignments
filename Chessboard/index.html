@@ -21,9 +21,83 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+<!--
+    <html>
+      <body>
+        <table id="chessboard-kinda">
+          <thead>
+            <tr>
+              <td></td>
+              <th> a </td>
+              <th> b </td>
+              <th> c </td>
+              <th> d </td>
+              <th> e </td>
+              <th> f </td>
+              <th> g </td>
+              <th> h </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th> 1 </th>
+              <td class="piece"> R </td>
+              <td class="piece"> N </td>
+              <td class="piece"> B </td>
+              <td class="piece"> Q </td>
+              <td class="piece"> K </td>
+              <td class="piece"> B </td>
+              <td class="piece"> N </td>
+              <td class="piece"> R </td>
+            </tr>
+          </tbody>
+        </table>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+        <script>
 
+          var table = document.body.children[0],
+              thead = document.body.children[0].children[0],
+              tbody = document.body.children[0].children[1];
+
+          console.assert(table.tagName == 'TABLE');
+          console.assert(thead.tagName == 'THEAD');
+          console.assert(tbody.tagName == 'TBODY');
+
+          var chessboard = document.getElementById('chessboard-kinda');
+
+          console.assert(chessboard === table);
+          // Shouldn't these be the same?
+
+          // Getting all the rows...
+          //
+          var rows = document.getElementsByTagName('tr');
+          // All the `<tr>` tags...
+
+          console.assert(rows.length === 2);
+          // 1 `<tr>` in `<thead>` + 1 `<tr>` in `<tbody>`
+
+          // Getting the row that is a child of `<tbody>`...
+          var bodyRow = _.find(rows, { 'parentElement': tbody });
+
+          console.assert(bodyRow === tbody.firstChild);
+          // Those should be the same, too, right?
+
+          // Getting some elements via `getElementByClassName`
+          var cells = document.getElementsByClassName('piece');
+
+          console.assert(cells.length === 9);
+          // 1 `<td>` in `<thead>` + 8 `<tr>` in `<tbody>`
+
+          // Getting the `<td>`'s that are children of `<tbody>`
+          var pieces = _.filter(cells, { 'parentElement': bodyRow });
+
+          console.assert(pieces.length === 8);
+        </script>
+      </body>
+    </html>
+                
+                
+                        -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
