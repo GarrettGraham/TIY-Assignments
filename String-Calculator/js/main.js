@@ -60,8 +60,6 @@ if (operator == 'multiply') {
 //    }
 }
 
-console.log(msg);
-
 //
 //it('should multiply "one" and "five"', function() {
 //    assert.equal(multiply(a,b), 5);
