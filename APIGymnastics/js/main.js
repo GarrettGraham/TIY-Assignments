@@ -156,25 +156,34 @@
 
 
 
-var events = require('../apis/github/users/GarrettGraham/events2.json'); // Replace USERNAME!
-var pushEvents = 'PushEvent';
-
+var events = require('../apis/users/GarrettGraham/events2.json'); // Replace USERNAME!
+var pushEvents = events.filter(function(item) {
+    return item.type = 'PushEvent'
+});
 
 function answer(){
   return {
-    'total': events.length  // How many total events did you fetch?
-      'PushEvent': PushEvent.length 
+    'total': events.length,  // How many total events did you fetch?
+      'PushEvent':
       {
-//      'total': ...,  // How many total events of type `PushEvent` are there?
-//      'perDay': ...  // On average, how many`PushEvent` entries per day?
-//    },
+      'total': PushEvent.length, // How many total events of type `PushEvent` are there?
+      'perDay': avg(pushEvents) // On average, how many`PushEvent` entries per day?
+    },
 //    'other': {
 //      'total': ...,  // How many _other_ events are in the data?
 //      'perDay': ...  // How many per day, on average?
 //    }
-//  };
-} 
+    };
+}
 
+// First Test: total events
+
+it('should have 30 total events'), function() {
+      assert(events.length === 30);
+}
+
+//console.log(events.length);      
+//      
 //
 //function every(anArray, callback){
 //  var hasFailed = false; // it hasn't has it?
