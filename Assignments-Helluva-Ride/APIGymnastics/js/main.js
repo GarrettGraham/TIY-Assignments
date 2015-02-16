@@ -23,7 +23,7 @@ function answer(){
     },
     'other': {
       'total': repo.length,  // How many _other_ events are in the data?
-      'perDay': avg(repos)  // How many per day, on average?
+//      'perDay': avg(repos)  // How many per day, on average?
     }
     };
 }
