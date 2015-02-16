@@ -5,38 +5,156 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
     </head>
     <body>
-      
-    <!-- USE BOOTSTRAP and START with the larger viewport size this time. Do the col-sx... like the form assignment  -->
-        
-        <header>
-        
-        </header>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<!--   BOOTSTRAP GRID LAYOUT like you did for the forms assignmetn     -->
+
+  <div class="container">  <!-- Maddie: just a header class=banner -->
+        
+
+        <header>
+            <div class="navbar">
+                <ul>
+                    <a href="#">About</a>
+                    <a href="#">Search <icon class="fa fa-search"></icon></a>
+                </ul>
+
+            <img class="waveLogo" src="img/waveicon.png">
+                    <p class="smPgTitle">
+                        <small>SURF&PADDLECO.</small>
+                    </p>
+            </div>    
+                
+
+            <div class="pageHeading">
+                <h1>SURF & PADDLE CO.</h1>
+                    <p><small>An Iron Yard Academy Project</small></p>
+            </div>
+    </header>
+
+    <div class="mainContent">
+        <section class="blogText">
+            <div class="blogPosts">
+                <h2>A Wonderfully Witty Title</h2>
+                    <time datetime="2015-01-15T5:25Z-4">
+                        <small>Thursday, January 15 5:25am</small>
+                    </time>
+                <p>
+                    Seasonal single origin arabica, froth, cup in crema rich mug variety trifecta. Con panna kopi-luwak espresso mazagran viennese dark sugar caramelization aromatic. . <!-- make text hyperlink on plunger pot -->
+                </p>
+                        <br>
+
+                <p>
+                    Curl into a furry donut hide at bottom of staircase to trip human. Chase mice poop on grasses, but make muffins pooping rainbow while flying in a toasted bread costume in space scamper.
+                </p>
+                        <br>
+
+
+                    <blockquote cite="#">
+                        <h3>
+                        "An Adventure, Encoded"
+                        </h3>
+                    </blockquote> 
+
+
+                        <br>
+                <p>
+                    Just sit right back and you'll hear a tale a tale of a fateful trip that started from this tropic port aboard this tiny ship. Didn't need no welfare states. Everybody pulled his weight.
+                     <!-- need another text hyperlink around dreams will come true-->
+                </p>
+                        <br>
+                <p>
+                    When I started Reynholm Industries, I had just two things in my possession: a dream and 6 million pounds. Yeah, you need to turn it on... uh, the button turns it on. You know, it's high tide. But we're not on the coast. I'm closed for maintenance! Closed for maintenance? I've fallen to the communists! Well, they do have some strong arguments.
+                </p>
+
+                    <div class="buttons">
+    <!-- make the following 3 images buttons and style them to be dim before curser moves over the icon -->
+                        <icon class="fa fa-anchor"></icon>
+                        <icon class="fa fa-cloud-download"></icon>
+                        <icon class="fa fa-birthday-cake"></icon> 
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+        </div>
+
+<!--
+        <aside class="rightColumn">
+            <figure class="sideBarImg">
+                        <img src="(image_url_here)">
+                    </figure>
+                        <p>About me</p>
+
+                        <nav class="stayConnected">
+                            <a href="#">Twitter</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">Facebook</a>
+                        </nav>
+
+                        <figure class="selfie">
+                            <img src="#">
+                            <figcaption class="moreInfo">
+                            <p><a href="#">About This Ad</a></p>
+                            </figcaption>
+                        </figure>
+                </aside>
+
+                <hr>  
+
+        <[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="footer">
+        <h2>Most Popular Quotes</h2>
+            <ul class="blogImages">
+                <li>
+                    <figure>
+                        <img src="https://tse4.mm.bing.net/th?id=HN.608051255108832392&w=263&h=181&c=7&rs=1&qlt=90&o=4&pid=1.7">
+                            <figcaption>AbstractI</figcaption>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure>
+                        <img src="https://tse1.mm.bing.net/th?&id=HN.608044207067103970&w=300&h=300&c=0&pid=1.9&rs=0&p=0">
+                        <figcaption>AbstractII</figcaption>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure>
+                        <img src="https://tse1.mm.bing.net/th?&id=HN.608031854742143882&w=300&h=300&c=0&pid=1.9&rs=0&p=0">
+                        <figcaption>AbstractIII</figcaption>
+                    </figure>
+                </li>
+            </ul>
+<!-- want to get the whitespace between the images in the mobile view footer but need to figure out the code -->
+                <div class="copyRight">
+                    <img src="img/tiy-logo.png" class="tiylogo">
+                        <p>
+                            The Ironyard Copyright 2013
+                                <br>
+                            All Rights Reserved
+                        </p>
+                    </div>
+                </footer>
+            </div>
+
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
     </body>
 </html>

@@ -98,15 +98,211 @@ textarea {
    ========================================================================== */
 
 
+/* added new div classes and changed 
+the names of some of the class containers.
+UPDATE with main.css*/
 
 
+/* max-width:35em;
+    margin:0 auto;
+    text-align:center;
+    position:relative; */
+
+/* possible css declarations....
 
 
+LOOK UP the properties - font-weight
+    amd line-height
+
+p {
+    font-family:;
+    font-size:;
+    color:;
+}
+
+h1 {
+    font-family:;
+    font-size:;
+    color:;
+    margin:;
+   ? text-transform:uppercase;
+   ? line-height:;
+}
+
+h2 {
+    font-family:;
+    font-size:;
+    color:;
+    margin:bottom;
+  ? text-transform:uppercase;
+  ? line-height:;
+  ? margin-bottom:0;
+}
 
 
+*/
+
+.container header {
+ background-image:url("http://larvalsubjects.files.wordpress.com/2013/05/renaissance-the-school-of-athens-classic-art-paitings-raphael-painter-rafael-philosophers-hd-wallpapers.jpg");
+ max-width:100%;
+ margin:0 auto;
+ text-align:center;
+ color:#FFFFFF;
+ text-transform:uppercase;
+ position:relative;
+ }
+
+ /* deleted from above - 
+ 
+ border:solid;
+ background-position:center;
+ background-size:cover;
+ position:relative;
+*/
+
+ .navbar {
+    position:relative;
+    text-align:center;
+}
+
+  /* !!!!!!! .navbar a {
+    font-family: 'Oswald' sans-serif;
+    color:#00008B;
+}       !!!!!!
+    margin:0 auto;
+    padding-left:0;
+    color:white;
+    ?text-transform:uppercae;?
+    ?text-declaration:none;?
+        !!!!!!   */
+
+.waveLogo {
+    height:auto;
+    width:auto;
+    max-width:50px;
+    max-height:50px;
+    position:relative;
+    text-align:center;
+    }
+
+a {
+    color:white;
+    text-decoration: none;
+} /* want to figure out to which element this declaration applies */
+
+/*
+.smPgTitle {
+}
+*/
+
+.pageHeading {
+    text-align: center;
+    margin: 0 auto;
+    color: white; 
+}
+
+.mainContent {
+    max-width:80%;
+    margin:0 auto;
+}
+
+.mainContent h2 {
+    color:#000080;
+}
+
+.mainContent time {
+    color:#FFD700;
+}
+
+.blogText {
+    text-align:center;
+    max-width:80%;
+    padding-left:8%;
+}
 
 
+.blogPosts p {
+    color:#000080;
+}
 
+blockquote {
+    color:#FFD700;
+    display:block;
+    padding-left:0;
+    position:relative;
+}
+
+
+.buttons {
+    text-align:center;
+    position:relative;
+    color:#FFD700;
+}
+
+/*
+.rightColumn figure {
+    text-align:center;
+}
+
+.sideBarImg p {
+    position:relative;
+}
+
+.stayconnected {
+    text-align:center;
+}
+
+.selfie {
+    padding left:30%;
+}
+
+.navIcons {
+    text-align:center;
+    color:#708090;
+    position:relative;
+}
+
+/* white border around each image in footer  */
+
+
+.footer {
+    max-width:80%;
+    margin:0 auto;
+    color:#708090;
+    text-align:center;  
+}
+
+.footer h2 {
+    text-align:center;
+    color:#000080;
+}
+
+.footer figcaption {
+    color:#000080;
+}
+
+.blogImages {
+    position:relative;
+    display:inline;
+    text-align:center;
+    padding-right:0.25em;
+}
+
+
+.copyRight{
+    position:relative;
+    text-align:center;
+}
+
+/*
+.tiylogo{
+    position:relative;
+    text-align:center;
+    padding-top:5%;
+    padding-right:23%
+
+}
+*/
 
 
 
@@ -220,6 +416,15 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
+/* Large Viewport*/
+@media only screen and (min-width: 64em) {
+}
+
+/* Tablet Size Viewports */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+}
+
+/* Mobile Viewports*/
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
