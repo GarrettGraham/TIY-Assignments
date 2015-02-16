@@ -20,6 +20,29 @@
                 //    * JSON file in `apis/github/users/USERNAME/events.json` (where `USERNAME` is _you_)
                 //    * new file in `scripts/` called `gymnastics.js` with a function called `answers` that meets **Requirements**
                 //
+//=============================================================================================
+//
+//=============================================================================================
+
+//---
+//
+//### API Gymnastics
+//
+//Use `curl` to fetch data from [the Github API](http://developer.github.com/v3), specifically [the public Events for a specific user](https://developer.github.com/v3/activity/events/#list-public-events-performed-by-a-user): **YOU!** Capture that data into a file called `apis/github/users/USERNAME/events.json` where `USERNAME` is _your_ Github account name, of course. **Hint:** You'll have to create all the directories along the way before you can create the file. When you've got 'em, it's time to _use_ 'em.
+//
+//Create a file called `scripts/gymnastics.js` and use the following incantation to get your cached API data into the file (again replacing `USERNAME`):
+
+//Next, use the methods of `Array` that you've documented to uncover some statistics about your progress. You can create as many functions as you like to help you derive the answers, but place the final invocations (not just the values) into a function called `answers` that returns the following:
+//
+
+//=============================================================================================
+//
+//=============================================================================================
+
+// END answer
+
+
+
 
                 //### Format for _Reading JavaScript_
                 //
@@ -41,42 +64,14 @@
                 //  * `thisArg`: `Object` to which to bind `callback`
                 //* _returns:_ `Boolean` whether `callback` returns `true` for _every_ element
                 //* _example:_
-=============================================================================================
-function every(anArray, callback){
-  var hasFailed = false; // it hasn't has it?
 
-  // iterate...
-  anArray.foreach(function(item, index, all){
-    if ( hasFailed ) return; // one failure ruins everything...
 
-    hasFailed = !callback(item, index, all); // why invert here?
-  });
 
-  return !hasFailed; // Another inverse?
-  // What if `anArray` is empty?
-}
-=============================================================================================
-
-//---
-//
-//### API Gymnastics
-//
-//Use `curl` to fetch data from [the Github API](http://developer.github.com/v3), specifically [the public Events for a specific user](https://developer.github.com/v3/activity/events/#list-public-events-performed-by-a-user): **YOU!** Capture that data into a file called `apis/github/users/USERNAME/events.json` where `USERNAME` is _your_ Github account name, of course. **Hint:** You'll have to create all the directories along the way before you can create the file. When you've got 'em, it's time to _use_ 'em.
-//
-//Create a file called `scripts/gymnastics.js` and use the following incantation to get your cached API data into the file (again replacing `USERNAME`):
-
-=============================================================================================
 var events = require('../apis/github/users/GarrettGraham/events.json'); // Replace USERNAME!
-=============================================================================================
 
-
-//Next, use the methods of `Array` that you've documented to uncover some statistics about your progress. You can create as many functions as you like to help you derive the answers, but place the final invocations (not just the values) into a function called `answers` that returns the following:
-//
-
-=============================================================================================
 function answer(){
   return {
-    'total': ...,    // How many total events did you fetch?
+    'total': events.length;    // How many total events did you fetch?
     'PushEvent': {
       'total': ...,  // How many total events of type `PushEvent` are there?
       'perDay': ...  // On average, how many`PushEvent` entries per day?
@@ -87,8 +82,20 @@ function answer(){
     }
   };
 } 
-=============================================================================================
 
-// END answer
+//
+//function every(anArray, callback){
+//  var hasFailed = false; // it hasn't has it?
+//
+//  // iterate...
+//  anArray.foreach(function(item, index, all){
+//    if ( hasFailed ) return; // one failure ruins everything...
+//
+//    hasFailed = !callback(item, index, all); // why invert here?
+//  });
+//
+//  return !hasFailed; // Another inverse?
+//  // What if `anArray` is empty?
+//}
 
 
