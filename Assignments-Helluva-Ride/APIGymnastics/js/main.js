@@ -19,7 +19,7 @@ function answer(){
       'PushEvent':
       {
       'total': PushEvent.length, // How many total events of type `PushEvent` are there?
-      'perDay': avg(pushEvents) // On average, how many`PushEvent` entries per day?
+//      'perDay': avg(pushEvents) // On average, how many`PushEvent` entries per day?
     },
     'other': {
       'total': repo.length,  // How many _other_ events are in the data?
