@@ -3,7 +3,7 @@
 
 ### Projects
 
-* [timeline](Timeline/index.html) 
+* [Timeline](Timeline/index.html) 
 
 * [Surf+Paddle]('')
 
