@@ -97,11 +97,71 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*.navbar-brand {
+    align-content:center;}*/
+
+.octokitty {
+    border-radius:0.2em;
+    width:7em;
+    height:7em;
+    float: left;
+}
+
+.profileHeader {
+    position:relative;
+    border-bottom:1px solid grey;
+    margin-bottom:0.9em;
+    padding:0.9em 0.9em 0.6em;
+}
+
+.profileHeader h4 {
+    margin:0;
+    font-size:1em;
+}
+
+
+.profileHeader h5 {
+    color:grey;
+    font-size:0.75em;
+    margin:0;
+}
+
+.userDetails {
+    margin:0.5em;
+    padding-left:0.5em;
+}
+
+.userDetails ul {
+    list-style:none;
+    font-size:30%;
+}
+
+.userDetails span{
+    color: grey;
+    padding-left:0.5em;
+
+}
+
+
+
+textarea {
+    max-width:100%;
+}
+
+
+/*figcaption {
+/*    float: right;}
 
 
 
 
 
+
+/*
+.panel-body {
+    border-bottom: 0.1em;
+}
+*/
 
 
 
