@@ -182,6 +182,10 @@ it('should have 30 total events'), function() {
       assert(events.length === 30);
 }
 
+it('should have 14 push events'), function () {
+    assert(pushEvents.length === 14);
+}
+
 //console.log(events.length);      
 //      
 //
