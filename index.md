@@ -5,19 +5,18 @@
 
 * [Timeline](Assignments-Helluva-Ride/Timeline/index.html)
 
-<!--    (Timeline/index.html)-->
+* [Surf+Paddle](Assignments-Helluva-Ride/Surf+Paddle/index.html)
 
-* [Surf+Paddle]('')
+* [String-Calculator](Assignments-Helluva-Ride/String-Calculator/js/main.js)
 
-* [String-Calculator](String-Calculator/js/main.js)
+* [Check-Writing](Assignments-Helluva-Ride/Check-Writing/js/main.js)
 
-* [Check-Writing](Check-Writing/js/main.js)
+* [APIGymnastics](Assignments-Helluva-Ride/APIGymnastics/js/main.js)
 
-* [APIGymnastics]('')
+* [Chessboard](Assignments-Helluva-Ride/Check-Writing/js/main.js)
+* [Chessboard](Assignments-Helluva-Ride/Check-Writing/index.html)
 
-* [Chessboard]('')
-
-* [GitHubProfile]('')
+* [GitHubProfile](Assignments-Helluva-Ride/GitHubProfile/index.js)
 
 <!------------------------------------->
     NEED TO FIX the link and gh-pages
