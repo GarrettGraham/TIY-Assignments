@@ -18,7 +18,3 @@
 
 * [GitHubProfile](Assignments-Helluva-Ride/GitHubProfile/index.html)
 
-<!------------------------------------->
-    NEED TO FIX the link and gh-pages
-    * now i can't see the assignment           folders on gh-pages but i               everything was fine when i left         last night. i dont know what             happened, really. 
-    -->
