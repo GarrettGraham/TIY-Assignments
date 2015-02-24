@@ -12,6 +12,8 @@
     "generator-h5bp": "^1.0.0"
   },
   "devDependencies": {
+    "bootstrap-sass": "^3.3.3",
+    "gulp": "^3.8.11",
     "node-sass": "^2.0.0-beta"
   },
   "scripts": {
