@@ -23,15 +23,19 @@
     </head>
     <body>
         
+<!--        1.2        -->
         
-       <h1>{{Hello, Angular!}}</h1>
+<!--       <h1>{{Hello, Angular!}}</h1>-->
         
 <!--        1.4      -->
 
+<!--
     <!DOCTYPE html>
         <html ng-app="gemStore">
                 <head>
                 <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+                <script type="text/javascript" src="angular.min.js"></script>
+                <script type="text/javascript" src="app.js"></script>
             </head>
         <body class="container" ng-controller="StoreController as store">
             <div class="product row">
@@ -39,14 +43,32 @@
                 {{store.product.name}}
                 <em class="pull-right">{{store.product.price}}</em>
                 </h3>
+                <button ng-show="store.product.canPurchase">Add to Cart</button>
             </div>
             <script type="text/javascript" src="angular.min.js"></script>
             <script type="text/javascript" src="app.js"></script>
         </body>
         </html>
+-->
+
+<!--        1.6        -->
         
-        
-        
+<!DOCTYPE html>
+    <html ng-app="gemStore">
+        <head>
+            <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+            <script type="text/javascript" src="angular.min.js"></script>
+            <script type="text/javascript" src="app.js"></script>            
+            </head>
+        <body class="container" ng-controller="StoreController as store">
+            <div class="product row" ng-hide="store.product.soldOut">
+            <h3>{{store.product.name
+                <em class="pull-fight">${{store.product.price}}</em>
+                </h3>
+            <button ng-show="store.product.canPurchase">Add to Cart</button>
+            </div>
+        </body>
+    </html>
         
         
         
@@ -54,15 +76,12 @@
 <!--        Boilerplate below     -->
         
         
-<!--
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
--->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<!--
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -73,5 +92,4 @@
         </script>
     </body>
 </html>
--->
 
