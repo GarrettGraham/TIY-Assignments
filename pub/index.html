@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 
-<html ng-app="gemStore">
+<html>
 <!--<![endif]-->
 
 <head>
@@ -15,24 +15,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- bower:css -->
 
+    <!-- endbower  -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <script type="text/javascript" src="angular.min.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <!-- bower:js -->
+
+    <!-- endbower -->
+
 </head>
 
-<body>
+<!--<body>-->
 
-    <!--        1.2        -->
+<!--        1.2        -->
 
-    <!--       <h1>{{Hello, Angular!}}</h1>-->
+<!--       <h1>{{Hello, Angular!}}</h1>-->
 
-    <!--        1.4      -->
+<!--        1.4      -->
 
-    <!--
+<!--
     <!DOCTYPE html>
         <html ng-app="gemStore">
                 <head>
@@ -54,7 +58,8 @@
         </html>
 -->
 
-    <!--        1.6        -->
+<!--        1.6        -->
+<!--
 
     <!DOCTYPE html>
     <html ng-app="gemStore">
@@ -75,9 +80,11 @@
     </body>
 
     </html>
+-->
 
 
-    <!--        1.7        -->
+<!--        1.7        -->
+<!--
 
     <!DOCTYPE html>
     <html ng-app="gemStore">
@@ -98,8 +105,10 @@
     </body>
 
     </html>
+-->
 
-    <!--    2.2     -->
+<!--    2.2     -->
+<!--
     <!DOCTYPE HTML>
     <html ng-app='gemStore'>
 
@@ -119,9 +128,11 @@
     </body>
 
     </html>
+-->
 
-    <!--    2.3      -->
+<!--    2.3      -->
 
+<!--
     <!DOCTYPE HTML>
     <html ng-app='gemStore'>
 
@@ -132,22 +143,28 @@
     </head>
 
     <body ng-controller="StoreController as store">
-        <!--        products container    -->
-        <div class="list-group">
-            <!--            product container  -->
+-->
+<!--        products container    -->
+<!--        <div class="list-group">-->
+<!--            product container  -->
+<!--
             <div class="list-group-item" ng-repeat="product in store.products">
                 <h3>
                 {{product.name}}
                 <em class="pull-right">{{product.price | currency}}</em>
             </h3>
-                <!--            image gallery    -->
+-->
+<!--            image gallery    -->
+<!--
                 <div class="gallery">
                     <img ng-src="{{product.images[0]}}" />
                 </div>
             </div>
         </div>
+-->
 
-        <!--        2.4        -->
+<!--        2.4        -->
+<!--
 
         <!DOCTYPE HTML>
         <html ng-app='gemStore'>
@@ -159,44 +176,99 @@
         </head>
 
         <body ng-controller="StoreController as store">
-            <!--        products container    -->
-            <div class="list-group">
-                <!--            product container  -->
-                <div class="list-group-item" ng-repeat="product in store.products">
-                    <h3>
+-->
+<!--        products container    -->
+<!--            <div class="list-group">-->
+<!--            product container  -->
+<!--                <div class="list-group-item" ng-repeat="product in store.products">
+<h3>
+<!--
                 {{product.name}}
                 <em class="pull-right">{{product.price | currency}}</em>
-            </h3>
-                    <!--            image gallery    -->
+            </h3> -->
+<!--            image gallery    -->
+<!--
                     <div class="gallery">
+                        <div class="img-wrap">
+                            <img ng-src="{{product.images[0]}}" />
+                        </div>
 
-                        <!--        Boilerplate below     -->
-
-
-                        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-                        <script>
-                            window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
-                        </script>
-                        <script src="js/plugins.js"></script>
-                        <script src="js/main.js"></script>
-
-                        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-                        <script>
-                            (function (b, o, i, l, e, r) {
-                                b.GoogleAnalyticsObject = l;
-                                b[l] || (b[l] =
-                                    function () {
-                                        (b[l].q = b[l].q || []).push(arguments)
-                                    });
-                                b[l].l = +new Date;
-                                e = o.createElement(i);
-                                r = o.getElementsByTagName(i)[0];
-                                e.src = '//www.google-analytics.com/analytics.js';
-                                r.parentNode.insertBefore(e, r)
-                            }(window, document, 'script', 'ga'));
-                            ga('create', 'UA-XXXXX-X');
-                            ga('send', 'pageview');
-                        </script>
+                        <ul class="img-thumbnails clearfix">
+                            <li class="small-image pull-left thumbnail" ng-repeat="image in products.images"></li>
+                            <img ng-src="{{images}}">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
         </body>
 
         </html>
+-->
+
+<!--        2.5      -->
+
+<!--
+        <!DOCTYPE html>
+        <html ng-app="gemStore">
+
+        <head>
+            <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+            <script type="text/javascript" src="angular.min.js"></script>
+            <script type="text/javascript" src="app.js"></script>
+        </head>
+-->
+
+<body ng-controller="StoreController as store">
+    <!--  Products Container  -->
+    <div class="list-group">
+        <!--  Product Container  -->
+        <div class="list-group-item" ng-repeat="product in store.products">
+            <h3>
+          {{product.name}}
+          <em class="pull-right">{{product.price | currency}}</em>
+        </h3>
+            <!-- Image Gallery  -->
+            <div class="gallery" ng-show="products.images.length">
+                <img class="img img-circle img-thumbnail center-block" ng src="{{product.images[0]}}" />
+                <ul class="clearfix">
+                    <li class="small-image pull-left thumbnail" ng-repeat="image in product.imagees"> <img ng-src="{{image}}" /> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!--        Boilerplate below     -->
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<!-- changed from main.js to app.js -->
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function () {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>
+</body>
+
+</html>
