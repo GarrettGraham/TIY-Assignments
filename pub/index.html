@@ -217,58 +217,119 @@
             <script type="text/javascript" src="app.js"></script>
         </head>
 -->
+<!--
 
 <body ng-controller="StoreController as store">
+-->
     <!--  Products Container  -->
-    <div class="list-group">
+<!--    <div class="list-group">-->
         <!--  Product Container  -->
+<!--
         <div class="list-group-item" ng-repeat="product in store.products">
             <h3>
           {{product.name}}
           <em class="pull-right">{{product.price | currency}}</em>
         </h3>
+-->
             <!-- Image Gallery  -->
-            <div class="gallery" ng-show="products.images.length">
-                <img class="img img-circle img-thumbnail center-block" ng src="{{product.images[0]}}" />
-                <ul class="clearfix">
-                    <li class="small-image pull-left thumbnail" ng-repeat="image in product.imagees"> <img ng-src="{{image}}" /> </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<!--
+           <div class="gallery" ng-show="products.images.length">
+    <img class="img img-circle img-thumbnail center-block" ng src="{{product.images[0]}}" />
+    <ul class="clearfix">
+        <li class="small-image pull-left thumbnail" ng-repeat="image in product.imagees"> <img ng-src="{{image}}" /> </li>
+    </ul>
+</div>
+</div>
+</div>
 </body>
 
 </html>
+-->
+<!--    2.8    -->
+<!DOCTYPE html>
+<html ng-app="gemStore">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body class="list-group" ng-controller="StoreController as store">
+    <header>
+        <h1 class="text-center">Flatlander Crafted Gems</h1>
+        <h2 class="text-center">– an Angular store –</h2>
+    </header>
+    <div class="list-group-item" ng-repeat="product in store.products">
+        <h3>
+        {{product.name}}
+        <em class="pull-right">{{product.price | currency}}</em>
+      </h3>
+        <section ng-show="product.images.length">
+            <img ng-src="{{product.images[0]}}" />
+            <ul class="list-inline thumbs">
+                <li class="thumbnail" ng-repeat="image in product.images">
+                    <img ng-src="{{image}}" />
+                </li>
+            </ul>
+        </section>
+
+        <section class="tab" ng-controller="TabController as tab">
+            <ul class="nav nav-pills">
+                <li ng-class="{ active: tab.isSet(1) }">
+                    <a href ng-click="tab.setTab(1)">Description</a>
+                </li>
+                <li ng-class="{ active: tab.isSet(2) }">
+                    <a href ng-click="tab.setTab(2)">Specs</a>
+                </li>
+                <li ng-class="{ active: tab.isSet(3) }">
+                    <a href ng-click="tab.setTab(3)">Reviews</a>
+                </li>
+            </ul>
+            <div ng-show="tab.isSet(1)">
+                <h4>Description</h4>
+                <blockquote>{{product.description}}</blockquote>
+            </div>
+            <div ng-show="tab.isSet(2)">
+                <h4>Specs</h4>
+                <blockquote>Shine: {{product.shine}}</blockquote>
+            </div>
+            <div ng-show="tab.isSet(3)">
+                <h4>Reviews</h4>
+            </div>
+        </section>
 
 
-<!--        Boilerplate below     -->
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
-</script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
-<!-- changed from main.js to app.js -->
+        <!--        Boilerplate below     -->
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
-    (function (b, o, i, l, e, r) {
-        b.GoogleAnalyticsObject = l;
-        b[l] || (b[l] =
-            function () {
-                (b[l].q = b[l].q || []).push(arguments)
-            });
-        b[l].l = +new Date;
-        e = o.createElement(i);
-        r = o.getElementsByTagName(i)[0];
-        e.src = '//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
-</script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+        </script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <!-- changed from main.js to app.js -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function (b, o, i, l, e, r) {
+                b.GoogleAnalyticsObject = l;
+                b[l] || (b[l] =
+                    function () {
+                        (b[l].q = b[l].q || []).push(arguments)
+                    });
+                b[l].l = +new Date;
+                e = o.createElement(i);
+                r = o.getElementsByTagName(i)[0];
+                e.src = '//www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e, r)
+            }(window, document, 'script', 'ga'));
+            ga('create', 'UA-XXXXX-X');
+            ga('send', 'pageview');
+        </script>
 </body>
 
 </html>
