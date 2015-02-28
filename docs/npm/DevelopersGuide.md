@@ -178,10 +178,11 @@ Frequently Asked Questions
 
 
 Where can I find these docs in HTML?
+ ```
+   https://docs.npmjs.com/, or run:
+ ```
 
-https://docs.npmjs.com/, or run:
-
-npm config set viewer browser
-to open these documents in your default web browser rather than man.
+`npm config set viewer browser`
+   * to open these documents in your default web browser rather than man.
 
 
