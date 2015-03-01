@@ -124,3 +124,19 @@ Extend/Inheritance
 
 
 Operators
+
+
+
+======================================================
+Sass (Styylistically Awesome StyleSheets)
+======================================================
+
+Sass is an extension of CSS that adds power and elegance to the basic language. It allows you to use variables, nested rules, mixins, inline imports, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well organized, and get small stylesheets up and runing quickly, particularly with help of the Compass style library.
+
+--Features
+
+    * Fully CSS3-compatible
+    * Language extensions such as variables, nesting, and mixins
+    * Many useful functions for manipulating colors and other values
+    * Advanced features like control directives for libraries
+    * Well-formatted, customizable output
