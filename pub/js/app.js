@@ -524,9 +524,9 @@
         color: '#CCC',
         faces: 14,
         images: [
-        "images/gem-02.gif",
-        "images/gem-05.gif",
-        "images/gem-09.gif"
+        "http://lorempixel.com/160/160",
+        "http://lorempixel.com/160/160",
+        "http://lorempixel.com/160/160"
       ],
         reviews: [{
             stars: 5,

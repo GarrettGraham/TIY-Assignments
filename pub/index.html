@@ -1,11 +1,6 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 
-<html>
-<!--<![endif]-->
+<html ng-app="gemStore">
 
 <head>
     <meta charset="utf-8">
@@ -14,20 +9,17 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower  -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    
     <!-- bower:js -->
-<!--
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-     <script src="bower_components/jquery/dist/jquery.js"></script>
--->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
 
 </head>
@@ -386,15 +378,6 @@
         <!--             end: 3.3 - 3.6              -->
 
 
-<!DOCTYPE html>
-<html ng-app="gemStore">
-
-<head>
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
-    <script type="text/javascript" src="angular.min.js"></script>
-    <script type="text/javascript" src="app.js"></script>
-</head>
-
 <body ng-controller="StoreController as store">
     <header>
         <h1 class="text-center">Flatlander Crafted Gems</h1>
@@ -442,13 +425,13 @@
                         <li ng-repeat="review in product.reviews">
                             <blockquote>
                                 <strong>{{review.stars}} Stars</strong> {{review.body}}
-                                <cite class="clearfix">—{{review.author}}</cite>
+                                <cite class="clearfix">—{{review.author}} on {{review.createdOn | date}}</cite>
                             </blockquote>
                         </li>
                     </ul>
 
-                    <!--         Review Form          -->
-                    <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(product)">
+                    <!--        3.7: Review Form          -->
+                    <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate> <!-- for 3.9: added the novalidate attribute and $valid on reviews to specify validity of the form with logical and && ...-->
 
                         <!--                        Live Preveiew     -->
 
@@ -457,7 +440,6 @@
                             <cite class="clearfix">--{{review.Ctrl.review.author}}</cite>
                         </blockquote>
 
-                        <!--                        Review Form            -->
                         <!--  Review Form -->
                         <h4>Submit a Review</h4>
                         <fieldset class="form-group">
@@ -480,19 +462,10 @@
             </section>
         </div>
     </div>
-
-
-
-
-
-
+    
 
 <!--        Boilerplate below     -->
-<!-- bower:js -->
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<!-- endbower -->
+
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js "></script>
 <script>
