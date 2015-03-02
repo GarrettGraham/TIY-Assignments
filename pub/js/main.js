@@ -163,11 +163,11 @@
     
 //  4.3
     
-    app.directive("productDescription", function() {
-        return: 'E',
-        templateUrl: "product-description.html"
-    };
-    });
+//    app.directive("productDescription", function() {
+//        return: 'E',
+//        templateUrl: "product-description.html"
+//    };
+//    });
     
 //  4.3
     
