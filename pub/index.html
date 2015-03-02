@@ -8,18 +8,17 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower  -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <!--    <link rel="stylesheet" href="css/normalize.css">-->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <!--    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />-->
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    
+
     <!-- bower:js -->
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
     <!-- endbower -->
 
 </head>
@@ -414,7 +413,19 @@
                 </div>
                 <div ng-show="tab.isSet(2)">
                     <h4>Specs</h4>
-                    <blockquote>Shine: {{product.shine}}</blockquote>
+    <!--                    4.2                    -->
+                    <ul class="list-unstyled">
+                        <li>
+                            <strong>Shine</strong> : {{product.shine}}</li>
+                        <li>
+                            <strong>Faces</strong> : {{product.faces}}</li>
+                        <li>
+                            <strong>Rarity</strong> : {{product.rarity}}</li>
+                        <li>
+                            <strong>Color</strong> : {{product.color}}</li>
+                    </ul>
+    <!--                    4.2                    -->
+
                 </div>
 
                 <!--  Review Tab's Content  -->
@@ -431,7 +442,9 @@
                     </ul>
 
                     <!--        3.7: Review Form          -->
-                    <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate> <!-- for 3.9: added the novalidate attribute and $valid on reviews to specify validity of the form with logical and && ...-->
+                    <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate>
+
+                        <!-- for 3.9: added the novalidate attribute and $valid on reviews to specify validity of the form with logical and && ...
 
                         <!--                        Live Preveiew     -->
 
@@ -457,41 +470,26 @@
                             <input type="submit" class="btn btn-primary pull-right" value="Submit Review" />
                         </fieldset>
                     </form>
-                    
+
                 </div>
             </section>
         </div>
     </div>
-    
-
-<!--        Boilerplate below     -->
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js "></script>
-<script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js "><\/script>')
-</script>
-<script src="js/plugins.js "></script>
-<script src="js/main.js "></script>
-<!-- changed from main.js to app.js -->
+    <!--        Boilerplate below     -->
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
-    (function (b, o, i, l, e, r) {
-        b.GoogleAnalyticsObject = l;
-        b[l] || (b[l] =
-            function () {
-                (b[l].q = b[l].q || []).push(arguments)
-            });
-        b[l].l = +new Date;
-        e = o.createElement(i);
-        r = o.getElementsByTagName(i)[0];
-        e.src = '//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
-</script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js "></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js "><\/script>')
+    </script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/plugins.js "></script>
+    <script src="js/main.js "></script>
+    <!-- changed from main.js to app.js -->
+
+
 </body>
 
 </html>

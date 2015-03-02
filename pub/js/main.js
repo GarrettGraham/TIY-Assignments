@@ -159,7 +159,20 @@
       this.review = {};
     };
   });
-
+    
+    
+//  4.3
+    
+    app.directive("productDescription", function() {
+        return: 'E',
+        templateUrl: "product-description.html"
+    };
+    });
+    
+//  4.3
+    
+    
+    
   var gems = [{
       name: 'Azurite',
       description: "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
@@ -169,9 +182,9 @@
       color: '#CCC',
       faces: 14,
       images: [
-        "images/gem-02.gif",
-        "images/gem-05.gif",
-        "images/gem-09.gif"
+        "http://lorempixel.com/output/abstract-q-c-120-120-1.jpg",
+        "http://lorempixel.com/output/abstract-q-c-120-120-1.jpg",
+        "http://lorempixel.com/output/abstract-q-c-120-120-1.jpg"
       ],
       reviews: [{
         stars: 5,
@@ -193,9 +206,9 @@
       color: '#EEE',
       faces: 12,
       images: [
-        "images/gem-01.gif",
-        "images/gem-03.gif",
-        "images/gem-04.gif"
+        "http://lorempixel.com/output/abstract-q-c-120-120-1.jpg",
+        "http://lorempixel.com/output/abstract-q-c-120-120-1.jpg",
+        "http://lorempixel.com/output/abstract-q-c-120-120-1.jpg"
       ],
       reviews: [{
         stars: 3,

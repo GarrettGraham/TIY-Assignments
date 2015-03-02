@@ -11,5 +11,8 @@
     "url": "TIY-Assignments"
   },
   "author": "GarrettLeeGrahamAnderson",
-  "license": "cco"
+  "license": "cco",
+  "devDependencies": {
+    "browser-sync": "^2.2.1"
+  }
 }
