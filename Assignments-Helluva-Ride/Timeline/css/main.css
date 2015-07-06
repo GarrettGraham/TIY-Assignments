@@ -164,7 +164,7 @@ article {
     bottom: 2.5em;
     color:#ffffff;
     background: #326899;
-    /*background:#6cbfee;*/
+    border:3px solid #6cbfee;
     border-radius:50%;
 }
 
@@ -174,6 +174,9 @@ h3 {
     border-bottom: 0.15em solid;
     border-bottom-width: 50%;
 }
+
+
+
 
 
 
@@ -283,12 +286,10 @@ h3 {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-/*
 
 @media only screen and (min-width: 35em) {
-     Style adjustments for viewports that meet the condition
+     /*Style adjustments for viewports that meet the condition*/
 }
-*/
 
 
 
@@ -357,7 +358,7 @@ article {
     position:relative;
     bottom: 2.5em;
     color:#ffffff;
-    background:#6cbfee;
+    background:#326899;
     border-radius:50%;
 }
 
