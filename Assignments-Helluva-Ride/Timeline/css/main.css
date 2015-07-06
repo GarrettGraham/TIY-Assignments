@@ -97,8 +97,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* mobile viewport */ 
-@media only screen and (max-width: 35em) {
+/* mobile viewport */
+/*@media only screen and (max-width: 35em) {*/
     /* Style adjustments for viewports that meet the condition */
 
 body {
@@ -118,7 +118,7 @@ body {
 
 
 .timelineHeader p span {
-    display:inline;   
+    display:inline;
 }
 
 
@@ -131,7 +131,7 @@ ul {
     bottom: 1em;
     display: block;
     color:#6cbfee;
-}   
+}
 
 span {
     display:block;
@@ -177,7 +177,7 @@ h3 {
 }
 
 
-}
+/*}*/
 
 /* ==========================================================================
    Helper classes
@@ -288,7 +288,7 @@ h3 {
 /*
 
 @media only screen and (min-width: 35em) {
-     Style adjustments for viewports that meet the condition 
+     Style adjustments for viewports that meet the condition
 }
 */
 
@@ -313,7 +313,7 @@ body {
 
 
 .timelineHeader p span {
-    display:inline;   
+    display:inline;
 }
 
 ul {
@@ -325,7 +325,7 @@ ul {
     bottom: 1em;
     display: block;
     color:#6cbfee;
-}   
+}
 
 span {
     display:block;
@@ -393,7 +393,7 @@ body {
 
 
 .timelineHeader p span {
-    display:inline;   
+    display:inline;
 }
 
 ul {
@@ -405,7 +405,7 @@ ul {
     bottom: 1em;
     display: block;
     color:#6cbfee;
-}   
+}
 
 span {
     display:block;

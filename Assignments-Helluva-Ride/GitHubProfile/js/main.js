@@ -23,11 +23,50 @@ $(document).ready(function(data) {
 //    });
 //        pretty sure this isnt correct
         
-====================================
-Notations from Peers: 09-02-15
-====================================
-    maddie did $.getJSON
-                    $('').text
-                    
-    Adam did $.getJSON
-                    $('').html
+//====================================
+//Notations from Peers: 09-02-15
+//====================================
+//    maddie did $.getJSON
+//                    $('').text
+//                    
+//    Adam did $.getJSON
+//                    $('').html
+					
+				// vue binds the data with the mustaches
+				//updating the data in the model changes the data in the view (vue)
+					
+					;(Funtion(window){
+						var $name = $('.profile-name big'),
+							$username = $('.profile-name small');
+						
+						//below is the vue model
+						
+						var profileDetails = new Vue({
+							el: '.profile-details',
+							data: {
+							"user" = {}
+							}
+						});
+						
+						$.getJSON('/api/github...')
+						
+						.then(function(octocat) {
+//							setTimeout(function(){}
+									   profileDetails.user = octocat;
+//									   } 3000);
+							
+							return $.getJSON(octocat.repos_url).then(function(repos){
+//								console.log(repos)
+								octocat.repos = repos;
+								console.log(octocat); 
+								//corresponding getter and setter?
+							});
+						});
+					})(window);
+		
+var profile = new Vue({
+							el: '.profile-details',
+							data: {
+							"user" = {}
+							}
+						});

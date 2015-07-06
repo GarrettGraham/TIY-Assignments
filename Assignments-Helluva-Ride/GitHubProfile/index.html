@@ -78,6 +78,7 @@
                 <div class="profileHeader">
                     <figure>
                         <img src="https://avatars3.githubusercontent.com/u/583231?v=3&s=400" class="octokitty">
+<!--                 <img ...v-attr="src: user.avatar_url" class="responsive"    -->
                     <figcatpion><h4>The Octocat</h4><h5>octocat</h5></figcatpion>
                     </figure>        
                         
@@ -105,10 +106,28 @@
             </ul>
         </div>
         
+        <ul class="profileDetails">
+        	<li class="profile-details-org">{{user.company}}</li>
+            <li class="profile-details-org">{{user.location}}</li>
+  	
+        </ul>
+        
         <!-- Popular Repos: need to push the star to far right and include the numbers representing the users who starred the repo -->
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Popular Repositories</h3>
+<!--                               set id to call it in the vue model-->
+                                <h3 class="panel-title" id="repo-list-popular">Popular Repositories</h3>
+                                <ul>
+                                	<li class="grid" v-repeat="repo in repos">
+<!--                                	<li class="grid" v-repeat="repo : user.repos">-->
+                                	
+                                		<header class="unit-6">
+                                			<h5>{{repo.name}}</h5>
+                                			<p>{{repo.description}}</p>
+                                		</header>
+                                	</li>
+                                	
+                                </ul>
                             </div>
                                 <div class="panel-body">
                                     <span class="octicon octicon-repo"></span><a href="">octocat/Spoon-Knife</a>
