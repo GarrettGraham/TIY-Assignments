@@ -116,9 +116,9 @@ body {
 }
 
 
-.timelineHeader p span {
+/*.timelineHeader p span {
     display:inline;
-}
+}*/
 
 
 ul {
@@ -159,12 +159,12 @@ article {
 .mobileIcon {
     float:right;
     width:1.8em;
-    /*height:1.em;*/
     text-align:center;
     position:relative;
     bottom: 2.5em;
     color:#ffffff;
-    background:#6cbfee;
+    background: #326899;
+    /*background:#6cbfee;*/
     border-radius:50%;
 }
 
