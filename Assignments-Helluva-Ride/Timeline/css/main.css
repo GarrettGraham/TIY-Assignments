@@ -101,13 +101,18 @@ body {
   margin: 0 5% auto;
 }
 .bodycontainer {
-  overflow: auto;
+  /*overflow: auto;*/
+  font-family: 'Lato', Calibri, Ariel, sans-serif;
+
 }
 .timelineHeader {
   text-align: center;
   color: #46a4da;
 }
 
+.initialDatetime:first-child {
+  font-size: 1em
+}
 /*.timelineHeader p span {
     display:inline;
 }*/
