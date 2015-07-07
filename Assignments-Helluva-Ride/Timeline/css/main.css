@@ -92,13 +92,12 @@ textarea {
 
 
 /* mobile viewport */
-
-
 /* Style adjustments for viewports that meet the condition */
 
 body {
-  width: 90%;
-  margin: 0 5% auto;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
 }
 .bodycontainer {
   /*overflow: auto;*/
@@ -110,15 +109,14 @@ body {
   color: #46a4da;
 }
 
-.initialDatetime:first-child {
-  font-size: 1em
-}
 /*.timelineHeader p span {
     display:inline;
 }*/
 
 ul {
   list-style: none;
+  margin:0;
+  padding:0;
 }
 .initialDatetime {
   position: relative;
@@ -126,9 +124,9 @@ ul {
   display: block;
   color: #6cbfee;
 }
-span {
+/*span {
   display: block;
-}
+}*/
 article {
   background-color: #6cbfee;
   color: #ffffff;
