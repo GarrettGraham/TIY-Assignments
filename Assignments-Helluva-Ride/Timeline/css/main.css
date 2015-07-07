@@ -158,13 +158,14 @@ article {
 
 .mobileIcon {
     float:right;
-    width:1.8em;
+    width:40px;
+    height: 40px;
     text-align:center;
     position:relative;
-    bottom: 2.5em;
+    bottom: 3.5em;
     color:#ffffff;
     background: #326899;
-    border:3px solid #6cbfee;
+    border:5px solid #6cbfee;
     border-radius:50%;
 }
 
