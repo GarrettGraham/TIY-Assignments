@@ -92,8 +92,16 @@ textarea {
 
 
 /* mobile viewport */
+
+
 /* Style adjustments for viewports that meet the condition */
 
+h3 {
+  margin-top: 0em;
+  padding-top: 0 0 0.7em;
+  border-bottom: 0.15em solid;
+  border-bottom-width: 50%;
+}
 body {
   font-size: 100%;
   padding: 0;
@@ -102,24 +110,30 @@ body {
 .bodycontainer {
   /*overflow: auto;*/
   font-family: 'Lato', Calibri, Ariel, sans-serif;
-
 }
 .timelineHeader {
   text-align: center;
   color: #46a4da;
 }
 
-/*.timelineHeader p span {
-    display:inline;
-}*/
+.timelineHeader i {
+    position:relative;
+    text-align: center;
+    padding-top: 0.5em;
+    border-radius: 50%;
+    height:2.5em;
+    width:2.5em;
+    display:inline-block;
+    border: 4px solid;
+}
 
 .timeline {
   list-style: none;
-  width:80%;
+  width: 80%;
   margin-top: 30px;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
-  padding:0;
+  padding: 0;
 }
 .initialDatetime {
   position: relative;
@@ -129,12 +143,14 @@ body {
 }
 
 /* Datetime block */
+
 span {
   display: block;
-  margin-left:1em;
+  margin-left: 1em;
 }
 
 /* li element text */
+
 article {
   background-color: #6cbfee;
   color: #ffffff;
@@ -160,12 +176,6 @@ article {
   border: 7px solid #6cbfee;
   border-radius: 50%;
   padding-top: 1px;
-}
-h3 {
-  margin-top: 0em;
-  padding-top: 0 0 0.7em;
-  border-bottom: 0.15em solid;
-  border-bottom-width: 50%;
 }
 
 /* ==========================================================================
