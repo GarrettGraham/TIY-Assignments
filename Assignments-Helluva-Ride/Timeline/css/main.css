@@ -116,6 +116,7 @@ body {
 .timeline {
   list-style: none;
   width:80%;
+  margin-top: 30px;
   margin-left:auto;
   margin-right: auto;
   padding:0;
@@ -130,7 +131,10 @@ body {
 /* Datetime block */
 span {
   display: block;
+  margin-left:1em;
 }
+
+/* li element text */
 article {
   background-color: #6cbfee;
   color: #ffffff;
@@ -146,15 +150,16 @@ article {
 }
 .mobileIcon {
   float: right;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   text-align: center;
   position: relative;
   bottom: 3.5em;
   color: #ffffff;
   background: #326899;
-  border: 5px solid #6cbfee;
+  border: 7px solid #6cbfee;
   border-radius: 50%;
+  padding-top: 1px;
 }
 h3 {
   margin-top: 0em;
