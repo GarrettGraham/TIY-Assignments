@@ -296,44 +296,15 @@ article {
     border-bottom: 0.15em solid;
     border-bottom-width: 50%;
   }
-  body {
-    width: 90%;
-    margin: 0 5% auto;
-  }
-  .bodycontainer {
-    overflow: auto;
-  }
-  .timelineHeader {
-    text-align: center;
-    color: #46a4da;
-  }
-
-  ul {
-    list-style: none;
-  }
   .initialDatetime {
-    position: relative;
-    bottom: 1em;
-    display: block;
-    color: #6cbfee;
   }
 
-  article {
-    background-color: #6cbfee;
-    color: #ffffff;
-    border-radius: 1.5%;
-    padding-left: 3%;
-    padding-right: 2%;
-    padding-bottom: 1%;
-    margin-bottom: 4%;
-    margin-left: -3%;
-  }
-  .carrot {
+  .carrot i {
     position: relative;
-
-    color: #6cbfee;
-    padding-left: 1em;
-    padding-bottom: 2em;
+    transform: rotate(180deg);
+    color:#6cbfee;
+    top: 1.5em;
+    right: 4.85em;
   }
   .mobileIcon {
     float: left;
