@@ -296,6 +296,12 @@ article {
 /* medium viewport */
 
 @media only screen and (min-width: 35em) and (max-width: 50em) {
+  h3 {
+    margin-top: 0em;
+    padding-top: 0 0 0.7em;
+    border-bottom: 0.15em solid;
+    border-bottom-width: 50%;
+  }
   body {
     width: 90%;
     margin: 0 5% auto;
@@ -318,6 +324,7 @@ article {
     bottom: 1em;
     display: block;
     color: #6cbfee;
+    float:left;
   }
   span {
     display: block;
@@ -341,20 +348,16 @@ article {
   }
   .mobileIcon {
     float: right;
-    width: 1.8em;
-    height: 1.em;
+    width: 50px;
+    height: 50px;
     text-align: center;
     position: relative;
-    bottom: 2.5em;
+    bottom: 3.5em;
     color: #ffffff;
     background: #326899;
+    border: 7px solid #6cbfee;
     border-radius: 50%;
-  }
-  h3 {
-    margin-top: 0em;
-    padding-top: 0 0 0.7em;
-    border-bottom: 0.15em solid;
-    border-bottom-width: 50%;
+    padding-top: 1px;
   }
 }
 
