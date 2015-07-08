@@ -296,7 +296,10 @@ article {
     border-bottom: 0.15em solid;
     border-bottom-width: 50%;
   }
-  .initialDatetime {
+  .initialDatetime span {
+    position:relative;
+    top:3em;
+    right:2em;
   }
 
   .carrot i {
@@ -314,78 +317,79 @@ article {
     position: relative;
     color: #ffffff;
     background: #326899;
-    border: 7px solid #6cbfee;
+    border: 7px solid #a3daf6;
     border-radius: 50%;
     margin: 3.2em 0 0 4.2em;
   }
 
+/* the solid line that connects vertically the mobile icons */
+
+  .timeline::before {
+    content:'';
+    position:absolute;
+    background: #a3daf6;
+    width:10px;
+    top:30%;
+    bottom:0;
+    margin-left:5.45em;
+  }
+
   .timelineArticle{
     padding-left: 8em;
+    /*border-left: 7px solid #a3daf6;*/
   }
 }
 
 /* medium viewport */
 
 @media only screen and (min-width: 50em) {
-  body {
-    width: 90%;
-    margin: 0 5% auto;
-  }
-  .bodycontainer {
-    overflow: auto;
-  }
-  .timelineHeader {
-    text-align: center;
-    color: #46a4da;
-  }
-  .timelineHeader p span {
-    display: inline;
-  }
-  ul {
-    list-style: none;
-  }
-  .initialDatetime {
-    position: relative;
-    bottom: 1em;
-    display: block;
-    color: #6cbfee;
-  }
-  span {
-    display: block;
-  }
-  article {
-    background-color: #6cbfee;
-    color: #ffffff;
-    border-radius: 1.5%;
-    padding-left: 3%;
-    padding-right: 2%;
-    padding-bottom: 1%;
-    margin-bottom: 4%;
-    margin-left: -3%;
-  }
-  .carrot {
-    position: relative;
-    bottom: 1em;
-    color: #6cbfee;
-    padding-left: 1em;
-    padding-bottom: 2em;
-  }
-  .mobileIcon {
-    float: right;
-    width: 1.8em;
-    height: 1.em;
-    text-align: center;
-    position: relative;
-    bottom: 2.5em;
-    color: #ffffff;
-    background: #6cbfee;
-    border-radius: 50%;
-  }
   h3 {
     margin-top: 0em;
     padding-top: 0 0 0.7em;
     border-bottom: 0.15em solid;
     border-bottom-width: 50%;
+  }
+  .initialDatetime span {
+    position:relative;
+    top:3em;
+    right:2em;
+  }
+
+  .carrot i {
+    position: relative;
+    transform: rotate(180deg);
+    color:#6cbfee;
+    top: 1.5em;
+    right: 2.7em;
+  }
+  .mobileIcon {
+    float: left;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    background: #326899;
+    border: 7px solid #a3daf6;
+    border-radius: 50%;
+    margin: 3.2em 0 0 4.2em;
+  }
+
+/* the solid line that connects vertically the mobile icons */
+
+  .timeline::before {
+    content:'';
+    position:absolute;
+    background: #a3daf6;
+    width:10px;
+    top:30%;
+    bottom:0;
+    margin-left:5.45em;
+  }
+
+  .timelineArticle{
+    padding-left: 8em;
+    /*border-left: 7px solid #a3daf6;*/
   }
 }
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
