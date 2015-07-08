@@ -304,7 +304,7 @@ article {
     transform: rotate(180deg);
     color:#6cbfee;
     top: 1.5em;
-    right: 4.85em;
+    right: 2.7em;
   }
   .mobileIcon {
     float: left;
@@ -312,12 +312,15 @@ article {
     height: 50px;
     text-align: center;
     position: relative;
-    bottom: 3.5em;
     color: #ffffff;
     background: #326899;
     border: 7px solid #6cbfee;
     border-radius: 50%;
-    padding-top: 1px;
+    margin: 3.2em 0 0 4.2em;
+  }
+
+  .timelineArticle{
+    padding-left: 8em;
   }
 }
 
