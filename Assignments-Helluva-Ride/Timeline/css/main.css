@@ -147,8 +147,11 @@ body {
   bottom: 1em;
   display: block;
   color: #6cbfee;
-  margin-left: 1em;
 }
+
+/*.initialDatetime span:last-child{
+  font-size:1.5em;
+}*/
 
 article {
   background-color: #6cbfee;
@@ -297,9 +300,13 @@ article {
     border-bottom-width: 50%;
   }
   .initialDatetime span {
-    position:relative;
+    /*position:relative;*/
     top:3em;
     right:2em;
+  }
+
+  time.initialDatetime span:last-child {
+    /*font-size: 1.5em;*/
   }
 
   .carrot i {
@@ -329,7 +336,7 @@ article {
     position:absolute;
     background: #a3daf6;
     width:10px;
-    top:30%;
+    top:40%;
     bottom:0;
     margin-left:5.45em;
   }
@@ -382,7 +389,7 @@ article {
     position:absolute;
     background: #a3daf6;
     width:10px;
-    top:30%;
+    top:40%;
     bottom:0;
     margin-left:5.45em;
   }
