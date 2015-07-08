@@ -127,6 +127,11 @@ body {
     border: 4px solid;
 }
 
+.backToPortfolio::after {
+  content: attr('data-info');
+  transition: 1s;
+}
+
 .timeline {
   list-style: none;
   width: 80%;
