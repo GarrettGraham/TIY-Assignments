@@ -140,21 +140,15 @@ body {
   margin-right: auto;
   padding: 0;
 }
-.initialDatetime {
+
+/* Date and Time */
+.initialDatetime span {
   position: relative;
   bottom: 1em;
   display: block;
   color: #6cbfee;
-}
-
-/* Datetime block */
-
-span {
-  display: block;
   margin-left: 1em;
 }
-
-/* li element text */
 
 article {
   background-color: #6cbfee;
@@ -313,9 +307,7 @@ article {
     text-align: center;
     color: #46a4da;
   }
-  .timelineHeader p span {
-    display: inline;
-  }
+
   ul {
     list-style: none;
   }
@@ -324,11 +316,8 @@ article {
     bottom: 1em;
     display: block;
     color: #6cbfee;
-    float:left;
   }
-  span {
-    display: block;
-  }
+
   article {
     background-color: #6cbfee;
     color: #ffffff;
@@ -341,13 +330,13 @@ article {
   }
   .carrot {
     position: relative;
-    bottom: 1em;
+
     color: #6cbfee;
     padding-left: 1em;
     padding-bottom: 2em;
   }
   .mobileIcon {
-    float: right;
+    float: left;
     width: 50px;
     height: 50px;
     text-align: center;
