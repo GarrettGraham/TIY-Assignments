@@ -149,9 +149,13 @@ body {
   color: #6cbfee;
 }
 
-/*.initialDatetime span:last-child{
+.initialDatetime span:first-child {
+  color: #bdd0db;
+}
+
+.initialDatetime span:last-child{
   font-size:1.5em;
-}*/
+}
 
 article {
   background-color: #6cbfee;
