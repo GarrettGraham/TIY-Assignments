@@ -3,14 +3,16 @@ var app = angular.module('Timeline', []);
 
 app.controller ('CommitsCtrl', ['$http', function($http){
   var self = this;
+  this.PushEvents = [];
   $http.get('js/commits.json').success(function(data) {
-    self.PushEvents = []; //get info from json?
-    console.log(data);
-    angular.forEach(data[0].payload.commits, function(PushEvent){
-      self.PushEvents.push(
-        PushEvent.message);
-    });
+    // self.PushEvents = []; //get info from json?
+    self.PushEvents = data;
     console.log(self.PushEvents);
+    // angular.forEach(data[0].payload.commits, function(PushEvent){
+    //   self.PushEvents.push(
+    //     {text: PushEvent.message});
+    //      });
+    // console.log(self.PushEvents);
   });
 }
 ])
