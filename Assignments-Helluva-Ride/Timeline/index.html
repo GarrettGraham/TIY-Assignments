@@ -39,48 +39,52 @@
         <h1>Vertical Timeline</h1>
         <nav>
           <!-- links back to portfolio and to github code -->
-          <a href="https://garrettgraham.github.io/Portfolio/" class="backToPortfolio" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Back to Portfolio"><i class="fa fa-arrow-left"></i></a>
-          <a href="https://github.com/GarrettGraham/TIY-Assignments/blob/feature/building-out-timeline/Assignments-Helluva-Ride/Timeline/index.html" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Code on GitHub"><i class="fa fa-github"></i></a>
+          <a href="https://garrettgraham.github.io/Portfolio/" target="_blank" class="backToPortfolio" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Back to Portfolio"><i class="fa fa-arrow-left"></i></a>
+          <a href="https://github.com/GarrettGraham/TIY-Assignments/blob/feature/building-out-timeline/Assignments-Helluva-Ride/Timeline/index.html" target="_blank" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Code on GitHub"><i class="fa fa-github"></i></a>
         </nav>
       </header>
     </div>
 
-    <div class="mainContent">
+    <div class="mainContent" ng-controller>
       <ul class="timeline">
         <li>
           <!-- time and date, stacked and different sizes and different colors-->
-            <div>
+          <div>
             <time class="initialDatetime" datetime="2015-02-13 14:00">
               <span>02/13/15</span>
               <span>14:00</span>
             </time>
           </div>
-            <!-- mobile icon with border radius and two different sized circles. NEED to enlarge!! -->
-            <div class="mobileIcon">
-              <i class="fa fa-mobile fa-2x"></i>
-            </div>
+          <!-- mobile icon with border radius and two different sized circles. NEED to enlarge!! -->
+          <div class="mobileIcon">
+            <i class="fa fa-mobile fa-2x"></i>
+          </div>
           <!-- carrot pointing up with same color as background color on <p> tag-->
           <div class="timelineArticle">
-          <article>
-            <span class="carrot">
-              <i class="fa fa-play fa-rotate-270"></i>
-            </span>
-            <h3>Music</h3>
-            <p>To acknowledge the power of music as a means of emotional and spiritual transcendence is nothing short of an understatement. Aside from historical evidence of the profound impetus of auditory stimulation, it is quite apparent that an inherent
-              desire for creating music is woven into the fabric of what can be understood as the universally collective human experience. Our power as creators is exemplified in what is possible to express through a rhythmic composition of melodic harmony
-              (or lack thereof). Not only does the study of music theory instruct proper chordal progression but, more simplistically, it provides a foundation for comprehending a less than superficial understanding of consonance and dissonance. Inherently
-              understanding what sounds pleasing (and abhorrent) is a ubiquitous attribute of an individual who looks beyond the black and white of printed music. The art of sound is available to all those willing to traverse the journey in becoming what
-              it is to be a spiritually connected being. Great composers like Tchaikovsky and Shostakovich manipulated sound so as to express their deepest angst. Their compositions prove that music is capable of providing a conduit of transcending oppression,
-              allowing the expression of their innermost being; making available to them a means of speaking against tyrannical powers that were. These men risked their lives in order to preserve their identity.</p>
-          </article>
+            <article>
+              <span class="carrot">
+                <i class="fa fa-play fa-rotate-270"></i>
+              </span>
+              <h3>Music</h3>
+              <p>To acknowledge the power of music as a means of emotional and spiritual transcendence is nothing short of an understatement. Aside from historical evidence of the profound impetus of auditory stimulation, it is quite apparent that an inherent
+                desire for creating music is woven into the fabric of what can be understood as the universally collective human experience. Our power as creators is exemplified in what is possible to express through a rhythmic composition of melodic
+                harmony (or lack thereof). Not only does the study of music theory instruct proper chordal progression but, more simplistically, it provides a foundation for comprehending a less than superficial understanding of consonance and dissonance.
+                Inherently understanding what sounds pleasing (and abhorrent) is a ubiquitous attribute of an individual who looks beyond the black and white of printed music. The art of sound is available to all those willing to traverse the journey
+                in becoming what it is to be a spiritually connected being. Great composers like Tchaikovsky and Shostakovich manipulated sound so as to express their deepest angst. Their compositions prove that music is capable of providing a conduit
+                of transcending oppression, allowing the expression of their innermost being; making available to them a means of speaking against tyrannical powers that were. These men risked their lives in order to preserve their identity.</p>
+            </article>
         </li>
       </ul>
+      </div>
     </div>
   </div>
-  </div>
-
   <script>
-  window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+    $(document).ready(function() {
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
   </script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>

@@ -114,11 +114,13 @@ body {
 .timelineHeader {
   text-align: center;
   color: #46a4da;
+  
 }
 
 .timelineHeader i {
     position:relative;
     text-align: center;
+    color: #46a4da;
     padding-top: 0.5em;
     border-radius: 50%;
     height:2.5em;
