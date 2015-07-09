@@ -226,4 +226,1993 @@
     },
     "public": true,
     "created_at": "2015-01-26T19:47:28Z"
+  },
+  {
+    "id": "2537321704",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 28673988,
+      "name": "GarrettGraham/TIY-Assignments",
+      "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments"
+    },
+    "payload": {
+      "action": "closed",
+      "number": 10,
+      "pull_request": {
+        "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/pulls/10",
+        "id": 27875280,
+        "html_url": "https://github.com/GarrettGraham/TIY-Assignments/pull/10",
+        "diff_url": "https://github.com/GarrettGraham/TIY-Assignments/pull/10.diff",
+        "patch_url": "https://github.com/GarrettGraham/TIY-Assignments/pull/10.patch",
+        "issue_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/issues/10",
+        "number": 10,
+        "state": "closed",
+        "locked": false,
+        "title": "Coding Dojo",
+        "user": {
+          "login": "GarrettGraham",
+          "id": 10319852,
+          "avatar_url": "https://avatars.githubusercontent.com/u/10319852?v=3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/GarrettGraham",
+          "html_url": "https://github.com/GarrettGraham",
+          "followers_url": "https://api.github.com/users/GarrettGraham/followers",
+          "following_url": "https://api.github.com/users/GarrettGraham/following{/other_user}",
+          "gists_url": "https://api.github.com/users/GarrettGraham/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/GarrettGraham/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/GarrettGraham/subscriptions",
+          "organizations_url": "https://api.github.com/users/GarrettGraham/orgs",
+          "repos_url": "https://api.github.com/users/GarrettGraham/repos",
+          "events_url": "https://api.github.com/users/GarrettGraham/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/GarrettGraham/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "https://github.com/TheIronYard--Orlando/FEE--2015--SPRING/issues/150",
+        "created_at": "2015-01-22T20:33:07Z",
+        "updated_at": "2015-01-26T19:47:27Z",
+        "closed_at": "2015-01-26T19:47:27Z",
+        "merged_at": "2015-01-26T19:47:27Z",
+        "merge_commit_sha": "ba9bed4bfe684412652c58b5e4bef6f7b0f04381",
+        "assignee": null,
+        "milestone": null,
+        "commits_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/pulls/10/commits",
+        "review_comments_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/pulls/10/comments",
+        "review_comment_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/pulls/comments/{number}",
+        "comments_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/issues/10/comments",
+        "statuses_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/statuses/b7cae94d6c448460bd92a4ed6f94d7b0e29ba599",
+        "head": {
+          "label": "GarrettGraham:feature/11--coding-dojo",
+          "ref": "feature/11--coding-dojo",
+          "sha": "b7cae94d6c448460bd92a4ed6f94d7b0e29ba599",
+          "user": {
+            "login": "GarrettGraham",
+            "id": 10319852,
+            "avatar_url": "https://avatars.githubusercontent.com/u/10319852?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/GarrettGraham",
+            "html_url": "https://github.com/GarrettGraham",
+            "followers_url": "https://api.github.com/users/GarrettGraham/followers",
+            "following_url": "https://api.github.com/users/GarrettGraham/following{/other_user}",
+            "gists_url": "https://api.github.com/users/GarrettGraham/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/GarrettGraham/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/GarrettGraham/subscriptions",
+            "organizations_url": "https://api.github.com/users/GarrettGraham/orgs",
+            "repos_url": "https://api.github.com/users/GarrettGraham/repos",
+            "events_url": "https://api.github.com/users/GarrettGraham/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/GarrettGraham/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 28673988,
+            "name": "TIY-Assignments",
+            "full_name": "GarrettGraham/TIY-Assignments",
+            "owner": {
+              "login": "GarrettGraham",
+              "id": 10319852,
+              "avatar_url": "https://avatars.githubusercontent.com/u/10319852?v=3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/GarrettGraham",
+              "html_url": "https://github.com/GarrettGraham",
+              "followers_url": "https://api.github.com/users/GarrettGraham/followers",
+              "following_url": "https://api.github.com/users/GarrettGraham/following{/other_user}",
+              "gists_url": "https://api.github.com/users/GarrettGraham/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/GarrettGraham/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/GarrettGraham/subscriptions",
+              "organizations_url": "https://api.github.com/users/GarrettGraham/orgs",
+              "repos_url": "https://api.github.com/users/GarrettGraham/repos",
+              "events_url": "https://api.github.com/users/GarrettGraham/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/GarrettGraham/received_events",
+              "type": "User",
+              "site_admin": false
+            },
+            "private": false,
+            "html_url": "https://github.com/GarrettGraham/TIY-Assignments",
+            "description": "",
+            "fork": false,
+            "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments",
+            "forks_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/forks",
+            "keys_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/teams",
+            "hooks_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/hooks",
+            "issue_events_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/events",
+            "assignees_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/tags",
+            "blobs_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/languages",
+            "stargazers_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/stargazers",
+            "contributors_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/contributors",
+            "subscribers_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/subscribers",
+            "subscription_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/subscription",
+            "commits_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/issues/comments/{number}",
+            "contents_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/merges",
+            "archive_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/downloads",
+            "issues_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/labels{/name}",
+            "releases_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/releases{/id}",
+            "created_at": "2014-12-31T20:00:31Z",
+            "updated_at": "2015-01-22T19:54:24Z",
+            "pushed_at": "2015-01-26T19:47:27Z",
+            "git_url": "git://github.com/GarrettGraham/TIY-Assignments.git",
+            "ssh_url": "git@github.com:GarrettGraham/TIY-Assignments.git",
+            "clone_url": "https://github.com/GarrettGraham/TIY-Assignments.git",
+            "svn_url": "https://github.com/GarrettGraham/TIY-Assignments",
+            "homepage": null,
+            "size": 27260,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "CSS",
+            "has_issues": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "forks_count": 0,
+            "mirror_url": null,
+            "open_issues_count": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "GarrettGraham:master",
+          "ref": "master",
+          "sha": "a246f0dcb332e7ebce6ca66c5472221280b19497",
+          "user": {
+            "login": "GarrettGraham",
+            "id": 10319852,
+            "avatar_url": "https://avatars.githubusercontent.com/u/10319852?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/GarrettGraham",
+            "html_url": "https://github.com/GarrettGraham",
+            "followers_url": "https://api.github.com/users/GarrettGraham/followers",
+            "following_url": "https://api.github.com/users/GarrettGraham/following{/other_user}",
+            "gists_url": "https://api.github.com/users/GarrettGraham/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/GarrettGraham/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/GarrettGraham/subscriptions",
+            "organizations_url": "https://api.github.com/users/GarrettGraham/orgs",
+            "repos_url": "https://api.github.com/users/GarrettGraham/repos",
+            "events_url": "https://api.github.com/users/GarrettGraham/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/GarrettGraham/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 28673988,
+            "name": "TIY-Assignments",
+            "full_name": "GarrettGraham/TIY-Assignments",
+            "owner": {
+              "login": "GarrettGraham",
+              "id": 10319852,
+              "avatar_url": "https://avatars.githubusercontent.com/u/10319852?v=3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/GarrettGraham",
+              "html_url": "https://github.com/GarrettGraham",
+              "followers_url": "https://api.github.com/users/GarrettGraham/followers",
+              "following_url": "https://api.github.com/users/GarrettGraham/following{/other_user}",
+              "gists_url": "https://api.github.com/users/GarrettGraham/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/GarrettGraham/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/GarrettGraham/subscriptions",
+              "organizations_url": "https://api.github.com/users/GarrettGraham/orgs",
+              "repos_url": "https://api.github.com/users/GarrettGraham/repos",
+              "events_url": "https://api.github.com/users/GarrettGraham/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/GarrettGraham/received_events",
+              "type": "User",
+              "site_admin": false
+            },
+            "private": false,
+            "html_url": "https://github.com/GarrettGraham/TIY-Assignments",
+            "description": "",
+            "fork": false,
+            "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments",
+            "forks_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/forks",
+            "keys_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/teams",
+            "hooks_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/hooks",
+            "issue_events_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/events",
+            "assignees_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/tags",
+            "blobs_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/languages",
+            "stargazers_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/stargazers",
+            "contributors_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/contributors",
+            "subscribers_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/subscribers",
+            "subscription_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/subscription",
+            "commits_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/issues/comments/{number}",
+            "contents_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/merges",
+            "archive_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/downloads",
+            "issues_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/labels{/name}",
+            "releases_url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/releases{/id}",
+            "created_at": "2014-12-31T20:00:31Z",
+            "updated_at": "2015-01-22T19:54:24Z",
+            "pushed_at": "2015-01-26T19:47:27Z",
+            "git_url": "git://github.com/GarrettGraham/TIY-Assignments.git",
+            "ssh_url": "git@github.com:GarrettGraham/TIY-Assignments.git",
+            "clone_url": "https://github.com/GarrettGraham/TIY-Assignments.git",
+            "svn_url": "https://github.com/GarrettGraham/TIY-Assignments",
+            "homepage": null,
+            "size": 27260,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "CSS",
+            "has_issues": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "forks_count": 0,
+            "mirror_url": null,
+            "open_issues_count": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/pulls/10"
+          },
+          "html": {
+            "href": "https://github.com/GarrettGraham/TIY-Assignments/pull/10"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/issues/10"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/issues/10/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/pulls/10/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/pulls/comments/{number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/pulls/10/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/statuses/b7cae94d6c448460bd92a4ed6f94d7b0e29ba599"
+          }
+        },
+        "merged": true,
+        "mergeable": null,
+        "mergeable_state": "unknown",
+        "merged_by": {
+          "login": "GarrettGraham",
+          "id": 10319852,
+          "avatar_url": "https://avatars.githubusercontent.com/u/10319852?v=3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/GarrettGraham",
+          "html_url": "https://github.com/GarrettGraham",
+          "followers_url": "https://api.github.com/users/GarrettGraham/followers",
+          "following_url": "https://api.github.com/users/GarrettGraham/following{/other_user}",
+          "gists_url": "https://api.github.com/users/GarrettGraham/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/GarrettGraham/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/GarrettGraham/subscriptions",
+          "organizations_url": "https://api.github.com/users/GarrettGraham/orgs",
+          "repos_url": "https://api.github.com/users/GarrettGraham/repos",
+          "events_url": "https://api.github.com/users/GarrettGraham/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/GarrettGraham/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "comments": 2,
+        "review_comments": 0,
+        "commits": 36,
+        "additions": 1232,
+        "deletions": 611,
+        "changed_files": 8
+      }
+    },
+    "public": true,
+    "created_at": "2015-01-26T19:47:27Z"
+  },
+  {
+    "id": "2537206686",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 28673988,
+      "name": "GarrettGraham/TIY-Assignments",
+      "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments"
+    },
+    "payload": {
+      "push_id": 556532152,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/feature/11--coding-dojo",
+      "head": "b7cae94d6c448460bd92a4ed6f94d7b0e29ba599",
+      "before": "6789c2edc6302fc29bebd3f5ac2c5f7636b02c9d",
+      "commits": [
+        {
+          "sha": "b7cae94d6c448460bd92a4ed6f94d7b0e29ba599",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "added to notes from class and added to kata and documentation",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/commits/b7cae94d6c448460bd92a4ed6f94d7b0e29ba599"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-26T19:01:15Z"
+  },
+  {
+    "id": "2537075370",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 28673988,
+      "name": "GarrettGraham/TIY-Assignments",
+      "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments"
+    },
+    "payload": {
+      "push_id": 556480830,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/feature/11--coding-dojo",
+      "head": "6789c2edc6302fc29bebd3f5ac2c5f7636b02c9d",
+      "before": "8c173c17220e07e8aa7d0d68862a041e83e4f543",
+      "commits": [
+        {
+          "sha": "6789c2edc6302fc29bebd3f5ac2c5f7636b02c9d",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "added to the notes from class.  arrays and functions, stacks and queues, and how to get numbers array to spit out a string, fromEnglish",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/commits/6789c2edc6302fc29bebd3f5ac2c5f7636b02c9d"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-26T18:07:56Z"
+  },
+  {
+    "id": "2536777672",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 28673988,
+      "name": "GarrettGraham/TIY-Assignments",
+      "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments"
+    },
+    "payload": {
+      "push_id": 556362206,
+      "size": 3,
+      "distinct_size": 3,
+      "ref": "refs/heads/feature/11--coding-dojo",
+      "head": "8c173c17220e07e8aa7d0d68862a041e83e4f543",
+      "before": "cfe1bb557463075352086cbcad161d597a9c5e70",
+      "commits": [
+        {
+          "sha": "31d9cd67e4f76d29926313e68b67f4ad2d9d1d44",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "doing the kata some more.  got to zero and four",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/commits/31d9cd67e4f76d29926313e68b67f4ad2d9d1d44"
+        },
+        {
+          "sha": "b4543a69bb4dd71e7b3306a4a12256aed36f975c",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "got zero and five",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/commits/b4543a69bb4dd71e7b3306a4a12256aed36f975c"
+        },
+        {
+          "sha": "8c173c17220e07e8aa7d0d68862a041e83e4f543",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "working on the weekends assignment.  taking notes into a seperate main js file and trying to understand the function assertions",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/commits/8c173c17220e07e8aa7d0d68862a041e83e4f543"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-26T16:17:33Z"
+  },
+  {
+    "id": "2536397570",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 28673988,
+      "name": "GarrettGraham/TIY-Assignments",
+      "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments"
+    },
+    "payload": {
+      "push_id": 556205391,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/feature/11--coding-dojo",
+      "head": "cfe1bb557463075352086cbcad161d597a9c5e70",
+      "before": "790c1ca70260b7513a648b40b692a70616539257",
+      "commits": [
+        {
+          "sha": "cfe1bb557463075352086cbcad161d597a9c5e70",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "adding to the calculator kata. not sure why but im  not able to test the kata in terminal. i must not be doing something correctly because the terminal says it cannot identify the path.",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/commits/cfe1bb557463075352086cbcad161d597a9c5e70"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-26T13:45:23Z"
+  },
+  {
+    "id": "2536385662",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 28673988,
+      "name": "GarrettGraham/TIY-Assignments",
+      "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments"
+    },
+    "payload": {
+      "push_id": 556200449,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/feature/11--coding-dojo",
+      "head": "790c1ca70260b7513a648b40b692a70616539257",
+      "before": "f5e9b956cf4297420ea41e0379f9016178128541",
+      "commits": [
+        {
+          "sha": "790c1ca70260b7513a648b40b692a70616539257",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "got up to fifteen on the check writing.  dont really understand it and i did try to ask for an explanation but my peer was busy and i got caught up with the other deliverables and never got the explanation",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/commits/790c1ca70260b7513a648b40b692a70616539257"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-26T13:39:26Z"
+  },
+  {
+    "id": "2536377461",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 28673988,
+      "name": "GarrettGraham/TIY-Assignments",
+      "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments"
+    },
+    "payload": {
+      "push_id": 556196999,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/feature/11--coding-dojo",
+      "head": "f5e9b956cf4297420ea41e0379f9016178128541",
+      "before": "4a63ff2b85e77111edcdedb6d4d8198e5f344514",
+      "commits": [
+        {
+          "sha": "f5e9b956cf4297420ea41e0379f9016178128541",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "working on getting the check wrtiting and string calculator.  i did the bare minimum for the assignment as i dont understand how to watch the output of each function or calculator kata. I tried asking a peer for help but i was somewhat blown off. everyone is busy with their own deliverables and im not one to force myself when someone else is unable to explain.",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/commits/f5e9b956cf4297420ea41e0379f9016178128541"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-26T13:35:19Z"
+  },
+  {
+    "id": "2535416118",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 29420285,
+      "name": "GarrettGraham/GarrettGraham.github.io",
+      "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io"
+    },
+    "payload": {
+      "push_id": 555793799,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "9abe354aaca729901dde9097bbf6e0d9a4820f5b",
+      "before": "d5b38d0e491dec1aac99356a7074e0d942ca3cec",
+      "commits": [
+        {
+          "sha": "9abe354aaca729901dde9097bbf6e0d9a4820f5b",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "changed the balzac quote back to an h5.  need to work on the layout and i need to do some editting on the post text.",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/9abe354aaca729901dde9097bbf6e0d9a4820f5b"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-26T00:12:44Z"
+  },
+  {
+    "id": "2535410757",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 29420285,
+      "name": "GarrettGraham/GarrettGraham.github.io",
+      "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io"
+    },
+    "payload": {
+      "push_id": 555791202,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "d5b38d0e491dec1aac99356a7074e0d942ca3cec",
+      "before": "5db8a98b01c497130bf5a6e7ef147c3e81a5e4ea",
+      "commits": [
+        {
+          "sha": "d5b38d0e491dec1aac99356a7074e0d942ca3cec",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "blogging.  trying to figure out how to get the blockquote with Balzac below and slightly off to the right of the quote itself.",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/d5b38d0e491dec1aac99356a7074e0d942ca3cec"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-26T00:05:08Z"
+  },
+  {
+    "id": "2535365268",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 25180640,
+      "name": "TheIronYard--Orlando/FEE--2015--SPRING",
+      "url": "https://api.github.com/repos/TheIronYard--Orlando/FEE--2015--SPRING"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/TheIronYard--Orlando/FEE--2015--SPRING/issues/150",
+        "labels_url": "https://api.github.com/repos/TheIronYard--Orlando/FEE--2015--SPRING/issues/150/labels{/name}",
+        "comments_url": "https://api.github.com/repos/TheIronYard--Orlando/FEE--2015--SPRING/issues/150/comments",
+        "events_url": "https://api.github.com/repos/TheIronYard--Orlando/FEE--2015--SPRING/issues/150/events",
+        "html_url": "https://github.com/TheIronYard--Orlando/FEE--2015--SPRING/issues/150",
+        "id": 55203474,
+        "number": 150,
+        "title": "11 -- Coding Dojo Style -- GarrettGraham",
+        "user": {
+          "login": "GarrettGraham",
+          "id": 10319852,
+          "avatar_url": "https://avatars.githubusercontent.com/u/10319852?v=3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/GarrettGraham",
+          "html_url": "https://github.com/GarrettGraham",
+          "followers_url": "https://api.github.com/users/GarrettGraham/followers",
+          "following_url": "https://api.github.com/users/GarrettGraham/following{/other_user}",
+          "gists_url": "https://api.github.com/users/GarrettGraham/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/GarrettGraham/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/GarrettGraham/subscriptions",
+          "organizations_url": "https://api.github.com/users/GarrettGraham/orgs",
+          "repos_url": "https://api.github.com/users/GarrettGraham/repos",
+          "events_url": "https://api.github.com/users/GarrettGraham/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/GarrettGraham/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "milestone": null,
+        "comments": 3,
+        "created_at": "2015-01-22T20:20:03Z",
+        "updated_at": "2015-01-25T23:07:06Z",
+        "closed_at": null,
+        "body": "* [x] **Yak Shaving** (M)\r\n  * [x] Merge your last PR if you haven't already! (use the merge button, Luke)\r\n  * [x] Pull your `master` branch locally _after_ you merge!\r\n  * [x] Create a new branch called `feature/11--coding-dojo`\r\n  * [x] Delete and commit `scripts/main.js`\r\n  * [x] Create and commit `scripts/string-calculator.js` and `scripts/check-writing.js`\r\n  * [x] Push your branch and open a PR\r\n* [x] **Reading JavaScript** (XL)\r\n  * [x] Checkpoint: `Array` literals: empty and filled\r\n  * [x] Checkpoint: Other ways to create an `Array`?\r\n  * [x] Checkpoint: What's your `length`...?\r\n  * [x] Checkpoint: First Mutator method!\r\n  * [x] Checkpoint: Five Mutators down!\r\n  * [x] Checkpoint: What, there's only 7?\r\n  * [x] Mission Complete!\r\n* [ ] **A Nice Game of Chess** (XL)\r\n  * [x] Checkpoint: Retyped [the example](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Example:_Creating_a_two-dimensional_array) in `scripts/main.js`\r\n  * [x] Checkpoint: I can move pieces! Well, one, really.\r\n  * [ ] Checkpoint: Moved _both_ sides at least once!\r\n  * [ ] Checkpoint: Opening complete!\r\n* [ ] **Coding Dojo** -- Time for your katas (XL)\r\n  * [x] Checkpoint: TDD **String Calculator** from `\"zero\"` to `\"five\"` in _my_ repo\r\n  * [x] Checkpoint: TDD **String Calculator** from `\"zero\"` to `\"five\"` in _another_ repo\r\n  * [ ] Checkpoint: TDD **String Calculator** from `\"zero\"` to `\"ten\"`! (HipChat that $#!+)\r\n  * [x] Checkpoint: TDD **Check Writing** from `1` to `10` in _my_ repo\r\n  * [ ] Checkpoint: TDD **Check Writing** from `1` to `10` in _another_ repo\r\n  * [ ] **BONUS:** TDD **Check Writing** above `20`...?\r\n* [ ] [**JavaScript Koans**](https://github.com/mrdavidlaing/javascript-koans) (XL)\r\n  * [x] Checkpoint: Forked and installed...!\r\n  * [x] Checkpoint: Ran it and it broke... as intended!\r\n  * [x] Checkpoint: Got `AboutExpects.js` green!\r\n  * [x] Checkpoint: Got `AboutArrays.js` green!\r\n  * [ ] **BONUS:** Got `AboutFunctions.js` green! (but I'm really confused)\r\n  * [ ] **BONUS:** Got `AboutObjects.js` green! (wasn't that bad, actually)\r\n* [ ] **BLOG IT!** (L)\r\n"
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/TheIronYard--Orlando/FEE--2015--SPRING/issues/comments/71398757",
+        "html_url": "https://github.com/TheIronYard--Orlando/FEE--2015--SPRING/issues/150#issuecomment-71398757",
+        "issue_url": "https://api.github.com/repos/TheIronYard--Orlando/FEE--2015--SPRING/issues/150",
+        "id": 71398757,
+        "user": {
+          "login": "GarrettGraham",
+          "id": 10319852,
+          "avatar_url": "https://avatars.githubusercontent.com/u/10319852?v=3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/GarrettGraham",
+          "html_url": "https://github.com/GarrettGraham",
+          "followers_url": "https://api.github.com/users/GarrettGraham/followers",
+          "following_url": "https://api.github.com/users/GarrettGraham/following{/other_user}",
+          "gists_url": "https://api.github.com/users/GarrettGraham/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/GarrettGraham/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/GarrettGraham/subscriptions",
+          "organizations_url": "https://api.github.com/users/GarrettGraham/orgs",
+          "repos_url": "https://api.github.com/users/GarrettGraham/repos",
+          "events_url": "https://api.github.com/users/GarrettGraham/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/GarrettGraham/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2015-01-25T23:07:06Z",
+        "updated_at": "2015-01-25T23:07:06Z",
+        "body": "https://GarrettGraham.github.io/#post2"
+      }
+    },
+    "public": true,
+    "created_at": "2015-01-25T23:07:06Z",
+    "org": {
+      "id": 8798300,
+      "login": "TheIronYard--Orlando",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/TheIronYard--Orlando",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8798300?"
+    }
+  },
+  {
+    "id": "2535363439",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 29420285,
+      "name": "GarrettGraham/GarrettGraham.github.io",
+      "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io"
+    },
+    "payload": {
+      "push_id": 555768604,
+      "size": 3,
+      "distinct_size": 3,
+      "ref": "refs/heads/master",
+      "head": "5db8a98b01c497130bf5a6e7ef147c3e81a5e4ea",
+      "before": "2ea0952c834730067c5bc9eb6e624555820bcac9",
+      "commits": [
+        {
+          "sha": "164c3cc89935c61405490cd88164aa7c8a4ba9d5",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "removed the css for the sideline.  plan to finish the blog post in order to complete the deliverables",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/164c3cc89935c61405490cd88164aa7c8a4ba9d5"
+        },
+        {
+          "sha": "9a4de1849cc71eb98578e2b8f7c50bf33713745a",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "added the blog post for the deliverable.  removed the zindex from the css and wrapped the p tags within the article. have a lot to do in terms of styling and formating the blog with longform. i want to indent the paragraphs and can research css properties for text indentation. wantto work more of the katas and koans at home as well as the documentation.",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/9a4de1849cc71eb98578e2b8f7c50bf33713745a"
+        },
+        {
+          "sha": "5db8a98b01c497130bf5a6e7ef147c3e81a5e4ea",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "added the carot to the end of the opening blockquote tag and added the forward slash in my gh pages permalink",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/5db8a98b01c497130bf5a6e7ef147c3e81a5e4ea"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-25T23:04:50Z"
+  },
+  {
+    "id": "2535362514",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 28044438,
+      "name": "johnalxndr/TIY-Assignments",
+      "url": "https://api.github.com/repos/johnalxndr/TIY-Assignments"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/johnalxndr/TIY-Assignments/issues/13",
+        "labels_url": "https://api.github.com/repos/johnalxndr/TIY-Assignments/issues/13/labels{/name}",
+        "comments_url": "https://api.github.com/repos/johnalxndr/TIY-Assignments/issues/13/comments",
+        "events_url": "https://api.github.com/repos/johnalxndr/TIY-Assignments/issues/13/events",
+        "html_url": "https://github.com/johnalxndr/TIY-Assignments/pull/13",
+        "id": 55200286,
+        "number": 13,
+        "title": "Feature/11--coding-dojo",
+        "user": {
+          "login": "johnalxndr",
+          "id": 9056270,
+          "avatar_url": "https://avatars.githubusercontent.com/u/9056270?v=3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/johnalxndr",
+          "html_url": "https://github.com/johnalxndr",
+          "followers_url": "https://api.github.com/users/johnalxndr/followers",
+          "following_url": "https://api.github.com/users/johnalxndr/following{/other_user}",
+          "gists_url": "https://api.github.com/users/johnalxndr/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/johnalxndr/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/johnalxndr/subscriptions",
+          "organizations_url": "https://api.github.com/users/johnalxndr/orgs",
+          "repos_url": "https://api.github.com/users/johnalxndr/repos",
+          "events_url": "https://api.github.com/users/johnalxndr/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/johnalxndr/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2015-01-22T19:53:15Z",
+        "updated_at": "2015-01-25T23:03:51Z",
+        "closed_at": null,
+        "pull_request": {
+          "url": "https://api.github.com/repos/johnalxndr/TIY-Assignments/pulls/13",
+          "html_url": "https://github.com/johnalxndr/TIY-Assignments/pull/13",
+          "diff_url": "https://github.com/johnalxndr/TIY-Assignments/pull/13.diff",
+          "patch_url": "https://github.com/johnalxndr/TIY-Assignments/pull/13.patch"
+        },
+        "body": ""
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/johnalxndr/TIY-Assignments/issues/comments/71398638",
+        "html_url": "https://github.com/johnalxndr/TIY-Assignments/pull/13#issuecomment-71398638",
+        "issue_url": "https://api.github.com/repos/johnalxndr/TIY-Assignments/issues/13",
+        "id": 71398638,
+        "user": {
+          "login": "GarrettGraham",
+          "id": 10319852,
+          "avatar_url": "https://avatars.githubusercontent.com/u/10319852?v=3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/GarrettGraham",
+          "html_url": "https://github.com/GarrettGraham",
+          "followers_url": "https://api.github.com/users/GarrettGraham/followers",
+          "following_url": "https://api.github.com/users/GarrettGraham/following{/other_user}",
+          "gists_url": "https://api.github.com/users/GarrettGraham/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/GarrettGraham/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/GarrettGraham/subscriptions",
+          "organizations_url": "https://api.github.com/users/GarrettGraham/orgs",
+          "repos_url": "https://api.github.com/users/GarrettGraham/repos",
+          "events_url": "https://api.github.com/users/GarrettGraham/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/GarrettGraham/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2015-01-25T23:03:50Z",
+        "updated_at": "2015-01-25T23:03:50Z",
+        "body": ":+1: "
+      }
+    },
+    "public": true,
+    "created_at": "2015-01-25T23:03:51Z"
+  },
+  {
+    "id": "2535310744",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 29420285,
+      "name": "GarrettGraham/GarrettGraham.github.io",
+      "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io"
+    },
+    "payload": {
+      "push_id": 555742780,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "2ea0952c834730067c5bc9eb6e624555820bcac9",
+      "before": "103d8ce94f1aff5e733dc849fc2786c1ea17c7f1",
+      "commits": [
+        {
+          "sha": "2ea0952c834730067c5bc9eb6e624555820bcac9",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "working on the sideline.  added a photo of me and added some of the code for the aside",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/2ea0952c834730067c5bc9eb6e624555820bcac9"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-25T22:01:29Z"
+  },
+  {
+    "id": "2535303903",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 29420285,
+      "name": "GarrettGraham/GarrettGraham.github.io",
+      "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io"
+    },
+    "payload": {
+      "push_id": 555739504,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "103d8ce94f1aff5e733dc849fc2786c1ea17c7f1",
+      "before": "17dbd948435809bcedf9f8c28c50b590bcbc9884",
+      "commits": [
+        {
+          "sha": "103d8ce94f1aff5e733dc849fc2786c1ea17c7f1",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "formatting the layout is tough as nails.  i want to get Balzac to the right a bit below the quote but if i do text align right, it shifts the name too far to the right and the padding left or right adds a large space",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/103d8ce94f1aff5e733dc849fc2786c1ea17c7f1"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-25T21:53:46Z"
+  },
+  {
+    "id": "2535291508",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 29420285,
+      "name": "GarrettGraham/GarrettGraham.github.io",
+      "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io"
+    },
+    "payload": {
+      "push_id": 555733501,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "17dbd948435809bcedf9f8c28c50b590bcbc9884",
+      "before": "3ebef1348743d60b2028a8a262be7d61972802c5",
+      "commits": [
+        {
+          "sha": "17dbd948435809bcedf9f8c28c50b590bcbc9884",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "fixed the reference to be in em tags and put a space after the colon",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/17dbd948435809bcedf9f8c28c50b590bcbc9884"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-25T21:39:30Z"
+  },
+  {
+    "id": "2535289695",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 29420285,
+      "name": "GarrettGraham/GarrettGraham.github.io",
+      "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io"
+    },
+    "payload": {
+      "push_id": 555732629,
+      "size": 2,
+      "distinct_size": 2,
+      "ref": "refs/heads/master",
+      "head": "3ebef1348743d60b2028a8a262be7d61972802c5",
+      "before": "a6f81b12c97feafe6f52f10b7922d652cf723182",
+      "commits": [
+        {
+          "sha": "377a205bbe888b68c14b4b838207c5893d0fe928",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "added the openning article tag for the initial post",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/377a205bbe888b68c14b4b838207c5893d0fe928"
+        },
+        {
+          "sha": "3ebef1348743d60b2028a8a262be7d61972802c5",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "trying to get the layout nice with the text centered.  having to play with padding and such but the layout in css may be better onece i start the aside. also moved the i ching reference after the final p tag in the first post instead of keeping it in the footer.",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/3ebef1348743d60b2028a8a262be7d61972802c5"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-25T21:37:17Z"
+  },
+  {
+    "id": "2535279547",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 29420285,
+      "name": "GarrettGraham/GarrettGraham.github.io",
+      "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io"
+    },
+    "payload": {
+      "push_id": 555727752,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "a6f81b12c97feafe6f52f10b7922d652cf723182",
+      "before": "56ee4f279563b6996ae24973aa692840ef3131b2",
+      "commits": [
+        {
+          "sha": "a6f81b12c97feafe6f52f10b7922d652cf723182",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "blogging  working on formating the main content of the blog. text align center the article text and want to code the sideline.",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/a6f81b12c97feafe6f52f10b7922d652cf723182"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-25T21:25:42Z"
+  },
+  {
+    "id": "2535262538",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 29420285,
+      "name": "GarrettGraham/GarrettGraham.github.io",
+      "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io"
+    },
+    "payload": {
+      "push_id": 555719458,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "56ee4f279563b6996ae24973aa692840ef3131b2",
+      "before": "f31f3493c5896b34627acebb01ee95540da48c92",
+      "commits": [
+        {
+          "sha": "56ee4f279563b6996ae24973aa692840ef3131b2",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "got the background image to render appropriately.  found a nice image of the italian alps and thanks to maddie and adam, i now what css properties alter the size of the image to fit the banner nicely",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/56ee4f279563b6996ae24973aa692840ef3131b2"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-25T21:06:12Z"
+  },
+  {
+    "id": "2535251363",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 29420285,
+      "name": "GarrettGraham/GarrettGraham.github.io",
+      "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io"
+    },
+    "payload": {
+      "push_id": 555714087,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "f31f3493c5896b34627acebb01ee95540da48c92",
+      "before": "0623faa273e279d1ac305343df1d92d7d9c69c83",
+      "commits": [
+        {
+          "sha": "f31f3493c5896b34627acebb01ee95540da48c92",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "trying to get a nice looking background image for the banner.  found a nice image of the italian alps but it may not be the correct size.",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/f31f3493c5896b34627acebb01ee95540da48c92"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-25T20:54:03Z"
+  },
+  {
+    "id": "2535241071",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 29420285,
+      "name": "GarrettGraham/GarrettGraham.github.io",
+      "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io"
+    },
+    "payload": {
+      "push_id": 555709113,
+      "size": 3,
+      "distinct_size": 3,
+      "ref": "refs/heads/master",
+      "head": "0623faa273e279d1ac305343df1d92d7d9c69c83",
+      "before": "7eb853cac8f05a57a7b32ad1f6d4bd88afc2091b",
+      "commits": [
+        {
+          "sha": "10974002c118624e657e7435d99025fa3ee3ab84",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "got the permalink coded but not sure if its correctly linked.",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/10974002c118624e657e7435d99025fa3ee3ab84"
+        },
+        {
+          "sha": "cc5b55886f66d569325492dc4e43e9f7b0a70157",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "chenged the heading sizes since the permalink and the other headings look too large for my liking in the live preview",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/cc5b55886f66d569325492dc4e43e9f7b0a70157"
+        },
+        {
+          "sha": "0623faa273e279d1ac305343df1d92d7d9c69c83",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "working on the blog.  changed the permalink to wrap around the h3 tags and the post heading is the link itself.  added the rel bookmark within the anchor and need to figure out why the live preview is rendering txt that i deleted from my html",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/0623faa273e279d1ac305343df1d92d7d9c69c83"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-25T20:42:45Z"
+  },
+  {
+    "id": "2535188551",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 29420285,
+      "name": "GarrettGraham/GarrettGraham.github.io",
+      "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io"
+    },
+    "payload": {
+      "push_id": 555685100,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "7eb853cac8f05a57a7b32ad1f6d4bd88afc2091b",
+      "before": "b92ee414df5f21498bf6a56fd8c23274fffcfc63",
+      "commits": [
+        {
+          "sha": "7eb853cac8f05a57a7b32ad1f6d4bd88afc2091b",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "got the permalink.  i think i wrote the code correctly. going to now work on the longform layout and get a good background image",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/7eb853cac8f05a57a7b32ad1f6d4bd88afc2091b"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-25T19:45:03Z"
+  },
+  {
+    "id": "2535167399",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 29420285,
+      "name": "GarrettGraham/GarrettGraham.github.io",
+      "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io"
+    },
+    "payload": {
+      "push_id": 555675329,
+      "size": 2,
+      "distinct_size": 2,
+      "ref": "refs/heads/master",
+      "head": "b92ee414df5f21498bf6a56fd8c23274fffcfc63",
+      "before": "0786acb72151d8e5db755d7e3773b404fee3a871",
+      "commits": [
+        {
+          "sha": "fbc18db52074f06f8d1d371de9ed5d65b68d2461",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "wrapped the h2 for the new blog post within article tags and working on the permalink.  found the html bookmark link tag to create the permalink then plan to spend some time formatting the blog into longform style and hope to code the sideline and responsiveness with media queries to practice what i didnt get to on the previous assignments",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/fbc18db52074f06f8d1d371de9ed5d65b68d2461"
+        },
+        {
+          "sha": "b92ee414df5f21498bf6a56fd8c23274fffcfc63",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "moved two pictures out of the img folder onto my desktop.  want to use one of my pictures as my blog banner but need to rescale the size possibly with css",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/b92ee414df5f21498bf6a56fd8c23274fffcfc63"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-25T19:21:14Z"
+  },
+  {
+    "id": "2535152826",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 28673988,
+      "name": "GarrettGraham/TIY-Assignments",
+      "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments"
+    },
+    "payload": {
+      "push_id": 555668317,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/feature/11--coding-dojo",
+      "head": "4a63ff2b85e77111edcdedb6d4d8198e5f344514",
+      "before": "fe862a8bc1204260cf65f2ec785dafc4cab92816",
+      "commits": [
+        {
+          "sha": "4a63ff2b85e77111edcdedb6d4d8198e5f344514",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "got the format layed out so now it is a bit more organized.  dont know why the color scheme differs from the top of the page and the bottom of the page",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/commits/4a63ff2b85e77111edcdedb6d4d8198e5f344514"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-25T19:03:55Z"
+  },
+  {
+    "id": "2535136475",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 28673988,
+      "name": "GarrettGraham/TIY-Assignments",
+      "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments"
+    },
+    "payload": {
+      "push_id": 555660473,
+      "size": 3,
+      "distinct_size": 3,
+      "ref": "refs/heads/feature/11--coding-dojo",
+      "head": "fe862a8bc1204260cf65f2ec785dafc4cab92816",
+      "before": "398ceb7b2d902e28d27da2753a65c73b240726b7",
+      "commits": [
+        {
+          "sha": "4e6683c0398f88921f503ffe2860906901daa40a",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "formatted the html a little bit.  i have a lot still to add to the html and css documentation but want to remind myself that bookmark link type is used to identify permalinks",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/commits/4e6683c0398f88921f503ffe2860906901daa40a"
+        },
+        {
+          "sha": "b7f8c6b0cbc754216974513f70f4ce01134768a2",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "deleted the extra input form documentation.  id like to organize the documentation a lot better",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/commits/b7f8c6b0cbc754216974513f70f4ce01134768a2"
+        },
+        {
+          "sha": "fe862a8bc1204260cf65f2ec785dafc4cab92816",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "added exhaustive list of the various link types from the mdn html reference.  did a little bit of formatting clean up and discovered a nice way to obviously distinguish between the element/attribute etc and info describing each",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/TIY-Assignments/commits/fe862a8bc1204260cf65f2ec785dafc4cab92816"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-25T18:43:52Z"
+  },
+  {
+    "id": "2535113209",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 29420285,
+      "name": "GarrettGraham/GarrettGraham.github.io",
+      "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io"
+    },
+    "payload": {
+      "push_id": 555649501,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "0786acb72151d8e5db755d7e3773b404fee3a871",
+      "before": "7442b88fb9fe502f03eeb1fa8cdb8bf01e57761d",
+      "commits": [
+        {
+          "sha": "0786acb72151d8e5db755d7e3773b404fee3a871",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "working on figuring out the permalink.  included the title of new post in an h2 and put the anchor tag with link below",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/0786acb72151d8e5db755d7e3773b404fee3a871"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-25T18:15:17Z"
+  },
+  {
+    "id": "2535104994",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 29420285,
+      "name": "GarrettGraham/GarrettGraham.github.io",
+      "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io"
+    },
+    "payload": {
+      "push_id": 555645660,
+      "size": 2,
+      "distinct_size": 2,
+      "ref": "refs/heads/master",
+      "head": "7442b88fb9fe502f03eeb1fa8cdb8bf01e57761d",
+      "before": "cf79124ceef8e3d8c621de34034e2bb08ace9a4d",
+      "commits": [
+        {
+          "sha": "93e605c081410f9f42949e77dba90f1ab82aee92",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "added footer with citation for i ching passage",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/93e605c081410f9f42949e77dba90f1ab82aee92"
+        },
+        {
+          "sha": "7442b88fb9fe502f03eeb1fa8cdb8bf01e57761d",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "working on the second blog post.  pretty much completed all of the deliverables. id like to spend some time formatting my blog after i get the plog post written. trying to figure out how to put in a permalink. also, i changed the h1 to an h2 and added another h2 for todays post.",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/7442b88fb9fe502f03eeb1fa8cdb8bf01e57761d"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-25T18:04:40Z"
+  },
+  {
+    "id": "2535073087",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 25180640,
+      "name": "TheIronYard--Orlando/FEE--2015--SPRING",
+      "url": "https://api.github.com/repos/TheIronYard--Orlando/FEE--2015--SPRING"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/TheIronYard--Orlando/FEE--2015--SPRING/issues/150",
+        "labels_url": "https://api.github.com/repos/TheIronYard--Orlando/FEE--2015--SPRING/issues/150/labels{/name}",
+        "comments_url": "https://api.github.com/repos/TheIronYard--Orlando/FEE--2015--SPRING/issues/150/comments",
+        "events_url": "https://api.github.com/repos/TheIronYard--Orlando/FEE--2015--SPRING/issues/150/events",
+        "html_url": "https://github.com/TheIronYard--Orlando/FEE--2015--SPRING/issues/150",
+        "id": 55203474,
+        "number": 150,
+        "title": "11 -- Coding Dojo Style -- GarrettGraham",
+        "user": {
+          "login": "GarrettGraham",
+          "id": 10319852,
+          "avatar_url": "https://avatars.githubusercontent.com/u/10319852?v=3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/GarrettGraham",
+          "html_url": "https://github.com/GarrettGraham",
+          "followers_url": "https://api.github.com/users/GarrettGraham/followers",
+          "following_url": "https://api.github.com/users/GarrettGraham/following{/other_user}",
+          "gists_url": "https://api.github.com/users/GarrettGraham/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/GarrettGraham/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/GarrettGraham/subscriptions",
+          "organizations_url": "https://api.github.com/users/GarrettGraham/orgs",
+          "repos_url": "https://api.github.com/users/GarrettGraham/repos",
+          "events_url": "https://api.github.com/users/GarrettGraham/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/GarrettGraham/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2015-01-22T20:20:03Z",
+        "updated_at": "2015-01-25T17:23:40Z",
+        "closed_at": null,
+        "body": "* [x] **Yak Shaving** (M)\r\n  * [x] Merge your last PR if you haven't already! (use the merge button, Luke)\r\n  * [x] Pull your `master` branch locally _after_ you merge!\r\n  * [x] Create a new branch called `feature/11--coding-dojo`\r\n  * [x] Delete and commit `scripts/main.js`\r\n  * [x] Create and commit `scripts/string-calculator.js` and `scripts/check-writing.js`\r\n  * [x] Push your branch and open a PR\r\n* [x] **Reading JavaScript** (XL)\r\n  * [x] Checkpoint: `Array` literals: empty and filled\r\n  * [x] Checkpoint: Other ways to create an `Array`?\r\n  * [x] Checkpoint: What's your `length`...?\r\n  * [x] Checkpoint: First Mutator method!\r\n  * [x] Checkpoint: Five Mutators down!\r\n  * [x] Checkpoint: What, there's only 7?\r\n  * [x] Mission Complete!\r\n* [ ] **A Nice Game of Chess** (XL)\r\n  * [x] Checkpoint: Retyped [the example](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Example:_Creating_a_two-dimensional_array) in `scripts/main.js`\r\n  * [x] Checkpoint: I can move pieces! Well, one, really.\r\n  * [ ] Checkpoint: Moved _both_ sides at least once!\r\n  * [ ] Checkpoint: Opening complete!\r\n* [ ] **Coding Dojo** -- Time for your katas (XL)\r\n  * [x] Checkpoint: TDD **String Calculator** from `\"zero\"` to `\"five\"` in _my_ repo\r\n  * [x] Checkpoint: TDD **String Calculator** from `\"zero\"` to `\"five\"` in _another_ repo\r\n  * [ ] Checkpoint: TDD **String Calculator** from `\"zero\"` to `\"ten\"`! (HipChat that $#!+)\r\n  * [x] Checkpoint: TDD **Check Writing** from `1` to `10` in _my_ repo\r\n  * [ ] Checkpoint: TDD **Check Writing** from `1` to `10` in _another_ repo\r\n  * [ ] **BONUS:** TDD **Check Writing** above `20`...?\r\n* [ ] [**JavaScript Koans**](https://github.com/mrdavidlaing/javascript-koans) (XL)\r\n  * [x] Checkpoint: Forked and installed...!\r\n  * [x] Checkpoint: Ran it and it broke... as intended!\r\n  * [x] Checkpoint: Got `AboutExpects.js` green!\r\n  * [x] Checkpoint: Got `AboutArrays.js` green!\r\n  * [ ] **BONUS:** Got `AboutFunctions.js` green! (but I'm really confused)\r\n  * [ ] **BONUS:** Got `AboutObjects.js` green! (wasn't that bad, actually)\r\n* [ ] **BLOG IT!** (L)\r\n"
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/TheIronYard--Orlando/FEE--2015--SPRING/issues/comments/71382054",
+        "html_url": "https://github.com/TheIronYard--Orlando/FEE--2015--SPRING/issues/150#issuecomment-71382054",
+        "issue_url": "https://api.github.com/repos/TheIronYard--Orlando/FEE--2015--SPRING/issues/150",
+        "id": 71382054,
+        "user": {
+          "login": "GarrettGraham",
+          "id": 10319852,
+          "avatar_url": "https://avatars.githubusercontent.com/u/10319852?v=3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/GarrettGraham",
+          "html_url": "https://github.com/GarrettGraham",
+          "followers_url": "https://api.github.com/users/GarrettGraham/followers",
+          "following_url": "https://api.github.com/users/GarrettGraham/following{/other_user}",
+          "gists_url": "https://api.github.com/users/GarrettGraham/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/GarrettGraham/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/GarrettGraham/subscriptions",
+          "organizations_url": "https://api.github.com/users/GarrettGraham/orgs",
+          "repos_url": "https://api.github.com/users/GarrettGraham/repos",
+          "events_url": "https://api.github.com/users/GarrettGraham/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/GarrettGraham/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2015-01-25T17:23:40Z",
+        "updated_at": "2015-01-25T17:23:40Z",
+        "body": "https://github.com/GarrettGraham/javascript-koans/pull/1"
+      }
+    },
+    "public": true,
+    "created_at": "2015-01-25T17:23:40Z",
+    "org": {
+      "id": 8798300,
+      "login": "TheIronYard--Orlando",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/TheIronYard--Orlando",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8798300?"
+    }
+  },
+  {
+    "id": "2535058533",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 29736907,
+      "name": "GarrettGraham/javascript-koans",
+      "url": "https://api.github.com/repos/GarrettGraham/javascript-koans"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 1,
+      "pull_request": {
+        "url": "https://api.github.com/repos/GarrettGraham/javascript-koans/pulls/1",
+        "id": 27994539,
+        "html_url": "https://github.com/GarrettGraham/javascript-koans/pull/1",
+        "diff_url": "https://github.com/GarrettGraham/javascript-koans/pull/1.diff",
+        "patch_url": "https://github.com/GarrettGraham/javascript-koans/pull/1.patch",
+        "issue_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/issues/1",
+        "number": 1,
+        "state": "open",
+        "locked": false,
+        "title": "First Koan",
+        "user": {
+          "login": "GarrettGraham",
+          "id": 10319852,
+          "avatar_url": "https://avatars.githubusercontent.com/u/10319852?v=3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/GarrettGraham",
+          "html_url": "https://github.com/GarrettGraham",
+          "followers_url": "https://api.github.com/users/GarrettGraham/followers",
+          "following_url": "https://api.github.com/users/GarrettGraham/following{/other_user}",
+          "gists_url": "https://api.github.com/users/GarrettGraham/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/GarrettGraham/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/GarrettGraham/subscriptions",
+          "organizations_url": "https://api.github.com/users/GarrettGraham/orgs",
+          "repos_url": "https://api.github.com/users/GarrettGraham/repos",
+          "events_url": "https://api.github.com/users/GarrettGraham/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/GarrettGraham/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2015-01-25T17:04:17Z",
+        "updated_at": "2015-01-25T17:04:17Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": null,
+        "assignee": null,
+        "milestone": null,
+        "commits_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/pulls/1/commits",
+        "review_comments_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/pulls/1/comments",
+        "review_comment_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/pulls/comments/{number}",
+        "comments_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/issues/1/comments",
+        "statuses_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/statuses/c302e59cbcd0ee987903d8cb3fa1f1f23d4df858",
+        "head": {
+          "label": "GarrettGraham:first",
+          "ref": "first",
+          "sha": "c302e59cbcd0ee987903d8cb3fa1f1f23d4df858",
+          "user": {
+            "login": "GarrettGraham",
+            "id": 10319852,
+            "avatar_url": "https://avatars.githubusercontent.com/u/10319852?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/GarrettGraham",
+            "html_url": "https://github.com/GarrettGraham",
+            "followers_url": "https://api.github.com/users/GarrettGraham/followers",
+            "following_url": "https://api.github.com/users/GarrettGraham/following{/other_user}",
+            "gists_url": "https://api.github.com/users/GarrettGraham/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/GarrettGraham/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/GarrettGraham/subscriptions",
+            "organizations_url": "https://api.github.com/users/GarrettGraham/orgs",
+            "repos_url": "https://api.github.com/users/GarrettGraham/repos",
+            "events_url": "https://api.github.com/users/GarrettGraham/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/GarrettGraham/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 29736907,
+            "name": "javascript-koans",
+            "full_name": "GarrettGraham/javascript-koans",
+            "owner": {
+              "login": "GarrettGraham",
+              "id": 10319852,
+              "avatar_url": "https://avatars.githubusercontent.com/u/10319852?v=3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/GarrettGraham",
+              "html_url": "https://github.com/GarrettGraham",
+              "followers_url": "https://api.github.com/users/GarrettGraham/followers",
+              "following_url": "https://api.github.com/users/GarrettGraham/following{/other_user}",
+              "gists_url": "https://api.github.com/users/GarrettGraham/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/GarrettGraham/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/GarrettGraham/subscriptions",
+              "organizations_url": "https://api.github.com/users/GarrettGraham/orgs",
+              "repos_url": "https://api.github.com/users/GarrettGraham/repos",
+              "events_url": "https://api.github.com/users/GarrettGraham/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/GarrettGraham/received_events",
+              "type": "User",
+              "site_admin": false
+            },
+            "private": false,
+            "html_url": "https://github.com/GarrettGraham/javascript-koans",
+            "description": "Koans to learn Javascript",
+            "fork": true,
+            "url": "https://api.github.com/repos/GarrettGraham/javascript-koans",
+            "forks_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/forks",
+            "keys_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/teams",
+            "hooks_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/hooks",
+            "issue_events_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/events",
+            "assignees_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/tags",
+            "blobs_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/languages",
+            "stargazers_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/stargazers",
+            "contributors_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/contributors",
+            "subscribers_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/subscribers",
+            "subscription_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/subscription",
+            "commits_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/issues/comments/{number}",
+            "contents_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/merges",
+            "archive_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/downloads",
+            "issues_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/labels{/name}",
+            "releases_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/releases{/id}",
+            "created_at": "2015-01-23T14:48:12Z",
+            "updated_at": "2015-01-23T14:48:13Z",
+            "pushed_at": "2015-01-24T21:41:10Z",
+            "git_url": "git://github.com/GarrettGraham/javascript-koans.git",
+            "ssh_url": "git@github.com:GarrettGraham/javascript-koans.git",
+            "clone_url": "https://github.com/GarrettGraham/javascript-koans.git",
+            "svn_url": "https://github.com/GarrettGraham/javascript-koans",
+            "homepage": "",
+            "size": 3024,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": true,
+            "forks_count": 0,
+            "mirror_url": null,
+            "open_issues_count": 1,
+            "forks": 0,
+            "open_issues": 1,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "GarrettGraham:master",
+          "ref": "master",
+          "sha": "5f83a4716838027e1aa38b6c84e54590022d3a2c",
+          "user": {
+            "login": "GarrettGraham",
+            "id": 10319852,
+            "avatar_url": "https://avatars.githubusercontent.com/u/10319852?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/GarrettGraham",
+            "html_url": "https://github.com/GarrettGraham",
+            "followers_url": "https://api.github.com/users/GarrettGraham/followers",
+            "following_url": "https://api.github.com/users/GarrettGraham/following{/other_user}",
+            "gists_url": "https://api.github.com/users/GarrettGraham/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/GarrettGraham/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/GarrettGraham/subscriptions",
+            "organizations_url": "https://api.github.com/users/GarrettGraham/orgs",
+            "repos_url": "https://api.github.com/users/GarrettGraham/repos",
+            "events_url": "https://api.github.com/users/GarrettGraham/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/GarrettGraham/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 29736907,
+            "name": "javascript-koans",
+            "full_name": "GarrettGraham/javascript-koans",
+            "owner": {
+              "login": "GarrettGraham",
+              "id": 10319852,
+              "avatar_url": "https://avatars.githubusercontent.com/u/10319852?v=3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/GarrettGraham",
+              "html_url": "https://github.com/GarrettGraham",
+              "followers_url": "https://api.github.com/users/GarrettGraham/followers",
+              "following_url": "https://api.github.com/users/GarrettGraham/following{/other_user}",
+              "gists_url": "https://api.github.com/users/GarrettGraham/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/GarrettGraham/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/GarrettGraham/subscriptions",
+              "organizations_url": "https://api.github.com/users/GarrettGraham/orgs",
+              "repos_url": "https://api.github.com/users/GarrettGraham/repos",
+              "events_url": "https://api.github.com/users/GarrettGraham/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/GarrettGraham/received_events",
+              "type": "User",
+              "site_admin": false
+            },
+            "private": false,
+            "html_url": "https://github.com/GarrettGraham/javascript-koans",
+            "description": "Koans to learn Javascript",
+            "fork": true,
+            "url": "https://api.github.com/repos/GarrettGraham/javascript-koans",
+            "forks_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/forks",
+            "keys_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/teams",
+            "hooks_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/hooks",
+            "issue_events_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/events",
+            "assignees_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/tags",
+            "blobs_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/languages",
+            "stargazers_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/stargazers",
+            "contributors_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/contributors",
+            "subscribers_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/subscribers",
+            "subscription_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/subscription",
+            "commits_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/issues/comments/{number}",
+            "contents_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/merges",
+            "archive_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/downloads",
+            "issues_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/labels{/name}",
+            "releases_url": "https://api.github.com/repos/GarrettGraham/javascript-koans/releases{/id}",
+            "created_at": "2015-01-23T14:48:12Z",
+            "updated_at": "2015-01-23T14:48:13Z",
+            "pushed_at": "2015-01-24T21:41:10Z",
+            "git_url": "git://github.com/GarrettGraham/javascript-koans.git",
+            "ssh_url": "git@github.com:GarrettGraham/javascript-koans.git",
+            "clone_url": "https://github.com/GarrettGraham/javascript-koans.git",
+            "svn_url": "https://github.com/GarrettGraham/javascript-koans",
+            "homepage": "",
+            "size": 3024,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": true,
+            "forks_count": 0,
+            "mirror_url": null,
+            "open_issues_count": 1,
+            "forks": 0,
+            "open_issues": 1,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/GarrettGraham/javascript-koans/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/GarrettGraham/javascript-koans/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/GarrettGraham/javascript-koans/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/GarrettGraham/javascript-koans/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/GarrettGraham/javascript-koans/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/GarrettGraham/javascript-koans/pulls/comments/{number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/GarrettGraham/javascript-koans/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/GarrettGraham/javascript-koans/statuses/c302e59cbcd0ee987903d8cb3fa1f1f23d4df858"
+          }
+        },
+        "merged": false,
+        "mergeable": null,
+        "mergeable_state": "unknown",
+        "merged_by": null,
+        "comments": 0,
+        "review_comments": 0,
+        "commits": 11,
+        "additions": 68,
+        "deletions": 35,
+        "changed_files": 3
+      }
+    },
+    "public": true,
+    "created_at": "2015-01-25T17:04:18Z"
+  },
+  {
+    "id": "2534583519",
+    "type": "PushEvent",
+    "actor": {
+      "id": 10319852,
+      "login": "GarrettGraham",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarrettGraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10319852?"
+    },
+    "repo": {
+      "id": 29420285,
+      "name": "GarrettGraham/GarrettGraham.github.io",
+      "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io"
+    },
+    "payload": {
+      "push_id": 555413501,
+      "size": 2,
+      "distinct_size": 2,
+      "ref": "refs/heads/master",
+      "head": "cf79124ceef8e3d8c621de34034e2bb08ace9a4d",
+      "before": "1ff58e50a21020e69cc9232531a182c8d2b5e93c",
+      "commits": [
+        {
+          "sha": "b41a26e91be50a56031fb7850b6edd4904e0e5dc",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "working on the blog  put an underscore between anne frank and trying to figure out how i can get the photo of cape cod as my background. as of now its just a thin blue line as if it is a border through the center of the header banner. is there any way i can use my own photos or will i need to resize them in photoshop or something?",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/b41a26e91be50a56031fb7850b6edd4904e0e5dc"
+        },
+        {
+          "sha": "cf79124ceef8e3d8c621de34034e2bb08ace9a4d",
+          "author": {
+            "email": "ganderson7197@icloud.com",
+            "name": "Garrett Graham"
+          },
+          "message": "trying to get a cool background image.  trying to figure out how i can resize the image appropriately in css. maybe i can use css to get the cape code jpg to render nicely as the banner?",
+          "distinct": true,
+          "url": "https://api.github.com/repos/GarrettGraham/GarrettGraham.github.io/commits/cf79124ceef8e3d8c621de34034e2bb08ace9a4d"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2015-01-25T03:51:31Z"
   }
+]

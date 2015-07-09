@@ -50,7 +50,7 @@
     </div>
 
     <div class="mainContent" ng-controller="CommitsCtrl">
-      <ul class="timeline" ng-repeat="PushEvent in PushEvent">
+      <ul class="timeline" ng-repeat="PushEvent in CommitsCtrl.PushEvents">
         <li>
           <!-- time and date, stacked and different sizes and different colors-->
           <div>
@@ -70,7 +70,7 @@
                 <i class="fa fa-play fa-rotate-270"></i>
               </span>
               <h3>Music</h3>
-              <p>{{PushEvent.text}}</p></article>
+              <p>{{PushEvent}}</p></article>
         </li>
       </ul>
       </div>
