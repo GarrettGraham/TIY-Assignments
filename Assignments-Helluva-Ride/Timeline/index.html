@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" media="screen and (max-width:35em)" href="css/main.css" />
   <link rel="stylesheet" media="screen and (min-width:35em) and (max-width:50em)" href="css/main.css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
@@ -34,15 +35,12 @@
     <div class="timelineHeader">
       <header>
         <p>Blueprint</p>
-        <!-- top right of p tags use ::after pseudo class -->
+
         <h1>Vertical Timeline</h1>
         <nav>
-          <!-- with border radius -->
-          <a href="https://garrettgraham.github.io/Portfolio/" class="backToPortfolio" data-info="Back to Portfolio"><i class="fa fa-arrow-left"></i></a>
-          <a href="https://github.com/GarrettGraham/TIY-Assignments/blob/feature/building-out-timeline/Assignments-Helluva-Ride/Timeline/index.html"><i class="fa fa-github"></i></a>
-          <!-- <i class="fa fa-arrow-right"></i>
-          <i class="fa fa-tint"></i>
-          <i class="fa fa-inbox"></i> -->
+          <!-- links back to portfolio and to github code -->
+          <a href="https://garrettgraham.github.io/Portfolio/" class="backToPortfolio" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Back to Portfolio"><i class="fa fa-arrow-left"></i></a>
+          <a href="https://github.com/GarrettGraham/TIY-Assignments/blob/feature/building-out-timeline/Assignments-Helluva-Ride/Timeline/index.html" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Code on GitHub"><i class="fa fa-github"></i></a>
         </nav>
       </header>
     </div>
@@ -81,9 +79,8 @@
   </div>
   </div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+  window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
   </script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>

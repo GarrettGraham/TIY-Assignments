@@ -151,10 +151,13 @@ body {
 
 .initialDatetime span:first-child {
   color: #bdd0db;
+  font-size: 0.75em;
+  margin: 0 0 2% 2%;
 }
 
 .initialDatetime span:last-child{
   font-size:1.5em;
+  top:15%;
 }
 
 article {
@@ -309,8 +312,16 @@ article {
     right:2em;
   }
 
+  time.initialDatetime span:first-child {
+    width: 80px;
+    right: 10px;
+    top: 50px;
+  }
+
   time.initialDatetime span:last-child {
-    /*font-size: 1.5em;*/
+    width: 80px;
+    right: 10px;
+    top: 35px;
   }
 
   .carrot i {
