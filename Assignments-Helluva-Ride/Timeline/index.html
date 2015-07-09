@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html ng-app="Timeline">
 <!--<![endif]-->
 
 <head>
@@ -45,8 +45,8 @@
       </header>
     </div>
 
-    <div class="mainContent" ng-controller>
-      <ul class="timeline">
+    <div class="mainContent" ng-controller="CommitsCtrl">
+      <ul class="timeline" ng-repeat="PushEvent in PushEvent">
         <li>
           <!-- time and date, stacked and different sizes and different colors-->
           <div>
@@ -66,13 +66,7 @@
                 <i class="fa fa-play fa-rotate-270"></i>
               </span>
               <h3>Music</h3>
-              <p>To acknowledge the power of music as a means of emotional and spiritual transcendence is nothing short of an understatement. Aside from historical evidence of the profound impetus of auditory stimulation, it is quite apparent that an inherent
-                desire for creating music is woven into the fabric of what can be understood as the universally collective human experience. Our power as creators is exemplified in what is possible to express through a rhythmic composition of melodic
-                harmony (or lack thereof). Not only does the study of music theory instruct proper chordal progression but, more simplistically, it provides a foundation for comprehending a less than superficial understanding of consonance and dissonance.
-                Inherently understanding what sounds pleasing (and abhorrent) is a ubiquitous attribute of an individual who looks beyond the black and white of printed music. The art of sound is available to all those willing to traverse the journey
-                in becoming what it is to be a spiritually connected being. Great composers like Tchaikovsky and Shostakovich manipulated sound so as to express their deepest angst. Their compositions prove that music is capable of providing a conduit
-                of transcending oppression, allowing the expression of their innermost being; making available to them a means of speaking against tyrannical powers that were. These men risked their lives in order to preserve their identity.</p>
-            </article>
+              <p>{{PushEvent.text}}</p></article>
         </li>
       </ul>
       </div>
