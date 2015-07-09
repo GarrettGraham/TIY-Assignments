@@ -1,0 +1,22 @@
+{
+  "name": "Timeline",
+  "version": "0.0.0",
+  "homepage": "https://github.com/GarrettGraham/TIY-Assignments",
+  "authors": [
+    "Garrett Graham <ganderson7197@icloud.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.2"
+  }
+}
