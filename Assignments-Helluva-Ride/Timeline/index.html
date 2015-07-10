@@ -50,12 +50,12 @@
     </div>
 
     <div class="mainContent" ng-controller="CommitsCtrl">
-      <ul class="timeline" ng-repeat="Data in CommitsCtrl.data">
+      <ul class="timeline" ng-repeat="PushEvents in pushevents">
         <li>
           <!-- time and date, stacked and different sizes and different colors-->
           <div>
             <time class="initialDatetime" datetime="2015-02-13 14:00">
-              <span>{{Data.created_at}}</span>
+              <span>{{pushevent.created_at}}</span>
               <span>14:00</span>
             </time>
           </div>
@@ -70,7 +70,7 @@
                 <i class="fa fa-play fa-rotate-270"></i>
               </span>
               <h3>Music</h3>
-              <p>{{Data.message}}</p></article>
+              <p>{{pushevent.text}}</p></article>
         </div>
         </li>
       </ul>
