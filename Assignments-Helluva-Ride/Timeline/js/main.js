@@ -1,12 +1,17 @@
 var app = angular.module('Timeline', []);
 
+// the jquery for the popover on the nav links
+$(document).ready(function() {
+  $('[data-toggle="popover"]').popover();
+});
+
 app.controller ('CommitsCtrl', ['$scope', '$http',
 function($scope, $http){
   $http.get('js/commits.json').success(function(data){
     $scope.pushevents = [];
     console.log(data)
     angular.forEach(data, function(pushevent){
-      $scope.pushevents.push(pushevent.payload);
+      $scope.pushevents.push(pushevent);
       console.log(pushevent.payload.commits)
     });
 
