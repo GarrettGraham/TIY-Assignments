@@ -10,10 +10,10 @@ function($scope, $http){
   $http.get('js/commits.json').success(function(data){
     $scope.data = data;
     console.log(data)
-    // angular.forEach(data[0], function(data){
-    //     data[0].push(payload)
+    angular.forEach(data, function(data){
+        $scope.data[0].push(payload)
     //   console.log(data)
-    // });
+    });
 
   });
 }])
