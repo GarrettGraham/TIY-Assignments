@@ -8,12 +8,12 @@ $(document).ready(function() {
 app.controller ('CommitsCtrl', ['$scope', '$http',
 function($scope, $http){
   $http.get('js/commits.json').success(function(data){
-    $scope.pushevents = [];
+    $scope.data = data;
     console.log(data)
-    angular.forEach(data, function(pushevent){
-      $scope.pushevents.push(pushevent);
-      console.log(pushevent.payload.commits)
-    });
+    // angular.forEach(data[0], function(data){
+    //     data[0].push(payload)
+    //   console.log(data)
+    // });
 
   });
 }])
