@@ -9,15 +9,18 @@ $(document).ready(function() {
 app.controller ('CommitsCtrl', ['$scope', '$http',
 function($scope, $http){
   $http.get('js/commits.json').success(function(data){
-    $scope.data = data;
     console.log(data)
-    // $scope.data[0] = payload.commits;
-    // angular.forEach(data[0], function(value, commits, data){
-    //   $scope.data.push(commits.message)
-    //   console.log(data.message)
-    // //   // $scope.data.payload = data.payload.commits;
-    // //   console.log(payload.commits[0])
-    // });
+    $scope.data = data[0].payload.commits;
+    $scope.commitArray = [];
+    angular.forEach($scope.data, function(commit, index){
+      console.log(commit)
+      $scope.commitArray.push({
+      text: commit.message
+    })
+      // console.log(data.message)
+    //   // $scope.data.payload = data.payload.commits;
+    //   console.log(payload.commits[0])
+    });
 
   });
 }])

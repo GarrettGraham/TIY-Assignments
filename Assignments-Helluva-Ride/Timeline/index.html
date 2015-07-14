@@ -25,8 +25,8 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
-<!-- bower:css -->
-<!-- endbower -->
+  <!-- bower:css -->
+  <!-- endbower -->
 
 </head>
 
@@ -51,11 +51,11 @@
 
     <div class="mainContent" ng-controller="CommitsCtrl">
       <ul class="timeline">
-        <li ng-repeat="PushEvent in data | orderBy:'payload.commits'">
+        <li ng-repeat="PushEvent in commitArray | orderBy:'payload.commits'">
           <!-- time and date, stacked and different sizes and different colors-->
           <div>
             <time class="initialDatetime" datetime="2015-02-13 14:00">
-              <span>{{data[0].created_at}}</span>
+              <span>05-15-15</span>
               <span>13:31</span>
             </time>
           </div>
@@ -70,9 +70,9 @@
                 <i class="fa fa-play fa-rotate-270"></i>
               </span>
               <h3>Commit Messages</h3>
-              <p>{{PushEvent.payload.commits[0].message}}</p>
-              </article>
-        </div>
+              <p>{{PushEvent.text}}</p>
+            </article>
+          </div>
         </li>
       </ul>
       <!-- </div> -->

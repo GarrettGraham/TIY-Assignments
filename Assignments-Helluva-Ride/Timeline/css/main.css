@@ -114,26 +114,22 @@ body {
 .timelineHeader {
   text-align: center;
   color: #46a4da;
-
 }
-
 .timelineHeader i {
-    position:relative;
-    text-align: center;
-    color: #46a4da;
-    padding-top: 0.5em;
-    border-radius: 50%;
-    height:2.5em;
-    width:2.5em;
-    display:inline-block;
-    border: 4px solid;
+  position: relative;
+  text-align: center;
+  color: #46a4da;
+  padding-top: 0.5em;
+  border-radius: 50%;
+  height: 2.5em;
+  width: 2.5em;
+  display: inline-block;
+  border: 4px solid;
 }
-
 .backToPortfolio::after {
   content: attr('data-info');
   transition: 1s;
 }
-
 .timeline {
   list-style: none;
   width: 80%;
@@ -144,24 +140,22 @@ body {
 }
 
 /* Date and Time */
+
 .initialDatetime span {
   position: relative;
   bottom: 1em;
   display: block;
   color: #6cbfee;
 }
-
 .initialDatetime span:first-child {
   color: #bdd0db;
   font-size: 0.75em;
   margin: 0 0 2% 2%;
 }
-
-.initialDatetime span:last-child{
-  font-size:1.5em;
-  top:15%;
+.initialDatetime span:last-child {
+  font-size: 1.5em;
+  top: 15%;
 }
-
 article {
   background-color: #6cbfee;
   color: #ffffff;
@@ -309,27 +303,24 @@ article {
     border-bottom-width: 50%;
   }
   .initialDatetime span {
-    /*position:relative;*/
-    top:3em;
-    right:2em;
+    position: relative;
+    top: 3em;
+    right: 2em;
   }
-
   time.initialDatetime span:first-child {
     width: 80px;
     right: 10px;
     top: 50px;
   }
-
   time.initialDatetime span:last-child {
     width: 80px;
     right: 10px;
     top: 35px;
   }
-
   .carrot i {
     position: relative;
     transform: rotate(180deg);
-    color:#6cbfee;
+    color: #6cbfee;
     top: 1.5em;
     right: 2.7em;
   }
@@ -344,27 +335,22 @@ article {
     border: 7px solid #a3daf6;
     border-radius: 50%;
     margin: 3.2em 0 0 4.2em;
-    z-index:1;
+    z-index: 1;
   }
-
-/* the solid line that connects vertically the mobile icons */
-
+  /* the solid line that connects vertically the mobile icons */
   .timeline {
-    position:relative;
+    position: relative;
   }
-
   .timeline:before {
-    content:'';
-    position:absolute;
+    content: '';
+    position: absolute;
     background: #a3daf6;
-    width:10px;
-    top:0;
-    bottom:0;
-    margin-left:;
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    margin-left: ;
   }
-
-
-  .timelineArticle{
+  .timelineArticle {
     padding-left: 8em;
     /*border-left: 7px solid #a3daf6;*/
   }
@@ -379,33 +365,29 @@ article {
     border-bottom: 0.15em solid;
     border-bottom-width: 50%;
   }
-
   .mainContent {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
-
   .initialDatetime span {
-    top:3em;
-    right:2em;
+    top: 3em;
+    right: 2em;
   }
   time.initialDatetime span:first-child {
     width: 80px;
     right: 10px;
     top: 50px;
   }
-
   time.initialDatetime span:last-child {
     width: 80px;
     right: 10px;
     top: 35px;
   }
-
   .carrot i {
     position: relative;
     transform: rotate(180deg);
-    color:#6cbfee;
+    color: #6cbfee;
     top: 1.5em;
     right: 2.7em;
   }
@@ -420,22 +402,19 @@ article {
     border: 7px solid #a3daf6;
     border-radius: 50%;
     margin: 3.2em 0 0 4.2em;
-    z-index:1;
+    z-index: 1;
   }
-
-/* the solid line that connects vertically the mobile icons */
-
-.timeline::before {
-  content:'';
-  position:absolute;
-  background: #a3daf6;
-  width:10px;
-  top:40%;
-  bottom:-960%;
-  margin-left:5.45em;
-}
-
-  .timelineArticle{
+  /* the solid line that connects vertically the mobile icons */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    background: #a3daf6;
+    width: 10px;
+    top: 40%;
+    bottom: -960%;
+    margin-left: 5.45em;
+  }
+  .timelineArticle {
     padding-left: 8em;
     /*border-left: 7px solid #a3daf6;*/
   }
