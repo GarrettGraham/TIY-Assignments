@@ -5,15 +5,19 @@ $(document).ready(function() {
   $('[data-toggle="popover"]').popover();
 });
 
+// bind the json data with the view
 app.controller ('CommitsCtrl', ['$scope', '$http',
 function($scope, $http){
   $http.get('js/commits.json').success(function(data){
     $scope.data = data;
     console.log(data)
-    angular.forEach(data, function(data){
-        $scope.data[0].push(payload)
-    //   console.log(data)
-    });
+    // $scope.data[0] = payload.commits;
+    // angular.forEach(data[0], function(value, commits, data){
+    //   $scope.data.push(commits.message)
+    //   console.log(data.message)
+    // //   // $scope.data.payload = data.payload.commits;
+    // //   console.log(payload.commits[0])
+    // });
 
   });
 }])

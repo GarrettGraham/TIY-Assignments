@@ -374,10 +374,27 @@ article {
     border-bottom: 0.15em solid;
     border-bottom-width: 50%;
   }
+
+  .mainContent {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .initialDatetime span {
-    position:relative;
     top:3em;
     right:2em;
+  }
+  time.initialDatetime span:first-child {
+    width: 80px;
+    right: 10px;
+    top: 50px;
+  }
+
+  time.initialDatetime span:last-child {
+    width: 80px;
+    right: 10px;
+    top: 35px;
   }
 
   .carrot i {
@@ -398,19 +415,20 @@ article {
     border: 7px solid #a3daf6;
     border-radius: 50%;
     margin: 3.2em 0 0 4.2em;
+    z-index:1;
   }
 
 /* the solid line that connects vertically the mobile icons */
 
-  .timeline::before {
-    content:'';
-    position:absolute;
-    background: #a3daf6;
-    width:10px;
-    top:40%;
-    bottom:0;
-    margin-left:5.45em;
-  }
+.timeline::before {
+  content:'';
+  position:absolute;
+  background: #a3daf6;
+  width:10px;
+  top:40%;
+  bottom:-960%;
+  margin-left:5.45em;
+}
 
   .timelineArticle{
     padding-left: 8em;
