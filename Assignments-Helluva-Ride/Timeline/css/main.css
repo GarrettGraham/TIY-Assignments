@@ -349,15 +349,20 @@ article {
 
 /* the solid line that connects vertically the mobile icons */
 
-  .timeline::before {
+  .timeline {
+    position:relative;
+  }
+
+  .timeline:before {
     content:'';
     position:absolute;
     background: #a3daf6;
     width:10px;
-    top:40%;
-    bottom:-1050%;
-    margin-left:5.45em;
+    top:0;
+    bottom:0;
+    margin-left:;
   }
+
 
   .timelineArticle{
     padding-left: 8em;

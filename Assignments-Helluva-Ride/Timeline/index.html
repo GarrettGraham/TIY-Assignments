@@ -50,8 +50,8 @@
     </div>
 
     <div class="mainContent" ng-controller="CommitsCtrl">
-      <ul class="timeline" ng-repeat="PushEvent in data | orderBy:'payload.commits[0]'">
-        <li>
+      <ul class="timeline">
+        <li ng-repeat="PushEvent in data | orderBy:'payload.commits'">
           <!-- time and date, stacked and different sizes and different colors-->
           <div>
             <time class="initialDatetime" datetime="2015-02-13 14:00">
