@@ -50,7 +50,7 @@
     </div>
 
     <div class="mainContent" ng-controller="CommitsCtrl">
-      <ul class="timeline" ng-repeat="PushEvent in data">
+      <ul class="timeline" ng-repeat="PushEvent in data | orderBy:'payload.commits[0]'">
         <li>
           <!-- time and date, stacked and different sizes and different colors-->
           <div>
@@ -69,8 +69,8 @@
               <span class="carrot">
                 <i class="fa fa-play fa-rotate-270"></i>
               </span>
-              <h3>Music</h3>
-              <p>{{data[0].payload.commits[0].message}}</p>
+              <h3>Commit Messages</h3>
+              <p>{{PushEvent.payload.commits[0].message}}</p>
               </article>
         </div>
         </li>
