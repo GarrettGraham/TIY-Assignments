@@ -51,7 +51,7 @@
 
     <div class="mainContent" ng-controller="CommitsCtrl">
       <ul class="timeline">
-        <li ng-repeat="PushEvent in commitArray | orderBy:'payload.commits'">
+        <li ng-repeat="PushEvent in commitArray">
           <!-- time and date, stacked and different sizes and different colors-->
           <div>
             <time class="initialDatetime" datetime="2015-02-13 14:00">
