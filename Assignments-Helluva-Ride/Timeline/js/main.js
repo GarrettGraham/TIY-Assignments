@@ -15,7 +15,8 @@ function($scope, $http){
     angular.forEach($scope.data, function(commit, index){
       console.log(commit)
       $scope.commitArray.push({
-      text: commit.message
+      text: commit.message,
+      name: commit.author.name
     })
       // console.log(data.message)
     //   // $scope.data.payload = data.payload.commits;

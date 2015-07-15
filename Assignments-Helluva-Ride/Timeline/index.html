@@ -38,9 +38,8 @@
   <div class="bodyContainer">
     <div class="timelineHeader">
       <header>
-        <p>Blueprint</p>
-
-        <h1>Vertical Timeline</h1>
+          <p>Blueprint</p>
+          <h1>Vertical Timeline</h1>
         <nav>
           <!-- links back to portfolio and to github code -->
           <a href="https://garrettgraham.github.io/Portfolio/" target="_blank" class="backToPortfolio" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Back to Portfolio"><i class="fa fa-arrow-left"></i></a>
@@ -54,9 +53,9 @@
         <li ng-repeat="PushEvent in commitArray">
           <!-- time and date, stacked and different sizes and different colors-->
           <div>
-            <time class="initialDatetime" datetime="2015-02-13 14:00">
-              <span>05-15-15</span>
-              <span>13:31</span>
+            <time class="initialDatetime" datetime="2015-01-26 19:47:28">
+              <span>01-26-15</span>
+              <span>19:47</span>
             </time>
           </div>
           <!-- mobile icon with border radius and two different sized circles. NEED to enlarge!! -->
@@ -69,7 +68,7 @@
               <span class="carrot">
                 <i class="fa fa-play fa-rotate-270"></i>
               </span>
-              <h3>Commit Messages</h3>
+              <h3>{{PushEvent.name}} Commits</h3>
               <p>{{PushEvent.text}}</p>
             </article>
           </div>
